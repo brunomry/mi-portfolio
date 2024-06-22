@@ -15,7 +15,7 @@ const Home = () => {
             className="imgProfile rounded-circle img-fluid border border-2 border-white"
           />
         </div>
-          <h3 className="mb-2 mb-md-5 display-6 fw-bold">Desarrollador Web Frontend</h3>
+          <h3 className="mb-3 mb-md-5 display-6 fw-bold">Desarrollador Web Frontend</h3>
 
           <div className="d-flex flex-column gap-3 gap-md-4 justify-content-center align-items-center">
             <button className="btn px-5 rounded-0 fw-bold btnCV text-white border border-1 border-white fs-5">
