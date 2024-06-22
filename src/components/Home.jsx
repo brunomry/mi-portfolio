@@ -3,7 +3,7 @@ import perfil from "../assets/perfil.png";
 
 const Home = () => {
   return (
-    <article className="d-flex flex-column justify-content-center align-items-center flex-md-row home py-5 " id="sobremi">
+    <article className="d-flex flex-column justify-content-center align-items-center flex-md-row home py-2 py-md-5 " id="sobremi">
       <div className="d-flex flex-column flex-md-row align-items-center home_presentation">
         <div className="text-center">
           <p className="text-white lead mb-0">¡Bienvenido!</p>
