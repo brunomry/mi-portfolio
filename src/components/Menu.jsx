@@ -7,7 +7,7 @@ const Menu = () => {
         <Navbar expand="md" className="nav px-2" data-bs-theme="dark">
           <Container fluid className="px-0">
             <Navbar.Brand href="#home" className="d-md-none navLink">
-              Bruno Madozzo
+            
             </Navbar.Brand>
             <Navbar.Toggle
               className="border border-white navToggle text-white"
@@ -23,8 +23,8 @@ const Menu = () => {
               <Offcanvas.Body>
                 {" "}
                 <Nav className="mx-auto text-center">
-                  <Nav.Link href="#home" className="fw-bold fs-5 me-3 navLink ">
-                    HOME
+                  <Nav.Link href="#sobremi" className="fw-bold fs-5 me-3 navLink ">
+                    SOBRE MÍ
                   </Nav.Link>
                   <Nav.Link
                     href="#tecnologias"

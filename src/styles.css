@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
 .nav{
     width: 100%;
     position: fixed;
@@ -30,18 +32,119 @@
     background-color: #111827;
     background-color: #111827;
     background-color: #073763;
-
+    background-color: #020617;
+    border-bottom: .5px solid gray;
     /* background-color: #029D9D;
     background-color: #F7F7F7;
     background-color: #0B130F; */
 }
 
 .canvas{
-    background-color: #073763;
+    background-color: #020617;
 
+
+}
+
+.navLink{
+    transition: 0.7s;
+    color: #f113db;
 }
 
 .navLink:hover{
     transition: 0.7s;
-    color: #85167a;
+    color: #830476;
+}
+
+/* seccion main */
+
+.mainSection{
+    margin-top: 80px;
+    background-color: #000;
+    background-color: #21031E;
+    background-color: #020617;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: 1200px;
+}
+
+/* home */
+
+.home{
+    width: 100%;
+    min-height: 500px;
+    padding-top: 50px;
+    color: #830476;
+
+    background-color: #171d35; 
+
+}
+
+.home:hover{
+    background-color: #171d35; 
+    transition: 1s;
+}
+
+.home_presentation{
+    gap:50px;
+}
+
+.home_presentation .btnCV{
+    background-color: #0A8ECD;
+
+}
+
+.btnCV:hover{
+    background-color: #171d35; 
+
+}
+
+h1{
+    /* color: #00ffdd; */
+    color: #fff;
+}
+
+h3{
+    /* color: #00ffdd; */
+    color: rgb(254, 28, 28);
+    color: white;
+}
+
+
+
+.social{
+    cursor: pointer;
+}
+
+.social i{
+    color: white;
+    transition: 0.8s;
+}
+
+.social:hover{
+    transform: scale(1.3);
+    transition: 0.8s;
+}
+
+
+.imgProfile{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+@media all and (min-width:768px){
+    
+.home_presentation{
+    gap:150px;
+}
+}
+
+@media all and (min-width:992px){
+    /* .imgProfile{
+        width: 350px;
+        height: 350px;
+        object-fit: fill;
+    } */
 }
