@@ -1,0 +1,47 @@
+.nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    background: #000;
+    background-color: #283845;
+    background-color: #24303D;
+    background-color: #120E26;
+    background-color: #160116;
+    background-color: #21031E;
+    background-color: #27272A;
+    background-color: #007B67;
+    background-color: #117D6C;
+    background-color: #009C86;
+    background-color: #007B67;
+    background-color: #141414;
+    background-color: #0A0A0A;
+    background-color: #41334D;
+    background-color: #13161C;
+    background-color: #0A8ECD;
+    color: white;
+    background-color: #171412;
+
+    background-color: #03091E; 
+    background-color: #020617;
+    background-color: #121F3D;
+    background-color: #17233F;
+    background-color: #111827;
+    background-color: #111827;
+    background-color: #073763;
+
+    /* background-color: #029D9D;
+    background-color: #F7F7F7;
+    background-color: #0B130F; */
+}
+
+.canvas{
+    background-color: #073763;
+
+}
+
+.navLink:hover{
+    transition: 0.7s;
+    color: #85167a;
+}
