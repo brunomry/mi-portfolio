@@ -6,6 +6,7 @@
   top: 0;
   left: 0;
   height: 80px;
+  z-index: 99;
 /* 
   background-color: #283845;
   background-color: #24303d;
@@ -180,6 +181,12 @@ a{
 
 .btnMoreProyects:hover{
   border: 1px solid #fff;
+}
+
+/* tecnologias */
+
+.stack{
+  width: 200px;
 }
 
 @media all and (min-width: 480px) {
