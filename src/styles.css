@@ -48,6 +48,7 @@
 .navLink {
   transition: 0.7s;
   /* color: #f113db; */
+  color: #d0cdcd;
 }
 
 .navLink:hover {
@@ -68,14 +69,14 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  height: 1200px;
+  min-height: 100vh;
 }
 
 /* home */
 
 .home {
   width: 100%;
-  min-height: 500px;
+  min-height: 550px;
   padding-top: 50px;
   /* color: #830476;
   background-color: #171d35; */
@@ -95,7 +96,7 @@
 }
 
 .home_presentation .btnCV {
-  background-color: #0a8ecd;
+  /* background-color: #0a8ecd; */
 }
 
 .btnCV:hover {
@@ -105,12 +106,17 @@
 h1 {
   /* color: #00ffdd; */
   color: #fff;
+  color: rgb(35, 38, 249);
+  color: rgb(3, 91, 255);
+
 }
 
 h3 {
   /* color: #00ffdd; */
   color: rgb(254, 28, 28);
-  color: white;
+  color: rgb(218, 218, 218);
+  color: rgb(3, 91, 255);
+
 }
 
 .social {
@@ -133,16 +139,69 @@ h3 {
   object-fit: cover;
 }
 
-@media all and (min-width: 768px) {
+/* proyectos */
+
+.cardProyect{
+  width: 250px;
+  height: 450px;
+  background: radial-gradient(circle, #000000, #020617, #0f172a);
+  transition: 0.8s;
+}
+
+.cardProyect:hover{
+  border: 1px solid white;
+  transition: 0.8s;
+  transform: scale(1.05);
+}
+
+.cardProyect .imgProyect{
+  height: 250px;
+  object-fit: cover;
+}
+
+h2{
+  color: rgb(218, 218, 218);
+}
+
+.btnSocial{
+  border: 1px solid gray;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.btnSocial:hover {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btnMoreProyects{
+  border: 1px solid gray;
+}
+
+.btnMoreProyects:hover{
+  border: 1px solid #fff;
+}
+
+@media all and (min-width: 480px) {
   .home_presentation {
     gap: 150px;
+  }
+
+  .cardProyect{
+    width: 350px;
+    height: 450px;
   }
 }
 
 @media all and (min-width: 992px) {
-  /* .imgProfile{
-        width: 350px;
-        height: 350px;
-        object-fit: fill;
-    } */
+     .tecnologies{
+      font-size: 18px;
+     }
+
+     .btnMoreProyects{
+      font-size: 18px;
+    }
 }

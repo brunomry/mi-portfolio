@@ -10,16 +10,16 @@ const Menu = () => {
             
             </Navbar.Brand>
             <Navbar.Toggle
-              className="border border-white navToggle text-white"
+              className="border border-white navToggle text-white "
               aria-controls="basic-navbar-nav offcanvasNavbar-expand-sm"
             />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
-              className="canvas"
+              className="canvas text-white"
             >
-              <Offcanvas.Header closeButton></Offcanvas.Header>
+              <Offcanvas.Header closeButton className=""></Offcanvas.Header>
               <Offcanvas.Body>
                 {" "}
                 <Nav className="mx-auto text-center">
