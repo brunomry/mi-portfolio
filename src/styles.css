@@ -145,14 +145,9 @@ h3 {
   min-width: 250px;
   /* max-width: 350px; */
   height: 450px;
+  border: 1px solid white;
   background: radial-gradient(circle, #000000, #020617, #0f172a);
   transition: 0.8s;
-}
-
-.cardProyect:hover{
-  border: 1px solid white;
-  transition: 0.8s;
-  transform: scale(1.02);
 }
 
 .cardProyect .imgProyect{
@@ -193,17 +188,28 @@ a{
   }
 
   .cardProyect{
-    width: 350px;
+    width: 450px;
     height: 450px;
   }
 
   .cardProyect:hover{
+    border: 1px solid #fff;
     transition: 0.8s;
     transform: scale(1.1);
   }
 }
 
 @media all and (min-width: 992px) {
+ 
+}
+
+@media all and (min-width: 992px) {
+  .cardProyect{
+    width: 280px;
+    height: 450px;
+    border: none;
+  }
+
      .tecnologies{
       font-size: 18px;
      }
@@ -211,4 +217,20 @@ a{
      .btnMoreProyects{
       font-size: 18px;
     }
+}
+
+@media all and (min-width: 1200px) {
+  .cardProyect{
+    width: 350px;
+    height: 450px;
+    border: none;
+  }
+
+  .tecnologies{
+   font-size: 18px;
+  }
+
+  .btnMoreProyects{
+   font-size: 18px;
+ }
 }
