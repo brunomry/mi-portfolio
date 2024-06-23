@@ -3,7 +3,7 @@ import CardProyecto from "./Proyectos/CardProyecto";
 
 const Proyectos = () => {
   return (
-    <article className="py-2 py-md-5 d-flex flex-column gap-5 justify-content-center align-items-center">
+    <article className="py-4 py-md-5 d-flex flex-column gap-2 gap-sm-5 justify-content-center align-items-center px-2">
       <h2 className="display-5 mb-3 text-center">Proyectos</h2>
       <div className="d-flex justify-content-center align-items-center flex-wrap gap-5">
         <CardProyecto></CardProyecto>
