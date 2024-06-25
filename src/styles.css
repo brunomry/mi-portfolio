@@ -175,7 +175,7 @@ h2{
 
 a{
   text-decoration: none;
-  color: #fff;
+  color: #F7F7F7;
 }
 
 .btnSocial:hover {
@@ -215,6 +215,9 @@ a{
     transition: 0.8s;
     transform: scale(1.1);
   }
+}
+p{
+  color: #F7F7F7;
 }
 
 @media all and (min-width: 992px) {

@@ -1,14 +1,17 @@
 import React from "react";
 import img from "../../assets/bg.jpg";
 
-const CardProyecto = () => {
+const CardProyecto = ({proyecto}) => {
+
+  console.log(proyecto.nombre)
+
   return (
     <div className="card cardProyect bg-dark ">
-      <img src={img} alt="" className="rounded-top imgProyect"/>
+      <img src={proyecto.imagen} alt={proyecto.nombre} className="rounded-top imgProyect"/>
       <div className="card-body d-flex flex-column justify-content-between">
         <div>
-          <h3 className=" text-primary mb-1">Ambiente Bohemio</h3>
-          <p className="text-white fs-5">Aplicación web de Restaurante</p>
+          <h3 className=" text-primary mb-1">{proyecto.nombre}</h3>
+          <p className="fs-5">{proyecto.tipo}</p>
           {/* <p className="text-success tecnologies">HTML5 | CSS3 | Bootstrap5 | React | Node | Express | Javascript | MongoDB</p> */}
         </div>
         <div className="d-flex gap-3 justify-content-center">
