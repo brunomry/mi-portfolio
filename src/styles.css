@@ -84,7 +84,7 @@
   background: linear-gradient(135deg, #020617, #0f172a);
   background: radial-gradient(circle, #020617, #0f172a);
   background: radial-gradient(circle, #000000, #020617, #0f172a);
-  
+  position: relative;
 }
 
 .home:hover {
@@ -109,6 +109,7 @@ h1 {
   color: #fff;
   color: rgb(35, 38, 249);
   color: rgb(3, 91, 255);
+  color: rgba(3, 91, 255, 0.637);
 
 }
 
@@ -116,27 +117,34 @@ h3 {
   /* color: #00ffdd; */
   color: rgb(254, 28, 28);
   color: rgb(218, 218, 218);
-  color: rgb(3, 91, 255);
+  color: rgba(3, 91, 255, 0.637);
 
+}
+
+.descriptionProfile{
+  width: 100%;
 }
 
 .social {
   cursor: pointer;
+  transition: 1s;
 }
 
 .social i {
   color: white;
-  transition: 0.8s;
+ 
 }
 
 .social:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
   transition: 0.8s;
 }
 
 .imgProfile {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 300px;
+  position: relative;
+  border-radius: 20px 20px 20px 20px;
   object-fit: cover;
 }
 
@@ -145,7 +153,7 @@ h3 {
 .cardProyect{
   min-width: 250px;
   /* max-width: 350px; */
-  height: 450px;
+  height: 425px;
   border: 1px solid white;
   background: radial-gradient(circle, #000000, #020617, #0f172a);
   transition: 0.8s;
@@ -189,6 +197,10 @@ a{
   width: 200px;
 }
 
+.iconTech{
+  width: 100px;
+}
+
 @media all and (min-width: 480px) {
   .home_presentation {
     gap: 150px;
@@ -196,7 +208,6 @@ a{
 
   .cardProyect{
     width: 450px;
-    height: 450px;
   }
 
   .cardProyect:hover{
@@ -207,13 +218,15 @@ a{
 }
 
 @media all and (min-width: 992px) {
- 
+  .descriptionProfile{
+    width: 800px;
+  }
+  
 }
 
 @media all and (min-width: 992px) {
   .cardProyect{
     width: 280px;
-    height: 450px;
     border: none;
   }
 
@@ -229,7 +242,6 @@ a{
 @media all and (min-width: 1200px) {
   .cardProyect{
     width: 350px;
-    height: 450px;
     border: none;
   }
 

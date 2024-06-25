@@ -1,21 +1,24 @@
 import React from "react";
-import perfil from "../assets/perfil.png";
+import perfil from "../assets/perfilbg.png";
 
 const Home = () => {
   return (
-    <article className="d-flex flex-column justify-content-center align-items-center flex-md-row home py-2 py-md-5 " id="sobremi">
+    <article className="d-flex flex-column justify-content-center align-items-center flex-md-row home pb-2 pb-md-5 " id="sobremi">
       <div className="d-flex flex-column flex-md-row align-items-center home_presentation">
         <div className="text-center">
-          <p className="text-white lead mb-0">¡Bienvenido!</p>
-          <h1 className="mb-2 mb-md-5 display-3 fw-bold">Hola, soy Bruno Madozzo</h1>
-          <div className="mb-2 mb-md-5">
+       
+          <p className="text-white lead mb-0">¡Bienvenido! Emoticon de saludo</p>
+          <h1 className=" mb-2 mb-md-4 display-3 fw-bold">Hola, soy Bruno Madozzo</h1>
           <img
             src={perfil}
             alt=""
-            className="imgProfile rounded-circle img-fluid border border-2 border-white"
+            className="imgProfile mb-3 shadow"
           />
+          <h3 className="display-6 fw-bold">Desarrollador Web Frontend</h3>
+          <div className="shadow descriptionProfile mb-2 mb-md-4 rounded-3 d-flex justify-content-center gap-5">
+          
+          <p className="text-secondary fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, iusto provident ratione dolore libero vitae nam, assumenda asperiores optio molestias animi eligendi cupiditate natus accusantium. Fugiat suscipit veritatis et debitis.</p>
         </div>
-          <h3 className="mb-3 mb-md-5 display-6 fw-bold">Desarrollador Web Frontend</h3>
 
           <div className="d-flex flex-column gap-3 gap-md-4 justify-content-center align-items-center">
             <button className="btn px-5 rounded-0 fw-bold btnCV text-white border border-1 border-white fs-5">
