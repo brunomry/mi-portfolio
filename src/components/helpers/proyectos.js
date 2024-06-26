@@ -1,6 +1,6 @@
-import perfil from "../../assets/proyectos/ambientebohemio.jpg";
-import blog from "../../assets/proyectos/blog.jpg";
-import sanjorge from "../../assets/proyectos/sanjorge.jpg";
+import perfil from "../../assets/proyectos/ab.jpg";
+import blog from "../../assets/proyectos/blogrecetas.jpg";
+import sanjorge from "../../assets/proyectos/hostalsanjorge.jpg";
 
 const proyectos = [
     {

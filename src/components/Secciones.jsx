@@ -3,6 +3,7 @@ import Home from "./Home";
 import Tecnologias from "./Tecnologias";
 import Contacto from "./Contacto";
 import Proyectos from "./Proyectos";
+import Certificaciones from "./Certificaciones";
 
 const Secciones = () => {
   return (
@@ -10,6 +11,7 @@ const Secciones = () => {
         <Home></Home>
         <Tecnologias></Tecnologias>
         <Proyectos></Proyectos>
+        <Certificaciones></Certificaciones>
         <Contacto></Contacto>
     </section>
   );

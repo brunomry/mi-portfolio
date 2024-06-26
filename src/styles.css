@@ -148,6 +148,10 @@ h3 {
   object-fit: cover;
 }
 
+.section{
+  background: radial-gradient(circle, #000000, #020617, #0f172a);
+  width: 100%;
+}
 /* proyectos */
 
 .cardProyect{
@@ -201,6 +205,16 @@ a{
   width: 100px;
 }
 
+/* certificados */
+
+.cardCertification{
+  height: 300px;
+  background: radial-gradient(circle, #000000, #020617, #0f172a);
+  background: radial-gradient(circle, #020617, #0f172a);
+  min-width: 250px;
+
+}
+
 @media all and (min-width: 480px) {
   .home_presentation {
     gap: 150px;
@@ -228,7 +242,8 @@ p{
 }
 
 @media all and (min-width: 992px) {
-  .cardProyect{
+  .cardProyect,
+  .cardCertification{
     width: 280px;
     border: none;
   }
@@ -243,7 +258,8 @@ p{
 }
 
 @media all and (min-width: 1200px) {
-  .cardProyect{
+  .cardProyect,
+  .cardCertification{
     width: 350px;
     border: none;
   }

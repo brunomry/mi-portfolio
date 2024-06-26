@@ -17,7 +17,7 @@ const Home = () => {
           <h3 className="display-6 fw-bold">Desarrollador Web Frontend</h3>
           <div className="shadow descriptionProfile mb-2 mb-md-4 rounded-3 d-flex justify-content-center gap-5">
           
-          <p className="text-secondary fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, iusto provident ratione dolore libero vitae nam, assumenda asperiores optio molestias animi eligendi cupiditate natus accusantium. Fugiat suscipit veritatis et debitis.</p>
+          <p className="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, iusto provident ratione dolore libero vitae nam, assumenda asperiores optio molestias animi eligendi cupiditate natus accusantium. Fugiat suscipit veritatis et debitis.</p>
         </div>
 
           <div className="d-flex flex-column gap-3 gap-md-4 justify-content-center align-items-center">
