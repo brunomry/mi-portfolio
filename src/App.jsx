@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
+    <div className="containerFlex d-flex">
       <Menu></Menu>
       <Secciones></Secciones>
       <Footer></Footer>

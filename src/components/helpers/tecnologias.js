@@ -15,30 +15,21 @@ import trello from "../../assets/iconos/trello.svg";
 import git from "../../assets/iconos/git.svg";
 import github from "../../assets/iconos/github.svg";
 
-const tecnologias = {
-    frontend: [
+const tecnologias = [
       { name: "HTML5", icon: html5 },
       { name: "CSS3", icon: css3 },
       { name: "Bootstrap5", icon: bootstrap5 },
-      { name: "Javascript", icon: javascript },
       { name: "React", icon: react },
-      { name: "React-Bootstrap", icon: rb }
-    ],
-    backend: [
+      { name: "React-Bootstrap", icon: rb },
       { name: "Node JS", icon: node },
       { name: "Express JS", icon: express },
       { name: "Javascript", icon: javascript },
       { name: "MongoDB", icon: mongodb },
-      { name: "Postman", icon: postman}
-    ],
-    otras: [
+      { name: "Postman", icon: postman},
       { name: "Git", icon: git},
       { name: "Github", icon: github},
       { name: "Trello", icon: trello},
-      { name: "Draw", icon: draw},
-      { name: "Netlify", icon: netlify},
-      { name: "Vercel", icon: vercel}
+      { name: "Draw", icon: draw}
     ]
-  };
 
 export default tecnologias;

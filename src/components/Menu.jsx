@@ -4,25 +4,14 @@ const Menu = () => {
   return (
     <>
       {[false, "sm"].map((expand) => (
-        <Navbar expand="md" className="nav px-2" data-bs-theme="dark">
-          <Container fluid className="px-0">
-            <Navbar.Brand href="#home" className="d-md-none navLink">
-            
-            </Navbar.Brand>
+        <Navbar expand="lg" className="navBar d-flex justify-content-end" >
             <Navbar.Toggle
               className="border border-white navToggle text-white "
-              aria-controls="basic-navbar-nav offcanvasNavbar-expand-sm"
+              aria-controls="basic-navbar-nav"
             />
-            <Navbar.Offcanvas
-              id={`offcanvasNavbar-expand-${expand}`}
-              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-              placement="end"
-              className="canvas text-white"
-            >
-              <Offcanvas.Header closeButton className=""></Offcanvas.Header>
-              <Offcanvas.Body>
-                {" "}
-                <Nav className="mx-auto text-center">
+
+                <Nav className="ps-3 shadow py-3 rounded-3 d-flex flex-column 
+                 navOptions d-md-none d-lg-block">
                   <Nav.Link href="#sobremi" className="fw-bold fs-5 me-3 navLink ">
                     SOBRE MÍ
                   </Nav.Link>
@@ -39,15 +28,18 @@ const Menu = () => {
                     PROYECTOS
                   </Nav.Link>
                   <Nav.Link
+                    href="#certificaciones"
+                    className="fw-bold fs-5 me-3 navLink"
+                  >
+                    CERTIFICACIONES
+                  </Nav.Link>
+                  <Nav.Link
                     href="#contacto"
                     className="fw-bold fs-5 me-2 navLink"
                   >
                     CONTACTO
                   </Nav.Link>
                 </Nav>
-              </Offcanvas.Body>
-            </Navbar.Offcanvas>
-          </Container>
         </Navbar>
       ))}
     </>
