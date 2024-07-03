@@ -29,7 +29,7 @@ const Menu = () => {
             <div className="mx-auto d-none d-lg-block imgProfile mb-2">
               <img src={perfil} alt="" className="" />
             </div>
-            <div className="d-none d-flex justify-content-center mb-xl-4 gap-3">
+            <div className="d-none d-lg-flex justify-content-center mb-xl-4 gap-3">
               <a className="social">
                 <i className="bi bi-github fs-1"></i>
               </a>
