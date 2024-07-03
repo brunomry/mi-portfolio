@@ -6,7 +6,7 @@ const Proyectos = () => {
   console.log(proyectos);
   return (
     <article
-      className=" py-4 py-md-5 d-flex flex-column gap-2 gap-sm-5 align-items-center px-3 section proyects  rounded-2 shadow"
+      className=" py-4 py-lg-4 d-flex flex-column gap-2 gap-sm-5 align-items-center px-3 section proyects  rounded-2"
       id="proyectos"
     >
       <h2 className="mb-3 text-center display-6 fw-bold ">Proyectos</h2>

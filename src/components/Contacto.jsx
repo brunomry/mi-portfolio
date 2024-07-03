@@ -4,7 +4,7 @@ import FormContacto from "./Contacto/FormContacto";
 const Contacto = () => {
   return (
     <article
-      className="containerContact py-4 py-md-5 d-flex flex-column gap-2 gap-sm-4 justify-content-center align-items-center px-3 section contact rounded-2 shadow"
+      className="containerContact py-4 py-md-5 d-flex flex-column gap-2 gap-sm-4 justify-content-center align-items-center px-3 section contact rounded-2 "
       id="contacto"
     >
       <h2 className="display-6 fw-bold ">Contáctame</h2>

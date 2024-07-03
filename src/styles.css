@@ -157,7 +157,7 @@
 /* home */
 
 .section {
-  background: #175563;
+  /* background: #175563; */
 }
 
 .home {
@@ -166,11 +166,14 @@
   height: 95vh;
   padding-top: 50px;
   position: relative;
-  background: #f7f7f7;
+    background: #eae8ff;
+    background: #eae8ff;
+
+  /* background: #f7f7f7;
   background: #031a2e;
   background: #010203;
   background: #0c181a;
-  background: #fff;
+  background: #fff; */
   /* background: linear-gradient(to bottom right, #0c181a 0%, #1c2a2d 50%, #0c181a 100%);
   background: linear-gradient(to bottom right, #0c181a 0%, #1f2f31 40%, #0c181a 100%);
   background-image: url("./assets//bgHome.jpg");
@@ -232,17 +235,7 @@ h3 {
   color: white;
 }
 
-.section {
-  background: #0c181a;
-  background: linear-gradient(
-    to bottom right,
-    #0c181a 0%,
-    #2f5c62 25%,
-    #0c181a 75%
-  );
-  background: #124e59;
-  background: #fff;
-}
+
 /* proyectos */
 
 .proyects {
@@ -330,7 +323,9 @@ a {
 
 .tecnologias {
   min-height: 95vh;
-  width: 95%;
+  width: 100%;
+  background: #dad8f8;
+
 }
 
 .tech {
@@ -351,7 +346,8 @@ a {
 /* certificados */
 
 .certifications {
-  width: 95%;
+  width: 100%;
+  background: #dad8f8;
   min-height: 100vh;
 }
 

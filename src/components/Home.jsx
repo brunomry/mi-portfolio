@@ -5,7 +5,7 @@ import home from "../assets/bgHome.jpg";
 const Home = () => {
   return (
     <article
-      className="d-flex flex-column flex-md-row justify-content-md-center align-items-center home pb-2 rounded-2 shadow section"
+      className="d-flex flex-column flex-md-row justify-content-md-center align-items-center home pb-2 rounded-2 section"
       id="sobremi"
     >
       <div className="d-flex flex-column align-items-center  flex-md-row home_presentation">
