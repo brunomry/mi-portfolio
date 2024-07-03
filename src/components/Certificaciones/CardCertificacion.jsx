@@ -2,7 +2,7 @@ import React from "react";
 
 const CardCertificacion = ({ certificado }) => {
   return (
-    <div className="card px-2 py-2 cardCertification border border-white d-flex px-5">
+    <div className="card px-2 py-2 cardCertification border border-white d-flex px-2 px-lg-5">
       <div className="px-2 d-flex flex-column justify-content-center align-items-start rounded-2 h-100">
         <div className="tex">
           <h3 className="mb-1">{certificado.titulo}</h3>

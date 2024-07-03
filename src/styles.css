@@ -9,7 +9,8 @@
 }
 
 .navBar {
-  height: 100vh;
+  width: 100%;
+  height: 80px;
   position: fixed;
   top: 0;
   left: 0;
@@ -46,11 +47,9 @@
     background-color: #F7F7F7;
     background-color: #0B130F; */
   /* background: #000; */
-  background: #e8f7ff;
+  background: #eae8ff;
+  background: #028891;
 
-  background: #000000;
-
-  background: #1d1d1d;
 }
 
 .navOptions {
@@ -138,6 +137,7 @@
 /* seccion main */
 
 .mainSection {
+
   width: 100%;
   background-color: #000;
   background-color: #21031e;
@@ -161,6 +161,7 @@
 }
 
 .home {
+  margin-top: 100px;
   width: 95%;
   height: 95vh;
   padding-top: 50px;
@@ -250,6 +251,7 @@ h3 {
 }
 
 .cardProyect {
+  width: 100%;
   min-width: 250px;
   /* max-width: 350px; */
   background-color: #3d5b76de;
@@ -464,6 +466,7 @@ label {
 
 @media all and (min-width: 992px) {
   .navBar {
+    height: 100vh;
     width: 25%;
   }
 
@@ -478,6 +481,10 @@ label {
   .mainSection {
     width: 75%;
     margin-left: 25%;
+  }
+
+  .home {
+    margin-top: 0px;
   }
 
   .cardProyect,

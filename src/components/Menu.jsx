@@ -1,23 +1,35 @@
-import { Navbar, Nav, Container, Offcanvas } from "react-bootstrap";
+import { Navbar, Nav, Container, Offcanvas,  } from "react-bootstrap";
 import perfil from "../assets/perfilbg.png";
+
+
 
 const Menu = () => {
   return (
     <>
       {[false, "sm"].map((expand) => (
-        <Navbar expand="lg" className="navBar d-flex justify-content-end ">
+        <Navbar expand="lg" className="navBar d-flex justify-content-center ">
+          <Container fluid className="px-0 ">
           <Navbar.Toggle
             className="border border-white navToggle text-white "
             aria-controls="basic-navbar-nav"
           />
+          <Navbar.Offcanvas
+              id={`offcanvasNavbar-expand-${expand}`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+              placement="end"
+            >
+              <Offcanvas.Header closeButton>
+
+              </Offcanvas.Header>
+              <Offcanvas.Body>
           <Nav
-            className=" shadow  d-flex flex-column justify-content-end align-items-center
+            className=" shadow  d-flex flex-column justify-content-lg-center align-items-center
                  navOptions d-md-none d-lg-block gap-4"
           >
-            <div className="mx-auto  imgProfile mb-2">
+            <div className="mx-auto d-none d-lg-block imgProfile mb-2">
               <img src={perfil} alt="" className="" />
             </div>
-            <div className="d-flex justify-content-center mb-xl-4 gap-3">
+            <div className="d-none d-flex justify-content-center mb-xl-4 gap-3">
               <a className="social">
                 <i className="bi bi-github fs-1"></i>
               </a>
@@ -46,6 +58,9 @@ const Menu = () => {
             </Nav.Link>
             </div>
           </Nav>
+          </Offcanvas.Body>
+          </Navbar.Offcanvas>
+           </Container>
         </Navbar>
       ))}
     </>

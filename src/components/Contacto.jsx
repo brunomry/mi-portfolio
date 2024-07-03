@@ -8,7 +8,7 @@ const Contacto = () => {
       id="contacto"
     >
       <h2 className="display-6 fw-bold ">Contáctame</h2>
-      <p className="descriptionContact">
+      <p className="descriptionContact text-center text-lg-start">
         Para colaborar o contratar mis servicios, no dudes en ponerte en
         contacto conmigo a través de mis redes sociales o completando el
         formulario a continuación.{" "}

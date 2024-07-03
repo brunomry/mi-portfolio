@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="containerFlex d-flex">
+    <div className="containerFlex d-flex flex-column flex-lg-row gap-5">
       <Menu></Menu>
       <Secciones></Secciones>
       <Footer></Footer>
