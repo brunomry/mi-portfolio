@@ -7,7 +7,7 @@ import Certificaciones from "./Certificaciones";
 
 const Secciones = () => {
   return (
-    <section className="mainSection d-flex flex-column align-items-center gap-3 py-5 ">
+    <section className="mainSection d-flex flex-column align-items-center gap-3 py-2 py-xl-3">
         <Home></Home>
         <Tecnologias></Tecnologias>
         <Proyectos></Proyectos>
