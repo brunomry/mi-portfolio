@@ -324,7 +324,7 @@ a {
 .tecnologias {
   min-height: 95vh;
   width: 100%;
-  background: #dad8f8;
+  background: #e0dffd;
 
 }
 
@@ -347,7 +347,8 @@ a {
 
 .certifications {
   width: 100%;
-  background: #dad8f8;
+  background: #e0dffd;
+
   min-height: 100vh;
 }
 
@@ -480,6 +481,7 @@ label {
   }
 
   .home {
+    padding-top: 0;
     margin-top: 0px;
   }
 
