@@ -13,10 +13,10 @@ const Proyectos = () => {
 
   return (
     <article
-      className=" py-4 py-lg-4 d-flex flex-column gap-2 gap-sm-5 align-items-center px-3 section proyects  "
+      className=" py-4 py-lg-4 d-flex flex-column gap-2 gap-xl-4 align-items-center px-3 section proyects  "
       id="proyectos"
     >
-      <h2 className="mb-3 text-center display-6 fw-bold ">Proyectos</h2>
+      <h2 className="text-center display-6 fw-bold ">Proyectos</h2>
       <Tabs
         id="controlled-tab-example"
         activeKey={key}

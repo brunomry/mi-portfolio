@@ -3,8 +3,6 @@ import img from "../../assets/bg.jpg";
 import { Link } from "react-router-dom";
 
 const CardProyecto = ({ proyecto }) => {
-  console.log(proyecto.nombre);
-
   return (
     <div className="card cardProyect ">
       <img
@@ -14,7 +12,7 @@ const CardProyecto = ({ proyecto }) => {
       />
       <div className="card-body d-flex flex-column justify-content-between">
         <div className="descriptionProyect rounded-2 py-1 px-2 d-flex flex-column align-items-center mb-2">
-          <h3 className="mb-1">{proyecto.nombre}</h3>
+          <h4 className="mb-1 fw-bold">{proyecto.nombre}</h4>
           <p className="text-dark fs-5 mb-0">{proyecto.tipo}</p>
         </div>
         <div className="d-flex gap-3 justify-content-center">

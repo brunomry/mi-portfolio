@@ -1,11 +1,20 @@
-import perfil from "../../assets/proyectos/ab.jpg";
-import blog from "../../assets/proyectos/blogrecetas.jpg";
-import sanjorge from "../../assets/proyectos/hostalsanjorge.jpg";
+import ab from "../../assets/proyectos/ambientebohemio.webp";
+import blog from "../../assets/proyectos/blog.avif";
+import temp from "../../assets/proyectos/temp.jpg";
+import rss1 from "../../assets/proyectos/rss1.jpg";
+import parrillada from "../../assets/proyectos/laparrillada.jpg";
+import technicaldoc from "../../assets/proyectos/technicaldoc.jpg";
+import rollingbank from "../../assets/proyectos/rollingbank.jpg";
+import trombones from "../../assets/proyectos/trombones.jpg";
+import blogrecetas from "../../assets/proyectos/blogrecetas.jpg";
+import peliculas from "../../assets/proyectos/peliculas.jpg";
+import sanjorge from "../../assets/frente.webp";
+import clima from "../../assets/proyectos/clima.jpg";
 
 const proyectos = [
     {
         id: 111,
-        imagen: perfil,
+        imagen: ab,
         nombre: "Ambiente Bohemio",
         tipo: "Aplicación web",
         descripcion: "",
@@ -31,9 +40,9 @@ const proyectos = [
     },
     {
         id: 333,
-        imagen: blog,
+        imagen: blogrecetas,
         nombre: "Blog de recetas",       
-        tipo: "Blog",
+        tipo: "Sitio web",
         descripcion: "",
         proyecto: "Individual",
         finalidad: "",
@@ -44,7 +53,7 @@ const proyectos = [
     },
     {
         id: 444,
-        imagen: "",
+        imagen: temp,
         nombre: "Temporizador",       
         tipo: "Aplicación web",
         descripcion: "",
@@ -57,7 +66,7 @@ const proyectos = [
     },
     {
         id: 555,
-        imagen: "",
+        imagen: parrillada,
         nombre: "La Parrillada",       
         tipo: "Landing Page",
         descripcion: "",
@@ -70,7 +79,7 @@ const proyectos = [
     },
     {
         id: 666,
-        imagen: "",
+        imagen: rss1,
         nombre: "Rolling Shoes Store",       
         tipo: "Sitio web",
         descripcion: "",
@@ -83,7 +92,7 @@ const proyectos = [
     },
     {
         id: 777,
-        imagen: "",
+        imagen: technicaldoc,
         nombre: "Technical Documentation",       
         tipo: "Landing Page",
         descripcion: "",
@@ -96,7 +105,7 @@ const proyectos = [
     },
     {
         id: 888,
-        imagen: "",
+        imagen: rollingbank,
         nombre: "Rolling Bank",       
         tipo: "Sitio web",
         descripcion: "",
@@ -109,8 +118,8 @@ const proyectos = [
     },
     {
         id: 999,
-        imagen: "",
-        nombre: "Landing Page",       
+        imagen: trombones,
+        nombre: "Original Trombones",       
         tipo: "Landing Page",
         descripcion: "",
         proyecto: "Individual",
@@ -122,7 +131,7 @@ const proyectos = [
     },
     {
         id: 1010,
-        imagen: "",
+        imagen: peliculas,
         nombre: "Películas",       
         tipo: "Otro",
         descripcion: "",
@@ -132,6 +141,19 @@ const proyectos = [
         responsabilidades:[""],
         github: "https://github.com/brunomry/CRUD_Peliculas",
         enlace: "https://crudpeliculas-bmr.netlify.app/",
+    },
+    {
+        id: 1121,
+        imagen: clima,
+        nombre: "Clima",       
+        tipo: "Aplicación web",
+        descripcion: "",
+        proyecto: "Individual",
+        finalidad: "",
+        objetivos:"",
+        responsabilidades:[""],
+        github: "https://github.com/brunomry/webDeClima_API_react",
+        enlace: "https://ejercicio13-bmr.netlify.app/",
     }
 ]
 
