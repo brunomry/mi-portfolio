@@ -30,10 +30,10 @@ const Menu = () => {
               <img src={perfil} alt="" className="" />
             </div>
             <div className="d-none d-lg-flex justify-content-center mb-xl-4 gap-3">
-              <a className="social">
+              <a className="social" href="https://github.com/brunomry" target="_blank">
                 <i className="bi bi-github fs-1"></i>
               </a>
-              <a className="social">
+              <a className="social" href="https://www.linkedin.com/in/bruno-madozzo/" target="_blank"> 
                 <i className="bi bi-linkedin fs-1"></i>
               </a>
             </div>

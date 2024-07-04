@@ -1,4 +1,12 @@
+import cv from '../assets/CV Bruno Madozzo Romay.pdf';
+
 const Home = () => {
+
+  const handleDownloadPDF = () => {
+    const urlPDF = cv;
+    window.open(urlPDF, '_blank');
+  };
+
   return (
     <article
       className="d-flex flex-column justify-content-md-start align-items-xl-center home pb-2 rounded-2 section pt-0"
@@ -33,14 +41,14 @@ const Home = () => {
           </div>
 
           <div className="d-flex flex-column gap-3 gap-xl-4 justify-content-center align-items-center">
-            <button className="btn px-5 rounded-0 fw-bold btnCV fs-5">
+            <button className="btn px-5 rounded-0 fw-bold btnCV fs-5" onClick={handleDownloadPDF}>
               Descargar CV <i className="bi bi-download ms-2"></i>
             </button>
             <div className="d-flex gap-4 text-dark">
-              <a className="social">
+              <a className="social" href="https://github.com/brunomry" target="_blank">
                 <i className="bi bi-github fs-1 text-dark"></i>
               </a>
-              <a className="social">
+              <a className="social" href="https://www.linkedin.com/in/bruno-madozzo/" target="_blank">
                 <i className="bi bi-linkedin fs-1 text-primary"></i>
               </a>
             </div>
