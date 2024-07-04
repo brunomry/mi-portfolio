@@ -6,7 +6,11 @@ import { Button } from "react-bootstrap";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 const Proyectos = () => {
+
   const [key, setKey] = useState("all");
+
+  const filtrarPorTipo = tipoProyecto => proyectos.filter(p => p.tipo === tipoProyecto);
+
   return (
     <article
       className=" py-4 py-lg-4 d-flex flex-column gap-2 gap-sm-5 align-items-center px-3 section proyects  "
@@ -17,7 +21,7 @@ const Proyectos = () => {
         id="controlled-tab-example"
         activeKey={key}
         onSelect={(k) => setKey(k)}
-        className="mb-3 d-flex gap-1 bg-white pt-3 pb-1 px-2 rounded-2"
+        className="d-flex gap-1 bg-white pt-3 pb-1 px-2 rounded-2"
       >
         <Tab
           eventKey="all"
@@ -42,7 +46,7 @@ const Proyectos = () => {
         >
           {key === "apps" && (
             <div className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-lg-4">
-              {proyectos.map((proyecto) => (
+              {filtrarPorTipo("Aplicación web").length > 0 && filtrarPorTipo("Aplicación web").map((proyecto) => (
                 <CardProyecto
                   key={proyecto.id}
                   proyecto={proyecto}
@@ -58,7 +62,7 @@ const Proyectos = () => {
         >
           {key === "sites" && (
             <div className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-lg-4">
-              {proyectos.map((proyecto) => (
+              {filtrarPorTipo("Sitio web").map((proyecto) => (
                 <CardProyecto
                   key={proyecto.id}
                   proyecto={proyecto}
@@ -74,7 +78,7 @@ const Proyectos = () => {
         >
           {key === "landing" && (
             <div className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-lg-4">
-              {proyectos.map((proyecto) => (
+              {filtrarPorTipo("Landing Page").map((proyecto) => (
                 <CardProyecto
                   key={proyecto.id}
                   proyecto={proyecto}
@@ -90,7 +94,7 @@ const Proyectos = () => {
         >
           {key === "otros" && (
             <div className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-lg-4">
-              {proyectos.map((proyecto) => (
+              {filtrarPorTipo("Otro").map((proyecto) => (
                 <CardProyecto
                   key={proyecto.id}
                   proyecto={proyecto}

@@ -1,5 +1,6 @@
 import React from "react";
 import img from "../../assets/bg.jpg";
+import { Link } from "react-router-dom";
 
 const CardProyecto = ({ proyecto }) => {
   console.log(proyecto.nombre);
@@ -17,20 +18,28 @@ const CardProyecto = ({ proyecto }) => {
           <p className="text-dark fs-5 mb-0">{proyecto.tipo}</p>
         </div>
         <div className="d-flex gap-3 justify-content-center">
-          <button className="rounded-2 px-3 btnProyect d-flex flex-column align-items-center ">
+          <a
+            href={proyecto.github}
+            className="rounded-2 px-3 btnProyect d-flex flex-column align-items-center "
+            target="_blank"
+          >
             <i className="bi bi-github fs-4 "></i>
-            <a href="#">Github</a>
-          </button>
-          <button className="rounded-2 px-3 btnProyect d-flex flex-column align-items-center">
+            <span>Github</span>
+          </a>
+          <a
+            href={proyecto.enlace}
+            className="rounded-2 px-3 btnProyect d-flex flex-column align-items-center"
+            target="_blank"
+          >
             <i className="bi bi-link-45deg fs-4 "></i>
-            <a href="#">Enlace</a>
-          </button>
-          <button className="rounded-2 px-3 btnProyect d-flex flex-column align-items-center ">
-            <i class="bi bi-info-circle fs-4"></i>{" "}
-            <a href="#" className="">
-              Detalle
-            </a>
-          </button>
+            <span>Enlace</span>
+          </a>
+          <a
+            className="rounded-2 px-3 border text-secondary d-flex flex-column align-items-center "
+            target="_blank" disabled
+          >
+            <i class="bi bi-info-circle fs-4"></i> <span>Detalle</span>
+          </a>
         </div>
       </div>
     </div>

@@ -383,13 +383,7 @@ a {
 
   .cardProyect {
     cursor: pointer;
-    -webkit-box-shadow: 14px 20px 82px 3px rgba(3, 255, 11, 1);
-    -moz-box-shadow: 14px 20px 82px 3px rgb(58, 100, 59);
-    box-shadow: 3px 10px 22px 3px rgb(128, 151, 147);
-  }
-
-  .cardProyect {
-    border: 1px solid #000;
+    
   }
 
   .formContact,
@@ -447,7 +441,7 @@ label {
   .cardProyect,
   .cardCertification {
     width: 300px;
-
+    box-shadow: 3px 10px 22px 3px rgb(128, 151, 147);
     transition: 0.7s;
   }
 
