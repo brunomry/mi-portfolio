@@ -99,13 +99,9 @@
 
 .navLink:hover {
   transition: 0.7s;
-
   color: #f6e8e8;
 }
 
-.navList {
-  /* background:#028891; */
-}
 .navLink {
   position: relative;
   padding-bottom: 5px;
@@ -125,6 +121,7 @@
   left: 0;
   transition: width 0.4s ease;
 }
+
 .navLink:hover::after {
   width: 100%;
 }
@@ -155,10 +152,6 @@
 }
 
 /* home */
-
-.section {
-  /* background: #175563; */
-}
 
 .home {
   margin-top: 100px;
@@ -270,53 +263,16 @@ h3 {
 
 .btnProyect {
   background: #fff;
-  color: #000;
-  border: 1px solid #028891;
-  border: 1px solid #b7bdbd;
-}
-
-.btnProyect:hover {
-  background: #fff;
   color: #028891;
   border: 1px solid #028891;
 }
 
 .btnProyect a {
-  color: #000;
-}
-
-.btnProyect a:hover {
   color: #028891;
-}
-
-.btnSocial {
-  border: 1px solid gray;
-  background-color: rgb(9, 85, 99);
 }
 
 a {
   text-decoration: none;
-  color: #f7f7f7;
-}
-
-.btnSocial:hover {
-  border: 1px solid #fff;
-  color: #fff;
-}
-
-.btnMoreProyects {
-  border: 1px solid gray;
-  background-color: rgb(9, 85, 99);
-  background: #028891;
-}
-
-.btnMoreProyects:hover {
-  border: 1px solid #028891;
-  color: #028891;
-}
-
-.btnMoreProyects a:hover {
-  color: #028891;
 }
 
 /* tecnologias */
@@ -325,7 +281,6 @@ a {
   min-height: 95vh;
   width: 100%;
   background: #e0dffd;
-
 }
 
 .tech {
@@ -485,6 +440,10 @@ label {
     margin-top: 0px;
   }
 
+  .cardProyect{
+    min-height: 300px;
+  }
+
   .cardProyect,
   .cardCertification {
     width: 300px;
@@ -501,10 +460,6 @@ label {
   }
 
   .tecnologies {
-    font-size: 18px;
-  }
-
-  .btnMoreProyects {
     font-size: 18px;
   }
 
@@ -546,10 +501,6 @@ label {
   }
 
   .tecnologies {
-    font-size: 18px;
-  }
-
-  .btnMoreProyects {
     font-size: 18px;
   }
 
