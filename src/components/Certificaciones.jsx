@@ -5,7 +5,7 @@ import certificados from "./helpers/certificados";
 const Certificaciones = () => {
   return (
     <article
-      className=" d-flex flex-column gap-2 gap-sm-3  certifications section px-5 py-lg-5"
+      className=" d-flex flex-column gap-2 gap-sm-3 py-4 certifications section px-5 py-lg-5"
       id="certificaciones"
     >
       <h2 className="text-center display-6 fw-bold ">Certificaciones</h2>

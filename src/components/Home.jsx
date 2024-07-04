@@ -1,20 +1,28 @@
-import React from "react";
-
-import home from "../assets/bgHome.jpg";
-
 const Home = () => {
   return (
     <article
-      className="d-flex flex-column flex-md-row justify-content-md-center align-items-xl-center home pb-2 rounded-2 section"
+      className="d-flex flex-column justify-content-md-start align-items-xl-center home pb-2 rounded-2 section pt-0"
       id="sobremi"
     >
-      <div className="d-flex flex-column align-items-center  flex-md-row home_presentation">
+      <div className="d-flex justify-content-center pb-md-3 w-100 mb-5 gap-5">
+        <div className="rounded-5 border-1 d-flex align-items-center gap-2">
+          <i class="bi bi-brightness-high fs-2 text-dark "></i>
+          <span>Luz</span>
+        </div>
+        <div className="rounded-5 border-1 d-flex align-items-center gap-2">
+          <i class="bi bi-globe fs-2 text-dark"></i>
+          <span>Español</span>
+        </div>
+      </div>
+      <div className="d-flex flex-column align-items-center mt-xl-4 flex-md-row home_presentation">
         <div className="text-center">
           <p className="text-dark lead mb-1">¡Bienvenido! 👋</p>
           <h1 className=" mb-2 mb-xl-4 display-3 fw-bold">
             Hola, soy Bruno Madozzo
           </h1>
-          <h2 className="display-6 fw-bold mb-3 mb-xl-5">Desarrollador Web Frontend</h2>
+          <h2 className="display-6 fw-bold mb-3 mb-xl-5">
+            Desarrollador Web Frontend
+          </h2>
           <div className="descriptionHome  p-3 p-xl-5 rounded-4 mb-4 mb-xl-5">
             <p className="fs-5 text-dark  mx-2 mx-xl-5 ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, iusto

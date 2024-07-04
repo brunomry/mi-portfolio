@@ -4,7 +4,7 @@ import tecnologias from "./helpers/tecnologias";
 const Tecnologias = () => {
   return (
     <article
-      className="d-flex flex-column gap-2 align-items-center py-lg-4 section tecnologias py-lg-5 "
+      className="d-flex flex-column gap-2 align-items-center py-4 py-lg-4 section tecnologias py-lg-5 "
       id="tecnologias"
     >
       <h2 className=" display-6 fw-bold ">Tecnologías</h2>

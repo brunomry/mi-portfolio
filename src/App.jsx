@@ -11,7 +11,6 @@ function App() {
       <Menu></Menu>
       <Secciones></Secciones>
 
-      <Footer></Footer>
     </div>
     
     
