@@ -21,12 +21,12 @@ const Proyectos = () => {
         id="controlled-tab-example"
         activeKey={key}
         onSelect={(k) => setKey(k)}
-        className="d-flex gap-1 bg-white pt-3 pb-1 px-2 rounded-2"
+        className="d-flex gap-1 py-3 px-3 align-items-center rounded-5 tabs "
       >
         <Tab
           eventKey="all"
           title="Todos"
-          className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-lg-4"
+          className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-lg-4 "
         >
           {key === "all" && (
             <div className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-lg-4">

@@ -236,6 +236,22 @@ h3 {
   min-height: 95vh;
 }
 
+.tabs{
+  background: #e0dffd;
+}
+
+.tabs button{
+  color: #000;
+  
+  color: #028891;
+  border-radius: 5px;
+}
+
+.tabs button:hover{
+  background: #eae8ff;
+  color: #028891;
+}
+
 .cardProyect {
   width: 100%;
   min-width: 250px;
