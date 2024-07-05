@@ -1,6 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 .containerFlex {
   height: 100vh;
 }
@@ -51,7 +51,6 @@
   /* background: #000; */
   background: #eae8ff;
   background: #028891;
-
 }
 
 .navOptions {
@@ -136,7 +135,6 @@
 /* seccion main */
 
 .mainSection {
-
   width: 100%;
   background-color: #000;
   background-color: #21031e;
@@ -161,8 +159,8 @@
   min-height: 100vh;
   padding-top: 50px;
   position: relative;
-    background: #eae8ff;
-    background: #eae8ff;
+  background: #eae8ff;
+  background: #eae8ff;
 
   /* background: #f7f7f7;
   background: #031a2e;
@@ -230,7 +228,6 @@ h3 {
   color: white;
 }
 
-
 /* proyectos */
 
 .proyects {
@@ -238,18 +235,18 @@ h3 {
   min-height: 95vh;
 }
 
-.tabs{
+.tabs {
   background: #e0dffd;
 }
 
-.tabs button{
+.tabs button {
   color: #000;
-  
+
   color: #028891;
   border-radius: 5px;
 }
 
-.tabs button:hover{
+.tabs button:hover {
   background: #eae8ff;
   color: #028891;
 }
@@ -369,7 +366,7 @@ a {
 .formContact button:hover {
   background-color: #171d35;
   background: #fff;
-  border:1px solid #028891;
+  border: 1px solid #028891;
   color: #028891;
 }
 
@@ -390,7 +387,7 @@ a {
   color: #f7f7f7;
 }
 
-footer{
+footer {
   width: 100%;
   background: #faf3f3;
 }
@@ -406,7 +403,6 @@ footer{
 
   .cardProyect {
     cursor: pointer;
-    
   }
 
   .formContact,
@@ -457,7 +453,7 @@ label {
     margin-top: 0px;
   }
 
-  .cardProyect{
+  .cardProyect {
     min-height: 300px;
   }
 
@@ -485,8 +481,6 @@ label {
     width: 65%;
   }
 }
-
-
 
 @media all and (min-width: 1200px) {
   .navOptions {

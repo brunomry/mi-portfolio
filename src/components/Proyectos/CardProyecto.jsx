@@ -8,6 +8,7 @@ const CardProyecto = ({ proyecto }) => {
       <img
         src={proyecto.imagen}
         alt={proyecto.nombre}
+        title={proyecto.nombre}
         className="rounded-top imgProyect border-bottom"
       />
       <div className="card-body d-flex flex-column justify-content-between">
@@ -20,6 +21,7 @@ const CardProyecto = ({ proyecto }) => {
             href={proyecto.github}
             className="rounded-2 px-3 btnProyect d-flex flex-column align-items-center "
             target="_blank"
+            title="Repositorio"
           >
             <i className="bi bi-github fs-4 "></i>
             <span>Github</span>
@@ -28,15 +30,18 @@ const CardProyecto = ({ proyecto }) => {
             href={proyecto.enlace}
             className="rounded-2 px-3 btnProyect d-flex flex-column align-items-center"
             target="_blank"
+            title="Ir a la página"
           >
             <i className="bi bi-link-45deg fs-4 "></i>
             <span>Enlace</span>
           </a>
           <a
+            href="#"
             className="rounded-2 px-3 border text-secondary d-flex flex-column align-items-center "
             target="_blank" disabled
+            title="Ver más información del proyecto"
           >
-            <i class="bi bi-info-circle fs-4"></i> <span>Detalle</span>
+            <i class="bi bi-info-circle fs-4" ></i> <span>Detalle</span>
           </a>
         </div>
       </div>

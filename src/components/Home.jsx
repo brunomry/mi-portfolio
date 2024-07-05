@@ -1,10 +1,9 @@
-import cv from '../assets/CV Bruno Madozzo Romay.pdf';
+import cv from "../assets/CV Bruno Madozzo Romay.pdf";
 
 const Home = () => {
-
   const handleDownloadPDF = () => {
     const urlPDF = cv;
-    window.open(urlPDF, '_blank');
+    window.open(urlPDF, "_blank");
   };
 
   return (
@@ -14,17 +13,17 @@ const Home = () => {
     >
       <div className="d-flex justify-content-center pb-md-3 w-100 mb-5 gap-5">
         <div className="rounded-5 border-1 d-flex align-items-center gap-2">
-          <i class="bi bi-brightness-high fs-2 text-dark "></i>
-          <span>Luz</span>
+          <i className="bi bi-brightness-high fs-2 text-dark" title="tema"></i>
+          <span>Tema</span>
         </div>
         <div className="rounded-5 border-1 d-flex align-items-center gap-2">
-          <i class="bi bi-globe fs-2 text-dark"></i>
-          <span>Español</span>
+          <i className="bi bi-globe fs-2 text-dark" title="idioma"></i>
+          <span>Idioma</span>
         </div>
       </div>
       <div className="d-flex flex-column align-items-center mt-xl-4 flex-md-row home_presentation">
         <div className="text-center">
-          <p className="text-dark lead mb-1">¡Bienvenido! 👋</p>
+          <p className="text-dark lead mb-1">¡Bienvenido! <span title="saludo">👋</span></p>
           <h1 className=" mb-2 mb-xl-4 display-3 fw-bold">
             Hola, soy Bruno Madozzo
           </h1>
@@ -41,14 +40,27 @@ const Home = () => {
           </div>
 
           <div className="d-flex flex-column gap-3 gap-xl-4 justify-content-center align-items-center">
-            <button className="btn px-5 rounded-0 fw-bold btnCV fs-5" onClick={handleDownloadPDF}>
+            <button
+              className="btn px-5 rounded-0 fw-bold btnCV fs-5"
+              onClick={handleDownloadPDF}
+            >
               Descargar CV <i className="bi bi-download ms-2"></i>
             </button>
             <div className="d-flex gap-4 text-dark">
-              <a className="social" href="https://github.com/brunomry" target="_blank">
+              <a
+                className="social"
+                href="https://github.com/brunomry"
+                target="_blank"
+                title="Github"
+              >
                 <i className="bi bi-github fs-1 text-dark"></i>
               </a>
-              <a className="social" href="https://www.linkedin.com/in/bruno-madozzo/" target="_blank">
+              <a
+                className="social"
+                href="https://www.linkedin.com/in/bruno-madozzo/"
+                target="_blank"
+                title="LinkedIn"
+              >
                 <i className="bi bi-linkedin fs-1 text-primary"></i>
               </a>
             </div>

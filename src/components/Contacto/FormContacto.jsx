@@ -10,8 +10,9 @@ const FormContacto = () => {
           id="name"
           className="section input "
           type="text"
-          placeholder="Ingresa tu nombre completo"
+          placeholder="Nombre completo"
           required
+          title="Ingresa tu nombre completo"
         />
       </Form.Group>
 
@@ -21,8 +22,9 @@ const FormContacto = () => {
           id="email"
           className="section input  "
           type="email"
-          placeholder="Ingresa tu correo"
+          placeholder="correo"
           required
+          title="Ingresa tu correo electrónico"
         />
       </Form.Group>
       <Form.Group className="mb-3">
@@ -32,8 +34,9 @@ const FormContacto = () => {
           className="section input   textarea"
           id="message"
           type="text"
-          placeholder="Ingresa tu mensaje"
+          placeholder="Mensaje"
           required
+          title="Ingresa tu mensaje"
         />
       </Form.Group>
       <div className="d-flex justify-content-sm-end">
