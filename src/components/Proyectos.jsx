@@ -21,7 +21,7 @@ const Proyectos = () => {
         id="controlled-tab-example"
         activeKey={key}
         onSelect={(k) => setKey(k)}
-        className="d-flex gap-1 py-3 px-3 align-items-center rounded-5 tabs "
+        className="d-flex gap-1 py-3 px-3 align-items-center rounded-5 tabs sizeText"
       >
         <Tab
           eventKey="all"

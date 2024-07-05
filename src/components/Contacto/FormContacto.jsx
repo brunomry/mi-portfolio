@@ -3,12 +3,13 @@ import { Button, Form } from "react-bootstrap";
 
 const FormContacto = () => {
   return (
-    <Form className="border-secondary px-2 px-sm-5 pt-4 pb-3 formContact rounded-2 bg-white shadow">
-      <Form.Group className="mb-3">
-        <Form.Label htmlFor="name">Nombre y Apellido:</Form.Label>
+    <Form className="sizeText px-2 px-sm-5 pt-4 pb-3 formContact rounded-2 shadow">
+      <Form.Group className="mb-2">
+        <p className="sizeText mb-4 text-center">Envíame un mensaje y estaré encantado en responderte.</p>
+        <Form.Label htmlFor="name" className="mb-1">Nombre y Apellido</Form.Label>
         <Form.Control
           id="name"
-          className="section input "
+          className="section input py-2 "
           type="text"
           placeholder="Nombre completo"
           required
@@ -16,22 +17,33 @@ const FormContacto = () => {
         />
       </Form.Group>
 
-      <Form.Group className="mb-3">
-        <Form.Label htmlFor="email">Email:</Form.Label>
+      <Form.Group className="mb-2" >
+        <Form.Label htmlFor="email" className="mb-1">Email</Form.Label>
         <Form.Control
           id="email"
-          className="section input  "
+          className="section input py-2 "
           type="email"
           placeholder="correo"
           required
           title="Ingresa tu correo electrónico"
         />
       </Form.Group>
+      <Form.Group className="mb-2">
+        <Form.Label htmlFor="subject" className="mb-1">Asunto</Form.Label>
+        <Form.Control
+          id="subject"
+          className="section input  py-2"
+          type="text"
+          placeholder="Asunto"
+          required
+          title="Ingresa el asunto"
+        />
+      </Form.Group>
       <Form.Group className="mb-3">
-        <Form.Label htmlFor="message">Mensaje:</Form.Label>
+        <Form.Label htmlFor="message" className="mb-1">Mensaje</Form.Label>
         <Form.Control
           as="textarea"
-          className="section input   textarea"
+          className="section input textarea "
           id="message"
           type="text"
           placeholder="Mensaje"
@@ -40,8 +52,8 @@ const FormContacto = () => {
         />
       </Form.Group>
       <div className="d-flex justify-content-sm-end">
-        <button type="submit" className="btn">
-          Enviar
+        <button type="submit" className="btn sizeText">
+          Enviar Mensaje
         </button>
       </div>
     </Form>

@@ -25,6 +25,7 @@ const Menu = () => {
                   <div className="mx-auto d-none d-lg-block imgProfile mb-2">
                     <img src={perfil} alt="Bruno Madozzo" title="Bruno Madozzo" className="" />
                   </div>
+                  <h2 className="text-center text-white">Bruno Madozzo</h2>
                   <div className="d-none d-lg-flex justify-content-center mb-xl-4 gap-3">
                     <a
                       className="social"
@@ -43,10 +44,10 @@ const Menu = () => {
                       <i className="bi bi-linkedin fs-1"></i>
                     </a>
                   </div>
-                  <div className="navList rounded-2 p-2">
+                  <div className="navList rounded-2 p-2 ">
                     <Nav.Link
                       href="#sobremi"
-                      className="fw-bold mb-xl-2 navLink text-center"
+                      className=" fw-bold mb-xl-2 navLink text-center"
                     >
                       Acerca de mí
                     </Nav.Link>

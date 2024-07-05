@@ -1,6 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
 .containerFlex {
   height: 100vh;
 }
@@ -18,57 +19,11 @@
   left: 0;
   margin: auto;
   z-index: 99;
-  /* 
-  background-color: #283845;
-  background-color: #24303d;
-  background-color: #120e26;
-  background-color: #160116;
-  background-color: #21031e;
-  background-color: #27272a;
-  background-color: #007b67;
-  background-color: #117d6c;
-  background-color: #009c86;
-  background-color: #007b67;
-  background-color: #141414;
-  background-color: #0a0a0a;
-  background-color: #41334d;
-  background-color: #13161c;
-  background-color: #0a8ecd;
-  color: white;
-  background-color: #171412;
-  background-color: #03091e;
-  background-color: #020617;
-  background-color: #121f3d;
-  background-color: #17233f;
-  background-color: #111827;
-  background-color: #111827;
-  background-color: #073763;
-  background-color: #020617; */
-  /* border-bottom: 0.5px solid gray; */
-  /* background-color: #029D9D;
-    background-color: #F7F7F7;
-    background-color: #0B130F; */
-  /* background: #000; */
-  background: #eae8ff;
   background: #028891;
 }
 
 .navOptions {
-  background: #006160;
-  background: #023b6d;
-  background: #040b14;
-  background: #175563;
-  background: #0c181a;
-  background: linear-gradient(
-    to bottom right,
-    #0c181a 0%,
-    #2f5c62 25%,
-    #0c181a 75%
-  );
-  background: #124e59;
   background: #028891;
-  /* background: #077d92; */
-
   width: 100%;
   height: 100vh;
 }
@@ -94,7 +49,6 @@
 
 .navLink {
   transition: 0.7s;
-  /* color: #f113db; */
   color: #f6e8e8;
 }
 
@@ -128,7 +82,7 @@
 }
 
 .social:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: 0.8s;
 }
 
@@ -136,16 +90,6 @@
 
 .mainSection {
   width: 100%;
-  background-color: #000;
-  background-color: #21031e;
-  background-color: #020617;
-  background: radial-gradient(circle, #020617, #0f172a);
-  background: radial-gradient(circle, #000000, #020617, #0f172a);
-  background: #f7f7f7;
-  background: #132232;
-  background: #213b52;
-  background: #213b52;
-  background: #f4fafd;
   position: absolute;
   min-height: 100vh;
   background: #eae8ff;
@@ -160,23 +104,6 @@
   padding-top: 50px;
   position: relative;
   background: #eae8ff;
-  background: #eae8ff;
-
-  /* background: #f7f7f7;
-  background: #031a2e;
-  background: #010203;
-  background: #0c181a;
-  background: #fff; */
-  /* background: linear-gradient(to bottom right, #0c181a 0%, #1c2a2d 50%, #0c181a 100%);
-  background: linear-gradient(to bottom right, #0c181a 0%, #1f2f31 40%, #0c181a 100%);
-  background-image: url("./assets//bgHome.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center cover; */
-  /* background: #213B52; */
-  /* background: linear-gradient(to bottom right, #0c181a 0%, #2f5c62 25%, #0c181a 75%); */
-  /* background: #124e59; */
-  /*  */
 }
 
 .descriptionHome {
@@ -190,7 +117,6 @@
 
 .btnCV {
   color: #fff;
-  background-color: #171d35;
   background: #028891;
 }
 
@@ -201,17 +127,8 @@
 
 h1,
 h2,
+h3,
 h4 {
-  color: #ecedf0;
-  color: #11756d;
-}
-
-h3 {
-  color: #3d8bde;
-  color: #031a2e;
-  color: #091725;
-  color: #f7f7f7;
-  /* color: #14e6c3; */
   color: #028891;
 }
 
@@ -240,8 +157,6 @@ h3 {
 }
 
 .tabs button {
-  color: #000;
-
   color: #028891;
   border-radius: 5px;
 }
@@ -254,20 +169,13 @@ h3 {
 .cardProyect {
   width: 100%;
   min-width: 250px;
-  /* max-width: 350px; */
-  background-color: #3d5b76de;
-  background: #999898;
-  background: #213b52;
-  background: #fff;
-  background: #1044719d;
-  background: #043540ca;
-  background: #08455d;
-  background: #124e59;
-  background: #0a4d5ef6;
   background: #f7f7f7;
-
   height: 425px;
   transition: 0.8s;
+}
+
+.cardProyect p {
+  color: #028891;
 }
 
 .cardProyect .imgProyect {
@@ -306,10 +214,11 @@ a {
   background: #e0dffd;
 }
 
+.tecnologias *{
+  color: #028891;
+}
+
 .tech {
-  background: #028891;
-  background: #028891;
-  background: #eef7f8;
   background: #f7f7f7;
   transition: 1s;
 }
@@ -345,12 +254,10 @@ a {
 .certifications {
   width: 100%;
   background: #e0dffd;
-
   min-height: 100vh;
 }
 
 .cardCertification {
-  color: #000;
   min-height: 225px;
   transition: 0.8s;
   background: #f7f7f7;
@@ -358,7 +265,7 @@ a {
 }
 
 .cardCertification p {
-  color: #000;
+  color: #028891;
 }
 
 .btnCertification {
@@ -376,7 +283,10 @@ a {
 .contact {
   min-height: 550px;
   width: 95%;
-  color: #000;
+}
+
+.contact *{
+  color: #028891;
 }
 
 .formContact {
@@ -398,7 +308,7 @@ a {
 }
 
 .formContact .textarea {
-  height: 150px;
+  height: 100px;
   resize: none;
 }
 
@@ -406,17 +316,21 @@ a {
   color: #9e9e9e;
 }
 
-.input:focus {
-  color: #f7f7f7;
+.input {
+  color: #028891;
 }
 
 .input {
-  color: #f7f7f7;
+  color: #000;
 }
 
 footer {
   width: 100%;
   background: #faf3f3;
+}
+
+.formContact label{
+  color:#028891;
 }
 
 @media all and (min-width: 480px) {
@@ -441,10 +355,6 @@ footer {
     width: 50%;
   }
 }
-p,
-label {
-  color: #000000;
-}
 
 @media all and (min-width: 768px) {
   .navLink {
@@ -454,9 +364,17 @@ label {
   .formContact {
     width: 75%;
   }
+
+  .sizeText{
+    font-size: 18px;
+  }
 }
 
 @media all and (min-width: 992px) {
+  .sizeText{
+    font-size: 20px;
+  }
+
   .navBar {
     height: 100vh;
     width: 25%;
@@ -484,8 +402,7 @@ label {
     min-height: 300px;
   }
 
-  .cardProyect,
-  .cardCertification {
+  .cardProyect {
     width: 300px;
     box-shadow: 3px 10px 22px 3px rgb(128, 151, 147);
     transition: 0.7s;
@@ -496,12 +413,8 @@ label {
   }
 
   .cardCertification {
-    width: 75%;
+    width: 65%;
     height: 225px;
-  }
-
-  .tecnologies {
-    font-size: 18px;
   }
 
   .formContact {
@@ -534,19 +447,12 @@ label {
   .cardProyect {
     color: #028891;
     width: 350px;
-    border: 1px solid #b7bdbd;
     border: none;
-    background: #fff;
-    background: #eef8f8;
     background: #f7f7f7;
-  }
-
-  .tecnologies {
-    font-size: 18px;
   }
 
   .formContact,
   .descriptionContact {
-    width: 700px;
+    width: 500px;
   }
 }

@@ -8,10 +8,10 @@ const Home = () => {
 
   return (
     <article
-      className="d-flex flex-column justify-content-md-start align-items-xl-center home pb-2 rounded-2 section pt-0"
+      className="d-flex flex-column justify-content-md-center align-items-xl-center home pb-2 rounded-2 section pt-0"
       id="sobremi"
     >
-      <div className="d-flex justify-content-center pb-md-3 w-100 mb-5 gap-5">
+      <div className="d-none justify-content-center pb-md-3 w-100 mb-5 gap-5">
         <div className="rounded-5 border-1 d-flex align-items-center gap-2">
           <i className="bi bi-brightness-high fs-2 text-dark" title="tema"></i>
           <span>Tema</span>
@@ -21,7 +21,7 @@ const Home = () => {
           <span>Idioma</span>
         </div>
       </div>
-      <div className="d-flex flex-column align-items-center mt-xl-4 flex-md-row home_presentation">
+      <div className="d-flex flex-column align-items-center  flex-md-row home_presentation">
         <div className="text-center">
           <p className="text-dark lead mb-1">¡Bienvenido! <span title="saludo">👋</span></p>
           <h1 className=" mb-2 mb-xl-4 display-3 fw-bold">
@@ -31,7 +31,7 @@ const Home = () => {
             Desarrollador Web Frontend
           </h2>
           <div className="descriptionHome  p-3 p-xl-5 rounded-4 mb-4 mb-xl-5">
-            <p className="fs-5 text-dark  mx-2 mx-xl-5 ">
+            <p className="sizeText mx-2 mx-xl-5 ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, iusto
               provident ratione dolore libero vitae nam, assumenda asperiores
               optio molestias animi eligendi cupiditate natus accusantium.
@@ -41,7 +41,7 @@ const Home = () => {
 
           <div className="d-flex flex-column gap-3 gap-xl-4 justify-content-center align-items-center">
             <button
-              className="btn px-5 rounded-0 fw-bold btnCV fs-5"
+              className="btn px-5 rounded-0 btnCV sizeText"
               onClick={handleDownloadPDF}
             >
               Descargar CV <i className="bi bi-download ms-2"></i>
