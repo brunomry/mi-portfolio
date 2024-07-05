@@ -10,6 +10,7 @@ import blogrecetas from "../../assets/proyectos/blogrecetas.jpg";
 import peliculas from "../../assets/proyectos/peliculas.jpg";
 import sanjorge from "../../assets/frente.webp";
 import clima from "../../assets/proyectos/clima.jpg";
+import wpp from "../../assets/proyectos/wpp.jpg"
 
 const proyectos = [
     {
@@ -154,6 +155,19 @@ const proyectos = [
         responsabilidades:[""],
         github: "https://github.com/brunomry/webDeClima_API_react",
         enlace: "https://ejercicio13-bmr.netlify.app/",
+    },
+    {
+        id: 1267,
+        imagen: wpp,
+        nombre: "Pantalla WhatsApp Web",       
+        tipo: "Challenge",
+        descripcion: "",
+        proyecto: "Individual",
+        finalidad: "",
+        objetivos:"",
+        responsabilidades:[""],
+        github: "https://github.com/brunomry/challengeRollingCode",
+        enlace: "https://challenge-rc-bmr.netlify.app/",
     }
 ]
 

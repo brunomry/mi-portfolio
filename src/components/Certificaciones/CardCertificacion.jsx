@@ -14,7 +14,7 @@ const CardCertificacion = ({ certificado }) => {
       </div>
       <div className="mt-5 mt-sm-0 d-flex justify-content-center justify-content-xl-end mb-2">
         <button className="btn btnCertification px-5 d-flex align-items-center gap-2">
-          <i class="bi bi-zoom-in fs-4"></i> 
+          <i className="bi bi-zoom-in fs-4"></i> 
           <span>Ver</span>
         </button>
       </div>

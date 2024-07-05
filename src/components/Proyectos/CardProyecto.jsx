@@ -41,7 +41,7 @@ const CardProyecto = ({ proyecto }) => {
             target="_blank" disabled
             title="Ver más información del proyecto"
           >
-            <i class="bi bi-info-circle fs-4" ></i> <span>Detalle</span>
+            <i className="bi bi-info-circle fs-4" ></i> <span>Detalle</span>
           </span>
         </div>
       </div>

@@ -37,7 +37,7 @@
   width: 190px;
   height: 190px;
   border-radius: 50%;
-  border: 3px solid #12c0bd;
+  border: 5px solid #12c0bd;
 }
 
 .imgProfile img {
@@ -322,6 +322,10 @@ a {
 
 .input {
   color: #000;
+}
+
+.input:focus{
+  outline: none!important;
 }
 
 footer {

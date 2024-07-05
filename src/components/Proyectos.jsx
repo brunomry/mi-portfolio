@@ -100,6 +100,12 @@ const Proyectos = () => {
                   proyecto={proyecto}
                 ></CardProyecto>
               ))}
+              {filtrarPorTipo("Challenge").map((proyecto) => (
+                <CardProyecto
+                  key={proyecto.id}
+                  proyecto={proyecto}
+                ></CardProyecto>
+              ))}
             </div>
           )}
           

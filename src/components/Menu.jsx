@@ -22,8 +22,8 @@ const Menu = () => {
                   className=" shadow  d-flex flex-column justify-content-lg-center align-items-center
                  navOptions d-md-none d-lg-block gap-4"
                 >
-                  <div className="mx-auto d-none d-lg-block imgProfile mb-2">
-                    <img src={perfil} alt="Bruno Madozzo" title="Bruno Madozzo" className="" />
+                  <div className="mx-auto d-none d-lg-block imgProfile mb-2 shadow">
+                    <img src={perfil} alt="Bruno Madozzo" title="Bruno Madozzo" className="shadow" />
                   </div>
                   <h2 className="text-center text-white">Bruno Madozzo</h2>
                   <div className="d-none d-lg-flex justify-content-center mb-xl-4 gap-3">
