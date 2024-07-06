@@ -1,8 +1,19 @@
 import React from "react";
+import { useState } from 'react';
+import ModalProyect from "./ModalProyect";
+
 
 const CardProyecto = ({ proyecto }) => {
+
+  const [abrirModal, setAbrirModal] = useState(false);
+
+  const handleShowModal = () => {
+    setAbrirModal(!abrirModal);
+  };
+
   return (
-    <div className="card cardProyect">
+    <>
+     <div className="card cardProyect">
       <img
         src={proyecto.imagen}
         alt={proyecto.nombre}
@@ -33,17 +44,23 @@ const CardProyecto = ({ proyecto }) => {
             <i className="bi bi-link-45deg fs-4 "></i>
             <span>Visitar</span>
           </a>
-          <span
-            href="#"
+          <button
             className="sizeText rounded-2 px-3 border text-secondary d-flex flex-column align-items-center "
-            target="_blank" disabled
             title="Ver más información del proyecto"
+            onClick={handleShowModal}
           >
             <i className="bi bi-info-circle fs-4" ></i> <span>Detalle</span>
-          </span>
+          </button>
         </div>
       </div>
     </div>
+    <ModalProyect
+      show={abrirModal}
+      proyecto={proyecto}
+      handleShowModal={handleShowModal}
+    ></ModalProyect>
+    </>
+   
   );
 };
 

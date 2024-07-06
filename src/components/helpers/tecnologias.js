@@ -2,6 +2,8 @@ import html5 from "../../assets/iconos/html5.svg";
 import css3 from "../../assets/iconos/css3.svg";
 import bootstrap5 from "../../assets/iconos/bootstrap5.svg";
 import javascript from "../../assets/iconos/javascript.svg";
+import reactbootstrap from "../../assets/iconos/reactbootstrap.svg";
+import reactrouter from "../../assets/iconos/reactrouter.svg";
 import react from "../../assets/iconos/react.svg";
 import node from "../../assets/iconos/nodejs.svg";
 import express from "../../assets/iconos/express.svg";
@@ -24,9 +26,8 @@ const tecnologias = {
       { name: "Bootstrap5", icon: bootstrap5 },
       { name: "Javascript", icon: javascript },
       { name: "React", icon: react },
-      { name: "React-Bootstrap", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactbootstrap/reactbootstrap-original.svg"},
-      { name: "React-Router", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-original.svg"
-      },
+      { name: "React-Bootstrap", icon: reactbootstrap},
+      { name: "React-Router", icon: reactrouter},      
       { name: "Node JS", icon: node },
       { name: "Express JS", icon: express },      
       { name: "MongoDB", icon: mongodb },

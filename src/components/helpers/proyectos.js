@@ -10,7 +10,26 @@ import blogrecetas from "../../assets/proyectos/blogrecetas.jpg";
 import peliculas from "../../assets/proyectos/peliculas.jpg";
 import sanjorge from "../../assets/frente.webp";
 import clima from "../../assets/proyectos/clima.jpg";
-import wpp from "../../assets/proyectos/wpp.jpg"
+import wpp from "../../assets/proyectos/wpp.jpg";
+import html5 from "../../assets/iconos/html5.svg";
+import css3 from "../../assets/iconos/css3.svg";
+import bootstrap5 from "../../assets/iconos/bootstrap5.svg";
+import javascript from "../../assets/iconos/javascript.svg";
+import react from "../../assets/iconos/react.svg";
+import reactbootstrap from "../../assets/iconos/reactbootstrap.svg";
+import reactrouter from "../../assets/iconos/reactrouter.svg";
+import node from "../../assets/iconos/nodejs.svg";
+import express from "../../assets/iconos/express.svg";
+import mongodb from "../../assets/iconos/mongodb.svg";
+import postman from "../../assets/iconos/postman.svg";
+import draw from "../../assets/iconos/draw.png";
+import trello from "../../assets/iconos/trello.svg";
+import git from "../../assets/iconos/git.svg";
+import github from "../../assets/iconos/github.svg";
+import redux from "../../assets/iconos/redux.svg";
+import tailwind from "../../assets/iconos/tailwind.svg";
+import axios from "../../assets/iconos/axios.svg";
+
 
 const proyectos = [
     {
@@ -18,13 +37,30 @@ const proyectos = [
         imagen: ab,
         nombre: "Ambiente Bohemio",
         tipo: "Aplicación web",
-        descripcion: "",
+        descripcion: "El proyecto desarrollado consiste en una aplicación web para restaurante",
         proyecto: "Grupal",
         finalidad: "Realizado como proyecto final del curso Desarrollador FullStack dictado por RollingCodeSchool",
-        objetivos:"",
-        responsabilidades:[""],
+        objetivos:"asdasdasd",
+        integrantes: ["Bruno Madozzo", "Leonel Cordero", "Fernando Herrera", "Elias Juarez"],
+        responsabilidades:["Desempeñé rol de Scrummaster facilitando la comunicación y resolviendo problemas del equipo.", "Generé las propuestas de diseño que luego implementé en los mockups de interfaces mediante la herramienta Draw."],
         github: "https://github.com/brunomry/frontendProyectoFinal_RollingCode",
         enlace: "https://ambiente-bohemio-restaurante.netlify.app/",
+        tecnologias:[
+            { name: "HTML5",icon:html5},
+            { name: "CSS3",icon:css3},
+            { name: "Bootstrap5",icon:bootstrap5},
+            { name: "Javascript",icon:javascript},
+            { name: "React",icon:react},
+            { name: "React-Bootstrap",icon:reactbootstrap},
+            { name: "React-Router",icon:reactrouter},
+            { name: "Node JS",icon:node},
+            { name: "Express JS",icon:express},
+            { name: "MongoDB",icon:mongodb},
+            { name: "Git",icon:git},
+            { name: "Github",icon:github},
+            { name: "Trello",icon:trello},
+            { name: "Draw",icon:draw}           
+        ]
     },
     {
         id: 222,
@@ -35,22 +71,48 @@ const proyectos = [
         proyecto: "Freelance",
         finalidad: "Este sitio web fue realizado para que el hostal llegue a más personas a través del sitio",
         objetivos:"",
+        integrantes: ["Bruno Madozzo"],
         responsabilidades:[""],
         github: "https://github.com/brunomry/HostalSanJorgeCafayate",
         enlace: "https://hostalsanjorgecafayate.netlify.app/",
+        tecnologias:[
+            { name: "HTML5",icon:html5},
+            { name: "CSS3",icon:css3},
+            { name: "Bootstrap5",icon:bootstrap5},
+            { name: "Javascript",icon:javascript},
+            { name: "Git",icon:git},
+            { name: "Github",icon:github},
+            { name: "Draw",icon:draw}
+        ]
     },
     {
         id: 333,
         imagen: blogrecetas,
         nombre: "Blog de recetas",       
-        tipo: "Sitio web",
-        descripcion: "",
+        tipo: "Aplicación web",
+        descripcion: "El proyecto desarrollado consiste en un Blog donde el administrador puede iniciar sesión, y gestionar las recetas.",
         proyecto: "Individual",
         finalidad: "",
         objetivos:"",
+        integrantes: ["Bruno Madozzo"],
         responsabilidades:[""],
         github: "https://github.com/brunomry/frontendBlogDeRecetas",
         enlace: "https://rincondeplaceresgastronomicos-rpg.netlify.app/",
+        tecnologias:[
+            { name: "HTML5",icon:html5},
+            { name: "CSS3",icon:css3},
+            { name: "Bootstrap5",icon:bootstrap5},
+            { name: "Javascript",icon:javascript},
+            { name: "React",icon:react},
+            { name: "React-Bootstrap",icon:reactbootstrap},
+            { name: "React-Router",icon:reactrouter},
+            { name: "Node JS",icon:node},
+            { name: "Express JS",icon:express},
+            { name: "MongoDB",icon:mongodb},
+            { name: "Git",icon:git},
+            { name: "Github",icon:github},
+            { name: "Draw",icon:draw}
+        ]
     },
     {
         id: 444,
@@ -61,9 +123,18 @@ const proyectos = [
         proyecto: "Individual",
         finalidad: "",
         objetivos:"",
+        integrantes: ["Bruno Madozzo"],
         responsabilidades:[""],
         github: "https://github.com/brunomry/Temporizador",
         enlace: "https://temporizador-online-bmr.netlify.app/",
+        tecnologias:[
+            { name: "HTML5",icon:html5},
+            { name: "CSS3",icon:css3},
+            { name: "Bootstrap5",icon:bootstrap5},
+            { name: "Javascript",icon:javascript},
+            { name: "Git",icon:git},
+            { name: "Github",icon:github},
+        ]
     },
     {
         id: 555,
@@ -74,9 +145,14 @@ const proyectos = [
         proyecto: "Individual",
         finalidad: "",
         objetivos:"",
+        integrantes: ["Bruno Madozzo"],
         responsabilidades:[""],
         github: "https://github.com/brunomry/LaParrillada",
         enlace: "https://r-parrillada-resto.netlify.app/",
+        tecnologias:[
+            { name: "HTML5",icon:html5},
+            { name: "CSS3",icon:css3}
+        ]
     },
     {
         id: 666,
@@ -87,9 +163,17 @@ const proyectos = [
         proyecto: "Grupal",
         finalidad: "",
         objetivos:"",
+        integrantes: ["Bruno Madozzo", "Leonel Cordero", "Javier Jimenez", "Leonel Ramella", "Jeremías Romero"],
         responsabilidades:[""],
         github: "https://github.com/brunomry/RollingShoesStore",
         enlace: "https://rollingshoesstore-rss.netlify.app/",
+        tecnologias:[
+            { name: "HTML5",icon:html5},
+            { name: "CSS3",icon:css3},
+            { name: "Bootstrap5",icon:bootstrap5},
+            { name: "Trello",icon:trello},
+            { name: "Draw",icon:draw}
+        ]
     },
     {
         id: 777,
@@ -100,9 +184,14 @@ const proyectos = [
         proyecto: "Individual",
         finalidad: "",
         objetivos:"",
+        integrantes: ["Bruno Madozzo"],
         responsabilidades:[""],
         github: "https://github.com/brunomry/TechnicalDocumentation",
         enlace: "https://technicaldocumentation-bmr.netlify.app/",
+        tecnologias:[
+            { name: "HTML5",icon:html5},
+            { name: "CSS3",icon:css3}
+        ]
     },
     {
         id: 888,
@@ -113,9 +202,17 @@ const proyectos = [
         proyecto: "Grupal",
         finalidad: "",
         objetivos:"",
+        integrantes: ["Bruno Madozzo", "Leonel Cordero", "Javier Jimenez","Leonel Ramella", "Jeremías Romero"],
         responsabilidades:[""],
         github: "https://github.com/brunomry/RollingBank",
         enlace: "https://rolling-bank-rb.netlify.app/",
+        tecnologias:[
+            { name: "HTML5",icon:html5},
+            { name: "CSS3",icon:css3},
+            { name: "Bootstrap5",icon:bootstrap5},
+            { name: "Git",icon:git},
+            { name: "Github",icon:github},
+        ]
     },
     {
         id: 999,
@@ -126,9 +223,14 @@ const proyectos = [
         proyecto: "Individual",
         finalidad: "",
         objetivos:"",
+        integrantes: ["Bruno Madozzo"],
         responsabilidades:[""],
         github: "https://github.com/brunomry/LandingPage",
         enlace: "https://landingpage-bmr.netlify.app/",
+        tecnologias:[
+            { name: "HTML5",icon:html5},
+            { name: "CSS3",icon:css3}
+        ]
     },
     {
         id: 1121,
@@ -139,9 +241,20 @@ const proyectos = [
         proyecto: "Individual",
         finalidad: "",
         objetivos:"",
+        integrantes: ["Bruno Madozzo"],
         responsabilidades:[""],
         github: "https://github.com/brunomry/webDeClima_API_react",
         enlace: "https://api-clima-bmr.netlify.app/",
+        tecnologias:[
+            { name: "HTML5",icon:html5},
+            { name: "CSS3",icon:css3},
+            { name: "Bootstrap5",icon:bootstrap5},
+            { name: "Javascript",icon:javascript},
+            { name: "React",icon:react},
+            { name: "React-Bootstrap",icon:reactbootstrap},
+            { name: "Git",icon:git},
+            { name: "Github",icon:github},
+        ]
     },
     {
         id: 1267,
@@ -152,9 +265,14 @@ const proyectos = [
         proyecto: "Individual",
         finalidad: "",
         objetivos:"",
+        integrantes: ["Bruno Madozzo"],
         responsabilidades:[""],
         github: "https://github.com/brunomry/challengeRollingCode",
         enlace: "https://challenge-rc-bmr.netlify.app/",
+        tecnologias:[
+            { name: "HTML5",icon:html5},
+            { name: "CSS3",icon:css3}
+        ]
     }
 ]
 

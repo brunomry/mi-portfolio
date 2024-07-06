@@ -370,6 +370,17 @@ footer a{
   color: #028891;
 }
 
+/* modal proyecto */
+
+.modal-body{
+  width: 100%;
+  background:#eae8ff;
+}
+
+.imgModal{
+  width: 100%;
+}
+
 @media all and (min-width: 480px) {
   .home_presentation {
     gap: 150px;
