@@ -17,12 +17,12 @@ const Menu = () => {
               placement="end"
             >
               <Offcanvas.Header closeButton className="canvas"></Offcanvas.Header>
-              <Offcanvas.Body className="px-0 canvas">
+              <Offcanvas.Body className="px-0 canvas pt-5">
                 <Nav
                   className=" shadow  d-flex flex-column justify-content-lg-center align-items-center
                  navOptions d-md-none d-lg-block gap-2 gap-sm-4"
                 >
-                  <div className="mx-auto imgProfile mb-2 shadow">
+                  <div className="d-none d-sm-flex mx-auto imgProfile mb-2 shadow">
                     <img src={perfil} alt="Bruno Madozzo" title="Bruno Madozzo" className="shadow" />
                   </div>
                   <h2 className="text-center text-white">Bruno Madozzo</h2>

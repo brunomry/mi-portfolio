@@ -33,8 +33,8 @@
 }
 
 .imgProfile {
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 5px solid #12c0bd;
 }
@@ -437,6 +437,11 @@ footer {
 
   .navLink {
     font-size: 20px;
+  }
+
+  .imgProfile {
+    width: 180px;
+    height: 180px;
   }
 
   .mainSection {
