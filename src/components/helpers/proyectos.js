@@ -131,19 +131,6 @@ const proyectos = [
         enlace: "https://landingpage-bmr.netlify.app/",
     },
     {
-        id: 1010,
-        imagen: peliculas,
-        nombre: "Películas",       
-        tipo: "Otro",
-        descripcion: "",
-        proyecto: "Individual",
-        finalidad: "",
-        objetivos:"",
-        responsabilidades:[""],
-        github: "https://github.com/brunomry/CRUD_Peliculas",
-        enlace: "https://crudpeliculas-bmr.netlify.app/",
-    },
-    {
         id: 1121,
         imagen: clima,
         nombre: "Clima",       
@@ -154,7 +141,7 @@ const proyectos = [
         objetivos:"",
         responsabilidades:[""],
         github: "https://github.com/brunomry/webDeClima_API_react",
-        enlace: "https://ejercicio13-bmr.netlify.app/",
+        enlace: "https://api-clima-bmr.netlify.app/",
     },
     {
         id: 1267,

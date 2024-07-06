@@ -8,7 +8,7 @@ const Home = () => {
 
   return (
     <article
-      className="d-flex flex-column justify-content-md-center align-items-xl-center home pb-2 rounded-2 section pt-0"
+      className="d-flex flex-column justify-content-center align-items-xl-center home pb-2 rounded-2 section pt-0"
       id="sobremi"
     >
       <div className="d-none justify-content-center pb-md-3 w-100 mb-5 gap-5">
@@ -31,7 +31,7 @@ const Home = () => {
             Desarrollador Web Frontend
           </h2>
           <div className="descriptionHome  p-3 p-xl-5 rounded-4 mb-4 mb-xl-5">
-            <p className="sizeText mx-2 mx-xl-5 ">
+            <p className="sizeText mx-2 mx-xl-5 mt-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, iusto
               provident ratione dolore libero vitae nam, assumenda asperiores
               optio molestias animi eligendi cupiditate natus accusantium.

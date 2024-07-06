@@ -34,8 +34,8 @@
 }
 
 .imgProfile {
-  width: 190px;
-  height: 190px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   border: 5px solid #12c0bd;
 }
@@ -100,7 +100,7 @@
 .home {
   margin-top: 100px;
   width: 95%;
-  min-height: 100vh;
+  min-height: 50vh;
   padding-top: 50px;
   position: relative;
   background: #eae8ff;
@@ -154,6 +154,7 @@ h4 {
 
 .tabs {
   background: #e0dffd;
+
 }
 
 .tabs button {
@@ -166,9 +167,16 @@ h4 {
   color: #028891;
 }
 
+.containerTabProyects{
+  width: 100vw;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  height: 450px;
+}
+
 .cardProyect {
   width: 100%;
-  min-width: 250px;
+  min-width: 280px;
   background: #f7f7f7;
   height: 425px;
   transition: 0.8s;
@@ -209,7 +217,7 @@ a {
 /* tecnologias */
 
 .tecnologias {
-  min-height: 95vh;
+  min-height: 50vh;
   width: 100%;
   background: #e0dffd;
 }
@@ -218,7 +226,15 @@ a {
   color: #028891;
 }
 
+.containerTech{
+  width: 100%;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+}
+
 .tech {
+  max-width: 200px;
+  height: 200px;
   background: #f7f7f7;
   transition: 1s;
 }
@@ -254,13 +270,21 @@ a {
 .certifications {
   width: 100%;
   background: #e0dffd;
-  min-height: 100vh;
+  min-height: 50vh;
+}
+
+.containerCertifications{
+  width: 100%;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  height: 280px;
 }
 
 .cardCertification {
-  min-height: 225px;
+  height: 250px;
   transition: 0.8s;
   background: #f7f7f7;
+  min-width: 260px;
   width: 100%;
 }
 
@@ -325,7 +349,9 @@ a {
 }
 
 .input:focus{
-  outline: none!important;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #028891
 }
 
 footer {
@@ -350,6 +376,26 @@ footer {
     cursor: pointer;
   }
 
+  .tecnologias,
+  .certifications{
+    min-height: 100vh;
+  }
+
+  .containerTech,
+  .containerTabProyects,
+  .containerCertifications{
+    width: 100%;
+    scroll-snap-type:none;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+  }
+
+  .containerTabProyects,
+  .containerCertifications{
+    height: 100%;
+    padding-bottom: 50px;
+  }
+
   .formContact,
   .descriptionContact {
     width: 80%;
@@ -365,6 +411,8 @@ footer {
     font-size: 18px;
   }
 
+  
+
   .formContact {
     width: 75%;
   }
@@ -376,7 +424,7 @@ footer {
 
 @media all and (min-width: 992px) {
   .sizeText{
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .navBar {
@@ -400,6 +448,7 @@ footer {
   .home {
     padding-top: 0;
     margin-top: 0px;
+    min-height: 100vh;
   }
 
   .cardProyect {
@@ -455,6 +504,18 @@ footer {
     background: #f7f7f7;
   }
 
+  .formContact,
+  .descriptionContact {
+    width: 400px;
+  }
+
+  .sizeText{
+    font-size: 20px;
+  }
+}
+
+@media all and (min-width:1400px){
+  
   .formContact,
   .descriptionContact {
     width: 500px;

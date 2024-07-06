@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    
-    <title>Trello-color</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-
-</defs>
-    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Color-" transform="translate(-200.000000, -760.000000)" fill="#007AC2">
-            <path d="M206,769 L206,796 C206,797.6575 207.3425,799 209,799 L218,799 C219.6575,799 221,797.6575 221,796 L221,769 C221,767.3425 219.6575,766 218,766 L209,766 C207.3425,766 206,767.3425 206,769 L206,769 Z M227,769 L227,784 C227,785.6575 228.3425,787 230,787 L239,787 C240.6575,787 242,785.6575 242,784 L242,769 C242,767.3425 240.6575,766 239,766 L230,766 C228.3425,766 227,767.3425 227,769 L227,769 Z M206,760 C202.6865,760 200,762.688 200,766 L200,802 C200,805.3135 202.688,808 206,808 L242,808 C245.3135,808 248,805.312 248,802 L248,766 C248,762.6865 245.312,760 242,760 L206,760 Z" id="Trello">
-
-</path>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><defs><linearGradient id="a" x1="128" x2="128" y1="0" y2="256" gradientTransform="scale(.5)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2684ff"/><stop offset="1" stop-color="#0052cc"/></linearGradient></defs><path fill="url(#a)" d="M12.5 0h103c6.925 0 12.5 5.575 12.5 12.5v103c0 6.925-5.575 12.5-12.5 12.5h-103C5.575 128 0 122.425 0 115.5v-103C0 5.575 5.575 0 12.5 0Z"/><path fill="#fff" d="M78.32 16.64h27.04c3.324 0 6 2.676 6 6v44c0 3.324-2.676 6-6 6H78.32c-3.324 0-6-2.676-6-6v-44c0-3.324 2.676-6 6-6zm-55.68 0h27.04c3.324 0 6 2.676 6 6v76c0 3.324-2.676 6-6 6H22.64c-3.324 0-6-2.676-6-6v-76c0-3.324 2.676-6 6-6z"/></svg>

@@ -1,6 +1,4 @@
 import React from "react";
-import img from "../../assets/bg.jpg";
-import { Link } from "react-router-dom";
 
 const CardProyecto = ({ proyecto }) => {
   return (
@@ -16,7 +14,7 @@ const CardProyecto = ({ proyecto }) => {
           <h4 className="mb-1 fw-bold">{proyecto.nombre}</h4>
           <p className="sizeText mb-0">{proyecto.tipo}</p>
         </div>
-        <div className="d-flex gap-3 justify-content-center">
+        <div className="d-flex gap-2 gap-xl-3 justify-content-center">
           <a
             href={proyecto.github}
             className="sizeText rounded-2 px-3 btnProyect d-flex flex-column align-items-center "
