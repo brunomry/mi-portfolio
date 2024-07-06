@@ -6,7 +6,7 @@ const Menu = () => {
     <>
       {[false, "sm", "md"].map((expand) => (
         <Navbar expand="lg" className="navBar d-flex justify-content-center ">
-          <Container fluid className="px-lg-0 ">
+          <Container fluid className="px-lg-0 d-flex justify-content-end">
             <Navbar.Toggle
               className="border border-white navToggle text-white "
               aria-controls="basic-navbar-nav"
