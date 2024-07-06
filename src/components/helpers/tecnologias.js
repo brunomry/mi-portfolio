@@ -19,7 +19,7 @@ const tecnologias = [
       { name: "Javascript", icon: javascript },
       { name: "React", icon: react },
       { name: "React-Bootstrap", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactbootstrap/reactbootstrap-original.svg"},
-      { name: "Reac-Router", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-original.svg"
+      { name: "React-Router", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-original.svg"
       },
       { name: "Node JS", icon: node },
       { name: "Express JS", icon: express },      

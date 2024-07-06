@@ -8,7 +8,7 @@ const Contacto = () => {
       id="contacto"
     >
       <h2 className="display-6 fw-bold ">Contáctame</h2>
-      <div className="d-flex flex-column flex-md-row gap-2 gap-xl-4">
+      <div className="d-flex flex-column flex-md-row gap-2 gap-xl-5">
         <FormContacto></FormContacto>
         <div className="d-flex align-items-center flex-column">
           <p className="descriptionContact text-center sizeText text-lg-start mt-5">
