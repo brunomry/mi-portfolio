@@ -11,6 +11,10 @@
   font-family: "DM Sans", sans-serif;
 }
 
+p {
+  color:#028891;
+}
+
 .navBar {
   width: 100%;
   height: 80px;
@@ -153,7 +157,6 @@ h4 {
 
 .tabs {
   background: #e0dffd;
-
 }
 
 .tabs button {
@@ -166,7 +169,7 @@ h4 {
   color: #028891;
 }
 
-.containerTabProyects{
+.containerTabProyects {
   width: 100vw;
   scroll-snap-type: x mandatory;
   overflow-x: scroll;
@@ -195,11 +198,11 @@ h4 {
   background: #fff;
   color: #028891;
   border: 1px solid #028891;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.btnProyect:hover{
-  transition: .5s;
+.btnProyect:hover {
+  transition: 0.5s;
   background: #028891;
   color: #fff;
   border: 1px solid #000;
@@ -221,11 +224,11 @@ a {
   background: #e0dffd;
 }
 
-.tecnologias *{
+.tecnologias * {
   color: #028891;
 }
 
-.containerTech{
+.containerTech {
   width: 100%;
   scroll-snap-type: x mandatory;
   overflow-x: scroll;
@@ -238,12 +241,13 @@ a {
   transition: 1s;
 }
 
-.tech:hover{
+.tech:hover {
   transform: scale(0.95);
 }
 
 @keyframes move {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(0, 0);
   }
   25% {
@@ -272,7 +276,7 @@ a {
   min-height: 50vh;
 }
 
-.containerCertifications{
+.containerCertifications {
   width: 100%;
   scroll-snap-type: x mandatory;
   overflow-x: scroll;
@@ -308,7 +312,7 @@ a {
   width: 95%;
 }
 
-.contact *{
+.contact * {
   color: #028891;
 }
 
@@ -347,10 +351,10 @@ a {
   color: #000;
 }
 
-.input:focus{
+.input:focus {
   outline: none;
   box-shadow: none;
-  border: 1px solid #028891
+  border: 1px solid #028891;
 }
 
 footer {
@@ -358,8 +362,12 @@ footer {
   background: #faf3f3;
 }
 
-.formContact label{
-  color:#028891;
+footer a{
+  color: #028891;
+}
+
+.formContact label {
+  color: #028891;
 }
 
 @media all and (min-width: 480px) {
@@ -368,29 +376,26 @@ footer {
   }
 
   .cardProyect {
-    width: 450px;
-  }
-
-  .cardProyect {
+    width: 300px;
     cursor: pointer;
   }
 
   .tecnologias,
-  .certifications{
+  .certifications {
     min-height: 100vh;
   }
 
   .containerTech,
   .containerTabProyects,
-  .containerCertifications{
+  .containerCertifications {
     width: 100%;
-    scroll-snap-type:none;
+    scroll-snap-type: none;
     overflow-x: hidden;
     flex-wrap: wrap;
   }
 
   .containerTabProyects,
-  .containerCertifications{
+  .containerCertifications {
     height: 100%;
     padding-bottom: 50px;
   }
@@ -410,19 +415,17 @@ footer {
     font-size: 18px;
   }
 
-  
-
   .formContact {
     width: 75%;
   }
 
-  .sizeText{
+  .sizeText {
     font-size: 18px;
   }
 }
 
 @media all and (min-width: 992px) {
-  .sizeText{
+  .sizeText {
     font-size: 18px;
   }
 
@@ -513,13 +516,12 @@ footer {
     width: 400px;
   }
 
-  .sizeText{
+  .sizeText {
     font-size: 20px;
   }
 }
 
-@media all and (min-width:1400px){
-  
+@media all and (min-width: 1400px) {
   .formContact,
   .descriptionContact {
     width: 500px;

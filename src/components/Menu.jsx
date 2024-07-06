@@ -4,9 +4,9 @@ import perfil from "../assets/perfilbg.png";
 const Menu = () => {
   return (
     <>
-      {[false, "sm"].map((expand) => (
+      {[false, "sm", "md"].map((expand) => (
         <Navbar expand="lg" className="navBar d-flex justify-content-center ">
-          <Container fluid className="px-md-0 ">
+          <Container fluid className="px-lg-0 ">
             <Navbar.Toggle
               className="border border-white navToggle text-white "
               aria-controls="basic-navbar-nav"
@@ -16,14 +16,22 @@ const Menu = () => {
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
             >
-              <Offcanvas.Header closeButton className="canvas"></Offcanvas.Header>
-              <Offcanvas.Body className="px-0 canvas pt-5">
+              <Offcanvas.Header
+                closeButton
+                className="canvas"
+              ></Offcanvas.Header>
+              <Offcanvas.Body className="px-0 canvas ">
                 <Nav
-                  className=" shadow  d-flex flex-column justify-content-lg-center align-items-center
-                 navOptions d-md-none d-lg-block gap-2 gap-sm-4"
+                  className="pt-5 shadow  d-flex flex-column justify-content-lg-center align-items-center
+                 navOptions d-md-block gap-2 gap-sm-4"
                 >
                   <div className="d-none d-sm-flex mx-auto imgProfile mb-2 shadow">
-                    <img src={perfil} alt="Bruno Madozzo" title="Bruno Madozzo" className="shadow" />
+                    <img
+                      src={perfil}
+                      alt="Bruno Madozzo"
+                      title="Bruno Madozzo"
+                      className="shadow"
+                    />
                   </div>
                   <h2 className="text-center text-white">Bruno Madozzo</h2>
                   <div className="d-flex justify-content-center mb-xl-4 gap-3">

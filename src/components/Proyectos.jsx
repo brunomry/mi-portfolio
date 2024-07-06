@@ -45,7 +45,7 @@ const Proyectos = () => {
           className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-lg-4"
         >
           {key === "apps" && (
-            <div className="d-flex px-3 containerTabProyects justify-content-md-center align-items-md-center gap-3 gap-lg-4">
+            <div className="d-flex px-3 containerTabProyects justify-content-sm-center align-items-md-center gap-3 gap-lg-4">
               {filtrarPorTipo("Aplicación web").length > 0 && filtrarPorTipo("Aplicación web").map((proyecto) => (
                 <CardProyecto
                   key={proyecto.id}
@@ -61,7 +61,7 @@ const Proyectos = () => {
           className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-lg-4"
         >
           {key === "sites" && (
-            <div className="d-flex px-3 containerTabProyects justify-content-md-center align-items-md-center gap-3 gap-lg-4">
+            <div className="d-flex px-3 containerTabProyects justify-content-sm-center align-items-md-center gap-3 gap-lg-4">
               {filtrarPorTipo("Sitio web").map((proyecto) => (
                 <CardProyecto
                   key={proyecto.id}
@@ -77,7 +77,7 @@ const Proyectos = () => {
           className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-lg-4"
         >
           {key === "landing" && (
-            <div className="d-flex px-3 containerTabProyects justify-content-md-center align-items-md-center gap-3 gap-lg-4">
+            <div className="d-flex px-3 containerTabProyects justify-content-sm-center align-items-md-center gap-3 gap-lg-4">
               {filtrarPorTipo("Landing Page").map((proyecto) => (
                 <CardProyecto
                   key={proyecto.id}
@@ -93,7 +93,7 @@ const Proyectos = () => {
           className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-lg-4"
         >
           {key === "otros" && (
-            <div className="d-flex justify-content-md-center align-items-md-center gap-3 gap-lg-4">
+            <div className="d-flex px-3 containerTabProyects justify-content-sm-center align-items-sm-center gap-3 gap-lg-4">
               {filtrarPorTipo("Otro").map((proyecto) => (
                 <CardProyecto
                   key={proyecto.id}
