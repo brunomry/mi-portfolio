@@ -11,10 +11,15 @@ const Tecnologias = () => {
       <p className="sizeText text-center px-2">Estas son las tecnologías que utilizo en mis proyectos y con las cuales estoy en continuo aprendizaje.</p>
 
         <div className="d-flex containerTech gap-2 gap-xl-3 align-items-center justify-content-md-center pt-4 px-5">
-          {tecnologias.map((tech, pos) => (
+          {tecnologias.actuales.map((tech, pos) => (
             <Tecnologia key={pos} tech={tech} />
-          ))}
-     
+          ))}    
+      </div>
+      <h3 className="px-2 px-md-5 me-auto fw-bold mt-3">Actualmente aprendiendo...</h3>
+      <div className="d-flex containerTech gap-2 gap-xl-3 align-items-center justify-content-md-center pt-4 px-5">
+      {tecnologias.aprendiendo.map((tech, pos) => (
+            <Tecnologia key={pos} tech={tech} />
+          ))}    
       </div>
     </article>
   );

@@ -11,8 +11,14 @@ import draw from "../../assets/iconos/draw.png";
 import trello from "../../assets/iconos/trello.svg";
 import git from "../../assets/iconos/git.svg";
 import github from "../../assets/iconos/github.svg";
+import redux from "../../assets/iconos/redux.svg";
+import tailwind from "../../assets/iconos/tailwind.svg";
+import axios from "../../assets/iconos/axios.svg";
 
-const tecnologias = [
+const tecnologias = {
+      actuales: [
+
+      
       { name: "HTML5", icon: html5},
       { name: "CSS3", icon: css3 },
       { name: "Bootstrap5", icon: bootstrap5 },
@@ -28,7 +34,14 @@ const tecnologias = [
       { name: "Git", icon: git},
       { name: "Github", icon: github},
       { name: "Trello", icon: trello},
-      { name: "Draw", icon: draw}
+      { name: "Draw", icon: draw}     
+    ],
+    aprendiendo: [
+      { name: "Redux", icon: redux},
+      { name: "Redux-Toolkit", icon: redux},
+      { name: "Tailwind", icon:tailwind},
+      { name: "Axios", icon: axios}
     ]
+  }
 
 export default tecnologias;
