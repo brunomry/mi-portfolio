@@ -16,6 +16,8 @@ import github from "../../assets/iconos/github.svg";
 import redux from "../../assets/iconos/redux.svg";
 import tailwind from "../../assets/iconos/tailwind.svg";
 import axios from "../../assets/iconos/axios.svg";
+import form from "../../assets/iconos/reacthookform.svg";
+import sql from "../../assets/iconos/sql.svg";
 
 const tecnologias = {
       actuales: [
@@ -27,9 +29,11 @@ const tecnologias = {
       { name: "Javascript", icon: javascript },
       { name: "React", icon: react },
       { name: "React-Bootstrap", icon: reactbootstrap},
-      { name: "React-Router", icon: reactrouter},      
+      { name: "React-Router", icon: reactrouter},   
+      { name: "React Hook Form", icon: form},    
       { name: "Node JS", icon: node },
-      { name: "Express JS", icon: express },      
+      { name: "Express JS", icon: express },  
+      { name: "SQL", icon: sql },    
       { name: "MongoDB", icon: mongodb },
       { name: "Postman", icon: postman},
       { name: "Git", icon: git},

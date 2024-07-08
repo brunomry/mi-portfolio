@@ -8,7 +8,7 @@ const Tecnologias = () => {
       id="tecnologias"
     >
       <h2 className=" display-6 fw-bold mb-4">Tecnologías</h2>
-      <p className="sizeText text-center px-2">Estas son las tecnologías que utilizo en mis proyectos y con las cuales estoy en continuo aprendizaje.</p>
+      <p className="sizeText text-center px-2">Estas son las tecnologías que utilizo en mis proyectos o de las cuales tengo conocimientos.</p>
 
         <div className="d-flex containerTech gap-2 gap-xl-3 align-items-center justify-content-md-center pt-4 px-5">
           {tecnologias.actuales.map((tech, pos) => (
