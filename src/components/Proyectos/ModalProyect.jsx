@@ -11,15 +11,23 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
     <Modal
       show={show}
       onHide={handleShowModal}
-      className="modalProyect rounded-0  modal"
+      className="modalProyect rounded-0  modal "
       centered
       size="xl"
       scrollable
     >
       <div class="modal-body">
+        <a
+          type="button"
+          class="text-secondary"
+          onClick={handleShowModal}
+          data-bs-theme="dark"
+        >
+          <i class="bi bi-arrow-left fs-3"></i>
+        </a>
         <div className="row mb-5">
             <article>
-            <div className="my-5">
+            <div className="mb-4 mt-5">
               <h3 className="d-inline rounded-2 p-3 bg-white mb-3">
                 {proyecto.nombre}
               </h3>
@@ -99,13 +107,7 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
           </article>
           
         </div>
-        <button
-          type="button"
-          class="btn btn-secondary mb-3 mx-5"
-          onClick={handleShowModal}
-        >
-          Cerrar
-        </button>
+       
       </div>
     </Modal>
   );

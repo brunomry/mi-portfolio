@@ -53,7 +53,7 @@ const FormContacto = () => {
       </Form.Group>
       <div className="d-flex ">
         <button type="submit" className="btn sizeText w-100">
-        <i className="bi bi-send me-2"></i> Enviar Mensaje
+        <i className="bi bi-send me-2 iconForm"></i> Enviar Mensaje
         </button>
       </div>
     </Form>

@@ -357,6 +357,16 @@ a {
   border: 1px solid #028891;
 }
 
+.formContact .iconForm{
+  color: #fff;
+}
+
+button:hover .iconForm{
+  color: #028891;
+}
+
+/* footer */
+
 footer {
   width: 100%;
   background: #faf3f3;
