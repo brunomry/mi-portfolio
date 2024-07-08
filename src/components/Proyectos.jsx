@@ -13,15 +13,15 @@ const Proyectos = () => {
 
   return (
     <article
-      className="py-4 d-flex flex-column gap-3 gap-xl-4 align-items-center px-3 section proyects  "
+      className="py-4 d-flex flex-column gap-3 gap-xl-4 align-items-center px-3 section proyects"
       id="proyectos"
     >
-      <h2 className="text-center display-6 fw-bold ">Proyectos</h2>
+      <h2 className="text-center display-6 fw-bold animationOpacity">Proyectos</h2>
       <Tabs
         id="controlled-tab-example"
         activeKey={key}
         onSelect={(k) => setKey(k)}
-        className="d-flex flex-column flex-md-row gap-1 py-3 px-3 align-items-center rounded-5 tabs sizeText"
+        className="d-flex flex-column flex-md-row gap-1 py-3 px-3 align-items-center rounded-5 tabs sizeText animationOpacity"
       >
         <Tab
           eventKey="all"
@@ -29,7 +29,7 @@ const Proyectos = () => {
           className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-lg-4 "
         >
           {key === "all" && (
-            <div className=" d-flex px-3 containerTabProyects justify-content-md-center align-items-md-center gap-3 gap-lg-4">
+            <div className=" d-flex px-3 containerTabProyects justify-content-md-center align-items-md-center gap-3 gap-lg-4 animationOpacity">
               {proyectos.map((proyecto) => (
                 <CardProyecto
                   key={proyecto.id}
@@ -45,7 +45,7 @@ const Proyectos = () => {
           className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-lg-4"
         >
           {key === "apps" && (
-            <div className="d-flex px-3 containerTabProyects justify-content-sm-center align-items-md-center gap-3 gap-lg-4">
+            <div className="d-flex px-3 containerTabProyects justify-content-sm-center align-items-md-center gap-3 gap-lg-4 animationOpacity">
               {filtrarPorTipo("Aplicación web").length > 0 && filtrarPorTipo("Aplicación web").map((proyecto) => (
                 <CardProyecto
                   key={proyecto.id}
@@ -61,7 +61,7 @@ const Proyectos = () => {
           className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-lg-4"
         >
           {key === "sites" && (
-            <div className="d-flex px-3 containerTabProyects justify-content-sm-center align-items-md-center gap-3 gap-lg-4">
+            <div className="d-flex px-3 containerTabProyects justify-content-sm-center align-items-md-center gap-3 gap-lg-4 animationOpacity">
               {filtrarPorTipo("Sitio web").map((proyecto) => (
                 <CardProyecto
                   key={proyecto.id}
@@ -77,7 +77,7 @@ const Proyectos = () => {
           className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-lg-4"
         >
           {key === "landing" && (
-            <div className="d-flex px-3 containerTabProyects justify-content-sm-center align-items-md-center gap-3 gap-lg-4">
+            <div className="d-flex px-3 containerTabProyects justify-content-sm-center align-items-md-center gap-3 gap-lg-4 animationOpacity">
               {filtrarPorTipo("Landing Page").map((proyecto) => (
                 <CardProyecto
                   key={proyecto.id}
@@ -93,7 +93,7 @@ const Proyectos = () => {
           className="d-flex justify-content-center align-items-center flex-wrap gap-3 gap-lg-4"
         >
           {key === "otros" && (
-            <div className="d-flex px-3 containerTabProyects justify-content-sm-center align-items-sm-center gap-3 gap-lg-4">
+            <div className="d-flex px-3 containerTabProyects justify-content-sm-center align-items-sm-center gap-3 gap-lg-4 animationOpacity">
               {filtrarPorTipo("Otro").map((proyecto) => (
                 <CardProyecto
                   key={proyecto.id}

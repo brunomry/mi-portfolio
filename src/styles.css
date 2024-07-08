@@ -391,6 +391,26 @@ footer a{
   width: 100%;
 }
 
+/* animacion de seccion */
+
+.animationOpacity{
+  view-timeline-name: --reveal;
+  animation-name: show;
+  animation-fill-mode: both;
+  animation-timeline: --reveal;
+  animation-range: entry 25% cover 50%;
+}
+
+@keyframes show {
+  from{
+    opacity: 0; scale: 25%;
+  }
+  to{
+    opacity: 1; scale: 100%;
+
+  } 
+}
+
 @media all and (min-width: 480px) {
   .home_presentation {
     gap: 150px;

@@ -8,8 +8,8 @@ const Certificaciones = () => {
       className=" d-flex flex-column gap-2 gap-sm-3 py-4 certifications section px-2 px-md-5 py-lg-5"
       id="certificaciones"
     >
-      <h2 className="text-center display-6 fw-bold ">Certificaciones</h2>
-      <div className="d-flex containerCertifications justify-content-md-center align-items-md-center gap-3 gap-lg-2 gap-xl-3">
+      <h2 className="text-center display-6 fw-bold animationOpacity">Certificaciones</h2>
+      <div className="d-flex containerCertifications justify-content-md-center align-items-md-center gap-3 gap-lg-2 gap-xl-3 animationOpacity">
         {certificados.map((certificado) => (
           <CardCertificacion
             key={certificado.id}

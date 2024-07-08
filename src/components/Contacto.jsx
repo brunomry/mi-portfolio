@@ -4,11 +4,11 @@ import FormContacto from "./Contacto/FormContacto";
 const Contacto = () => {
   return (
     <article
-      className="containerContact py-4 py-md-5 d-flex flex-column gap-2 gap-sm-4 justify-content-center align-items-center px-3 section contact "
+      className="containerContact py-4 py-md-5 d-flex flex-column gap-2 gap-sm-4 justify-content-center align-items-center px-3 section contact"
       id="contacto"
     >
-      <h2 className="display-6 fw-bold ">Contáctame</h2>
-      <div className="d-flex flex-column flex-md-row gap-2 gap-xl-5">
+      <h2 className="display-6 fw-bold animationOpacity">Contáctame</h2>
+      <div className="d-flex flex-column flex-md-row gap-2 gap-xl-5 animationOpacity">
         <FormContacto></FormContacto>
         <div className="d-flex align-items-center flex-column">
           <p className="descriptionContact text-center sizeText text-lg-start mt-5">
