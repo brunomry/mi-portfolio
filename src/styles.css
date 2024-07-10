@@ -393,7 +393,7 @@ footer a{
 
 /* animacion de seccion */
 
-.animationOpacity{
+/* .animationOpacity{
   view-timeline-name: --reveal;
   animation-name: show;
   animation-fill-mode: both;
@@ -409,7 +409,7 @@ footer a{
     opacity: 1; scale: 100%;
 
   } 
-}
+} */
 
 @media all and (min-width: 480px) {
   .home_presentation {
