@@ -9,41 +9,41 @@ const Home = () => {
 
   return (
     <article
-      className="d-flex flex-column justify-content-center align-items-xl-center home pb-2 rounded-2 section pt-0"
+      className="flex flex-col justify-center xl:items-center mt-[100px] pt-[10px] w-[95%] min-h-[50vh] bg-[#eae8ff] lg:min-h-screen pb-2 rounded-2 lg:pt-0 lg:mt-0"
       id="sobremi"
     >
-      <div className="d-none justify-content-center pb-md-3 w-100 mb-5 gap-5">
-        <div className="rounded-5 border-1 d-flex align-items-center gap-2">
-          <i className="bi bi-brightness-high fs-2 text-dark" title="tema"></i>
+      <div className="hidden justify-center pb-md-3 w-[100%] mb-5 gap-5">
+        <div className="rounded-[5px] border-1 flex items-center gap-2">
+          <i className="bi bi-brightness-high " title="tema"></i>
           <span>Tema</span>
         </div>
         <div className="rounded-5 border-1 d-flex align-items-center gap-2">
-          <i className="bi bi-globe fs-2 text-dark" title="idioma"></i>
+          <i className="bi bi-globe " title="idioma"></i>
           <span>Idioma</span>
         </div>
       </div>
-      <div className="d-flex flex-column align-items-center  flex-md-row home_presentation">
+      <div className="flex flex-col items-center md:flex-row sm:gap-[150px] gap-[50px]">
         <div className="text-center">
-          <p className="lead mb-1">
+          <p className="text-xl text-[#028891]">
             ¡Bienvenido! <span title="saludo">👋</span>
           </p>
-          <h1 className=" mb-2 mb-xl-4 display-3 fw-bold">
+          <h1 className="text-[36px] text-[#028891] leading-10 md:leading-normal sm:text-[49px] lg:text-[64px] mb-2 md:mb-0 xl:mb-4 font-bold">
             Hola, soy Bruno Madozzo
           </h1>
 
-          <h2 className="display-6 fw-bold mb-3 mb-xl-5">
+          <h2 className="text-[27px] text-[#028891] leading-8 md:leading-normal text-center align-middle sm:text-[33px] lg:text-[40px] font-bold mb-4 xl:mb-12">
             Desarrollador Web Frontend
           </h2>
-          <div className="descriptionHome  p-3 p-xl-5 rounded-4 mb-4 mb-xl-5">
-            <div className="d-block d-sm-none mx-auto imgProfile mb-2 shadow">
+          <div className="w-[100%] xl:w-[800px] bg-[#F7F7F7] p-4 xl:p-12 rounded-2xl mb-4 xl:mb-12">
+            <div className="block sm:hidden mx-auto w-[150px] h-[150px] rounded-[50%] border-[5px] border-[#12c0bd] lg:w-[180px] lg:h-[180px] mb-2">
               <img
                 src={perfil}
                 alt="Bruno Madozzo"
                 title="Bruno Madozzo"
-                className="shadow"
+                className="shadow-xl w-[100%] h-[100%] rounded-[50%] object-cover"
               />
             </div>
-            <p className="sizeText mx-2 mx-xl-5 mt-2">
+            <p className="mx-2 xl:mx-5 my-2 text-[#028891] md:text-[18px] lg:text-[20px] xl:text-[22px]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, iusto
               provident ratione dolore libero vitae nam, assumenda asperiores
               optio molestias animi eligendi cupiditate natus accusantium.
@@ -51,29 +51,27 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="d-flex flex-column gap-3 gap-xl-4 justify-content-center align-items-center">
+          <div className="flex flex-col gap-4 md:gap-5 xl:gap-6 justify-center items-center">
             <button
-              className="btn px-5 rounded-0 btnCV sizeText"
+              className="px-12 py-[6px] rounded-sm bg-[#028891] text-white border hover:bg-[#eae8ff] hover:text-[#028891] hover:border hover:border-[#028891] text-[16px] md:text-[18px] lg:text-[20px]"
               onClick={handleDownloadPDF}
             >
               Descargar CV <i className="bi bi-download ms-2"></i>
             </button>
-            <div className="d-flex gap-4 text-dark">
+            <div className="flex gap-4">
               <a
-                className="social"
                 href="https://github.com/brunomry"
                 target="_blank"
                 title="Github"
               >
-                <i className="bi bi-github fs-1 text-dark"></i>
+                <i className="bi bi-github text-black text-3xl sm:text-4xl"></i>
               </a>
               <a
-                className="social"
                 href="https://www.linkedin.com/in/bruno-madozzo/"
                 target="_blank"
                 title="LinkedIn"
               >
-                <i className="bi bi-linkedin fs-1 text-primary"></i>
+                <i className="bi bi-linkedin text-blue-600 text-3xl sm:text-4xl"></i>
               </a>
             </div>
           </div>
