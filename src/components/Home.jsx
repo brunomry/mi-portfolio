@@ -17,7 +17,7 @@ const Home = () => {
           <i className="bi bi-brightness-high " title="tema"></i>
           <span>Tema</span>
         </div>
-        <div className="rounded-5 border-1 d-flex align-items-center gap-2">
+        <div className="gap-2 rounded-5 border-1 d-flex align-items-center">
           <i className="bi bi-globe " title="idioma"></i>
           <span>Idioma</span>
         </div>
@@ -34,7 +34,7 @@ const Home = () => {
           <h2 className="text-[27px] text-[#028891] leading-8 md:leading-normal text-center align-middle sm:text-[33px] lg:text-[40px] font-bold mb-4 xl:mb-12">
             Desarrollador Web Frontend
           </h2>
-          <div className="w-[100%] xl:w-[800px] bg-[#F7F7F7] p-4 xl:p-12 rounded-2xl mb-4 xl:mb-12">
+          <div className="w-[100%] xl:w-[800px] bg-[#f1f0fd] shadow-xl p-4 xl:p-12 rounded-2xl mb-4 xl:mb-12">
             <div className="block sm:hidden mx-auto w-[150px] h-[150px] rounded-[50%] border-[5px] border-[#12c0bd] lg:w-[180px] lg:h-[180px] mb-2">
               <img
                 src={perfil}
@@ -51,27 +51,27 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="flex flex-col gap-4 md:gap-5 xl:gap-6 justify-center items-center">
+          <div className="flex flex-col items-center justify-center gap-4 md:gap-5 xl:gap-6">
             <button
               className="px-12 py-[6px] rounded-sm bg-[#028891] text-white border hover:bg-[#eae8ff] hover:text-[#028891] hover:border hover:border-[#028891] text-[16px] md:text-[18px] lg:text-[20px]"
               onClick={handleDownloadPDF}
             >
               Descargar CV <i className="bi bi-download ms-2"></i>
             </button>
-            <div className="flex gap-4">
+            <div className="flex gap-4 mt-2">
               <a
                 href="https://github.com/brunomry"
                 target="_blank"
                 title="Github"
               >
-                <i className="bi bi-github text-black text-3xl sm:text-4xl"></i>
+                <i className="p-1 px-3 bg-[#f1f0fd] text-3xl text-[#028891] rounded-[6px] bi bi-github sm:text-4xl"></i>
               </a>
               <a
                 href="https://www.linkedin.com/in/bruno-madozzo/"
                 target="_blank"
                 title="LinkedIn"
               >
-                <i className="bi bi-linkedin text-blue-600 text-3xl sm:text-4xl"></i>
+                <i className="p-1 px-3 bg-[#f1f0fd] text-3xl text-[#028891] rounded-[6px] bi bi-linkedin sm:text-4xl"></i>
               </a>
             </div>
           </div>

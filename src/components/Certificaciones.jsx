@@ -9,7 +9,7 @@ const Certificaciones = () => {
       id="certificaciones"
     >
       <h2 className="text-center font-bold text-[27px] md:text-[35px] lg:text-[38px] xl:text-[40px] text-[#028891]">Certificaciones</h2>
-      <div className="flex flex-col containerCertifications h-[280px] sm:h-[100%] sm:pb-[50px] md:justify-center md:items-center gap-3 lg:gap-4 ">
+      <div className="flex sm:flex-col containerCertifications h-[280px] sm:h-[100%] sm:pb-[50px] md:justify-center md:items-center gap-3 lg:gap-4 ">
         {certificados.map((certificado) => (
           <CardCertificacion
             key={certificado.id}
