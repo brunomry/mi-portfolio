@@ -31,8 +31,6 @@
   width: 100%;
 }
 
-/* proyectos */
-
 .tabs button {
   border-radius: 5px;
   padding: 10px;
@@ -44,34 +42,11 @@
   color: #028891;
 }
 
-.containerTabProyects {
+.containerTabProyects,
+.containerTech,
+.containerCertifications {
   scroll-snap-type: x mandatory;
   overflow-x: scroll;
-}
-
-/* tecnologias */
-
-.tecnologias {
-  min-height: 50vh;
-  width: 100%;
-  background: #e0dffd;
-}
-
-.tecnologias * {
-  color: #028891;
-}
-
-.containerTech {
-  width: 100%;
-  scroll-snap-type: x mandatory;
-  overflow-x: scroll;
-}
-
-.tech {
-  max-width: 200px;
-  height: 200px;
-  background: #f7f7f7;
-  transition: 1s;
 }
 
 .tech:hover {
@@ -90,52 +65,6 @@
 
 .iconTech {
   animation: move 3s infinite alternate;
-  box-shadow: #000;
-}
-
-.stack {
-  width: 200px;
-}
-
-.iconTech {
-  width: 100px;
-}
-
-/* certificados */
-
-.certifications {
-  width: 100%;
-  background: #e0dffd;
-  min-height: 50vh;
-}
-
-.containerCertifications {
-  width: 100%;
-  scroll-snap-type: x mandatory;
-  overflow-x: scroll;
-  height: 280px;
-}
-
-.cardCertification {
-  height: 250px;
-  transition: 0.8s;
-  background: #f7f7f7;
-  min-width: 260px;
-  width: 100%;
-}
-
-.cardCertification p {
-  color: #028891;
-}
-
-.btnCertification {
-  background: #028891;
-  color: #fff;
-}
-
-.btnCertification:hover {
-  border: 1px solid #028891;
-  color: #028891;
 }
 
 /*contacto */
@@ -213,22 +142,12 @@ button:hover .iconForm{
   width: 100%;
 }
 
-@media all and (min-width: 480px) {
-  .tecnologias,
-  .certifications {
-    min-height: 100vh;
-  }
-
+@media all and (min-width: 640px) {
   .containerTech,
   .containerTabProyects,
   .containerCertifications {
     scroll-snap-type: none;
     overflow-x: hidden;
-  }
-
-  .containerCertifications {
-    height: 100%;
-    padding-bottom: 50px;
   }
 
   .formContact,
@@ -248,11 +167,6 @@ button:hover .iconForm{
 }
 
 @media all and (min-width: 992px) {
-  .cardCertification {
-    width: 65%;
-    height: 225px;
-  }
-
   .formContact {
     width: 65%;
   }

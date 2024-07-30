@@ -25,7 +25,7 @@ const Proyectos = () => {
           className="flex justify-center items-center flex-wrap gap-3 gap-lg-4 rounded-[5px]"
         >
           {key === "all" && (
-            <div className=" flex px-3 containerTabProyects sm:flex-wrap h-[450px] w-[100%] sm:h-[100%] sm:pb-[50px] md:justify-center md:items-center gap-3 lg:gap-5 ">
+            <div className=" flex px-3 containerTabProyects sm:flex-wrap h-[450px] w-[100vw] sm:w-[100%]  sm:h-[100%] sm:pb-[50px] md:justify-center md:items-center gap-3 lg:gap-5 ">
               {proyectos.map((proyecto) => (
                 <CardProyecto
                   key={proyecto.id}
@@ -41,7 +41,7 @@ const Proyectos = () => {
           className="flex justify-center items-center flex-wrap gap-3 gap-lg-4"
         >
           {key === "apps" && (
-            <div className="flex px-3 containerTabProyects sm:flex-wrap md:justify-center md:items-center gap-3 lg:gap-4 ">
+            <div className="flex px-3 containerTabProyects sm:flex-wrap h-[450px] w-[100vw] sm:w-[100%]  sm:h-[100%] sm:pb-[50px]  md:justify-center md:items-center gap-3 lg:gap-4 ">
               {filtrarPorTipo("Aplicación web").length > 0 && filtrarPorTipo("Aplicación web").map((proyecto) => (
                 <CardProyecto
                   key={proyecto.id}
@@ -57,7 +57,7 @@ const Proyectos = () => {
           className="flex justify-center items-center flex-wrap gap-3 gap-lg-4"
         >
           {key === "sites" && (
-            <div className="flex px-3 containerTabProyects sm:flex-wrap md:justify-center md:items-center gap-3 lg:gap-4 ">
+            <div className="flex px-3 containerTabProyects sm:flex-wrap h-[450px] w-[100vw] sm:w-[100%]  sm:h-[100%] sm:pb-[50px]  md:justify-center md:items-center gap-3 lg:gap-4 ">
               {filtrarPorTipo("Sitio web").map((proyecto) => (
                 <CardProyecto
                   key={proyecto.id}
@@ -73,7 +73,7 @@ const Proyectos = () => {
           className="flex justify-center items-center flex-wrap gap-3 gap-lg-4"
         >
           {key === "landing" && (
-            <div className="flex px-3 containerTabProyects sm:flex-wrap md:justify-center md:items-center gap-3 lg:gap-4 ">
+            <div className="flex px-3 containerTabProyects sm:flex-wrap h-[450px] w-[100vw] sm:w-[100%]  sm:h-[100%] sm:pb-[50px]  md:justify-center md:items-center gap-3 lg:gap-4 ">
               {filtrarPorTipo("Landing Page").map((proyecto) => (
                 <CardProyecto
                   key={proyecto.id}
@@ -89,7 +89,7 @@ const Proyectos = () => {
           className="flex justify-center items-center flex-wrap gap-3 gap-lg-4"
         >
           {key === "otros" && (
-            <div className="flex px-3 containerTabProyects sm:flex-wrap md:justify-center md:items-center gap-3 lg:gap-4 ">
+            <div className="flex px-3 containerTabProyects sm:flex-wrap h-[450px] w-[100vw] sm:w-[100%] sm:h-[100%] sm:pb-[50px]  md:justify-center md:items-center gap-3 lg:gap-4 ">
               {filtrarPorTipo("Otro").map((proyecto) => (
                 <CardProyecto
                   key={proyecto.id}
