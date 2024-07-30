@@ -1,5 +1,4 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 
 @tailwind base;
@@ -67,79 +66,9 @@
   animation: move 3s infinite alternate;
 }
 
-/*contacto */
-
-.contact {
-  min-height: 550px;
-  width: 95%;
-}
-
-.contact * {
-  color: #028891;
-}
-
-.formContact {
-  width: 100%;
-  background: #fff;
-}
-
-.formContact button {
-  width: 100%;
-  background: #028891;
-  color: #ffffff;
-}
-
-.formContact button:hover {
-  background-color: #171d35;
-  background: #fff;
-  border: 1px solid #028891;
-  color: #028891;
-}
-
-.formContact .textarea {
-  height: 100px;
-  resize: none;
-}
-
-.input::placeholder {
-  color: #9e9e9e;
-}
-
-.input {
-  color: #028891;
-}
-
-.input {
-  color: #000;
-}
-
 .input:focus {
   outline: none;
-  box-shadow: none;
-  border: 1px solid #028891;
-}
-
-.formContact .iconForm{
-  color: #fff;
-}
-
-button:hover .iconForm{
-  color: #028891;
-}
-
-.formContact label {
-  color: #028891;
-}
-
-/* modal proyecto */
-
-.modal-body{
-  width: 100%;
-  background:#eae8ff;
-}
-
-.imgModal{
-  width: 100%;
+  border-bottom: 1px solid #028891;
 }
 
 @media all and (min-width: 640px) {
@@ -148,40 +77,5 @@ button:hover .iconForm{
   .containerCertifications {
     scroll-snap-type: none;
     overflow-x: hidden;
-  }
-
-  .formContact,
-  .descriptionContact {
-    width: 80%;
-  }
-
-  .formContact button {
-    width: 50%;
-  }
-}
-
-@media all and (min-width: 768px) {
-  .formContact {
-    width: 75%;
-  }
-}
-
-@media all and (min-width: 992px) {
-  .formContact {
-    width: 65%;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  .formContact,
-  .descriptionContact {
-    width: 400px;
-  }
-}
-
-@media all and (min-width: 1400px) {
-  .formContact,
-  .descriptionContact {
-    width: 500px;
   }
 }

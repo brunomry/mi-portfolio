@@ -3,60 +3,60 @@ import { Button, Form } from "react-bootstrap";
 
 const FormContacto = () => {
   return (
-    <Form className="sizeText px-2 px-xl-5 pt-4 pb-3 formContact rounded-2 shadow">
-      <Form.Group className="mb-2">
-        <p className="sizeText mb-4 text-center">Envíame un mensaje y estaré encantado en responderte.</p>
-        <Form.Label htmlFor="name" className="mb-1">Nombre y Apellido</Form.Label>
+    <form className="px-2 pt-4 pb-3 shadow w-[100%] bg-white xl:px-5 formContact rounded-[6px] sm:w-[80%] md:w-[75%] lg:w-[65%] xl:w-[500px]">
+      <div className="mb-3">
+        <p className="mb-4 text-center md:text-[18px] lg:text-[20px] text-[#028891]">Envíame un mensaje y estaré encantado en responderte.</p>
+        <label htmlFor="name" className="block md:text-[18px] lg:text-[20px] text-[#028891]">Nombre y Apellido</label>
         <Form.Control
           id="name"
-          className="section input py-2"
+          className="block py-2 border-b-[1px] input focus:border-b-[1px] w-[100%] border-[#028891]"
           type="text"
           placeholder="Nombre completo"
           required
           title="Ingresa tu nombre completo"
         />
-      </Form.Group>
+      </div>
 
-      <Form.Group className="mb-2" >
-        <Form.Label htmlFor="email" className="mb-1">Email</Form.Label>
+      <div className="mb-3" >
+        <label htmlFor="email" className="block md:text-[18px] lg:text-[20px] text-[#028891]">Email</label>
         <Form.Control
           id="email"
-          className="section input py-2"
+          className="block py-2 border-b-[1px] input w-[100%] border-[#028891]"
           type="email"
           placeholder="correo"
           required
           title="Ingresa tu correo electrónico"
         />
-      </Form.Group>
-      <Form.Group className="mb-2">
-        <Form.Label htmlFor="subject" className="mb-1">Asunto</Form.Label>
+      </div>
+      <div className="mb-3 ">
+        <label htmlFor="subject" className="block md:text-[18px] lg:text-[20px] text-[#028891]">Asunto</label>
         <Form.Control
           id="subject"
-          className="section input  py-2"
+          className="block py-2 border-b-[1px] input w-[100%] border-[#028891]"
           type="text"
           placeholder="Asunto"
           required
           title="Ingresa el asunto"
         />
-      </Form.Group>
-      <Form.Group className="mb-3">
-        <Form.Label htmlFor="message" className="mb-1">Mensaje</Form.Label>
+      </div>
+      <div className="mb-3">
+        <Form.Label htmlFor="message" className="block mb-1 md:text-[18px] lg:text-[20px] text-[#028891]">Mensaje</Form.Label>
         <Form.Control
           as="textarea"
-          className="section input textarea"
+          className="ps-2 input textarea h-[150px] rounded-[4px] border-[1px] block py-2 input w-[100%] border-[#028891]"
           id="message"
           type="text"
           placeholder="Mensaje"
           required
           title="Ingresa tu mensaje"
         />
-      </Form.Group>
-      <div className="d-flex ">
-        <button type="submit" className="btn sizeText w-100">
-        <i className="bi bi-send me-2 iconForm"></i> Enviar Mensaje
+      </div>
+      <div className="flex justify-end">
+        <button type="submit" className="bg-[#028891] md:text-[18px] rounded-[6px] lg:text-[20px] text-white py-2 w-[100%] border hover:bg-white hover:border-[#028891] hover:text-[#028891]">
+        <i className="bi bi-send me-2 hover:text-[#028891] "></i> Enviar Mensaje
         </button>
       </div>
-    </Form>
+    </form>
   );
 };
 

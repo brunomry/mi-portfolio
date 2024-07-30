@@ -11,9 +11,9 @@ const CardCertificacion = ({ certificado }) => {
           </p>
 
       </div>
-      <div className="mt-5 sm:mt-0 flex justify-center md:justify-end mb-2">
-        <button className=" rounded-[6px] bg-[#028891] text-white hover:bg-[#F7F7F7] hover:border hover:border-[#028891] hover:text-[#028891] px-12 py-3 flex items-center gap-2">
-          <i className="bi bi-zoom-in"></i>
+      <div className="flex justify-center mt-5 mb-2 sm:mt-0 md:justify-end">
+        <button className=" rounded-[6px] bg-[#028891] md:text-[18px] text-white hover:bg-[#F7F7F7] hover:border hover:border-[#028891] hover:text-[#028891] px-12 py-3 flex items-center gap-2">
+          <i className="text-2xl bi bi-zoom-in"></i>
           <span>Ver</span>
         </button>
       </div>
