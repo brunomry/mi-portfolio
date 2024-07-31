@@ -16,7 +16,7 @@ const Tecnologias = () => {
           ))}    
       </div>
       <h3 className="px-2 md:px-10 me-auto font-bold mt-3 sm:flex-wrap md:text-[25px] lg:text-[28px]">Actualmente aprendiendo...</h3>
-      <div className="flex containerTech w-[100%] h-[250px] sm:h-[100%] gap-2 md:gap-3 xl:gap-6 items-center md:justify-center pt-4 px-5 ">
+      <div className="flex containerTech w-[100%] h-[250px] sm:h-[100%] sm:flex-wrap gap-2 md:gap-3 xl:gap-6 items-center md:justify-center pt-4 px-5 ">
       {tecnologias.aprendiendo.map((tech, pos) => (
             <Tecnologia key={pos} tech={tech} />
           ))}    
