@@ -13,7 +13,7 @@ const CardProyecto = ({ proyecto }) => {
 
   return (
     <>
-     <div className="rounded-md w-[100%] min-w-[280px] h-[425px] bg-[#f7f7f7] duration-[0.8s] sm:w-[300px] lg:w-[300px] lg:min-h-[300px] lg:duration-[0.7s] xl:w-[350px] cursor-pointer shadow-2xl hover:shadow-none">
+     <div className="border-[#028891] border-[1px] rounded-md w-[100%] min-w-[280px] h-[425px] bg-[#f7f7f7] duration-[0.8s] sm:w-[300px] lg:w-[300px] lg:min-h-[300px] lg:duration-[0.7s] xl:w-[350px] cursor-pointer  hover:shadow-xl">
       <img
         src={proyecto.imagen}
         alt={proyecto.nombre}
@@ -45,7 +45,7 @@ const CardProyecto = ({ proyecto }) => {
             <span>Visitar</span>
           </a>
           <button
-            className="md:text-[18px] lg:text-[20px] rounded-[6px] px-3 border text-secondary flex flex-col items-center "
+            className="md:text-[18px] lg:text-[20px] rounded-[6px] px-3 border-[1px] text-[#028891] border-[#028891] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#028891] hover:text-[#fff] hover:border-[#000] flex flex-col items-center "
             title="Ver más información del proyecto"
             onClick={()=>handleShowModal(true)}
           >

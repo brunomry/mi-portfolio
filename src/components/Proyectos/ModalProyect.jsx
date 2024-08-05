@@ -1,108 +1,109 @@
 const ModalProyect = ({ show, handleShowModal, proyecto }) => {
   return (
     <modal
-      className={`lg:w-[65%] md:mt-[150px] lg:mt-[25px] bg-[#f5e4fd] border-[#000] border-[1px] rounded-[6px] my-8 fixed top-0 bottom-0 overflow-auto ${
+      className={`lg:w-[65%] md:text-[18px] lg:text-[20px] text-[#028891] md:mt-[150px] lg:mt-[25px] bg-[#f5e4fd] border-[#000] border-[1px] rounded-[6px] my-8 fixed top-0 bottom-0 overflow-auto ${
         show ? "block z-[99]" : "hidden"
       }`}
     >
       <div class="w-[100%] mx-auto">
-        <a
-          type="button"
-          class="flex justify-end px-10 cursor-pointer sticky py-2 top-0 right-0 "
-          onClick={() => handleShowModal(false)}
-          title="Cerrar"
-        >
-          <i class="bi bi-x-lg text-[40px] bg-[#effeff] px-2"></i>
-        </a>
-        <div className=" mb-5 row w-[100%]">
-          <article>
-            <div className="mt-5 mb-4">
-              <h3 className="p-3 mb-3 bg-white d-inline rounded-2">
+        <div className="px-6 mb-5 row w-[100%] h-[100%]">
+          <article className="flex items-center justify-between py-2 my-2 bg-white">
+            <div className="flex items-center gap-2">
+              <h3 className="p-3 rounded-[4px] font-bold sm:flex-wrap md:text-[25px] lg:text-[28px]">
                 {proyecto.nombre}
               </h3>
+              <a
+                href=""
+                className="px-4 border-[#028891] border-[1px] rounded-[4px]"
+              >
+                Visitar
+              </a>
             </div>
+
+            <a
+              type="button"
+              class="flex justify-end px-6 cursor-pointer"
+              onClick={() => handleShowModal(false)}
+              title="Cerrar"
+            >
+              <i className="bi bi-x-lg text-[40px] px-6"></i>
+            </a>
           </article>
           <article className="col-lg-6">
-            <img
-              src={proyecto.imagen}
-              alt=""
-              className="mb-3 w-[300px] h-[300px]"
-            />
-            <div className="px-2 py-2 mb-2 bg-white rounded-2">
-              <p className="fw-bold">Tecnologías utilizadas:</p>
-              <ul className="flex-wrap gap-3 d-flex">
+            <div className="px-6 py-6 mb-2 bg-white rounded-[4px]">
+              <p className="mb-2 font-bold">Tecnologías utilizadas:</p>
+              <ul className="gap-6 flex w-[75%] flex-wrap">
                 {proyecto.tecnologias.map((t) => (
-                  <figure
+                  <div
                     key={t.name}
-                    className="d-flex flex-column align-items-center"
+                    className="flex flex-col items-center gap-2"
                   >
                     <img src={t.icon} alt="" width={40} height={40} />
                     <figcaption>{t.name}</figcaption>
-                  </figure>
+                  </div>
                 ))}
               </ul>
             </div>
           </article>
           <article className="col-lg-6">
-            <div className="gap-2 d-flex align-items-center">
-              <div className="px-2 py-2 mb-3 bg-white rounded-2">
-                <p className="mb-0 fw-bold">
-                  Tipo: <span className="fw-normal">{proyecto.tipo}</span>
+            <div className="flex items-center gap-2">
+              <div className="px-6 py-6 mb-2 bg-white rounded-[4px]">
+                <p className="mb-0 font-bold">
+                  Tipo:{" "}
+                  <span className="font-normal md:text-[18px] lg:text-[20px]">
+                    {proyecto.tipo}
+                  </span>
                 </p>
               </div>
-              <div className="px-2 py-2 mb-3 bg-white rounded-2 d-flex align-items-center">
-                <p className="mb-0 fw-bold">
+              <div className="flex items-center px-6 py-6 mb-2 bg-white rounded-[4px]">
+                <p className="mb-0 font-bold">
                   Proyecto:{" "}
-                  <span className="fw-normal">{proyecto.proyecto}</span>
+                  <span className="font-normal">{proyecto.proyecto}</span>
                 </p>
               </div>
             </div>
 
-            <div className="px-2 py-3 mb-2 bg-white rounded-2">
-              <p className="mb-0 fw-bold">Descripción:</p>
+            <div className="px-6 py-6 mb-2 bg-white rounded-[4px]">
+              <p className="mb-0 font-bold">Descripción:</p>
               <ul>
-                <li className="text-dark">{proyecto.descripcion}</li>
+                <li>{proyecto.descripcion}</li>
               </ul>
             </div>
-            <div className="px-2 py-3 mb-2 bg-white rounded-2">
-              <p className="mb-0 fw-bold">Objetivos:</p>
-              <ul>
-                <li className="text-dark">{proyecto.objetivos}</li>
-              </ul>
-            </div>
-            <div className="px-2 py-3 mb-2 bg-white rounded-2">
-              <p className="mb-0 fw-bold">
+            <div className="px-6 py-6 mb-2 bg-white rounded-[4px]">
+              <p className="mb-0 font-bold">
                 {proyecto.integrantes.length > 1
                   ? "Responsabilidades:"
-                  : "Funcionalidades relevantes"}
+                  : "Aspectos relevantes"}
               </p>
               <ul>
                 {proyecto.responsabilidades.map((r) => (
-                  <li key={r}>{r}</li>
+                  <li key={r}>
+                    <i class="bi bi-check2 text-[1.25rem] text-[#028891] me-2"></i>
+                    {r}
+                  </li>
                 ))}
               </ul>
             </div>
 
-            <div className="px-2 py-2 mb-2 bg-white rounded-2">
-              <p className="mb-0 fw-bold">
-                {proyecto.integrantes.length > 1
-                  ? "Integrantes:"
-                  : `Autor: ${proyecto.integrantes}`}
+            <div className="px-6 py-6 mb-2 bg-white rounded-[4px]">
+              <p className="mb-0 font-bold">
+                {proyecto.integrantes.length > 1 ? "Equipo:" : `Autor: `}
               </p>
               <ul>
-                {proyecto.integrantes.length > 1 &&
-                  proyecto.integrantes.map((i) => <li key={i}>{i}</li>)}
+                {proyecto.integrantes.map((i) => (
+                  <li key={i}>{i}</li>
+                ))}
               </ul>
             </div>
           </article>
-          <a
+          <button
             type="button"
-            class="flex justify-center px-10 cursor-pointer text-[20px] border-[1px] rounded-2 bg-[#028891] py-2 text-white"
+            class="w-[100%] mt-3 bottom-[20px] text-center cursor-pointer text-[20px] border-[1px] rounded-[4px] bg-[#028891] py-2 text-white"
             onClick={() => handleShowModal(false)}
             title="Cerrar"
           >
             Cerrar
-          </a>
+          </button>
         </div>
       </div>
     </modal>
