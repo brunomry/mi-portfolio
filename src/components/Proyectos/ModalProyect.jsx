@@ -1,13 +1,13 @@
 const ModalProyect = ({ show, handleShowModal, proyecto }) => {
   return (
     <modal
-      className={`lg:w-[65%] md:text-[18px] lg:text-[20px] text-[#028891] md:mt-[150px] lg:mt-[25px] bg-[#f5e4fd] border-[#000] border-[1px] rounded-[6px] my-8 fixed top-0 bottom-0 overflow-auto ${
+      className={`md:w-[75%] lg:w-[65%] md:text-[18px] lg:text-[20px] text-[#028891] md:mt-[150px] lg:mt-[25px] bg-[#c9c4ff] border-[#c8a7f6] border-[5px] rounded-[6px] my-8 fixed top-0 bottom-0 overflow-auto ${
         show ? "block z-[99]" : "hidden"
       }`}
     >
-      <div class="w-[100%] mx-auto">
+      <div class="w-[100%] mx-auto ">
         <div className="px-6 mb-5 row w-[100%] h-[100%]">
-          <article className="flex items-center justify-between py-2 my-2 bg-white">
+          <article className="flex items-center justify-between py-2 my-2 bg-[#eae8ff]">
             <div className="flex items-center gap-2">
               <h3 className="p-3 rounded-[4px] font-bold sm:flex-wrap md:text-[25px] lg:text-[28px]">
                 {proyecto.nombre}
@@ -29,8 +29,8 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
               <i className="bi bi-x-lg text-[40px] px-6"></i>
             </a>
           </article>
-          <article className="col-lg-6">
-            <div className="px-6 py-6 mb-2 bg-white rounded-[4px]">
+          <article className="col-lg-6 ">
+            <div className="px-6 py-6 mb-2 bg-[#eae8ff] rounded-[4px]">
               <p className="mb-2 font-bold">Tecnologías utilizadas:</p>
               <ul className="gap-6 flex w-[75%] flex-wrap">
                 {proyecto.tecnologias.map((t) => (
@@ -45,9 +45,9 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
               </ul>
             </div>
           </article>
-          <article className="col-lg-6">
+          <article className="col-lg-6 ">
             <div className="flex items-center gap-2">
-              <div className="px-6 py-6 mb-2 bg-white rounded-[4px]">
+              <div className="px-6 py-6 mb-2 bg-[#eae8ff] rounded-[4px]">
                 <p className="mb-0 font-bold">
                   Tipo:{" "}
                   <span className="font-normal md:text-[18px] lg:text-[20px]">
@@ -55,7 +55,7 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
                   </span>
                 </p>
               </div>
-              <div className="flex items-center px-6 py-6 mb-2 bg-white rounded-[4px]">
+              <div className="flex items-center px-6 py-6 mb-2 bg-[#eae8ff] rounded-[4px]">
                 <p className="mb-0 font-bold">
                   Proyecto:{" "}
                   <span className="font-normal">{proyecto.proyecto}</span>
@@ -63,13 +63,13 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
               </div>
             </div>
 
-            <div className="px-6 py-6 mb-2 bg-white rounded-[4px]">
+            <div className="px-6 py-6 mb-2 bg-[#eae8ff] rounded-[4px]">
               <p className="mb-0 font-bold">Descripción:</p>
               <ul>
                 <li>{proyecto.descripcion}</li>
               </ul>
             </div>
-            <div className="px-6 py-6 mb-2 bg-white rounded-[4px]">
+            <div className="px-6 py-6 mb-2 bg-[#eae8ff] rounded-[4px]">
               <p className="mb-0 font-bold">
                 {proyecto.integrantes.length > 1
                   ? "Responsabilidades:"
@@ -85,7 +85,7 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
               </ul>
             </div>
 
-            <div className="px-6 py-6 mb-2 bg-white rounded-[4px]">
+            <div className="px-6 py-6 mb-2 bg-[#eae8ff] rounded-[4px]">
               <p className="mb-0 font-bold">
                 {proyecto.integrantes.length > 1 ? "Equipo:" : `Autor: `}
               </p>
