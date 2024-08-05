@@ -10,7 +10,7 @@ const Proyectos = () => {
 
   return (
     <article
-      className="py-3 flex flex-col gap-3 xl:gap-4 items-center px-3 proyects w-[95%] min-h-[95vh]"
+      className="py-3 flex flex-col gap-3 xl:gap-4 items-center px-3 w-[95%] min-h-[95vh]"
       id="proyectos"
     >
       <h2 className="text-center font-bold text-[27px] md:text-[35px] lg:text-[38] xl:text-[40px] text-[#028891]">Proyectos</h2>

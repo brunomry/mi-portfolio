@@ -7,8 +7,8 @@ const CardProyecto = ({ proyecto }) => {
 
   const [abrirModal, setAbrirModal] = useState(false);
 
-  const handleShowModal = () => {
-    setAbrirModal(!abrirModal);
+  const handleShowModal = (value) => {
+    setAbrirModal(value);
   };
 
   return (
@@ -25,14 +25,14 @@ const CardProyecto = ({ proyecto }) => {
           <h4 className="mb-1 font-bold text-2xl text-[#028891]">{proyecto.nombre}</h4>
           <p className="md:text-[18px] lg:text-[20px] mb-0 text-[#028891]">{proyecto.tipo}</p>
         </div>
-        <div className="flex gap-2 xl:gap-3 justify-center">
+        <div className="flex justify-center gap-2 xl:gap-3">
           <a
             href={proyecto.github}
             className="md:text-[18px] lg:text-[20px] rounded-[6px] px-3 text-[#028891] border border-[#028891] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#028891] hover:text-[#fff] hover:border-[#000] flex flex-col items-center "
             target="_blank"
             title="Ver código"
           >
-            <i className="bi bi-github text-2xl"></i>
+            <i className="text-2xl bi bi-github"></i>
             <span>Github</span>
           </a>
           <a
@@ -41,24 +41,28 @@ const CardProyecto = ({ proyecto }) => {
             target="_blank"
             title="Ver página"
           >
-            <i className="bi bi-link-45deg text-2xl"></i>
+            <i className="text-2xl bi bi-link-45deg"></i>
             <span>Visitar</span>
           </a>
           <button
             className="md:text-[18px] lg:text-[20px] rounded-[6px] px-3 border text-secondary flex flex-col items-center "
             title="Ver más información del proyecto"
-            onClick={handleShowModal}
+            onClick={()=>handleShowModal(true)}
           >
-            <i className="bi bi-info-circle text-2xl" ></i> <span>Detalle</span>
+            <i className="text-2xl bi bi-info-circle" ></i> <span>Detalle</span>
           </button>
         </div>
       </div>
     </div>
+    <div className={`${abrirModal ? "flex justify-center w-[100%] md:mt-[150px]" : ""}`}>
     <ModalProyect
       show={abrirModal}
       proyecto={proyecto}
       handleShowModal={handleShowModal}
+      setAbrirModal={setAbrirModal}
     ></ModalProyect>
+    </div>
+    
     </>
    
   );
