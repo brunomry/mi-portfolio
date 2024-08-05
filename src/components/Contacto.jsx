@@ -34,7 +34,7 @@ const Contacto = () => {
             </div>
           </div>
           <p className="mt-5 mb-4 text-center sizeText md:text-[18px] lg:text-[20px] text-[#028891]">
-            ¡Gracias por visitar mi perfil!
+            ¡Gracias por visitar mi portfolio!
           </p>
         </div>
       </div>

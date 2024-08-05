@@ -62,14 +62,14 @@ const Home = () => {
               <a
                 href="https://github.com/brunomry"
                 target="_blank"
-                title="Github"
+                title="Visita mis proyectos en mi repositorio de Github"
               >
                 <i className="p-1 px-3 bg-[#f1f0fd] text-3xl text-[#028891] rounded-[6px] bi bi-github sm:text-4xl"></i>
               </a>
               <a
                 href="https://www.linkedin.com/in/bruno-madozzo/"
                 target="_blank"
-                title="LinkedIn"
+                title="Visita mi perfil de LinkedIn"
               >
                 <i className="p-1 px-3 bg-[#f1f0fd] text-3xl text-[#028891] rounded-[6px] bi bi-linkedin sm:text-4xl"></i>
               </a>
