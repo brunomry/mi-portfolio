@@ -38,7 +38,7 @@ const proyectos = [
     duracion: "4 semanas",
     ultima_actualizacion: "-",
     descripcion:
-      "El proyecto desarrollado es una aplicación web para restaurante donde el objetivo principal consistía en que los usuarios luego de registrarse e iniciar sesión puedan realizar un pedido. Además cabe resaltar que con el equipo logramos incorporar método de pago mediante MercadoPago a modo de prueba como funcionalidad extra de la aplicación.",
+      "Aplicación web para restaurante donde el objetivo principal consistía en que los usuarios luego de registrarse e iniciar sesión puedan realizar un pedido. Además cabe resaltar que con el equipo logramos incorporar método de pago mediante MercadoPago a modo de prueba como funcionalidad extra de la aplicación.",
     proyecto: "En equipo",
     responsabilidades: [
       "Desempeñé rol de Scrummaster facilitando la comunicación y resolviendo problemas del equipo.",
@@ -75,7 +75,7 @@ const proyectos = [
     duracion: "8 semanas",
     ultima_actualizacion: "Marzo 2024",
     descripcion:
-      "Este proyecto consiste en un sitio web desarrollado para el Hostal San Jorge ubicado en la ciudad de Cafayate, provincia de Salta. El objetivo consistía en realizar un sitio web al hostal que brinde toda la información sobre el mismo y sus servicios, a su vez que los usuarios puedan acceder al mismo a través de la opción de sitio web que ofrece Google a los negocios registrados. Como mejoras futuras planeo refactorizar el sitio a una aplicación web usando stack MERN y TailwindCSS para los estilos, además de incorporar las opciones de reserva y métodos de pago entre otras funcionalidades.",
+      "Sitio web desarrollado para el Hostal San Jorge ubicado en la ciudad de Cafayate, provincia de Salta. El objetivo consistía en realizar una web al hostal que brinde toda la información sobre el mismo y sus servicios, a su vez que los usuarios puedan acceder al mismo a través de la opción de sitio web que ofrece Google a los negocios registrados. Como mejoras futuras planeo refactorizar el sitio a una aplicación web usando stack MERN y TailwindCSS para los estilos, además de incorporar las opciones de reserva y métodos de pago entre otras funcionalidades.",
     proyecto: "Freelance",
     responsabilidades: [
       "Implementé SEO básico",
@@ -134,9 +134,9 @@ const proyectos = [
     fecha: "Diciembre 2023",
     duracion: "1 semana",
     ultima_actualizacion: "Julio 2024",
-    descripcion: "",
+    descripcion: "El proyecto realizado es una aplicación web de temporizador donde el objetivo consistía en desarrollar las funcionalidades de iniciar, pausar, continuar y restablecer el temporizador. ",
     proyecto: "Individual",
-    responsabilidades: [""],
+    responsabilidades: ["El diseño fue replicado de una aplicación existente.", "Agregué en el menú de navegación las opciones para redirigir a aplicaciones desarrolladas de reloj y cronómetro."],
     github: "https://github.com/brunomry/Temporizador",
     enlace: "https://temporizador-online-bmr.netlify.app/",
     tecnologias: [
@@ -215,7 +215,7 @@ const proyectos = [
     ultima_actualizacion: "Julio 2024",
     descripcion: "El proyecto desarrollado es un sitio web donde el objetivo principal consistía en replicar los diseños predefinidos y practicar el uso de git y github.",
     proyecto: "Trabajo en equipo",
-    responsabilidades: ["Desempeñe rol de Scrummaster facilitando la comunicación y resolviendo problemas del equipo.","Desarrollé la tercera sección de la página principal","Desarrollé segunda sección de la página de Seguridad", "Encargado de aprobar los pull request"],
+    responsabilidades: ["Desempeñe rol de Scrummaster facilitando la comunicación y resolviendo problemas del equipo.","Desarrollé la tercera sección de la página principal","Desarrollé segunda sección de la página de Seguridad"],
     github: "https://github.com/brunomry/RollingBank",
     enlace: "https://rolling-bank-rb.netlify.app/",
     tecnologias: [
