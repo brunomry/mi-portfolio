@@ -75,7 +75,7 @@ const proyectos = [
     duracion: "8 semanas",
     ultima_actualizacion: "Marzo 2024",
     descripcion:
-      "Este proyecto consiste en un sitio web desarrollado para el Hostal San Jorge ubicado en la ciudad de Cafayate, provincia de Salta. El objetivo consistía en realizar un sitio web al hostal que brinde toda la información sobre el mismo y sus servicios, a su vez que los usuarios puedan acceder al mismo a través de la opción de sitio web que ofrece Google a los negocios registrados.",
+      "Este proyecto consiste en un sitio web desarrollado para el Hostal San Jorge ubicado en la ciudad de Cafayate, provincia de Salta. El objetivo consistía en realizar un sitio web al hostal que brinde toda la información sobre el mismo y sus servicios, a su vez que los usuarios puedan acceder al mismo a través de la opción de sitio web que ofrece Google a los negocios registrados. Como mejoras futuras planeo refactorizar el sitio a una aplicación web usando stack MERN y TailwindCSS para los estilos, además de incorporar las opciones de reserva y métodos de pago entre otras funcionalidades.",
     proyecto: "Freelance",
     responsabilidades: [
       "Implementé SEO básico",
@@ -105,9 +105,9 @@ const proyectos = [
     duracion: "10 días",
     ultima_actualizacion: "-",
     descripcion:
-      "El proyecto desarrollado es una aplicación web sobre Blog de recetas donde el objetivo principal consistía en que el administrador pueda iniciar sesión y gestionar las recetas.",
+      "Aplicación web sobre Blog de recetas donde el objetivo principal consistía en que el administrador pueda iniciar sesión y gestionar las recetas. El proyecto comenzó siendo en equipo desarrollándose todo el frontend y su continuación consistía en desarrollar de forma individual el backend de la aplicación.",
     proyecto: "En equipo",
-    responsabilidades: ["Realicé los mockups de interfaces","Desarrollé la página de detalle de receta", "Desarrollé menú de navegación y pie de página"],
+    responsabilidades: ["Realicé los mockups de interfaces","Desarrollé la página de detalle de receta", "Desarrollé menú de navegación y pie de página", "Desarrollé el backend de la aplicación"],
     github: "https://github.com/brunomry/frontendBlogDeRecetas",
     enlace: "https://rincondeplaceresgastronomicos-rpg.netlify.app/",
     tecnologias: [
