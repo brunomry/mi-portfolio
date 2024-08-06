@@ -22,6 +22,7 @@ const Menu = () => {
           <button
             class={`text-white lg:hidden ${desplegado ? "hidden" : "block"}`}
             type="button"
+            title="menu"
             onClick={() => desplegarMenu(true)}
           >
             <i class="bi bi-list text-[50px]"></i>
@@ -33,6 +34,7 @@ const Menu = () => {
           <div class="flex justify-end px-4">
             <button
               type="button"
+              title="cerrar"
               class={`text-white lg:hidden ${
                 desplegado ? "block duration-[0.8s]" : "hidden"
               }`}

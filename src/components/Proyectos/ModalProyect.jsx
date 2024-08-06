@@ -55,6 +55,24 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
                   <span className="font-normal">{proyecto.proyecto}</span>
                 </p>
               </div>
+              <div className="bg-[#eae8ff] p-4 rounded-md">
+                <p className="font-bold">
+                  Inicio:{" "}
+                  <span className="font-normal">{proyecto.fecha}</span>
+                </p>
+              </div>
+              <div className="bg-[#eae8ff] p-4 rounded-md">
+                <p className="font-bold">
+                  Duración:{" "}
+                  <span className="font-normal">{proyecto.duracion}</span>
+                </p>
+              </div>
+              <div className="bg-[#eae8ff] p-4 rounded-md">
+                <p className="font-bold">
+                  Última actualización:{" "}
+                  <span className="font-normal">{proyecto.ultima_actualizacion}</span>
+                </p>
+              </div>
             </div>
 
             <div className="bg-[#eae8ff] p-4 rounded-md mb-2">
