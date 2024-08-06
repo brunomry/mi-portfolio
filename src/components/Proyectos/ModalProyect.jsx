@@ -35,7 +35,7 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
               <ul className="flex flex-wrap gap-6">
                 {proyecto.tecnologias.map((t) => (
                   <div key={t.name} className="flex flex-col items-center">
-                    <img src={t.icon} alt={t.name} className="iconTechModal" />
+                    <img src={t.icon} alt={t.name} className="iconTechModal w-[25px]" />
                     <figcaption>{t.name}</figcaption>
                   </div>
                 ))}

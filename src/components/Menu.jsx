@@ -42,7 +42,7 @@ const Menu = () => {
             </button>
           </div>
           <div class="px-0 w-[100%]">
-            <ul
+            <div
               class={`w-[100%] lg:block lg:justify-center py-3 items-center gap-2 sm:gap-4 xl:pt-[30px] ${
                 desplegado ? "flex flex-col bg-[#028891]" : "hidden"
               } `}
@@ -74,7 +74,7 @@ const Menu = () => {
                   <i class="bi bi-linkedin text-white text-3xl sm:text-4xl"></i>
                 </a>
               </div>
-              <div class="rounded-[4px] pt-[30px] w-[100%] h-[100%]">
+              <ul class="rounded-[4px] pt-[30px] w-[100%] h-[100%]">
                 <li>
                   <a
                     class=" block w-[100%] font-bold xl:mb-2 navLink text-[#f6e8e8] duration-[0.5s] hover:duration-[0.5s] relative pb-[15px] md:text-[18px] lg:text-[20px] text-center"
@@ -120,8 +120,8 @@ const Menu = () => {
                     Contacto
                   </a>
                 </li>
-              </div>
-            </ul>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

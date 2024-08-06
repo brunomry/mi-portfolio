@@ -1,16 +1,14 @@
 import ab from "../../assets/proyectos/ambientebohemio.webp";
-import blog from "../../assets/proyectos/blog.avif";
-import temp from "../../assets/proyectos/temp.jpg";
-import rss1 from "../../assets/proyectos/rss1.jpg";
-import parrillada from "../../assets/proyectos/laparrillada.jpg";
-import technicaldoc from "../../assets/proyectos/technicaldoc.jpg";
-import rollingbank from "../../assets/proyectos/rollingbank.jpg";
-import trombones from "../../assets/proyectos/trombones.jpg";
-import blogrecetas from "../../assets/proyectos/blogrecetas.jpg";
-import peliculas from "../../assets/proyectos/peliculas.jpg";
-import sanjorge from "../../assets/frente.webp";
-import clima from "../../assets/proyectos/clima.jpg";
-import wpp from "../../assets/proyectos/wpp.jpg";
+import temp from "../../assets/proyectos/temp.webp";
+import rss1 from "../../assets/proyectos/rss1.webp";
+import parrillada from "../../assets/proyectos/laparrillada.webp";
+import technicaldoc from "../../assets/proyectos/technicaldoc.webp";
+import rollingbank from "../../assets/proyectos/rollingbank.webp";
+import trombones from "../../assets/proyectos/trombones.webp";
+import blogrecetas from "../../assets/proyectos/blogrecetas.webp";
+import sanjorge from "../../assets/proyectos/sanjorge.webp";
+import clima from "../../assets/proyectos/clima.webp";
+import wpp from "../../assets/proyectos/wpp.webp";
 import html5 from "../../assets/iconos/html5.svg";
 import css3 from "../../assets/iconos/css3.svg";
 import bootstrap5 from "../../assets/iconos/bootstrap5.svg";
@@ -62,6 +60,7 @@ const proyectos = [
       { name: "Github", icon: github },
       { name: "Trello", icon: trello },
       { name: "Draw", icon: draw },
+      { name: "Postman", icon: postman}
     ],
   },
   {
