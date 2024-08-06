@@ -6,8 +6,8 @@ const CardProyecto = ({ proyecto }) => {
 
   useEffect(() => {
     abrirModal 
-      ? document.body.classList.toggle('scroll')
-      : document.body.classList.toggle('scroll');
+      ? document.body.classList.add('scroll')
+      : document.body.classList.remove('scroll');
   }, [abrirModal]);
   
   const handleShowModal = (value) => {
