@@ -11,6 +11,10 @@
   font-family: "DM Sans", sans-serif;
 }
 
+.scroll {
+  overflow: hidden;
+}
+
 .active {
   color: #003635 !important;
 }
@@ -56,6 +60,10 @@
   border-bottom: 1px solid #028891;
 }
 
+.iconTechModal{
+  width: 25px;
+}
+
 @media all and (min-width: 640px) {
   .containerTech,
   .containerTabProyects,
@@ -83,5 +91,15 @@
 
   * {
     scroll-margin-top: 20px;
+  }
+}
+
+@media all and (min-width:1400px){
+  .iconTechModal{
+    width: 40px;
+  }
+
+  .fontSizeModal{
+    font-size: 18px;
   }
 }
