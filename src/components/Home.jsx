@@ -52,12 +52,20 @@ const Home = () => {
           </div>
 
           <div className="flex flex-col items-center justify-center gap-4 md:gap-5 xl:gap-6">
+            <div className="flex gap-3">
             <button
-              className="px-12 py-[6px] rounded-sm bg-[#028891] text-white border hover:bg-[#eae8ff] hover:text-[#028891] hover:border hover:border-[#028891] text-[16px] md:text-[18px] lg:text-[20px]"
+              className="px-5 py-[6px] w-[250px] rounded-[6px] bg-[#028891] text-white border hover:bg-[#eae8ff] hover:text-[#028891] hover:border hover:border-[#028891] text-[16px] md:text-[18px] lg:text-[20px]"
               onClick={handleDownloadPDF}
             >
               Descargar CV <i className="bi bi-download ms-2"></i>
             </button>
+            <a
+              className="px-5 py-[6px] w-[250px] rounded-[6px] bg-[#028891] text-white border hover:bg-[#eae8ff] hover:text-[#028891] hover:border hover:border-[#028891] text-[16px] md:text-[18px] lg:text-[20px]"
+              href="#contacto"
+            >
+              Contactar <i class="bi bi-envelope ms-2"></i>
+            </a> 
+            </div>
             <div className="flex gap-4 mt-2">
               <a
                 href="https://github.com/brunomry"

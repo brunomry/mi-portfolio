@@ -9,6 +9,7 @@ import blogrecetas from "../../assets/proyectos/blogrecetas.webp";
 import sanjorge from "../../assets/proyectos/sanjorge.webp";
 import clima from "../../assets/proyectos/clima.webp";
 import wpp from "../../assets/proyectos/wpp.webp";
+import panel from "../../assets/proyectos/panel.webp";
 import html5 from "../../assets/iconos/html5.svg";
 import css3 from "../../assets/iconos/css3.svg";
 import bootstrap5 from "../../assets/iconos/bootstrap5.svg";
@@ -284,6 +285,27 @@ const proyectos = [
     tecnologias: [
       { name: "HTML5", icon: html5 },
       { name: "CSS3", icon: css3 },
+    ],
+  },
+  {
+    id: 1948,
+    imagen: panel,
+    nombre: "Panel de notificaciones",
+    tipo: "Challenge",
+    fecha: "Julio 2024",
+    duracion: "1 semana",
+    ultima_actualizacion: "-",
+    descripcion: "Challengue de FrontendMentor que consistía en desarrollar un panel de notificaciones replicando los diseños sugeridos en distintos dispositivos donde además el usuario pueda marcar las notificaciones no leídas.",
+    proyecto: "Individual",
+    responsabilidades: ["Primera práctica haciendo uso del framework de TailwindCSS"],
+    github: "https://github.com/brunomry/panelNotificaciones_frontendMentor",
+    enlace: "https://notificaciones-fm.netlify.app/",
+    tecnologias: [
+      { name: "HTML5", icon: html5 },
+      { name: "CSS3", icon: css3 },
+      { name: "Javascript", icon: javascript },
+      { name: "React", icon: react },
+      { name: "Tailwind", icon: tailwind },
     ],
   },
 ];
