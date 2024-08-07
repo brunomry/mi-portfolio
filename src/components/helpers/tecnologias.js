@@ -18,6 +18,7 @@ import tailwind from "../../assets/iconos/tailwind.svg";
 import axios from "../../assets/iconos/axios.svg";
 import form from "../../assets/iconos/reacthookform.svg";
 import sql from "../../assets/iconos/sql.svg";
+import netlify from "../../assets/iconos/netlify.svg";
 
 const tecnologias = {
       actuales: [
@@ -39,7 +40,8 @@ const tecnologias = {
       { name: "Git", icon: git},
       { name: "Github", icon: github},
       { name: "Trello", icon: trello},
-      { name: "Draw", icon: draw}     
+      { name: "Draw", icon: draw},
+      { name: "Netlify", icon: netlify}        
     ],
     aprendiendo: [
       { name: "Redux", icon: redux},

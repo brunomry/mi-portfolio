@@ -28,6 +28,8 @@ import github from "../../assets/iconos/github.svg";
 import redux from "../../assets/iconos/redux.svg";
 import tailwind from "../../assets/iconos/tailwind.svg";
 import axios from "../../assets/iconos/axios.svg";
+import netlify from "../../assets/iconos/netlify.svg";
+
 
 const proyectos = [
   {
@@ -305,7 +307,7 @@ const proyectos = [
       { name: "CSS3", icon: css3 },
       { name: "Javascript", icon: javascript },
       { name: "React", icon: react },
-      { name: "Tailwind", icon: tailwind },
+      { name: "Tailwind", icon: tailwind }
     ],
   },
 ];
