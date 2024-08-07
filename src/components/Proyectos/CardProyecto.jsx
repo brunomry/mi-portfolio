@@ -25,7 +25,7 @@ const CardProyecto = ({ proyecto }) => {
       />
       <div className="flex flex-col justify-between gap-6 mt-3">
         <div className=" rounded-[4px] py-1 px-2 flex flex-col items-center mb-2">
-          <h4 className="mb-1 font-bold text-2xl text-[#028891]">{proyecto.nombre}</h4>
+          <h4 className="mb-1 font-bold text-[20px] md:text-2xl text-[#028891]">{proyecto.nombre}</h4>
           <p className="md:text-[18px] lg:text-[20px] mb-0 text-[#028891]">{proyecto.tipo}</p>
         </div>
         <div className="flex justify-center gap-2 xl:gap-3">

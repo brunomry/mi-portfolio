@@ -52,7 +52,7 @@ const Home = () => {
           </div>
 
           <div className="flex flex-col items-center justify-center gap-4 md:gap-5 xl:gap-6">
-            <div className="flex gap-3">
+            <div className="flex flex-col gap-2 md:flex-row md:gap-3">
             <button
               className="px-5 py-[6px] w-[250px] rounded-[6px] bg-[#028891] text-white border hover:bg-[#eae8ff] hover:text-[#028891] hover:border hover:border-[#028891] text-[16px] md:text-[18px] lg:text-[20px]"
               onClick={handleDownloadPDF}
