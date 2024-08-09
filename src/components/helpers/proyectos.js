@@ -279,9 +279,9 @@ const proyectos = [
     fecha: "Mayo 2024",
     duracion: "1 semana",
     ultima_actualizacion: "-",
-    descripcion: "",
+    descripcion: "Challengue propuesto por RollingCodeSchool donde el objetivo consistía en replicar la pantalla principal de WhatsApp web utilizando HTML5 y CSS3",
     proyecto: "Individual",
-    responsabilidades: [""],
+    responsabilidades: ["Buenas prácticas de SEO", "HTML semántico", "Buenas prácticas de código", "Uso de metodología BEM", "Diseño fiel"],
     github: "https://github.com/brunomry/challengeRollingCode",
     enlace: "https://challenge-rc-bmr.netlify.app/",
     tecnologias: [

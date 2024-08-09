@@ -5,7 +5,7 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
         show ? "block" : "hidden"
       }`}
     >
-      <div className="md:w-3/4 lg:w-[90%] fontSizeModal xl:w-[65%] h-[95vh] mx-auto flex flex-col justify-between lg:overflow-auto mt-4 bg-[#c9c4ff] border-4 border-[#c8a7f6] rounded-md p-2 md:p-4 lg:p-4 text-[#028891]">
+      <div className="md:w-[90%] fontSizeModal xl:w-[65%] min-h-[50vh] mx-auto flex flex-col justify-between lg:overflow-auto mt-4 bg-[#c9c4ff] border-4 border-[#c8a7f6] rounded-md p-2 md:p-4 lg:p-4 text-[#028891]">
         <div>
           <div className="flex justify-between items-center bg-[#eae8ff] py-2 px-4 w-[100%] rounded-md mb-2">
             <div className="flex items-center gap-2 ">
