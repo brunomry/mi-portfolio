@@ -3,7 +3,7 @@ import { Button, Form } from "react-bootstrap";
 
 const FormContacto = () => {
   return (
-    <form className="px-2 pt-4 pb-3 shadow w-[100%] bg-white xl:px-5 formContact rounded-[6px] sm:w-[80%] md:w-[75%]  xl:w-[500px]">
+    <form className="hidden px-2 pt-4 pb-3 shadow w-[100%] bg-white xl:px-5 formContact rounded-[6px] sm:w-[80%] md:w-[75%]  xl:w-[500px]">
       <div className="mb-3">
         <p className="mb-4 text-center md:text-[18px] lg:text-[20px] text-[#028891]">Envíame un mensaje y estaré encantado en responderte.</p>
         <label htmlFor="name" className="block md:text-[18px] lg:text-[20px] text-[#028891]">Nombre y Apellido</label>

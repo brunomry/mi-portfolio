@@ -44,10 +44,7 @@ const Home = () => {
               />
             </div>
             <p className="mx-2 xl:mx-5 my-2 text-[#028891] md:text-[18px] lg:text-[20px] xl:text-[22px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, iusto
-              provident ratione dolore libero vitae nam, assumenda asperiores
-              optio molestias animi eligendi cupiditate natus accusantium.
-              Fugiat suscipit veritatis et debitis.
+              
             </p>
           </div>
 

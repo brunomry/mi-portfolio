@@ -1,6 +1,29 @@
 import React from "react";
+import Swal from "sweetalert2";
 
 const CardCertificacion = ({ certificado }) => {
+
+  const mostrarCertificacion = () => {
+    Swal.fire({
+      icon: "info",
+      title: "Funcionalidad en desarrollo",
+      showClass: {
+        popup: `
+          animate__animated
+          animate__fadeInUp
+          animate__faster
+        `
+      },
+      hideClass: {
+        popup: `
+          animate__animated
+          animate__fadeOutDown
+          animate__faster
+        `
+      }
+    });
+  }
+
   return (
     <div className="rounded-[6px] pt-6 md:py-5 cardCertification w-[100%] min-w-[260px] h-[250px] duration-[0.8s] bg-[#F7F7F7] text-center md:text-start flex flex-col px-2 md:px-4 xl:px-10 shadow-xl lg:w-[75%] lg:h-[225px] xl:w-[60%]">
       <div className="flex flex-col justify-start rounded-[4px] h-[100%]">
@@ -12,7 +35,7 @@ const CardCertificacion = ({ certificado }) => {
 
       </div>
       <div className="flex justify-center mt-5 mb-2 sm:mt-0 sm:justify-end">
-        <button className=" rounded-[6px] bg-[#028891] md:text-[18px] text-white hover:bg-[#F7F7F7] hover:border hover:border-[#028891] hover:text-[#028891] px-12 py-2 flex items-center gap-2">
+        <button onClick={mostrarCertificacion} className=" rounded-[6px] bg-[#028891] md:text-[18px] text-white hover:bg-[#F7F7F7] hover:border hover:border-[#028891] hover:text-[#028891] px-12 py-2 flex items-center gap-2">
           <i className="text-2xl bi bi-zoom-in"></i>
           <span>Ver</span>
         </button>
