@@ -31,9 +31,7 @@ const Home = () => {
             Hola, soy Bruno Madozzo
           </h1>
 
-          <h2 className="text-[27px] text-[#028891] leading-8 md:leading-normal text-center align-middle sm:text-[33px] lg:text-[40px] font-bold mb-4 xl:mb-12">
-            Desarrollador Web Frontend
-          </h2>
+         
           <div className="w-[100%] xl:w-[800px] bg-[#f1f0fd] shadow-xl p-4 xl:p-12 rounded-2xl mb-4 xl:mb-12">
             <div className="block sm:hidden mx-auto w-[150px] h-[150px] rounded-[50%] border-[5px] border-[#12c0bd] lg:w-[180px] lg:h-[180px] mb-2">
               <img
@@ -43,9 +41,11 @@ const Home = () => {
                 className="shadow-xl w-[100%] h-[100%] rounded-[50%] object-cover"
               />
             </div>
-            <p className="mx-2 xl:mx-5 my-2 text-[#028891] md:text-[18px] lg:text-[20px] xl:text-[22px]">
-              
-            </p>
+            <div className="mx-2 xl:mx-5 my-2 text-[#028891] md:text-[18px] lg:text-[20px] xl:text-[22px]">
+            <h2 className="text-[27px] text-[#028891] leading-8 md:leading-normal text-center align-middle sm:text-[33px] lg:text-[40px] font-bold ">
+            Desarrollador Web Frontend
+          </h2>
+            </div>
           </div>
 
           <div className="flex flex-col items-center justify-center gap-4 md:gap-5 xl:gap-6">
