@@ -237,7 +237,7 @@ const proyectos = [
     duracion: "4 horas",
     fecha: "Junio 2022",
     ultima_actualizacion: "-",
-    descripcion: "La página desarrollada corresponde al 3° módulo de la certificación del curso Diseño responsive de FreeCodeCamp donde el objetivo era replicar el diseño predefinido.",
+    descripcion: "La página desarrollada corresponde al 3° módulo de la certificación del curso Diseño responsive de FreeCodeCamp donde el objetivo consistía en replicar el diseño establecido en el enunciado",
     proyecto: "Individual",
     responsabilidades: [],
     github: "https://github.com/brunomry/LandingPage",
