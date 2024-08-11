@@ -159,9 +159,9 @@ const proyectos = [
     fecha: "Septiembre 2023",
     duracion: "1 semana",
     ultima_actualizacion: "-",
-    descripcion: "",
+    descripcion: "El proyecto realizado tenía como objetivo replicar el diseño brindado usando HTML5 y CSS3 además de hacer que la página sea responsive.",
     proyecto: "Individual",
-    responsabilidades: [""],
+    responsabilidades: [],
     github: "https://github.com/brunomry/LaParrillada",
     enlace: "https://r-parrillada-resto.netlify.app/",
     tecnologias: [
@@ -198,9 +198,9 @@ const proyectos = [
     fecha: "Junio 2022",
     duracion: "5 horas",
     ultima_actualizacion: "-",
-    descripcion: "La página desarrollada corresponde al 2° módulo de la certificación del curso Diseño responsive de FreeCodeCamp donde el objetivo era replicar el diseño predefinido.",
+    descripcion: "La página desarrollada corresponde al 2° módulo de la certificación del curso Diseño responsive de FreeCodeCamp donde el objetivo consistía en replicar el diseño establecido en el enunciado.",
     proyecto: "Individual",
-    responsabilidades: [""],
+    responsabilidades: [],
     github: "https://github.com/brunomry/TechnicalDocumentation",
     enlace: "https://technicaldocumentation-bmr.netlify.app/",
     tecnologias: [
@@ -239,7 +239,7 @@ const proyectos = [
     ultima_actualizacion: "-",
     descripcion: "La página desarrollada corresponde al 3° módulo de la certificación del curso Diseño responsive de FreeCodeCamp donde el objetivo era replicar el diseño predefinido.",
     proyecto: "Individual",
-    responsabilidades: [""],
+    responsabilidades: [],
     github: "https://github.com/brunomry/LandingPage",
     enlace: "https://landingpage-bmr.netlify.app/",
     tecnologias: [
@@ -255,9 +255,9 @@ const proyectos = [
     fecha: "Febrero 2024",
     duracion: "1 semana",
     ultima_actualizacion: "Abril 2024",
-    descripcion: "",
+    descripcion: "Aplicación web de clima donde el objetivo consistía en hacer uso de la API Openweathermap para mostrar la información relacionada al clima ingresando la ubicación y seleccionando el país.",
     proyecto: "Individual",
-    responsabilidades: [""],
+    responsabilidades: ["Consumo de API externa para obtener información"],
     github: "https://github.com/brunomry/webDeClima_API_react",
     enlace: "https://api-clima-bmr.netlify.app/",
     tecnologias: [
@@ -299,7 +299,7 @@ const proyectos = [
     ultima_actualizacion: "-",
     descripcion: "Challengue de FrontendMentor que consistía en desarrollar un panel de notificaciones replicando los diseños sugeridos en distintos dispositivos donde además el usuario pueda marcar las notificaciones no leídas.",
     proyecto: "Individual",
-    responsabilidades: ["Primera práctica haciendo uso del framework de TailwindCSS"],
+    responsabilidades: ["Primera práctica haciendo uso del framework TailwindCSS"],
     github: "https://github.com/brunomry/panelNotificaciones_frontendMentor",
     enlace: "https://notificaciones-fm.netlify.app/",
     tecnologias: [

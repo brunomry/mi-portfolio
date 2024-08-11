@@ -79,14 +79,15 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
               <p className="font-bold">Descripción:</p>
               <p>{proyecto.descripcion}</p>
             </div>
-            <div className="bg-[#eae8ff] p-4 rounded-md mb-2">
+            <div className={`bg-[#eae8ff] p-4 rounded-md mb-2 ${proyecto.responsabilidades.length === 0 ? "hidden" : "block"}`}>
               <p className="font-bold">
                 {proyecto.proyecto === "Individual" || proyecto.proyecto === "Freelance"
                   ? "Aspectos relevantes"
                   : "Responsabilidades"}
               </p>
               <ul>
-                {proyecto.responsabilidades.map((r) => (
+                {proyecto.responsabilidades.length > 0 &&
+                  proyecto.responsabilidades.map((r) => (
                   <li key={r}>
                     <i className="bi bi-check2 text-[#028891] mr-2"></i>
                     {r}
