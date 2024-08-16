@@ -51,7 +51,7 @@ const AcercaDeMi = () => {
                 Soy estudiante de Ingeniería en Sistemas de Información con
                 enfoque en el desarrollo web frontend. Me destaco por mi
                 atención al detalle, por aportar ideas creativas de diseño y por
-                mi dedicación en cada proyecto que emprendo.
+                mi dedicación en cada proyecto que emprendo o me toca participar.
               </p>
             </div>
           </div>
