@@ -14,9 +14,13 @@ const CardProyecto = ({ proyecto }) => {
     setAbrirModal(value);
   };
 
+  const openWeb = () => {
+    window.open(proyecto.enlace, "_blank");
+  }
+
   return (
     <>
-     <div className="border-[#028891] border-[1px] rounded-md w-[100%] min-w-[280px] h-[425px] bg-[#f7f7f7] duration-[0.8s] sm:w-[300px] lg:w-[300px] lg:min-h-[300px] lg:duration-[0.7s] xl:w-[350px] cursor-pointer  hover:shadow-xl">
+     <div onClick={openWeb} className="border-[#028891] border-[1px] rounded-md w-[100%] min-w-[280px] h-[425px] bg-[#f7f7f7] duration-[0.8s] sm:w-[300px] lg:w-[300px] lg:min-h-[300px] lg:duration-[0.7s] xl:w-[350px] cursor-pointer  hover:shadow-xl">
       <img
         src={proyecto.imagen}
         alt={proyecto.nombre}

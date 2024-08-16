@@ -1,7 +1,7 @@
 import cv from "../assets/CV Bruno Madozzo Romay.pdf";
 import perfil from "../assets/perfilbg.png";
 
-const Home = () => {
+const AcercaDeMi = () => {
   const handleDownloadPDF = () => {
     const urlPDF = cv;
     window.open(urlPDF, "_blank");
@@ -120,4 +120,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default AcercaDeMi;

@@ -1,19 +1,22 @@
 import React, { useState } from "react";
 import CardProyecto from "./Proyectos/CardProyecto";
 import proyectos from "./helpers/proyectos";
-import {Tab, Tabs} from "react-bootstrap";
+import { Tab, Tabs } from "react-bootstrap";
 
 const Proyectos = () => {
   const [key, setKey] = useState("all");
 
-  const filtrarPorTipo = tipoProyecto => proyectos.filter(p => p.tipo === tipoProyecto);
+  const filtrarPorTipo = (tipoProyecto) =>
+    proyectos.filter((p) => p.tipo === tipoProyecto);
 
   return (
     <article
       className="py-3 flex flex-col gap-3 xl:gap-4 items-center px-3 w-[95%] min-h-[95vh]"
       id="proyectos"
     >
-      <h2 className="text-center font-bold text-[27px] md:text-[35px] lg:text-[38] xl:text-[40px] text-[#028891]">Proyectos</h2>
+      <h2 className="text-center font-bold text-[27px] md:text-[35px] lg:text-[38] xl:text-[40px] text-[#028891]">
+        Proyectos
+      </h2>
       <Tabs
         activeKey={key}
         onSelect={(k) => setKey(k)}
@@ -42,12 +45,13 @@ const Proyectos = () => {
         >
           {key === "apps" && (
             <div className="flex px-3 containerTabProyects sm:flex-wrap h-[450px] w-[100vw] sm:w-[100%]  sm:h-[100%] sm:pb-[50px]  sm:justify-center md:items-center gap-3 lg:gap-4 ">
-              {filtrarPorTipo("Aplicación web").length > 0 && filtrarPorTipo("Aplicación web").map((proyecto) => (
-                <CardProyecto
-                  key={proyecto.id}
-                  proyecto={proyecto}
-                ></CardProyecto>
-              ))}
+              {filtrarPorTipo("Aplicación web").length > 0 &&
+                filtrarPorTipo("Aplicación web").map((proyecto) => (
+                  <CardProyecto
+                    key={proyecto.id}
+                    proyecto={proyecto}
+                  ></CardProyecto>
+                ))}
             </div>
           )}
         </Tab>
@@ -104,7 +108,6 @@ const Proyectos = () => {
               ))}
             </div>
           )}
-          
         </Tab>
       </Tabs>
     </article>
