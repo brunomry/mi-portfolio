@@ -29,8 +29,8 @@ const tecnologias = {
       { name: "Bootstrap5", icon: bootstrap5 },
       { name: "Javascript", icon: javascript },
       { name: "React", icon: react },
-      { name: "React-Bootstrap", icon: reactbootstrap},
-      { name: "React-Router", icon: reactrouter},   
+      { name: "React Bootstrap", icon: reactbootstrap},
+      { name: "React Router", icon: reactrouter},   
       { name: "React Hook Form", icon: form},    
       { name: "Node JS", icon: node },
       { name: "Express JS", icon: express },  
@@ -46,7 +46,7 @@ const tecnologias = {
     aprendiendo: [
       { name: "Redux", icon: redux},
       { name: "Redux-Toolkit", icon: redux},
-      { name: "Tailwind", icon:tailwind},
+      { name: "TailwindCSS", icon:tailwind},
       { name: "Axios", icon: axios}
     ]
   }

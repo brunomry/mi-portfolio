@@ -17,7 +17,7 @@ const Proyectos = () => {
       <Tabs
         activeKey={key}
         onSelect={(k) => setKey(k)}
-        className="flex flex-col sm:flex-row gap-5 py-3 lg:mb-5 px-12 items-center rounded-[25px] tabs text-[#028891] bg-[#e0dffd]  md:text-[18px] lg:text-[20px]"
+        className="flex flex-col sm:flex-row md:gap-5 py-3 lg:mb-5 px-12 items-center rounded-[25px] tabs text-[#028891] bg-[#e0dffd]  md:text-[18px] lg:text-[20px]"
       >
         <Tab
           eventKey="all"
