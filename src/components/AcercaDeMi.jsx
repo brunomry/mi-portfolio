@@ -22,7 +22,7 @@ const AcercaDeMi = () => {
           <span>Idioma</span>
         </div>
       </div>
-      <div className="flex flex-col items-center md:flex-row sm:gap-[150px] gap-[50px]">
+      <div className="flex flex-col md:justify-center items-center md:flex-row sm:gap-[150px] gap-[50px]">
         <div className="text-center">
           <p className="text-xl text-[#028891]">
             ¡Bienvenido! <span title="saludo">👋</span>
@@ -34,7 +34,7 @@ const AcercaDeMi = () => {
             Desarrollador Web Frontend
           </h2>
 
-          <div className="w-[100%] xl:w-[50vw] text-center lg:text-start bg-[#f1f0fd] lg:mt-4  p-3 rounded-2xl mb-4 border-[#69bac0] border-[1px]">
+          <div className="w-[100%] xl:w-[75vw] aboutMe mx-auto text-center lg:text-start bg-[#f1f0fd] lg:mt-4  p-3 rounded-2xl mb-4 border-[#69bac0] border-[1px]">
             <div className="block sm:hidden mx-auto w-[150px] h-[150px] rounded-[50%] border-[5px] border-[#12c0bd] lg:w-[180px] lg:h-[180px] mb-2">
               <img
                 src={perfil}
@@ -55,7 +55,7 @@ const AcercaDeMi = () => {
               </p>
             </div>
           </div>
-          <div className="w-[100%] xl:w-[50vw] text-center lg:text-start bg-[#f1f0fd] lg:mt-2  p-3 rounded-2xl mb-4 border-[#69bac0] border-[1px]">
+          <div className="w-[100%] xl:w-[75vw] aboutMe mx-auto text-center lg:text-start bg-[#f1f0fd] lg:mt-2  p-3 rounded-2xl mb-4 border-[#69bac0] border-[1px]">
             <div className="mx-2 xl:mx-5 my-2 text-[#028891] md:text-[18px] lg:text-[20px] xl:text-[22px]">
               <h2 className="text-[25px] font-bold leading-8 md:leading-normal">
                 Buenas prácticas
@@ -67,7 +67,7 @@ const AcercaDeMi = () => {
               </p>
             </div>
           </div>
-          <div className="w-[100%] xl:w-[50vw] text-center lg:text-start bg-[#f1f0fd] lg:mt-2  p-3 rounded-2xl mb-4 border-[#69bac0] border-[1px]">
+          <div className="w-[100%] xl:w-[75vw] aboutMe mx-auto text-center lg:text-start bg-[#f1f0fd] lg:mt-2  p-3 rounded-2xl mb-4 border-[#69bac0] border-[1px]">
             <div className="mx-2 xl:mx-5 my-2 text-[#028891] md:text-[18px] lg:text-[20px] xl:text-[22px]">
               <h2 className="text-[25px] font-bold leading-8 md:leading-normal">
                 Compromiso y Crecimiento profesional

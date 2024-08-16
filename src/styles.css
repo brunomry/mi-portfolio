@@ -98,4 +98,8 @@
   .fontSizeModal{
     font-size: 18px;
   }
+
+  .aboutMe{
+    max-width: 50vw;
+  }
 }
