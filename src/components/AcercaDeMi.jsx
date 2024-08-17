@@ -43,7 +43,7 @@ const AcercaDeMi = () => {
                 className="shadow-xl w-[100%] h-[100%] rounded-[50%] object-cover"
               />
             </div>
-            <div className="mx-2 xl:mx-5 my-2 text-center lg:text-start text-[#028891] md:text-[18px] lg:text-[20px] xl:text-[22px]">
+            <div className="mx-2 xl:mx-5 my-2 text-center lg:text-start text-[#028891] md:text-[16px] lg:text-[18px] xl:text-[20px]">
               <h2 className=" text-[25px] font-bold leading-8 md:leading-normal">
                 Acerca de mí
               </h2>
@@ -56,7 +56,7 @@ const AcercaDeMi = () => {
             </div>
           </div>
           <div className="w-[100%] xl:w-[75vw] aboutMe mx-auto text-center lg:text-start bg-[#f1f0fd] lg:mt-2  p-3 rounded-2xl mb-4 border-[#69bac0] border-[1px]">
-            <div className="mx-2 xl:mx-5 my-2 text-[#028891] md:text-[18px] lg:text-[20px] xl:text-[22px]">
+            <div className="mx-2 xl:mx-5 my-2 text-[#028891] md:text-[16px] lg:text-[18px] xl:text-[20px]">
               <h2 className="text-[25px] font-bold leading-8 md:leading-normal">
                 Buenas prácticas
               </h2>
@@ -68,7 +68,7 @@ const AcercaDeMi = () => {
             </div>
           </div>
           <div className="w-[100%] xl:w-[75vw] aboutMe mx-auto text-center lg:text-start bg-[#f1f0fd] lg:mt-2  p-3 rounded-2xl mb-4 border-[#69bac0] border-[1px]">
-            <div className="mx-2 xl:mx-5 my-2 text-[#028891] md:text-[18px] lg:text-[20px] xl:text-[22px]">
+            <div className="mx-2 xl:mx-5 my-2 text-[#028891] md:text-[16px] lg:text-[18px] xl:text-[20px]">
               <h2 className="text-[25px] font-bold leading-8 md:leading-normal">
                 Compromiso y Crecimiento profesional
               </h2>
@@ -83,13 +83,13 @@ const AcercaDeMi = () => {
           <div className="flex flex-col items-center justify-center gap-4 md:gap-5 xl:gap-6">
             <div className="flex flex-col gap-2 md:flex-row md:gap-3">
               <button
-                className="px-5 py-[6px] w-[250px] rounded-[6px] bg-[#028891] text-white border hover:bg-[#f1f0fd] hover:text-[#028891] hover:border hover:border-[#028891] text-[16px] md:text-[18px] lg:text-[20px]"
+                className="px-5 py-[6px] w-[250px] rounded-[6px] bg-[#028891] text-white border hover:bg-[#f1f0fd] hover:text-[#028891] hover:border hover:border-[#028891] text-[16px] md:text-[16px] lg:text-[18px]"
                 onClick={handleDownloadPDF}
               >
                 Descargar CV <i className="bi bi-download ms-2"></i>
               </button>
               <a
-                className="px-5 py-[6px] w-[250px] rounded-[6px] bg-[#028891] text-white border hover:bg-[#f1f0fd] hover:text-[#028891] hover:border hover:border-[#028891] text-[16px] md:text-[18px] lg:text-[20px]"
+                className="px-5 py-[6px] w-[250px] rounded-[6px] bg-[#028891] text-white border hover:bg-[#f1f0fd] hover:text-[#028891] hover:border hover:border-[#028891] text-[16px] md:text-[16px] lg:text-[18px]"
                 href="#contacto"
               >
                 Contactar <i class="bi bi-envelope ms-2"></i>

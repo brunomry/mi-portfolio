@@ -28,7 +28,7 @@ const CardCertificacion = ({ certificado }) => {
     <div className="rounded-[6px] pt-6 md:pb-2 cardCertification w-[100%] min-w-[260px] h-[225px]  md:h-[250px] duration-[0.8s] bg-[#F7F7F7] text-center md:text-start flex flex-col px-2 md:px-4 xl:px-10 shadow-xl lg:w-[75%] lg:h-[225px] xl:w-[60%]">
       <div className="flex flex-col justify-start rounded-[4px] h-[100%]">
           <h5 className="mb-1 font-bold text-[#028891] md:text-[20px] lg:text-[24px]">{certificado.titulo}</h5>
-          <p className="text-[#028891] md:text-[18px] lg:text-[20px]">{certificado.org}</p>
+          <p className="text-[#028891] md:text-[16px] lg:text-[18px] xl:text-[20px]">{certificado.org}</p>
           <p className="text-[#028891] mt-4">
             {certificado.fechaInicio} | {certificado.fechaFin}
           </p>

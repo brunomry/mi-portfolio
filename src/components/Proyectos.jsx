@@ -20,7 +20,7 @@ const Proyectos = () => {
       <Tabs
         activeKey={key}
         onSelect={(k) => setKey(k)}
-        className="flex flex-col sm:flex-row md:gap-5 py-3 lg:mb-5 px-12 items-center rounded-[25px] tabs text-[#028891] bg-[#e0dffd]  md:text-[18px] lg:text-[20px]"
+        className="flex flex-col sm:flex-row px-2 gap-2 xl:gap-5 py-3 lg:mb-5 xl:px-12 items-center rounded-[25px] tabs text-[#028891] bg-[#e0dffd]  md:text-[16px] lg:text-[18px] xl:text-[20px]"
       >
         <Tab
           eventKey="all"
@@ -72,13 +72,13 @@ const Proyectos = () => {
           )}
         </Tab>
         <Tab
-          eventKey="landing"
-          title="Landing Pages"
+          eventKey="challenge"
+          title="Challenges"
           className="flex flex-wrap items-center justify-center gap-3 gap-lg-4"
         >
-          {key === "landing" && (
+          {key === "challenge" && (
             <div className="flex px-3 containerTabProyects sm:flex-wrap h-[450px] w-[100vw] sm:w-[100%]  sm:h-[100%] sm:pb-[50px]  sm:justify-center md:items-center gap-3 lg:gap-4 ">
-              {filtrarPorTipo("Landing Page").map((proyecto) => (
+              {filtrarPorTipo("Challenge").map((proyecto) => (
                 <CardProyecto
                   key={proyecto.id}
                   proyecto={proyecto}
@@ -94,13 +94,13 @@ const Proyectos = () => {
         >
           {key === "otros" && (
             <div className="flex px-3 containerTabProyects sm:flex-wrap h-[450px] w-[100vw] sm:w-[100%] sm:h-[100%] sm:pb-[50px]  sm:justify-center md:items-center gap-3 lg:gap-4 ">
-              {filtrarPorTipo("Otro").map((proyecto) => (
+              {filtrarPorTipo("One Page").map((proyecto) => (
                 <CardProyecto
                   key={proyecto.id}
                   proyecto={proyecto}
                 ></CardProyecto>
               ))}
-              {filtrarPorTipo("Challenge").map((proyecto) => (
+              {filtrarPorTipo("Landing Page").map((proyecto) => (
                 <CardProyecto
                   key={proyecto.id}
                   proyecto={proyecto}

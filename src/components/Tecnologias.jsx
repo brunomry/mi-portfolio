@@ -10,7 +10,7 @@ const Tecnologias = () => {
       <h2 className="font-bold mb-4 text-[27px] md:text-[35px] lg:text-[38] xl:text-[40px] text-[#028891]">
         Tecnologías
       </h2>
-      <p className="text-center px-2 md:text-[18px] lg:text-[20px]">
+      <p className="text-center px-2 md:text-[16px] lg:text-[18px] xl:text-[20px]">
         Estas son las tecnologías que utilizo en mis proyectos o de las cuales
         tengo conocimientos.
       </p>

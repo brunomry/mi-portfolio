@@ -11,11 +11,11 @@ const Contacto = () => {
       <div className="flex flex-col gap-2 md:flex-row xl:gap-3 ">
         <FormContacto></FormContacto>
         <div className="flex flex-col items-center">
-          <p className="mt-5 text-center descriptionContact sm:w-[80%] lg:text-start md:text-[18px] lg:text-[20px] text-[#028891]">
+          <p className="mt-5 text-center descriptionContact sm:w-[80%] lg:text-start md:text-[16px] lg:text-[18px] xl:text-[20px] text-[#028891]">
             Si estás interesado en mi perfil, no dudes en ponerte en contacto
             conmigo.{" "}
           </p>
-          <div className="flex flex-col gap-2 mt-6 md:text-[18px] lg:text-[20px] text-[#028891]">
+          <div className="flex flex-col gap-2 mt-6 md:text-[16px] lg:text-[18px] xl:text-[20px] text-[#028891]">
             <div className="w-[100%] bg-white rounded-[4px] flex px-5 py-2 items-center gap-5 ">
               <i className="text-4xl text-red-500 bi bi-google" title="Email"></i>
               <span className="">brunomadozzo@gmail.com</span>
@@ -33,7 +33,7 @@ const Contacto = () => {
               <span className="">Tucumán, Argentina</span>
             </div>
           </div>
-          {/* <p className="mt-5 mb-4 text-center sizeText md:text-[18px] lg:text-[20px] text-[#028891]">
+          {/* <p className="mt-5 mb-4 text-center sizeText md:text-[16px] lg:text-[18px] xl:text-[20px] text-[#028891]">
             ¡Gracias por visitar mi portfolio!
           </p> */}
         </div>

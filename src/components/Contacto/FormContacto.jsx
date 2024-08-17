@@ -5,8 +5,8 @@ const FormContacto = () => {
   return (
     <form className="hidden px-2 pt-4 pb-3 shadow w-[100%] bg-white xl:px-5 formContact rounded-[6px] sm:w-[80%] md:w-[75%]  xl:w-[500px]">
       <div className="mb-3">
-        <p className="mb-4 text-center md:text-[18px] lg:text-[20px] text-[#028891]">Envíame un mensaje y estaré encantado en responderte.</p>
-        <label htmlFor="name" className="block md:text-[18px] lg:text-[20px] text-[#028891]">Nombre y Apellido</label>
+        <p className="mb-4 text-center md:text-[16px] lg:text-[18px] xl:text-[20px] text-[#028891]">Envíame un mensaje y estaré encantado en responderte.</p>
+        <label htmlFor="name" className="block md:text-[16px] lg:text-[18px] xl:text-[20px] text-[#028891]">Nombre y Apellido</label>
         <Form.Control
           id="name"
           className="block py-2 border-b-[1px] input focus:border-b-[1px] w-[100%] border-[#028891]"
@@ -18,7 +18,7 @@ const FormContacto = () => {
       </div>
 
       <div className="mb-3" >
-        <label htmlFor="email" className="block md:text-[18px] lg:text-[20px] text-[#028891]">Email</label>
+        <label htmlFor="email" className="block md:text-[16px] lg:text-[18px] xl:text-[20px] text-[#028891]">Email</label>
         <Form.Control
           id="email"
           className="block py-2 border-b-[1px] input w-[100%] border-[#028891]"
@@ -29,7 +29,7 @@ const FormContacto = () => {
         />
       </div>
       <div className="mb-3 ">
-        <label htmlFor="subject" className="block md:text-[18px] lg:text-[20px] text-[#028891]">Asunto</label>
+        <label htmlFor="subject" className="block md:text-[16px] lg:text-[18px] xl:text-[20px] text-[#028891]">Asunto</label>
         <Form.Control
           id="subject"
           className="block py-2 border-b-[1px] input w-[100%] border-[#028891]"
@@ -40,7 +40,7 @@ const FormContacto = () => {
         />
       </div>
       <div className="mb-3">
-        <Form.Label htmlFor="message" className="block mb-1 md:text-[18px] lg:text-[20px] text-[#028891]">Mensaje</Form.Label>
+        <Form.Label htmlFor="message" className="block mb-1 md:text-[16px] lg:text-[18px] xl:text-[20px] text-[#028891]">Mensaje</Form.Label>
         <Form.Control
           as="textarea"
           className="ps-2 input textarea h-[150px] rounded-[4px] border-[1px] block py-2 input w-[100%] border-[#028891]"
