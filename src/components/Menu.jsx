@@ -16,7 +16,7 @@ const Menu = () => {
             desplegado ? "hidden" : "block"
           }`}
         >
-          <h2 className="block my-auto text-white font-bold text-[1.25rem]">
+          <h2 className="block my-auto text-white font-bold text-[1.125rem]">
             Bruno Madozzo
           </h2>
           <button
@@ -49,7 +49,7 @@ const Menu = () => {
                 desplegado ? "flex flex-col bg-[#028891]" : "hidden"
               } `}
             >
-              <div class="hidden lg:block mx-auto w-[150px] h-[150px] rounded-[50%] border-[5px] border-[#12c0bd] lg:w-[180px] lg:h-[180px] mb-2 shadow">
+              <div class="hidden lg:block mx-auto md:w-[125px] md:h-[125px] xl:w-[150px] xl:h-[150px] rounded-[50%] border-[5px] border-[#12c0bd] lg:w-[180px] lg:h-[180px] mb-2 shadow">
                 <img
                   src={perfil}
                   alt="Bruno Madozzo"
@@ -57,7 +57,7 @@ const Menu = () => {
                   class="shadow-xl w-[100%] h-[100%] rounded-[50%] object-cover"
                 />
               </div>
-              <h2 class="text-center text-white text-[32px] mb-2">
+              <h2 class="text-center text-white text-[25px] mb-2">
                 Bruno Madozzo
               </h2>
               <div class="flex justify-center xl:mb-4 gap-3">
@@ -79,7 +79,7 @@ const Menu = () => {
               <ul class="rounded-[4px] pt-[30px] w-[100%] h-[100%]">
                 <li>
                   <a
-                    class=" block w-[100%] font-bold xl:mb-2 navLink text-[#f6e8e8] duration-[0.5s] hover:duration-[0.5s] relative pb-[15px] md:text-[18px] lg:text-[20px] text-center"
+                    class=" block w-[100%] font-bold xl:mb-2 navLink text-[#f6e8e8] duration-[0.5s] hover:duration-[0.5s] relative pb-[15px] xl:text-[1.125rem]  text-center"
                     href="#sobremi"
                     onClick={() => desplegarMenu(false)}
                   >
@@ -88,7 +88,7 @@ const Menu = () => {
                 </li>
                 <li>
                   <a
-                    class="block w-[100%] font-bold xl:mb-2 navLink text-[#f6e8e8] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px] md:text-[18px] lg:text-[20px] text-center"
+                    class="block w-[100%] font-bold xl:mb-2 navLink text-[#f6e8e8] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px] xl:text-[1.125rem]  text-center"
                     href="#tecnologias"
                     onClick={() => desplegarMenu(false)}
                   >
@@ -97,7 +97,7 @@ const Menu = () => {
                 </li>
                 <li>
                   <a
-                    class="block font-bold xl:mb-2 navLink text-[#f6e8e8] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px] md:text-[18px] lg:text-[20px] text-center"
+                    class="block font-bold xl:mb-2 navLink text-[#f6e8e8] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px] xl:text-[1.125rem]  text-center"
                     href="#proyectos"
                     onClick={() => desplegarMenu(false)}
                   >
@@ -106,7 +106,7 @@ const Menu = () => {
                 </li>
                 <li>
                   <a
-                    class="block font-bold xl:mb-2 navLink text-[#f6e8e8] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px] md:text-[18px] lg:text-[20px] text-center"
+                    class="block font-bold xl:mb-2 navLink text-[#f6e8e8] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px] xl:text-[1.125rem]  text-center"
                     href="#certificaciones"
                     onClick={() => desplegarMenu(false)}
                   >
@@ -115,7 +115,7 @@ const Menu = () => {
                 </li>
                 <li>
                   <a
-                    class="block font-bold xl:mb-2 navLink text-[#f6e8e8] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px] md:text-[18px] lg:text-[20px] text-center"
+                    class="block font-bold xl:mb-2 navLink text-[#f6e8e8] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px] xl:text-[1.125rem]  text-center"
                     href="#contacto"
                     onClick={() => desplegarMenu(false)}
                   >

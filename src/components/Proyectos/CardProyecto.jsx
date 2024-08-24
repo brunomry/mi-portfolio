@@ -26,12 +26,12 @@ const CardProyecto = ({ proyecto }) => {
       <div className="flex flex-col justify-between gap-6 mt-3">
         <div className=" rounded-[4px] py-1 px-2 flex flex-col items-center mb-2">
           <h4 className="mb-1 font-bold text-[20px] md:text-[20px] xl:text-2xl text-[#028891]">{proyecto.nombre}</h4>
-          <p className="md:text-[16px] lg:text-[18px] xl:text-[20px] mb-0 text-[#028891]">{proyecto.tipo}</p>
+          <p className="md:text-[1rem] xl:text-[1.125rem]  mb-0 text-[#028891]">{proyecto.tipo}</p>
         </div>
         <div className="flex justify-center gap-2 xl:gap-3">
           <a
             href={proyecto.github}
-            className="md:text-[16px] lg:text-[18px] xl:text-[20px] rounded-[6px] px-3 text-[#028891] border border-[#028891] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#028891] hover:text-[#fff] hover:border-[#000] flex flex-col items-center "
+            className="md:text-[1rem] xl:text-[1.125rem]  rounded-[6px] px-3 text-[#028891] border border-[#028891] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#028891] hover:text-[#fff] hover:border-[#000] flex flex-col items-center "
             target="_blank"
             title="Ver código"
           >
@@ -40,7 +40,7 @@ const CardProyecto = ({ proyecto }) => {
           </a>
           <a
             href={proyecto.enlace}
-            className="md:text-[16px] lg:text-[18px] xl:text-[20px] rounded-[6px] px-3 text-[#028891] border border-[#028891] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#028891] hover:text-[#fff] hover:border-[#000] flex flex-col items-center"
+            className="md:text-[1rem] xl:text-[1.125rem]  rounded-[6px] px-3 text-[#028891] border border-[#028891] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#028891] hover:text-[#fff] hover:border-[#000] flex flex-col items-center"
             target="_blank"
             title="Ver página"
           >
@@ -48,7 +48,7 @@ const CardProyecto = ({ proyecto }) => {
             <span>Visitar</span>
           </a>
           <button
-            className="hidden md:flex md:text-[16px] lg:text-[18px] xl:text-[20px] rounded-[6px] px-3 border-[1px] text-[#028891] border-[#028891] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#028891] hover:text-[#fff] hover:border-[#000]  flex-col items-center "
+            className="hidden md:flex md:text-[1rem] xl:text-[1.125rem]  rounded-[6px] px-3 border-[1px] text-[#028891] border-[#028891] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#028891] hover:text-[#fff] hover:border-[#000]  flex-col items-center "
             title="Ver más información del proyecto"
             onClick={()=>handleShowModal(true)}
           >

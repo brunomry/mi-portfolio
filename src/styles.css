@@ -11,10 +11,6 @@
   font-family: "DM Sans", sans-serif;
 }
 
-.scroll {
-  overflow: hidden;
-}
-
 .active {
   color: #003635 !important;
 }
@@ -101,5 +97,10 @@
 
   .aboutMe{
     max-width: 50vw;
+  }
+
+  .modal{
+    height: inherit!important;
+    min-height: 50vh!important;
   }
 }

@@ -1,11 +1,11 @@
 const ModalProyect = ({ show, handleShowModal, proyecto }) => {
   return (
     <div
-      className={`fixed top-0 bottom-0 left-0 right-0 z-[99]  bg-gray-800 bg-opacity-50  ${
+      className={` fixed top-0 bottom-0 left-0 right-0 z-[99]  bg-gray-800 bg-opacity-50  ${
         show ? "block" : "hidden"
       }`}
     >
-      <div className="md:w-[90%] fontSizeModal xl:w-[65%] min-h-[50vh] mx-auto flex flex-col justify-between lg:overflow-auto mt-4 bg-[#c9c4ff] border-4 border-[#c8a7f6] rounded-md p-2 md:p-4 lg:p-4 text-[#028891]">
+      <div className="md:w-[90%] modal fontSizeModal xl:w-[65%] lg:h-[90vh] mx-auto flex flex-col justify-between mt-4 bg-[#c9c4ff] lg:overflow-y-auto border-4 border-[#c8a7f6] rounded-md p-2 md:p-4 lg:p-4 text-[#028891]">
         <div>
           <div className="flex justify-between items-center bg-[#eae8ff] py-2 px-4 w-[100%] rounded-md mb-2">
             <div className="flex items-center gap-2 ">

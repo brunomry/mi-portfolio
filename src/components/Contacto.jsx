@@ -4,18 +4,18 @@ import FormContacto from "./Contacto/FormContacto";
 const Contacto = () => {
   return (
     <article
-      className="flex flex-col items-center justify-center gap-2 min-h-[550px] w-[95%] px-3 py-4 containerContact sm:gap-5 contact"
+      className="flex flex-col items-center justify-start gap-2 min-h-[400px] xl:h-[550px] w-[95%] px-3 py-4 containerContact sm:gap-5 contact"
       id="contacto"
     >
       <h2 className="font-bold text-[27px] md:text-[35px] lg:text-[38px] xl:text-[40px] text-[#028891]">Contáctame</h2>
       <div className="flex flex-col gap-2 md:flex-row xl:gap-3 ">
         <FormContacto></FormContacto>
         <div className="flex flex-col items-center">
-          <p className="mt-5 text-center descriptionContact sm:w-[80%] lg:text-start md:text-[16px] lg:text-[18px] xl:text-[20px] text-[#028891]">
+          <p className=" text-center descriptionContact sm:w-[80%] lg:text-start md:text-[1rem] xl:text-[1.125rem]  text-[#028891]">
             Si estás interesado en mi perfil, no dudes en ponerte en contacto
             conmigo.{" "}
           </p>
-          <div className="flex flex-col gap-2 mt-6 md:text-[16px] lg:text-[18px] xl:text-[20px] text-[#028891]">
+          <div className="flex flex-col gap-2 mt-6 md:text-[1rem] xl:text-[1.125rem]  text-[#028891]">
             <div className="w-[100%] bg-white rounded-[4px] flex px-5 py-2 items-center gap-5 ">
               <i className="text-4xl text-red-500 bi bi-google" title="Email"></i>
               <span className="">brunomadozzo@gmail.com</span>
@@ -33,7 +33,7 @@ const Contacto = () => {
               <span className="">Tucumán, Argentina</span>
             </div>
           </div>
-          {/* <p className="mt-5 mb-4 text-center sizeText md:text-[16px] lg:text-[18px] xl:text-[20px] text-[#028891]">
+          {/* <p className="mt-5 mb-4 text-center sizeText md:text-[1rem] xl:text-[1.125rem]  text-[#028891]">
             ¡Gracias por visitar mi portfolio!
           </p> */}
         </div>

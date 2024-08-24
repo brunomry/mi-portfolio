@@ -78,9 +78,10 @@ const proyectos = [
     duracion: "8 semanas",
     ultima_actualizacion: "Marzo 2024",
     descripcion:
-      "Sitio web desarrollado para el Hostal San Jorge ubicado en la ciudad de Cafayate, provincia de Salta. El objetivo consistía en realizar una web al hostal que brinde toda la información sobre el mismo y sus servicios, a su vez que los usuarios puedan acceder al mismo a través de la opción de sitio web que ofrece Google a los negocios registrados. Como mejoras futuras planeo refactorizar el sitio a una aplicación web usando stack MERN y TailwindCSS para los estilos, además de incorporar las opciones de reserva y métodos de pago entre otras funcionalidades.",
+      "Sitio web desarrollado para el Hostal San Jorge ubicado en la ciudad de Cafayate, provincia de Salta. El objetivo consistía en realizar una web al hostal que brinde toda la información sobre el mismo y sus servicios, a su vez que los usuarios puedan acceder al mismo a través de la opción de sitio web que ofrece Google a los negocios registrados. Como mejoras futuras planeo refactorizar el sitio a una aplicación web usando stack MERN y TailwindCSS para los estilos, además de incorporar las opciones de reserva y métodos de pago entre otras funcionalidades. ",
     proyecto: "Freelance",
     responsabilidades: [
+      "Logré posicionar el sitio web en los primeros resultados de búsqueda en Google, mejorando su visibilidad y accesibilidad para potenciales clientes del hostal.",
       "Implementé SEO básico",
       "Implementé funcionalidad de contacto vía WhatsApp y un formulario de contacto para que los visitantes realicen sus consultas",
       "Implementé funcionalidad de traducción de español a inglés para todas las páginas del sitio",
