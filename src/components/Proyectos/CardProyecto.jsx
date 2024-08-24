@@ -4,11 +4,11 @@ import ModalProyect from './ModalProyect';
 const CardProyecto = ({ proyecto }) => {
   const [abrirModal, setAbrirModal] = useState(false);
 
-  useEffect(() => {
-    abrirModal 
-      ? document.body.classList.add('scroll')
-      : document.body.classList.remove('scroll');
-  }, [abrirModal]);
+  // useEffect(() => {
+  //   abrirModal 
+  //     ? document.body.classList.add('scroll')
+  //     : document.body.classList.remove('scroll');
+  // }, [abrirModal]);
   
   const handleShowModal = (value) => {
     setAbrirModal(value);
