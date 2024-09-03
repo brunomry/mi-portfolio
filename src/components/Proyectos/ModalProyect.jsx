@@ -5,8 +5,8 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
         show ? "block" : "hidden"
       }`}
     >
-      <div className="md:w-[90%] modal fontSizeModal xl:w-[65%] lg:h-[90vh] mx-auto flex flex-col justify-between mt-4 bg-[#c9c4ff] lg:overflow-y-auto border-4 border-[#c8a7f6] rounded-md p-2 md:p-4 lg:p-4 text-[#028891]">
-        <div>
+      <div className="md:w-[90%] modal fontSizeModal xl:w-[65%] lg:h-[90vh] xl:min-h[80] mx-auto flex flex-col justify-between mt-4 bg-[#c9c4ff] lg:overflow-auto border-4 border-[#c8a7f6] rounded-md p-2 md:p-4 lg:p-4 text-[#028891]">
+        <div className="lg:h-[90vh]">
           <div className="flex justify-between items-center bg-[#eae8ff] py-2 px-4 w-[100%] rounded-md mb-2">
             <div className="flex items-center gap-2 ">
               <h3 className="text-lg font-bold md:text-2xl lg:text-3xl">
@@ -35,7 +35,11 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
               <ul className="flex flex-wrap gap-6">
                 {proyecto.tecnologias.map((t) => (
                   <div key={t.name} className="flex flex-col items-center">
-                    <img src={t.icon} alt={t.name} className="iconTechModal w-[25px]" />
+                    <img
+                      src={t.icon}
+                      alt={t.name}
+                      className="iconTechModal w-[25px]"
+                    />
                     <figcaption>{t.name}</figcaption>
                   </div>
                 ))}
@@ -57,8 +61,7 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
               </div>
               <div className="bg-[#eae8ff] p-4 rounded-md">
                 <p className="font-bold">
-                  Inicio:{" "}
-                  <span className="font-normal">{proyecto.fecha}</span>
+                  Inicio: <span className="font-normal">{proyecto.fecha}</span>
                 </p>
               </div>
               <div className="bg-[#eae8ff] p-4 rounded-md">
@@ -70,7 +73,9 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
               <div className="bg-[#eae8ff] p-4 rounded-md">
                 <p className="font-bold">
                   Última actualización:{" "}
-                  <span className="font-normal">{proyecto.ultima_actualizacion}</span>
+                  <span className="font-normal">
+                    {proyecto.ultima_actualizacion}
+                  </span>
                 </p>
               </div>
             </div>
@@ -79,33 +84,37 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
               <p className="font-bold">Descripción:</p>
               <p>{proyecto.descripcion}</p>
             </div>
-            <div className={`bg-[#eae8ff] p-4 rounded-md mb-2 ${proyecto.responsabilidades.length === 0 ? "hidden" : "block"}`}>
+            <div
+              className={`bg-[#eae8ff] p-4 rounded-md mb-2 ${
+                proyecto.responsabilidades.length === 0 ? "hidden" : "block"
+              }`}
+            >
               <p className="font-bold">
-                {proyecto.proyecto === "Individual" || proyecto.proyecto === "Freelance"
+                {proyecto.proyecto === "Individual" ||
+                proyecto.proyecto === "Freelance"
                   ? "Aspectos relevantes"
-                  : "Responsabilidades"}
+                  : "Responsabilidades o Aspectos relevantes"}
               </p>
               <ul>
                 {proyecto.responsabilidades.length > 0 &&
                   proyecto.responsabilidades.map((r) => (
-                  <li key={r}>
-                    <i className="bi bi-check2 text-[#028891] mr-2"></i>
-                    {r}
-                  </li>
-                ))}
+                    <li key={r}>
+                      <i className="bi bi-check2 text-[#028891] mr-2"></i>
+                      {r}
+                    </li>
+                  ))}
               </ul>
             </div>
           </article>
+          <button
+            type="button"
+            className="w-[100%] mt-2 py-2 bg-[#028891] text-white rounded-md text-lg"
+            onClick={() => handleShowModal(false)}
+            title="Cerrar"
+          >
+            Cerrar
+          </button>
         </div>
-
-        <button
-          type="button"
-          className="w-[100%] mt-2 py-2 bg-[#028891] text-white rounded-md text-lg"
-          onClick={() => handleShowModal(false)}
-          title="Cerrar"
-        >
-          Cerrar
-        </button>
       </div>
     </div>
   );

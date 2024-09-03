@@ -1,3 +1,4 @@
+import laburandoando from "../../assets/proyectos/laburandoando.png";
 import ab from "../../assets/proyectos/ambientebohemio.webp";
 import temp from "../../assets/proyectos/temp.webp";
 import rss1 from "../../assets/proyectos/rss1.webp";
@@ -32,6 +33,50 @@ import netlify from "../../assets/iconos/netlify.svg";
 
 
 const proyectos = [
+  {
+    id: 111,
+    imagen: laburandoando,
+    nombre: "LaburandoAndo",
+    tipo: "Aplicación web",
+    fecha: "Agosto 2024",
+    duracion: "6 semanas",
+    ultima_actualizacion: "-",
+    descripcion:
+      "LaburandoAndo es una plataforma web diseñada para conectar a trabajadores independientes con clientes que necesitan sus servicios. La aplicación permite a los profesionales crear y gestionar sus perfiles, publicar anuncios de trabajo y recibir opiniones de sus clientes. Los usuarios pueden buscar y filtrar profesionales por categorías, ver detalles de sus servicios y contratar directamente desde la plataforma.",
+    proyecto: "En equipo",
+    responsabilidades: [
+      "Desempeñé rol de Scrummaster.",
+      "Realicé los mockups de interfaces de toda la aplicación mediante la herramienta Draw.",
+      "Refactoricé la estructura del proyecto utilizando Arquitectura basada en dominios para facilitar el mantenimiento, escalabilidad y la colaboración entre los miembros del equipo",
+      "Colaboré en el desarrollo de todas las páginas",
+      "Implementé SEO básico",
+      "Desarrollé las páginas de Profesionales, Opciones de Registro, Quiénes Somos, Perfil Profesional, Publicación del profesional, Publicaciones del profesional, Soporte Admin, Categorías Admin, y Menú Lateral.",
+      "Desarrollé la funcionalidad para mostrar y agregar comentarios en el detalle de anuncio, eliminar comentarios como administrador, crear publicación como profesional, mostrar publicaciones en perfil profesional, mostrar mensajes en Soporte Admin",
+      "Colaboré en el desarrollo de funcionalidad para iniciar sesión."
+    ],
+    github: "https://github.com/FranprzDev/LaburandoAndo",
+    enlace: "https://laburando-ando.netlify.app/",
+    tecnologias: [
+      { name: "HTML5", icon: html5 },
+      { name: "CSS3", icon: css3 },
+      { name: "Bootstrap5", icon: bootstrap5 },
+      { name: "Javascript", icon: javascript },
+      { name: "React", icon: react },
+      { name: "React-Bootstrap", icon: reactbootstrap },
+      { name: "React-Router", icon: reactrouter },
+      { name: "Redux-Toolkit", icon: redux },
+      { name: "Axios", icon: axios },
+      { name: "Git", icon: git },
+      { name: "Github", icon: github },
+      { name: "Trello", icon: trello },
+      { name: "Draw", icon: draw },
+      { name: "Node JS", icon: node },
+      { name: "Express JS", icon: express },
+      { name: "MongoDB", icon: mongodb },
+      { name: "Postman", icon: postman},
+      { name: "Netlify", icon: netlify}
+    ],
+  },
   {
     id: 111,
     imagen: ab,
