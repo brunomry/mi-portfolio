@@ -38,7 +38,7 @@ const proyectos = [
     imagen: laburandoando,
     nombre: "LaburandoAndo",
     tipo: "Aplicación web",
-    fecha: "Agosto 2024",
+    fecha: "Julio 2024",
     duracion: "6 semanas",
     ultima_actualizacion: "-",
     descripcion:
@@ -48,8 +48,7 @@ const proyectos = [
       "Desempeñé rol de Scrummaster.",
       "Realicé los mockups de interfaces de toda la aplicación mediante la herramienta Draw.",
       "Refactoricé la estructura del proyecto utilizando Arquitectura basada en dominios para facilitar el mantenimiento, escalabilidad y la colaboración entre los miembros del equipo",
-      "Colaboré en el desarrollo de todas las páginas",
-      "Implementé SEO básico",
+      "Colaboré en el desarrollo de todas las páginas realizando las correcciones pertinentes con exhaustiva atención al detalle y verificando que cumplan con un diseño web responsive.",
       "Desarrollé las páginas de Profesionales, Opciones de Registro, Quiénes Somos, Perfil Profesional, Publicación del profesional, Publicaciones del profesional, Soporte Admin, Categorías Admin, y Menú Lateral.",
       "Desarrollé la funcionalidad para mostrar y agregar comentarios en el detalle de anuncio, eliminar comentarios como administrador, crear publicación como profesional, mostrar publicaciones en perfil profesional, mostrar mensajes en Soporte Admin",
       "Colaboré en el desarrollo de funcionalidad para iniciar sesión."
@@ -123,7 +122,7 @@ const proyectos = [
     duracion: "8 semanas",
     ultima_actualizacion: "Marzo 2024",
     descripcion:
-      "Sitio web desarrollado para el Hostal San Jorge ubicado en la ciudad de Cafayate, provincia de Salta. El objetivo consistía en realizar una web al hostal que brinde toda la información sobre el mismo y sus servicios, a su vez que los usuarios puedan acceder al mismo a través de la opción de sitio web que ofrece Google a los negocios registrados. Como mejoras futuras planeo refactorizar el sitio a una aplicación web usando stack MERN y TailwindCSS para los estilos, además de incorporar las opciones de reserva y métodos de pago entre otras funcionalidades. ",
+      "Sitio web desarrollado para el Hostal San Jorge ubicado en la ciudad de Cafayate, provincia de Salta. El objetivo consistía en realizar una web al hostal que brinde toda la información sobre el mismo y sus servicios, a su vez que los usuarios puedan acceder al mismo a través de la opción de sitio web que ofrece Google a los negocios registrados. Como mejoras futuras planeo refactorizar el sitio a una aplicación web modificando el diseño y aplicando stack MERN y TailwindCSS para los estilos, incorporando además nuevas funcionalidades como opción de reserva y métodos de pago.",
     proyecto: "Freelance",
     responsabilidades: [
       "Logré posicionar el sitio web en los primeros resultados de búsqueda en Google, mejorando su visibilidad y accesibilidad para potenciales clientes del hostal.",
@@ -131,7 +130,7 @@ const proyectos = [
       "Implementé funcionalidad de contacto vía WhatsApp y un formulario de contacto para que los visitantes realicen sus consultas",
       "Implementé funcionalidad de traducción de español a inglés para todas las páginas del sitio",
       `Integré el sitio web con la opción de "Sitio web" que ofrece Google a los negocios registrados.`,
-      "Contraté una fotógrafa para capturar imágenes de buena calidad del hostal y de las habitaciones",
+      // "Contraté una fotógrafa para capturar imágenes de buena calidad del hostal y de las habitaciones",
     ],
     github: "https://github.com/brunomry/HostalSanJorgeCafayate",
     enlace: "https://hostalsanjorgecafayate.netlify.app/",
