@@ -130,7 +130,7 @@ const proyectos = [
       "Implementé funcionalidad de contacto vía WhatsApp y un formulario de contacto para que los visitantes realicen sus consultas",
       "Implementé funcionalidad de traducción de español a inglés para todas las páginas del sitio",
       `Integré el sitio web con la opción de "Sitio web" que ofrece Google a los negocios registrados.`,
-      // "Contraté una fotógrafa para capturar imágenes de buena calidad del hostal y de las habitaciones",
+      "Contraté una fotógrafa para capturar imágenes de buena calidad del hostal y de las habitaciones",
     ],
     github: "https://github.com/brunomry/HostalSanJorgeCafayate",
     enlace: "https://hostalsanjorgecafayate.netlify.app/",
