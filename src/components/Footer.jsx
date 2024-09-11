@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="w-[100%] py-5 bg-[#faf3f3]">
+    <footer className="w-[100%] py-5 bg-[#f7f7f7]">
       <p className="text-center text-black">
         &copy;2024. Desarrollado con React y TailwindCSS. Por
         <a

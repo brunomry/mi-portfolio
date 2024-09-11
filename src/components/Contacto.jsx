@@ -16,19 +16,19 @@ const Contacto = () => {
             conmigo.{" "}
           </p>
           <div className="flex flex-col gap-2 mt-6 md:text-[1rem] xl:text-[1.125rem]  text-[#028891]">
-            <div className="w-[100%] bg-white rounded-[4px] flex px-5 py-2 items-center gap-5 ">
+            <div className="w-[100%] bg-white shadow-xl border-[1px] border-s-[#028891] border-s-[5px] rounded-[4px] flex px-5 py-2 items-center gap-5 ">
               <i className="text-4xl text-red-500 bi bi-google" title="Email"></i>
               <span className="">brunomadozzo@gmail.com</span>
             </div>
-            <div className="flex items-center gap-5 px-5 py-2 bg-white w-[100%] rounded-[4px]">
+            <div className="flex items-center gap-5 px-5 py-2 bg-white shadow-xl border-[1px] border-s-[#028891] border-s-[5px] w-[100%] rounded-[4px]">
               <i className="text-4xl text-blue-500 bi bi-linkedin"></i>
               <span className="">bruno madozzo</span>
             </div>
-            <div className="flex items-center gap-5 px-5 py-2 bg-white w-[100%] rounded-[4px]">
+            <div className="flex items-center gap-5 px-5 py-2 bg-white shadow-xl border-[1px] border-s-[#028891] border-s-[5px] w-[100%] rounded-[4px]">
               <i className="text-4xl text-black bi bi-github"></i>
               <span className="">brunomry</span>
             </div>
-            <div className="flex items-center gap-5 px-5 py-2 bg-white w-[100%] rounded-[4px]">
+            <div className="flex items-center gap-5 px-5 py-2 bg-white shadow-xl border-[1px] border-s-[#028891] border-s-[5px] w-[100%] rounded-[4px]">
               <i className="text-4xl text-gray-400 bi bi-geo-alt-fill"></i>
               <span className="">Tucumán, Argentina</span>
             </div>
