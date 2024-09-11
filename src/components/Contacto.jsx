@@ -20,14 +20,14 @@ const Contacto = () => {
               <i className="text-4xl text-red-500 bi bi-google" title="Email"></i>
               <span className="">brunomadozzo@gmail.com</span>
             </div>
-            <div className="flex items-center gap-5 px-5 py-2 bg-white shadow-xl border-[1px] border-s-[#028891] border-s-[5px] w-[100%] rounded-[4px]">
+            <a href="https://www.linkedin.com/in/bruno-madozzo/" target="_blank" className="flex items-center gap-5 px-5 py-2 bg-white shadow-xl border-[1px] border-s-[#028891] border-s-[5px] w-[100%] rounded-[4px]">
               <i className="text-4xl text-blue-500 bi bi-linkedin"></i>
               <span className="">bruno madozzo</span>
-            </div>
-            <div className="flex items-center gap-5 px-5 py-2 bg-white shadow-xl border-[1px] border-s-[#028891] border-s-[5px] w-[100%] rounded-[4px]">
+            </a>
+            <a href="https://github.com/brunomry" target="_blank" className="flex items-center gap-5 px-5 py-2 bg-white shadow-xl border-[1px] border-s-[#028891] border-s-[5px] w-[100%] rounded-[4px]">
               <i className="text-4xl text-black bi bi-github"></i>
               <span className="">brunomry</span>
-            </div>
+            </a>
             <div className="flex items-center gap-5 px-5 py-2 bg-white shadow-xl border-[1px] border-s-[#028891] border-s-[5px] w-[100%] rounded-[4px]">
               <i className="text-4xl text-gray-400 bi bi-geo-alt-fill"></i>
               <span className="">Tucumán, Argentina</span>

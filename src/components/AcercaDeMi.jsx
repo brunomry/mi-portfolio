@@ -83,13 +83,13 @@ const AcercaDeMi = () => {
           <div className="flex flex-col items-center justify-center gap-4 md:gap-4 xl:gap-5">
             <div className="flex flex-col gap-2 md:flex-row md:gap-3">
               <button
-                className="px-5 py-[6px] w-[250px] rounded-[6px] bg-[#028891] text-white border hover:bg-[#fff] hover:text-[#028891] hover:border border-[1px] hover:border-[#028891] text-[16px] md:text-[1rem] xl:text-[1.125rem]"
+                className="px-5 py-[6px] w-[250px] rounded-[6px] bg-[#028891] text-white hover:bg-[#fff] hover:text-[#028891] hover:border border-[1px] hover:border-[#028891] text-[16px] md:text-[1rem] xl:text-[1.125rem]"
                 onClick={handleDownloadPDF}
               >
                 Descargar CV <i className="bi bi-download ms-2"></i>
               </button>
               <a
-                className="px-5 py-[6px] w-[250px] rounded-[6px] bg-[#028891] text-white border hover:bg-[#fff] hover:text-[#028891] hover:border hover:border-[#028891] text-[16px] md:text-[1rem] xl:text-[1.125rem]"
+                className="px-5 py-[6px] w-[250px] rounded-[6px] bg-[#028891] text-white hover:bg-[#fff] hover:text-[#028891] hover:border hover:border-[#028891] text-[16px] md:text-[1rem] xl:text-[1.125rem]"
                 href="#contacto"
               >
                 Contactar <i class="bi bi-envelope ms-2"></i>
@@ -100,7 +100,7 @@ const AcercaDeMi = () => {
                 href="https://github.com/brunomry"
                 target="_blank"
                 title="Visita mis proyectos en mi repositorio de Github"
-                className="border-[1px] border-[#028891] rounded-[4px] bg-[#fff] p-1 "
+                className="border-b-[#028891] border-[1px] border-b-[5px] rounded-[4px] bg-[#fff] p-1 "
               >
                 <i className=" px-3 text-3xl text-[#028891] rounded-[6px] bi bi-github sm:text-4xl"></i>
               </a>
@@ -108,7 +108,7 @@ const AcercaDeMi = () => {
                 href="https://www.linkedin.com/in/bruno-madozzo/"
                 target="_blank"
                 title="Visita mi perfil de LinkedIn"
-                className="border-[1px] border-[#028891] rounded-[4px] bg-[#fff] p-1 "
+                className="border-b-[#028891] border-[1px] border-b-[5px] rounded-[4px] bg-[#fff] p-1 "
               >
                 <i className="px-3 text-3xl text-[#028891] rounded-[6px] bi bi-linkedin sm:text-4xl"></i>
               </a>
