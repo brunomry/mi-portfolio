@@ -1,13 +1,16 @@
 const ModalProyect = ({ show, handleShowModal, proyecto }) => {
+  const cerrarModal = () => {};
+
   return (
     <div
       className={` fixed top-0 bottom-0 left-0 right-0 z-[99]  bg-gray-800 bg-opacity-50  ${
         show ? "block" : "hidden"
       }`}
+      onClick={cerrarModal}
     >
-      <div className="md:w-[90%] modal fontSizeModal xl:w-[65%] lg:h-[90vh] xl:min-h[80] mx-auto flex flex-col justify-between mt-4 bg-[#c9c4ff] lg:overflow-auto border-4 border-[#c8a7f6] rounded-md p-2 md:p-4 lg:p-4 text-[#028891]">
-        <div className="lg:h-[90vh]">
-          <div className="flex justify-between items-center bg-[#eae8ff] py-2 px-4 w-[100%] rounded-md mb-2">
+      <div className="lg:w-[75%] modal mt-4 fontSizeModal xl:w-[75%]  lg:h-[100] mx-auto flex flex-col justify-between bg-[#fff] lg:overflow-auto rounded-md p-2 md:p-2 lg:p-2 text-[#028891]">
+        <div className=" lg:min-h-[50vh] lg:max-h-[80vh] xl:h-[inherit] xl:min-h-[25vh]">
+          <div className="flex justify-between items-center py-2 px-3 w-[100%] ">
             <div className="flex items-center gap-2 ">
               <h3 className="text-lg font-bold md:text-2xl lg:text-3xl">
                 {proyecto.nombre}
@@ -26,66 +29,58 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
               onClick={() => handleShowModal(false)}
               title="Cerrar"
             >
-              <i className="bi bi-x-lg text-[30px] px-6"></i>
+              <i className="bi bi-x-lg text-[20px]"></i>
             </button>
           </div>
           <article className="mb-2 ">
-            <div className="bg-[#eae8ff] p-4 rounded-md">
+            <div className="p-2 rounded-md">
               <p className="mb-2 font-bold">Tecnologías utilizadas:</p>
-              <ul className="flex flex-wrap gap-6">
+              <ul className="flex flex-wrap gap-4">
                 {proyecto.tecnologias.map((t) => (
                   <div key={t.name} className="flex flex-col items-center">
                     <img
                       src={t.icon}
                       alt={t.name}
-                      className="iconTechModal w-[25px]"
+                      className="iconTechModal w-[40px]"
                     />
-                    <figcaption>{t.name}</figcaption>
+                    <figcaption className="text-[1rem]">{t.name}</figcaption>
                   </div>
                 ))}
               </ul>
             </div>
           </article>
           <article>
-            <div className="flex gap-2 mb-2 rounded-md">
-              <div className="bg-[#eae8ff] rounded-md p-4 ">
-                <p className="font-bold">
-                  Tipo: <span className="font-normal">{proyecto.tipo}</span>
-                </p>
+            <div className="flex gap-5 mb-2 rounded-md">
+              <div className="flex flex-col rounded-md p-2 py-0 text-[1rem]">
+                <p className="font-bold ">Tipo</p>
+                <span className="font-normal ">{proyecto.tipo}</span>
               </div>
-              <div className="bg-[#eae8ff] p-4 rounded-md">
-                <p className="font-bold">
-                  Proyecto:{" "}
-                  <span className="font-normal">{proyecto.proyecto}</span>
-                </p>
+              <div className="flex flex-col rounded-md p-2 py-0 text-[1rem]">
+                <p className="font-bold">Proyecto</p>
+                <span className="font-normal">{proyecto.proyecto}</span>
               </div>
-              <div className="bg-[#eae8ff] p-4 rounded-md">
-                <p className="font-bold">
-                  Inicio: <span className="font-normal">{proyecto.fecha}</span>
-                </p>
+              <div className="flex flex-col rounded-md p-2 py-0 text-[1rem]">
+                <p className="font-bold">Inicio</p>
+                <span className="font-normal">{proyecto.fecha}</span>
               </div>
-              <div className="bg-[#eae8ff] p-4 rounded-md">
-                <p className="font-bold">
-                  Duración:{" "}
-                  <span className="font-normal">{proyecto.duracion}</span>
-                </p>
+              <div className="flex flex-col rounded-md p-2 py-0 text-[1rem]">
+                <p className="font-bold">Duración</p>
+                <span className="font-normal">{proyecto.duracion}</span>
               </div>
-              <div className="bg-[#eae8ff] p-4 rounded-md">
-                <p className="font-bold">
-                  Última actualización:{" "}
-                  <span className="font-normal">
-                    {proyecto.ultima_actualizacion}
-                  </span>
-                </p>
+              <div className="flex flex-col rounded-md p-2 py-0 text-[1rem]">
+                <p className="font-bold">Última actualización</p>
+                <span className="font-normal">
+                  {proyecto.ultima_actualizacion}
+                </span>
               </div>
             </div>
 
-            <div className="bg-[#eae8ff] p-4 rounded-md mb-2">
+            <div className="flex flex-col rounded-md p-2 py-0 text-[1rem] mb-2">
               <p className="font-bold">Descripción:</p>
               <p>{proyecto.descripcion}</p>
             </div>
             <div
-              className={`bg-[#eae8ff] p-4 rounded-md mb-2 ${
+              className={`text-[1rem] p-2 pb-3 py-0 rounded-md mb-2 ${
                 proyecto.responsabilidades.length === 0 ? "hidden" : "block"
               }`}
             >
@@ -106,14 +101,16 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
               </ul>
             </div>
           </article>
+          {/* <div className="flex justify-end mx-3">
           <button
             type="button"
-            className="w-[100%] mt-2 py-2 bg-[#028891] text-white rounded-md text-lg"
+            className="w-[25%] my-2 py-1 bg-[#028891] text-white rounded-md text-lg"
             onClick={() => handleShowModal(false)}
             title="Cerrar"
           >
             Cerrar
           </button>
+          </div> */}
         </div>
       </div>
     </div>

@@ -204,7 +204,7 @@ const proyectos = [
     tipo: "Sitio web",
     fecha: "Octubre 2024",
     duracion:"2 semanas",
-    ultima_actualizacion: "Julio 2024",
+    ultima_actualizacion: "Septiembre 2024",
     descripcion: "El proyecto realizado es un sitio web de tienda de calzados donde el objetivo consistía en desarrollar un E-commerce estático donde se visualice toda la información relacionada a los productos y cuente además con un carrito de compras.",
     proyecto: "En equipo",
     responsabilidades: ["Desempeñe rol de scrummaster facilitando la comunicación y resolviendo problemas del equipo", "Realicé los mockups de interfaces","Desarrollé las páginas de contacto, carrito de compras y detalle de producto", "Desarrollé menú de navegación"],

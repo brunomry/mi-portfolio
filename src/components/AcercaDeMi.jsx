@@ -68,11 +68,11 @@ const AcercaDeMi = () => {
             </div>
           </div>
           <div className="w-[100%] xl:w-[75vw] aboutMe mx-auto text-center lg:text-start bg-[#fff] shadow-xl lg:mt-2  p-3 rounded-2xl mb-2 xl:mb-3 border-[1px] border-b-[#69bac0] border-b-[5px]">
-            <div className="mx-2 xl:mx-5 my-2 text-[#028891] md:text-[1rem] xl:text-[1.125rem] ">
-              <h2 className="text-[20px] xl:text-[25px] font-bold leading-8 md:leading-normal">
+            <div className="mx-2 xl:mx-5 my-2  md:text-[1rem] xl:text-[1.125rem] ">
+              <h2 className="text-[20px] text-[#028891] xl:text-[25px] font-bold leading-8 md:leading-normal">
                 Compromiso y Crecimiento profesional
               </h2>
-              <p>
+              <p className="text-[#028891]">
                 Cada proyecto que surje es una oportunidad para seguir creciendo,
                 practicar y a su vez prepararme para los desafíos profesionales que
                 vendrán.

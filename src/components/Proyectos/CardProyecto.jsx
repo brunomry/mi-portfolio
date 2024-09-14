@@ -47,13 +47,13 @@ const CardProyecto = ({ proyecto }) => {
             <i className="text-2xl bi bi-link-45deg"></i>
             <span>Visitar</span>
           </a>
-          {/* <button
+          <button
             className="hidden md:flex md:text-[1rem] xl:text-[1.125rem]  rounded-[6px] px-3 border-[1px] text-[#028891] border-[#028891] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#028891] hover:text-[#fff] hover:border-[#000]  flex-col items-center "
             title="Ver más información del proyecto"
             onClick={()=>handleShowModal(true)}
           >
             <i className="text-2xl bi bi-info-circle" ></i> <span>Detalle</span>
-          </button> */}
+          </button>
         </div>
       </div>
     </div>

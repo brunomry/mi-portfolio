@@ -84,6 +84,18 @@
   * {
     scroll-margin-top: 20px;
   }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #91aba0;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #028891;
+  }
 }
 
 @media all and (min-width:1400px){
@@ -100,7 +112,7 @@
   }
 
   .modal{
-    height: inherit!important;
-    min-height: 50vh!important;
+    margin-top: 50px;
+    max-width: 50%;
   }
 }

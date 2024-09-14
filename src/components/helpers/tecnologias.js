@@ -39,9 +39,7 @@ const tecnologias = {
       { name: "Postman", icon: postman},
       { name: "Git", icon: git},
       { name: "Github", icon: github},
-      { name: "Trello", icon: trello},
-      { name: "Draw", icon: draw},
-      { name: "Netlify", icon: netlify}        
+      { name: "Trello", icon: trello}   
     ],
     aprendiendo: [
       { name: "Redux", icon: redux},
