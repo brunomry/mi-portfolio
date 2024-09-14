@@ -202,7 +202,7 @@ const proyectos = [
     imagen: rss1,
     nombre: "Rolling Shoes Store",
     tipo: "Sitio web",
-    fecha: "Octubre 2024",
+    fecha: "Octubre 2023",
     duracion:"2 semanas",
     ultima_actualizacion: "Septiembre 2024",
     descripcion: "El proyecto realizado es un sitio web de tienda de calzados donde el objetivo consistía en desarrollar un E-commerce estático donde se visualice toda la información relacionada a los productos y cuente además con un carrito de compras.",
