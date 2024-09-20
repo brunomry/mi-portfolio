@@ -53,7 +53,7 @@ const proyectos = [
       "Desarrollé la funcionalidad para mostrar y agregar comentarios en el detalle de anuncio, eliminar comentarios como administrador, crear publicación como profesional, mostrar publicaciones en perfil profesional, mostrar mensajes en Soporte Admin",
       "Colaboré en el desarrollo de funcionalidad para iniciar sesión."
     ],
-    github: "https://github.com/FranprzDev/LaburandoAndo",
+    github: "https://github.com/brunomry/LaburandoAndo",
     enlace: "https://laburando-ando.netlify.app/",
     tecnologias: [
       { name: "HTML5", icon: html5 },
