@@ -17,7 +17,7 @@ import redux from "../../assets/iconos/redux.svg";
 import tailwind from "../../assets/iconos/tailwind.svg";
 import axios from "../../assets/iconos/axios.svg";
 import form from "../../assets/iconos/reacthookform.svg";
-import sql from "../../assets/iconos/sql.svg";
+import mysql from "../../assets/iconos/mysql.svg";
 import netlify from "../../assets/iconos/netlify.svg";
 
 const tecnologias = {
@@ -34,7 +34,7 @@ const tecnologias = {
       { name: "React Hook Form", icon: form},    
       { name: "Node JS", icon: node },
       { name: "Express JS", icon: express },  
-      { name: "SQL", icon: sql },    
+      { name: "MySQL", icon: mysql },    
       { name: "MongoDB", icon: mongodb },
       { name: "Postman", icon: postman},
       { name: "Git", icon: git},
