@@ -47,6 +47,7 @@ const proyectos = [
     responsabilidades: [
       "Desempeñé rol de Scrummaster.",
       "Realicé los mockups de interfaces de toda la aplicación mediante la herramienta Draw.",
+      "Colaboré en la definición de requerimientos.",
       "Refactoricé la estructura del proyecto utilizando Arquitectura basada en dominios para facilitar el mantenimiento, escalabilidad y la colaboración entre los miembros del equipo",
       "Colaboré en el desarrollo de todas las páginas realizando las correcciones pertinentes con exhaustiva atención al detalle y verificando que cumplan con un diseño web responsive.",
       "Desarrollé las páginas de Profesionales, Opciones de Registro, Quiénes Somos, Perfil Profesional, Publicación del profesional, Publicaciones del profesional, Soporte Admin, Categorías Admin, y Menú Lateral.",
@@ -122,11 +123,10 @@ const proyectos = [
     duracion: "8 semanas",
     ultima_actualizacion: "Marzo 2024",
     descripcion:
-      "Sitio web desarrollado para el Hostal San Jorge ubicado en la ciudad de Cafayate, provincia de Salta. El objetivo consistía en realizar una web al hostal que brinde toda la información sobre el mismo y sus servicios, a su vez que los usuarios puedan acceder al mismo a través de la opción de sitio web que ofrece Google a los negocios registrados. Como mejoras futuras planeo refactorizar el sitio a una aplicación web modificando el diseño y aplicando stack MERN y TailwindCSS para los estilos, incorporando además nuevas funcionalidades como opción de reserva y métodos de pago.",
+      "Sitio web desarrollado para el Hostal San Jorge ubicado en la ciudad de Cafayate, provincia de Salta. El objetivo consistía en realizar una web al hostal que brinde toda la información sobre el mismo y sus servicios. Como mejoras futuras, se planea modificar el diseño utilizando TailwindCSS para los estilos, incorporar reseñas realizadas a través de Google y añadir nuevas funcionalidades como la opción de reserva de habitaciones, a través de una aplicación de reservas desarrollada con React que permitirá a los visitantes seleccionar fechas y confirmar su reserva, además de integrar métodos de pago online.",
     proyecto: "Freelance",
     responsabilidades: [
-      "Logré posicionar el sitio web en los primeros resultados de búsqueda en Google, mejorando su visibilidad y accesibilidad para potenciales clientes del hostal.",
-      "Implementé SEO básico",
+      "Posicioné el sitio web en los primeros resultados de búsqueda en Google mediante palabras claves como “hostal san jorge cafayate” o ”san jorge cafayate” gracias a la implementación de SEO básico y buenas prácticas de código.",
       "Implementé funcionalidad de contacto vía WhatsApp y un formulario de contacto para que los visitantes realicen sus consultas",
       "Implementé funcionalidad de traducción de español a inglés para todas las páginas del sitio",
       `Integré el sitio web con la opción de "Sitio web" que ofrece Google a los negocios registrados.`,
