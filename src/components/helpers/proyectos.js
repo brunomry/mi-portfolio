@@ -86,13 +86,14 @@ const proyectos = [
     duracion: "4 semanas",
     ultima_actualizacion: "-",
     descripcion:
-      "Aplicación web para restaurante donde el objetivo principal consistía en que los usuarios luego de registrarse e iniciar sesión puedan realizar un pedido. Además cabe resaltar que con el equipo logramos incorporar método de pago mediante MercadoPago a modo de prueba como funcionalidad extra de la aplicación.",
+      "Aplicación web de Restaurante donde el objetivo principal consistía en que los usuarios luego de registrarse e iniciar sesión puedan realizar un pedido.",
     proyecto: "En equipo",
     responsabilidades: [
       "Desempeñé rol de Scrummaster facilitando la comunicación y resolviendo problemas del equipo.",
       "Realicé los mockups de interfaces de toda la aplicación mediante la herramienta Draw.",
       "Desarrollé las páginas de Inicio, Detalle de producto, Administración, Gestión de productos, usuarios y pedidos, Detalle de compra, Historial de pedidos.",
       "Desarrollé la funcionalidad de listar productos por categoría, filtrar productos por nombre y descarga de PDF en página de Menú, entre otras.",
+      "Implementación de método de pago como funcionalidad extra mediante MercadoPago."
     ],
     github: "https://github.com/brunomry/frontendProyectoFinal_RollingCode",
     enlace: "https://ambiente-bohemio-restaurante.netlify.app/",
