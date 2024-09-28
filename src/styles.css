@@ -12,7 +12,7 @@
 }
 
 .active {
-  color: #003635 !important;
+  color: #000 !important;
 }
 
 .tabs button {
@@ -23,7 +23,7 @@
 .tabs button:hover {
   padding: 10px;
   background: #fff;
-  color: #028891;
+  color: #000;
 }
 
 .containerTabProyects,
@@ -53,7 +53,7 @@
 
 .input:focus {
   outline: none;
-  border-bottom: 1px solid #028891;
+  border-bottom: 1px solid #000;
 }
 
 @media all and (min-width: 640px) {
@@ -71,7 +71,7 @@
     position: absolute;
     width: 0;
     height: 2px;
-    background: #0efffb;
+    background: #000;
     bottom: 0;
     left: 0;
     transition: width 0.4s ease;
@@ -94,7 +94,7 @@
   }
   
   ::-webkit-scrollbar-thumb {
-    background: #028891;
+    background: #000;
   }
 }
 

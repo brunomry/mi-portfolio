@@ -14,13 +14,13 @@ const Proyectos = () => {
       className="py-3 flex flex-col gap-3 xl:gap-4 items-center px-3 w-[95%] min-h-[95vh]"
       id="proyectos"
     >
-      <h2 className="text-center font-bold text-[27px] md:text-[35px] lg:text-[38] xl:text-[40px] text-[#028891]">
+      <h2 className="text-center font-bold text-[27px] md:text-[35px] lg:text-[38] xl:text-[40px] text-[#333]">
         Proyectos
       </h2>
       <Tabs
         activeKey={key}
         onSelect={(k) => setKey(k)}
-        className="flex flex-col sm:flex-row px-2 gap-1 xl:gap-5 py-3 lg:mb-5 xl:px-12 items-center rounded-[25px] tabs text-[#028891] bg-[#f7f7f7]  md:text-[1rem] lg:text-[18px] "
+        className="flex flex-col sm:flex-row px-2 gap-1 xl:gap-5 py-3 lg:mb-5 xl:px-12 items-center rounded-[25px] tabs text-[#787777] bg-[#f7f7f7]  md:text-[1rem] lg:text-[18px] "
       >
         <Tab
           eventKey="all"

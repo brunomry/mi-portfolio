@@ -9,14 +9,14 @@ const Menu = () => {
   };
 
   return (
-    <nav class="w-[100%] h-[80px] lg:h-[100vh] lg:w-[25%] xl:w-[20%] fixed top-0 left-0 bg-[#028891] flex justify-center z-[99]">
+    <nav class="w-[100%] h-[80px] lg:h-[100vh] lg:w-[25%] xl:w-[20%] fixed top-0 left-0 bg-[#f7f7f7] flex justify-center z-[99]">
       <div class="lg:px-0 flex justify-between w-[100%] lg:w-[initial]">
         <div
           class={`flex w-[100%] justify-between px-4 lg:hidden ${
             desplegado ? "hidden" : "block"
           }`}
         >
-          <h2 className="block my-auto text-white font-bold text-[1.125rem]">
+          <h2 className="block my-auto text-white text-[1.125rem]">
             Bruno Madozzo
           </h2>
           <button
@@ -49,37 +49,39 @@ const Menu = () => {
                 desplegado ? "flex flex-col bg-[#028891]" : "hidden"
               } `}
             >
-              <div class="hidden lg:block mx-auto md:w-[125px] md:h-[125px] xl:w-[150px] xl:h-[150px] rounded-[50%] border-[5px] border-[#12c0bd] lg:w-[180px] lg:h-[180px] mb-2 shadow">
+              <div class="hidden lg:block mx-auto md:w-[125px] md:h-[150px] lg:w-[150px] lg:h-[200px] rounded-[20px] border-[1px] border-[#d5d5d5] mb-2 shadow">
                 <img
                   src={perfil}
                   alt="Bruno Madozzo"
                   title="Bruno Madozzo"
-                  class="shadow-xl w-[100%] h-[100%] rounded-[50%] object-cover"
+                  class="shadow-xl w-[100%] h-[100%] bg-[#f7f7f7] rounded-[20px] object-cover"
                 />
               </div>
-              <h2 class="text-center text-white text-[25px] mb-2">
+              <h2 class="text-center font-bold text-[#414141] text-[25px] mb-2">
                 Bruno Madozzo
               </h2>
-              <div class="flex justify-center xl:mb-4 gap-3">
-                <a
-                  href="https://github.com/brunomry"
-                  target="_blank"
-                  title="Visita mis proyectos en mi repositorio de Github"
-                >
-                  <i class="bi bi-github text-white text-3xl sm:text-4xl"></i>
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/bruno-madozzo/"
-                  target="_blank"
-                  title="Visita mi perfil de LinkedIn"
-                >
-                  <i class="bi bi-linkedin text-white text-3xl sm:text-4xl"></i>
-                </a>
-              </div>
+              <div className="flex justify-center gap-3 mt-2">
+              <a
+                href="https://github.com/brunomry"
+                target="_blank"
+                title="Visita mis proyectos en mi repositorio de Github"
+                className="border-b-[#000] border-[1px] border-b-[5px] rounded-[4px] bg-[#fff] pt-2 "
+              >
+                <i className=" px-3 text-3xl text-[#222] rounded-[6px] bi bi-github sm:text-[30px]"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/bruno-madozzo/"
+                target="_blank"
+                title="Visita mi perfil de LinkedIn"
+                className="border-b-[#000] border-[1px] border-b-[5px] rounded-[4px] bg-[#fff] pt-2 "
+              >
+                <i className="px-3 text-3xl text-[#222] rounded-[6px] bi bi-linkedin sm:text-[30px]"></i>
+              </a>
+            </div>
               <ul class="rounded-[4px] pt-[30px] w-[100%] h-[100%]">
                 <li>
                   <a
-                    class=" block w-[100%] font-bold xl:mb-2 navLink text-[#f6e8e8] duration-[0.5s] hover:duration-[0.5s] relative pb-[15px] xl:text-[1.125rem]  text-center"
+                    class=" block w-[100%] xl:mb-2 navLink text-[#414141] duration-[0.5s] hover:duration-[0.5s] relative pb-[15px] xl:text-[1.125rem]  text-center"
                     href="#sobremi"
                     onClick={() => desplegarMenu(false)}
                   >
@@ -88,7 +90,7 @@ const Menu = () => {
                 </li>
                 <li>
                   <a
-                    class="block w-[100%] font-bold xl:mb-2 navLink text-[#f6e8e8] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px] xl:text-[1.125rem]  text-center"
+                    class="block w-[100%] xl:mb-2 navLink text-[#414141] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px] xl:text-[1.125rem]  text-center"
                     href="#tecnologias"
                     onClick={() => desplegarMenu(false)}
                   >
@@ -97,7 +99,7 @@ const Menu = () => {
                 </li>
                 <li>
                   <a
-                    class="block font-bold xl:mb-2 navLink text-[#f6e8e8] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px] xl:text-[1.125rem]  text-center"
+                    class="block xl:mb-2 navLink text-[#414141] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px] xl:text-[1.125rem]  text-center"
                     href="#proyectos"
                     onClick={() => desplegarMenu(false)}
                   >
@@ -106,7 +108,7 @@ const Menu = () => {
                 </li>
                 <li>
                   <a
-                    class="block font-bold xl:mb-2 navLink text-[#f6e8e8] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px] xl:text-[1.125rem]  text-center"
+                    class="block xl:mb-2 navLink text-[#414141] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px] xl:text-[1.125rem]  text-center"
                     href="#certificaciones"
                     onClick={() => desplegarMenu(false)}
                   >
@@ -115,7 +117,7 @@ const Menu = () => {
                 </li>
                 <li>
                   <a
-                    class="block font-bold xl:mb-2 navLink text-[#f6e8e8] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px] xl:text-[1.125rem]  text-center"
+                    class="block xl:mb-2 navLink text-[#414141] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px] xl:text-[1.125rem]  text-center"
                     href="#contacto"
                     onClick={() => desplegarMenu(false)}
                   >

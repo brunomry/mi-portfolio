@@ -16,22 +16,25 @@ const CardProyecto = ({ proyecto }) => {
 
   return (
     <>
-     <div className="shadow-xl border-[1px] border-b-[#028891] border-b-[5px] rounded-md w-[100%] min-w-[280px] h-[425px] bg-[#f7f7f7] duration-[0.8s] sm:w-[300px] lg:w-[300px] lg:min-h-[300px] lg:duration-[0.7s] xl:w-[350px]  hover:shadow-xl">
+     <div className="border-[1px] border-b-[#000] border-b-[5px] rounded-md w-[100%] min-w-[280px] h-[425px] bg-[#fff] duration-[0.8s] sm:w-[300px] lg:w-[300px] lg:min-h-[300px] lg:duration-[0.7s] xl:w-[350px]  hover:shadow-xl">
+      <div className='px-4 pt-4'>
       <img
         src={proyecto.imagen}
         alt={proyecto.nombre}
         title={proyecto.nombre}
-        className="rounded-se-md rounded-ss-md border-bottom w-[100%] h-[225px] object-cover"
+        className="rounded-[8px] border-b w-[100%] h-[225px] object-cover"
       />
-      <div className="flex flex-col justify-between gap-6 mt-3">
+      </div>
+      
+      <div className="flex flex-col justify-between gap-2 mt-3">
         <div className=" rounded-[4px] py-1 px-2 flex flex-col items-center mb-2">
-          <h4 className="mb-1 font-bold text-[20px] md:text-[20px] xl:text-2xl text-[#028891]">{proyecto.nombre}</h4>
-          <p className="md:text-[1rem] xl:text-[1.125rem]  mb-0 text-[#028891]">{proyecto.tipo}</p>
+          <h4 className="mb-1 font-bold text-[20px] md:text-[20px] xl:text-2xl text-[#222]">{proyecto.nombre}</h4>
+          <p className="md:text-[1rem] xl:text-[1.125rem]  mb-0 text-[#787777]">{proyecto.tipo}</p>
         </div>
         <div className="flex justify-center gap-2 xl:gap-3">
           <a
             href={proyecto.github}
-            className="md:text-[1rem] xl:text-[1.125rem]  rounded-[6px] px-3 text-[#028891] border border-[#028891] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#028891] hover:text-[#fff] hover:border-[#000] flex flex-col items-center "
+            className="flex md:text-[1rem] xl:text-[1rem] bg-[#fff] rounded-[8px] px-3 pt-1 text-[#000] border-[1px] border-[#999] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#000] hover:border-[#000] hover:text-[#fff] flex-col items-center hover:shadow-xl"
             target="_blank"
             title="Ver código"
           >
@@ -40,7 +43,7 @@ const CardProyecto = ({ proyecto }) => {
           </a>
           <a
             href={proyecto.enlace}
-            className="md:text-[1rem] xl:text-[1.125rem]  rounded-[6px] px-3 text-[#028891] border border-[#028891] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#028891] hover:text-[#fff] hover:border-[#000] flex flex-col items-center"
+            className="flex md:text-[1rem] xl:text-[1rem] bg-[#fff] rounded-[8px] px-3 pt-1 text-[#000] border-[1px] border-[#999] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#000] hover:border-[#000] hover:text-[#fff] flex-col items-center hover:shadow-xl"
             target="_blank"
             title="Ver página"
           >
@@ -48,7 +51,7 @@ const CardProyecto = ({ proyecto }) => {
             <span>Visitar</span>
           </a>
           <button
-            className="hidden md:flex md:text-[1rem] xl:text-[1.125rem]  rounded-[6px] px-3 border-[1px] text-[#028891] border-[#028891] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#028891] hover:text-[#fff] hover:border-[#000]  flex-col items-center "
+            className="hidden md:flex md:text-[1rem] xl:text-[1rem] bg-[#fff] rounded-[8px] px-3 pt-1 text-[#000] border-[1px] border-[#999] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#000] hover:border-[#000] hover:text-[#fff] flex-col items-center hover:shadow-xl"
             title="Ver más información del proyecto"
             onClick={()=>handleShowModal(true)}
           >
