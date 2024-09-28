@@ -7,7 +7,7 @@ const Contacto = () => {
       className="flex flex-col items-center justify-start gap-2 min-h-[400px] xl:h-[550px] w-[95%] px-3 py-4 containerContact sm:gap-5 contact"
       id="contacto"
     >
-      <h2 className="font-bold text-[27px] md:text-[35px] lg:text-[38px] xl:text-[40px] text-[#333]">Contáctame</h2>
+      <h2 className="font-bold text-[25px] xl:text-[30px] text-[#333]">Contáctame</h2>
       <div className="flex flex-col gap-2 md:flex-row xl:gap-3 ">
         <FormContacto></FormContacto>
         <div className="flex flex-col items-center">
@@ -15,7 +15,7 @@ const Contacto = () => {
             Si estás interesado en mi perfil, no dudes en ponerte en contacto
             conmigo.{" "}
           </p>
-          <div className="flex flex-col gap-2 mt-6 md:text-[1rem] xl:text-[1.125rem] w-[65%]">
+          <div className="flex flex-col gap-2 mt-6 md:text-[1rem] xl:text-[1.125rem] w-[100%] md:w-[65%]">
             <div className="w-[100%] bg-white border-[1px] border-s-[#000] border-s-[5px] rounded-[4px] flex p-5   hover:text-[#000] items-center gap-5 ">
               <i className="text-4xl text-red-500 bi bi-google" title="Email"></i>
               <span className="">brunomadozzo@gmail.com</span>

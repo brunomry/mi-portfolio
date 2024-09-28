@@ -27,10 +27,10 @@ const AcercaDeMi = () => {
           <p className="text-xl text-[#787777]">
             ¡Bienvenido! <span title="saludo">👋</span>
           </p>
-          <h1 className="text-[30px] text-[#111] leading-10 md:leading-normal sm:text-[49px] xl:text-[60px] mb-2 md:mb-0 font-bold">
+          <h1 className="text-[25px] text-[#111] leading-10 md:leading-normal sm:text-[35px] xl:text-[48px] mb-2 md:mb-0 font-bold">
             Hola, soy Bruno Madozzo
           </h1>
-          <h2 className="text-[20px] text-[#222] leading-8 md:leading-normal text-center align-middle sm:text-[33px] xl:text-[40px] font-bold ">
+          <h2 className="text-[20px] text-[#222] leading-8 md:leading-normal text-center align-middle sm:text-[25px] xl:text-[33px] font-bold ">
             Desarrollador web Frontend
           </h2>
 
@@ -44,7 +44,7 @@ const AcercaDeMi = () => {
               />
             </div>
             <div className="mx-2 xl:mx-5 my-2 text-center lg:text-start md:text-[1rem] xl:text-[1.125rem] ">
-              <h2 className="text-[20px] text-[#333] xl:text-[25px] font-bold leading-8 md:leading-normal">
+              <h2 className="text-[20px] text-[#333] xl:text-[22px] font-bold leading-8 md:leading-normal">
                 Acerca de mí
               </h2>
               <p className="text-[#787777]">

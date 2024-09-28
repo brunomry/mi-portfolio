@@ -57,7 +57,7 @@ const Menu = () => {
                   class="shadow-xl w-[100%] h-[100%] bg-[#f7f7f7] rounded-[20px] object-cover"
                 />
               </div>
-              <h2 class="text-center font-bold text-[#414141] text-[25px] mb-2">
+              <h2 class="text-center text-[#414141] text-[20px] mb-2">
                 Bruno Madozzo
               </h2>
               <div className="flex justify-center gap-3 mt-2">
