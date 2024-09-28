@@ -57,7 +57,7 @@ const AcercaDeMi = () => {
           </div>
           <div className="w-[80%] xl:w-[70vw] aboutMe mx-auto text-center lg:text-start bg-[#fff] shadow-xl lg:mt-2  p-3 rounded-2xl mb-2 xl:mb-3 border-[1px] border-b-[#000] border-b-[5px]">
             <div className="mx-2 xl:mx-5 my-2  md:text-[1rem] xl:text-[1.125rem] ">
-              <h2 className="text-[20px] text-[#333] xl:text-[25px] font-bold leading-8 md:leading-normal">
+              <h2 className="text-[20px] text-[#333] xl:text-[22px] font-bold leading-8 md:leading-normal">
                 Buenas prácticas
               </h2>
               <p className="text-[#787777]">
@@ -69,7 +69,7 @@ const AcercaDeMi = () => {
           </div>
           <div className="w-[80%] xl:w-[70vw] aboutMe mx-auto text-center lg:text-start bg-[#fff] shadow-xl lg:mt-2  p-3 rounded-2xl mb-2 xl:mb-3 border-[1px] border-b-[#000] border-b-[5px]">
             <div className="mx-2 xl:mx-5 my-2  md:text-[1rem] xl:text-[1.125rem] ">
-              <h2 className="text-[20px] text-[#333] xl:text-[25px] font-bold leading-8 md:leading-normal">
+              <h2 className="text-[20px] text-[#333] xl:text-[22px] font-bold leading-8 md:leading-normal">
                 Compromiso y Crecimiento profesional
               </h2>
               <p className="text-[#787777]">
