@@ -16,11 +16,11 @@ const Menu = () => {
             desplegado ? "hidden" : "block"
           }`}
         >
-          <h2 className="block my-auto text-white text-[1.125rem]">
+          <h2 className="block my-auto text-[#222] text-[1.125rem]">
             Bruno Madozzo
           </h2>
           <button
-            class={`text-white lg:hidden ${desplegado ? "hidden" : "block"}`}
+            class={`text-[#222] lg:hidden ${desplegado ? "hidden" : "block"}`}
             type="button"
             title="menu"
             onClick={() => desplegarMenu(true)}
@@ -35,26 +35,26 @@ const Menu = () => {
             <button
               type="button"
               title="cerrar"
-              class={`text-white lg:hidden ${
+              class={`text-[#222] lg:hidden ${
                 desplegado ? "block duration-[0.8s]" : "hidden"
               }`}
               onClick={() => desplegarMenu(false)}
             >
-              <i class="bi bi-x-lg text-[25px]"></i>
+              <i class="bi bi-x-lg text-[20px] font-bold"></i>
             </button>
           </div>
           <div class="px-0 w-[100%]">
             <div
               class={`w-[100%] lg:block lg:justify-center py-3 items-center gap-2 sm:gap-4 xl:pt-[30px] ${
-                desplegado ? "flex flex-col bg-[#028891]" : "hidden"
+                desplegado ? "flex flex-col bg-[#f7f7f7]" : "hidden"
               } `}
             >
-              <div class="hidden lg:block mx-auto md:w-[125px] md:h-[150px] lg:w-[150px] lg:h-[200px] rounded-[20px] border-[1px] border-[#d5d5d5] mb-2 shadow">
+              <div class="hidden lg:block mx-auto md:w-[125px] md:h-[150px] lg:w-[150px] lg:h-[200px] rounded-[20px] border-[1px] border-[#d5d5d5] mb-2 ">
                 <img
                   src={perfil}
                   alt="Bruno Madozzo"
                   title="Bruno Madozzo"
-                  class="shadow-xl w-[100%] h-[100%] bg-[#f7f7f7] rounded-[20px] object-cover"
+                  class="w-[100%] h-[100%] bg-[#f7f7f7] rounded-[20px] object-cover"
                 />
               </div>
               <h2 class="text-center text-[#414141] text-[20px] mb-2">
@@ -65,7 +65,7 @@ const Menu = () => {
                 href="https://github.com/brunomry"
                 target="_blank"
                 title="Visita mis proyectos en mi repositorio de Github"
-                className="border-b-[#000] border-[1px] border-b-[5px] rounded-[4px] bg-[#fff] pt-2 "
+                className="border-[1px] rounded-[4px] bg-[#fff] pt-2 "
               >
                 <i className=" px-3 text-3xl text-[#222] rounded-[6px] bi bi-github sm:text-[30px]"></i>
               </a>
@@ -73,7 +73,7 @@ const Menu = () => {
                 href="https://www.linkedin.com/in/bruno-madozzo/"
                 target="_blank"
                 title="Visita mi perfil de LinkedIn"
-                className="border-b-[#000] border-[1px] border-b-[5px] rounded-[4px] bg-[#fff] pt-2 "
+                className="border-[1px] rounded-[4px] bg-[#fff] pt-2 "
               >
                 <i className="px-3 text-3xl text-[#222] rounded-[6px] bi bi-linkedin sm:text-[30px]"></i>
               </a>

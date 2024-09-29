@@ -33,13 +33,13 @@ const tecnologias = {
       { name: "React Router", icon: reactrouter},   
       { name: "React Hook Form", icon: form},    
       { name: "Node JS", icon: node },
-      { name: "Express JS", icon: express },  
+      // { name: "Express JS", icon: express },  
       { name: "MySQL", icon: mysql },    
       { name: "MongoDB", icon: mongodb },
       { name: "Postman", icon: postman},
-      { name: "Git", icon: git},
-      { name: "Github", icon: github},
-      { name: "Trello", icon: trello}   
+      // { name: "Git", icon: git},
+      // { name: "Github", icon: github},
+      // { name: "Trello", icon: trello}   
     ],
     aprendiendo: [
       { name: "Redux", icon: redux},

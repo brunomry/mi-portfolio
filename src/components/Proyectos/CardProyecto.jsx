@@ -3,20 +3,14 @@ import ModalProyect from './ModalProyect';
 
 const CardProyecto = ({ proyecto }) => {
   const [abrirModal, setAbrirModal] = useState(false);
-
-  // useEffect(() => {
-  //   abrirModal 
-  //     ? document.body.classList.add('scroll')
-  //     : document.body.classList.remove('scroll');
-  // }, [abrirModal]);
-  
+ 
   const handleShowModal = (value) => {
     setAbrirModal(value);
   };
 
   return (
     <>
-     <div className="border-[1px] shadow-2xl rounded-md w-[100%] min-w-[280px] h-[425px] bg-[#fff] duration-[0.8s] sm:w-[300px] lg:w-[300px] lg:min-h-[300px] lg:duration-[0.7s] xl:w-[350px]  hover:shadow-xl">
+     <div className="border-[1px] shadow-xl rounded-md w-[100%] min-w-[280px] h-[425px] bg-[#fff] duration-[0.8s] sm:w-[300px] lg:w-[300px] lg:min-h-[300px] lg:duration-[0.7s] xl:w-[350px]  hover:shadow-xl">
       <div className='px-4 pt-4'>
       <img
         src={proyecto.imagen}
@@ -25,7 +19,6 @@ const CardProyecto = ({ proyecto }) => {
         className="rounded-[8px] border-b w-[100%] h-[225px] object-cover"
       />
       </div>
-      
       <div className="flex flex-col justify-between gap-2 mt-3">
         <div className=" rounded-[4px] py-1 px-2 flex flex-col items-center mb-2">
           <h4 className="mb-1 font-bold text-[20px] md:text-[20px] text-[#222]">{proyecto.nombre}</h4>
@@ -67,10 +60,8 @@ const CardProyecto = ({ proyecto }) => {
       handleShowModal={handleShowModal}
       setAbrirModal={setAbrirModal}
     ></ModalProyect>
-    </div>
-    
-    </>
-   
+    </div>   
+    </>  
   );
 };
 
