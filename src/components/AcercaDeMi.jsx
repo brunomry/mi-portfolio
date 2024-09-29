@@ -34,7 +34,7 @@ const AcercaDeMi = () => {
             Desarrollador web Frontend
           </h2>
 
-          <div className="w-[80%] xl:w-[70vw] aboutMe mx-auto text-center lg:text-start bg-[#fff] shadow-xl lg:mt-4  p-3 rounded-2xl mb-2 xl:mb-3 border-[1px] border-b-[#000] border-b-[5px]">
+          <div className="w-[80%] xl:w-[70vw] aboutMe mx-auto text-center lg:text-start bg-[#fff] shadow-xl lg:mt-4  p-3 rounded-2xl mb-2 xl:mb-3 border-[1px] ">
             <div className="block sm:hidden mx-auto w-[175px] h-[250px] rounded-[20px] border-[1px] border-[#f7f7f7] lg:w-[180px] lg:h-[180px] mb-2">
               <img
                 src={perfil}
@@ -55,7 +55,7 @@ const AcercaDeMi = () => {
               </p>
             </div>
           </div>
-          <div className="w-[80%] xl:w-[70vw] aboutMe mx-auto text-center lg:text-start bg-[#fff] shadow-xl lg:mt-2  p-3 rounded-2xl mb-2 xl:mb-3 border-[1px] border-b-[#000] border-b-[5px]">
+          <div className="w-[80%] xl:w-[70vw] aboutMe mx-auto text-center lg:text-start bg-[#fff] shadow-xl lg:mt-2  p-3 rounded-2xl mb-2 xl:mb-3 border-[1px] ">
             <div className="mx-2 xl:mx-5 my-2  md:text-[1rem] xl:text-[1.125rem] ">
               <h2 className="text-[20px] text-[#333] xl:text-[22px] font-bold leading-8 md:leading-normal">
                 Buenas prácticas
@@ -67,7 +67,7 @@ const AcercaDeMi = () => {
               </p>
             </div>
           </div>
-          <div className="w-[80%] xl:w-[70vw] aboutMe mx-auto text-center lg:text-start bg-[#fff] shadow-xl lg:mt-2  p-3 rounded-2xl mb-2 xl:mb-3 border-[1px] border-b-[#000] border-b-[5px]">
+          <div className="w-[80%] xl:w-[70vw] aboutMe mx-auto text-center lg:text-start bg-[#fff] shadow-xl lg:mt-2  p-3 rounded-2xl mb-2 xl:mb-3 border-[1px] ">
             <div className="mx-2 xl:mx-5 my-2  md:text-[1rem] xl:text-[1.125rem] ">
               <h2 className="text-[20px] text-[#333] xl:text-[22px] font-bold leading-8 md:leading-normal">
                 Compromiso y Crecimiento profesional
@@ -83,7 +83,7 @@ const AcercaDeMi = () => {
           <div className="flex flex-col items-center justify-center gap-4 md:gap-4 xl:gap-5">
             <div className="flex flex-col gap-2 md:flex-row md:gap-3">
               <button
-                className="px-5 py-[10px] w-[250px] rounded-[6px] bg-[#000] text-white hover:bg-[#fff] hover:text-[#222] hover:border border-[1px] hover:border-[#000] text-[16px] md:text-[1rem] xl:text-[1.125rem]"
+                className=" px-5 py-[10px] w-[250px] rounded-[6px] bg-[#000] text-white hover:bg-[#fff] hover:text-[#222] hover:border border-[1px] hover:border-[#000] text-[16px] md:text-[1rem] xl:text-[1.125rem]"
                 onClick={handleDownloadPDF}
               >
                 Descargar CV <i className="bi bi-download ms-2"></i>
@@ -100,7 +100,7 @@ const AcercaDeMi = () => {
                 href="https://github.com/brunomry"
                 target="_blank"
                 title="Visita mis proyectos en mi repositorio de Github"
-                className="border-b-[#000] border-[1px] border-b-[5px] rounded-[4px] bg-[#fff] pt-[5px] "
+                className="shadow-xl border-[1px]  rounded-[4px] bg-[#fff] pt-[5px] "
               >
                 <i className=" px-3 text-3xl text-[#222] rounded-[6px] bi bi-github sm:text-4xl"></i>
               </a>
@@ -108,7 +108,7 @@ const AcercaDeMi = () => {
                 href="https://www.linkedin.com/in/bruno-madozzo/"
                 target="_blank"
                 title="Visita mi perfil de LinkedIn"
-                className="border-b-[#000] border-[1px] border-b-[5px] rounded-[4px] bg-[#fff] pt-[5px] "
+                className="shadow-xl border-[1px] rounded-[4px] bg-[#fff] pt-[5px] "
               >
                 <i className="px-3 text-3xl text-[#222] rounded-[6px] bi bi-linkedin sm:text-4xl"></i>
               </a>

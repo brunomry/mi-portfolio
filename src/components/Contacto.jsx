@@ -16,19 +16,19 @@ const Contacto = () => {
             conmigo.{" "}
           </p>
           <div className="flex flex-col gap-2 mt-6 md:text-[1rem] xl:text-[1.125rem] w-[100%] md:w-[65%]">
-            <div className="w-[100%] bg-white border-[1px] border-s-[#000] border-s-[5px] rounded-[4px] flex p-5   hover:text-[#000] items-center gap-5 ">
+            <div className="w-[100%] bg-white border-[1px]  rounded-[4px] flex p-5   hover:text-[#000] items-center gap-5 ">
               <i className="text-4xl text-red-500 bi bi-google" title="Email"></i>
               <span className="">brunomadozzo@gmail.com</span>
             </div>
-            <a href="https://www.linkedin.com/in/bruno-madozzo/" target="_blank" className="flex items-center gap-5 p-5   hover:text-[#000] bg-white hover:hover:shadow-xl border-[1px] border-s-[#000] border-s-[5px] w-[100%] rounded-[4px]">
+            <a href="https://www.linkedin.com/in/bruno-madozzo/" target="_blank" className="flex items-center gap-5 p-5   hover:text-[#000] bg-white hover:hover:shadow-xl border-[1px]  w-[100%] rounded-[4px]">
               <i className="text-4xl text-blue-500 bi bi-linkedin"></i>
               <span className="">bruno madozzo</span>
             </a>
-            <a href="https://github.com/brunomry" target="_blank" className="flex items-center gap-5 p-5  bg-white  hover:text-[#000] hover:shadow-xl border-[1px] border-s-[#000] border-s-[5px] w-[100%] rounded-[4px]">
+            <a href="https://github.com/brunomry" target="_blank" className="flex items-center gap-5 p-5  bg-white  hover:text-[#000] hover:shadow-xl border-[1px]  w-[100%] rounded-[4px]">
               <i className="text-4xl text-black bi bi-github"></i>
               <span className="">brunomry</span>
             </a>
-            <div className="flex items-center gap-5 p-5  bg-white border-[1px] border-s-[#000]  border-s-[5px] w-[100%] rounded-[4px]">
+            <div className="flex items-center gap-5 p-5  bg-white border-[1px] w-[100%] rounded-[4px]">
               <i className="text-4xl text-gray-400 bi bi-geo-alt-fill"></i>
               <span className="">Tucumán, Argentina</span>
             </div>
