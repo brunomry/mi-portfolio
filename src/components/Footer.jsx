@@ -4,9 +4,10 @@ const Footer = () => {
       <p className="text-center text-black">
         &copy;2024. Diseñado por
         <a
-          className="font-bold text-[#000] ms-1"
+          className="font-bold text-[#000] ms-1 lg:hover:underline"
           href="https://www.linkedin.com/in/bruno-madozzo/"
           target="_blank"
+          title="Visita mi perfil de LinkedIn"
         >
           Bruno Madozzo
         </a>

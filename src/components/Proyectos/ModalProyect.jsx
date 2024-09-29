@@ -19,6 +19,7 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
                 href={proyecto.enlace}
                 className="px-4 py-1 border border-[#000] hover:bg-[#000] hover:text-[#fff] rounded-md text-sm md:text-base lg:text-lg"
                 target="_BLANK"
+                title="Visitar web"
               >
                 Visitar
               </a>
@@ -42,6 +43,7 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
                       src={t.icon}
                       alt={t.name}
                       className="iconTechModal w-[40px]"
+                      title={t.name}
                     />
                     <figcaption className="text-[1rem] text-[#5c5c5c]">{t.name}</figcaption>
                   </div>

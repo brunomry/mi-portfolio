@@ -18,7 +18,7 @@ const Contacto = () => {
             de tu equipo? Hablemos
           </p>
           <div className="flex flex-col gap-2 mt-6 md:text-[1rem] xl:text-[1.125rem] w-[100%]">
-            <div className="w-[100%] bg-white border-[1px]  rounded-[25px] flex p-5   hover:text-[#000] items-center gap-5 ">
+            <div className="w-[100%] bg-white border-[1px]  rounded-[25px] flex p-5   hover:text-[#000] items-center gap-5" title="Contáctame por correo">
               <i
                 className="text-4xl text-red-500 bi bi-google"
                 title="Email"
@@ -31,9 +31,10 @@ const Contacto = () => {
             <a
               href="https://www.linkedin.com/in/bruno-madozzo/"
               target="_blank"
+              title="Contáctame por LinkedIn"
               className="flex items-center gap-5 p-5   hover:text-[#000] bg-white hover:hover:shadow-lg border-[1px]  w-[100%] rounded-[25px]"
             >
-              <i className="text-4xl text-blue-500 bi bi-linkedin"></i>
+              <i className="text-4xl text-blue-600 bi bi-linkedin"></i>
               <div className="flex flex-col">
                 <span className="text-[#787777]">LinkedIn</span>
                 <span className="">Bruno Madozzo</span>

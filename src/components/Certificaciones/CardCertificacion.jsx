@@ -34,7 +34,7 @@ const CardCertificacion = ({ certificado }) => {
           </p>
 
       </div>
-      <div className="flex justify-center mt-5 mb-2 sm:mt-0 sm:justify-end">
+      <div className="flex justify-center mt-5 mb-2 sm:mt-0 sm:justify-end" title="ver certificado">
         <button onClick={mostrarCertificacion} className="w-[100%] md:w-[initial] text-center rounded-[6px] bg-[#000] text-[1rem] text-white hover:bg-[#fff] hover:border hover:border-[#000] hover:text-[#000] px-12 py-1 flex justify-center items-center gap-2">
           <i className="text-2xl bi bi-zoom-in"></i>
           <span>Ver</span>

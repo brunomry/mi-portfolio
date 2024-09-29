@@ -74,12 +74,14 @@ const AcercaDeMi = () => {
               <button
                 className=" px-5 py-[10px] w-[250px] rounded-[25px] bg-[#fff] text-[#222] hover:bg-[#000] hover:text-[#fff] border-[#222] border-[1px] hover:border-[#000] text-[16px] md:text-[1rem] xl:text-[1.125rem]"
                 onClick={handleDownloadPDF}
+                title="haz clic para descargar mi CV"
               >
                 Descargar CV <i className="bi bi-download ms-2"></i>
               </button>
               <a
                 className="flex items-center justify-center px-5 py-[10px] w-[250px] rounded-[25px] bg-[#000] text-white hover:bg-[#f7f7f7] hover:text-[#222] hover:border hover:border-[#000] text-[16px] md:text-[1rem] xl:text-[1.125rem]"
                 href="#contacto"
+                title="Contáctame a través de mis redes sociales"
               >
                 <span>Contactarse</span>
               </a>

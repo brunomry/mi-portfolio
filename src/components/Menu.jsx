@@ -75,7 +75,7 @@ const Menu = () => {
                 title="Visita mi perfil de LinkedIn"
                 className="border-[1px] rounded-[4px] bg-[#fff] pt-2 "
               >
-                <i className="px-3 text-3xl text-[#222] rounded-[6px] bi bi-linkedin sm:text-[30px]"></i>
+                <i className="px-3 text-3xl text-blue-600 rounded-[6px] bi bi-linkedin sm:text-[30px]"></i>
               </a>
             </div>
               <ul class="rounded-[4px] pt-[30px] w-[100%] h-[100%]">
