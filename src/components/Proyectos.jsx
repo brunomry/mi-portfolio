@@ -15,7 +15,7 @@ const Proyectos = () => {
       id="proyectos"
     >
       <h2 className="text-center font-bold text-[25px] xl:text-[30px] text-[#333]">
-      &lt; Proyectos &gt;
+      &lt; Proyectos /&gt;
       </h2>
       <Tabs
         activeKey={key}

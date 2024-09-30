@@ -8,7 +8,7 @@ const Tecnologias = () => {
       id="tecnologias"
     >
       <h2 className="font-bold mb-2 text-[25px] xl:text-[30px] text-[#333]">
-        &lt; Tecnologías &gt;
+        &lt; Tecnologías /&gt;
       </h2>
       <p className="text-center text-[#787777] px-2 md:text-[1rem] xl:text-[1.125rem] ">
         Estas son las tecnologías que utilizo en mis proyectos o de las cuales

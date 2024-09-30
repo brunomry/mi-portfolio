@@ -8,7 +8,7 @@ const Contacto = () => {
       id="contacto"
     >
       <h2 className="font-bold text-[25px] xl:text-[30px] text-[#333]">
-        &lt; Contáctame &gt;
+        &lt; Contáctame /&gt;
       </h2>
       <div className="flex flex-col justify-center gap-2 md:flex-row xl:gap-3 ">
         <FormContacto></FormContacto>
