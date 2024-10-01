@@ -1,4 +1,3 @@
-import React from "react";
 import FormContacto from "./Contacto/FormContacto";
 
 const Contacto = () => {
@@ -8,7 +7,7 @@ const Contacto = () => {
       id="contacto"
     >
       <h2 className="font-bold text-[25px] xl:text-[30px] text-[#333]">
-        &lt; Contáctame /&gt;
+        &lt; Contacto /&gt;
       </h2>
       <div className="flex flex-col justify-center gap-2 md:flex-row xl:gap-3 ">
         <FormContacto></FormContacto>
@@ -18,7 +17,10 @@ const Contacto = () => {
             de tu equipo? Hablemos
           </p>
           <div className="flex flex-col gap-2 mt-6 md:text-[1rem] xl:text-[1.125rem] w-[100%]">
-            <div className="w-[100%] bg-white border-[1px]  rounded-[25px] flex p-5   hover:text-[#000] items-center gap-5" title="Contáctame por correo">
+            <div
+              className="w-[100%] bg-white border-[1px]  rounded-[25px] flex p-5   hover:text-[#000] items-center gap-5"
+              title="Contáctame por correo"
+            >
               <i
                 className="text-4xl text-red-500 bi bi-google"
                 title="Email"

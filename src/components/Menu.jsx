@@ -9,7 +9,7 @@ const Menu = () => {
   };
 
   return (
-    <nav class="w-[100%] h-[80px] lg:h-[100vh] lg:w-[25%] xl:w-[20%] fixed top-0 left-0 bg-[#f7f7f7] flex justify-center z-[99]">
+    <nav class="w-[100%] h-[80px] lg:h-[100vh] lg:w-[25%] xl:w-[20%] fixed top-0 left-0 bg-slate-100 flex justify-center z-[99]">
       <div class="lg:px-0 flex justify-between w-[100%] lg:w-[initial]">
         <div
           class={`flex w-[100%] justify-between px-4 lg:hidden ${
@@ -54,7 +54,7 @@ const Menu = () => {
                   src={perfil}
                   alt="Bruno Madozzo"
                   title="Bruno Madozzo"
-                  class="w-[100%] h-[100%] bg-[#f7f7f7] rounded-[20px] object-cover"
+                  class="w-[100%] h-[100%] bg-slate-100 rounded-[20px] object-cover"
                 />
               </div>
               <h2 class="text-center text-[#414141] text-[20px] mb-2">

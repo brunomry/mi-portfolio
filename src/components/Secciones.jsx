@@ -4,8 +4,17 @@ import Proyectos from "./Proyectos";
 import Certificaciones from "./Certificaciones";
 import Footer from "./Footer";
 import AcercaDeMi from "./AcercaDeMi";
+import { useEffect, useState } from "react";
 
 const Secciones = () => {
+  const [scrollTop, setScrollTop] = useState(0);
+  const handleScroll = () => setScrollTop(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <section
       id="section"
@@ -17,6 +26,14 @@ const Secciones = () => {
       <Certificaciones></Certificaciones>
       <Contacto></Contacto>
       <Footer></Footer>
+      {scrollTop > 0 && (
+        <a
+          href="#sobremi"
+          className="btnScrollTop fixed bottom-[50px] right-10 bg-slate-300 px-4 py-2 rounded-sm"
+        >
+          <i className="bi bi-arrow-up text-[20px]"></i>
+        </a>
+      )}
     </section>
   );
 };
