@@ -84,7 +84,7 @@ const proyectos = [
     tipo: "Aplicación web",
     fecha: "Marzo 2024",
     duracion: "4 semanas",
-    ultima_actualizacion: "-",
+    ultima_actualizacion: "Refactorizando...",
     descripcion:
       "Aplicación web de Restaurante donde el objetivo principal consistía en que los usuarios luego de registrarse e iniciar sesión puedan realizar un pedido.",
     proyecto: "En equipo",
@@ -122,7 +122,7 @@ const proyectos = [
     tipo: "Sitio web",
     fecha: "Enero 2024",
     duracion: "8 semanas",
-    ultima_actualizacion: "Marzo 2024",
+    ultima_actualizacion: "Refactorizando...",
     descripcion:
       "Sitio web desarrollado para el Hostal San Jorge ubicado en la ciudad de Cafayate, provincia de Salta. El objetivo consistía en realizar una web al hostal que brinde toda la información sobre el mismo y sus servicios. Como mejoras futuras, se planea modificar el diseño utilizando TailwindCSS para los estilos, incorporar reseñas realizadas a través de Google y añadir nuevas funcionalidades como la opción de reserva de habitaciones, a través de una aplicación de reservas desarrollada con React que permitirá a los visitantes seleccionar fechas y confirmar su reserva, además de integrar métodos de pago online.",
     proyecto: "Freelance",
