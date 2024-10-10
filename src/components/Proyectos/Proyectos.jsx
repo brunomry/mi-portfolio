@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import CardProyecto from "./Proyectos/CardProyecto";
-import proyectos from "./helpers/proyectos";
+import CardProyecto from "./CardProyecto";
+import proyectos from "../helpers/proyectos";
 import { Tab, Tabs } from "react-bootstrap";
 
 const Proyectos = () => {

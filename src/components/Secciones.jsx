@@ -1,10 +1,10 @@
-import Tecnologias from "./Tecnologias";
-import Contacto from "./Contacto";
-import Proyectos from "./Proyectos";
-import Certificaciones from "./Certificaciones";
-import Footer from "./Footer";
-import AcercaDeMi from "./AcercaDeMi";
 import { useEffect, useState } from "react";
+import Tecnologias from "./tecnologias/Tecnologias";
+import AcercaDeMi from "./sobreMi/AcercaDeMi";
+import Proyectos from "./Proyectos/Proyectos";
+import Certificaciones from "./Certificaciones/Certificaciones";
+import Contacto from "./Contacto/Contacto";
+import Footer from "./Footer";
 
 const Secciones = () => {
   const [scrollTop, setScrollTop] = useState(0);
@@ -29,7 +29,7 @@ const Secciones = () => {
       {scrollTop > 0 && (
         <a
           href="#sobremi"
-          className="btnScrollTop fixed bottom-[50px] right-10 bg-slate-300 px-4 py-2 rounded-sm"
+          className="btnScrollTop fixed bottom-[20px] right-5 md:bottom-[50px] md:right-10 bg-slate-300 px-4 py-2 rounded-sm"
         >
           <i className="bi bi-arrow-up text-[20px]"></i>
         </a>

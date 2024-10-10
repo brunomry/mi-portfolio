@@ -1,6 +1,6 @@
 import React from "react";
-import CardCertificacion from "./Certificaciones/CardCertificacion";
-import certificados from "./helpers/certificados";
+import CardCertificacion from "./CardCertificacion";
+import certificados from "../helpers/certificados";
 
 const Certificaciones = () => {
   return (

@@ -1,5 +1,5 @@
-import cv from "../assets/CV Bruno Madozzo Romay.pdf";
-import perfil from "../assets/perfilbg.png";
+import cv from "../../assets/CV Bruno Madozzo Romay.pdf";
+import perfil from "../../assets/perfilbg.png";
 
 const AcercaDeMi = () => {
   const handleDownloadPDF = () => {

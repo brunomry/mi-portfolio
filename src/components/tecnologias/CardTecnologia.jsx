@@ -1,4 +1,4 @@
-const Tecnologia = ({ tech }) => {
+const CardTecnologia = ({ tech }) => {
   return (
     <figure
       key={tech.name}
@@ -11,4 +11,4 @@ const Tecnologia = ({ tech }) => {
   );
 };
 
-export default Tecnologia;
+export default CardTecnologia;

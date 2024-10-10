@@ -22,8 +22,6 @@ import netlify from "../../assets/iconos/netlify.svg";
 
 const tecnologias = {
       actuales: [
-
-      
       { name: "HTML5", icon: html5},
       { name: "CSS3", icon: css3 },
       { name: "Bootstrap5", icon: bootstrap5 },
