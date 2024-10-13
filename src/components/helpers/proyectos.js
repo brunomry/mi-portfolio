@@ -30,6 +30,7 @@ import redux from "../../assets/iconos/redux.svg";
 import tailwind from "../../assets/iconos/tailwind.svg";
 import axios from "../../assets/iconos/axios.svg";
 import netlify from "../../assets/iconos/netlify.svg";
+import reacthookform from "../../assets/iconos/reacthookform.svg"
 
 
 const proyectos = [
@@ -63,6 +64,7 @@ const proyectos = [
       { name: "Javascript", icon: javascript },
       { name: "React", icon: react },
       { name: "React-Bootstrap", icon: reactbootstrap },
+      { name: "React-Hook-Form", icon: reacthookform },
       { name: "React-Router", icon: reactrouter },
       { name: "Redux-Toolkit", icon: redux },
       { name: "Axios", icon: axios },
@@ -84,11 +86,12 @@ const proyectos = [
     tipo: "Aplicación web",
     fecha: "Marzo 2024",
     duracion: "4 semanas",
-    ultima_actualizacion: "Refactorizando...",
+    ultima_actualizacion: "Octubre 2024",
     descripcion:
       "Aplicación web de Restaurante donde el objetivo principal consistía en que los usuarios luego de registrarse e iniciar sesión puedan realizar un pedido.",
     proyecto: "En equipo",
     responsabilidades: [
+      "Rediseñe todas las páginas de la aplicación y modifique estructura de proyecto (octubre 2024)",
       "Desempeñé rol de Scrummaster.",
       "Realicé los mockups de interfaces de toda la aplicación mediante la herramienta Draw.",
       "Desarrollé las páginas de Inicio, Detalle de producto, Administración, Gestión de productos, usuarios y pedidos, Detalle de compra, Historial de pedidos.",
@@ -104,6 +107,7 @@ const proyectos = [
       { name: "Javascript", icon: javascript },
       { name: "React", icon: react },
       { name: "React-Bootstrap", icon: reactbootstrap },
+      { name: "React-Hook-Form", icon: reacthookform },
       { name: "React-Router", icon: reactrouter },
       { name: "Node JS", icon: node },
       { name: "Express JS", icon: express },
@@ -166,6 +170,7 @@ const proyectos = [
       { name: "Javascript", icon: javascript },
       { name: "React", icon: react },
       { name: "React-Bootstrap", icon: reactbootstrap },
+      { name: "React-Hook-Form", icon: reacthookform },
       { name: "React-Router", icon: reactrouter },
       { name: "Node JS", icon: node },
       { name: "Express JS", icon: express },
