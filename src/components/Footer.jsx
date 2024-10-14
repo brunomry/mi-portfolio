@@ -8,6 +8,7 @@ const Footer = () => {
           href="https://www.linkedin.com/in/bruno-madozzo/"
           target="_blank"
           title="Visita mi perfil de LinkedIn"
+          rel="noopener"
         >
           Bruno Madozzo
         </a>

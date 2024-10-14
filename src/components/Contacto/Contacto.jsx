@@ -34,6 +34,7 @@ const Contacto = () => {
               href="https://www.linkedin.com/in/bruno-madozzo/"
               target="_blank"
               title="Contáctame por LinkedIn"
+              rel="noopener noreferrer"
               className="flex items-center gap-5 p-5   hover:text-[#000] bg-white hover:hover:shadow-lg border-[1px]  w-[100%] rounded-[25px]"
             >
               <i className="text-4xl text-blue-600 bi bi-linkedin"></i>
@@ -42,18 +43,7 @@ const Contacto = () => {
                 <span className="">Bruno Madozzo</span>
               </div>
             </a>
-            {/* <a href="https://github.com/brunomry" target="_blank" className="flex items-center gap-5 p-5  bg-white  hover:text-[#000] hover:shadow-xl border-[1px]  w-[100%] rounded-[4px]">
-              <i className="text-4xl text-black bi bi-github"></i>
-              <span className="">brunomry</span>
-            </a>
-            <div className="flex items-center gap-5 p-5  bg-white border-[1px] w-[100%] rounded-[4px]">
-              <i className="text-4xl text-gray-400 bi bi-geo-alt-fill"></i>
-              <span className="">Tucumán, Argentina</span>
-            </div> */}
           </div>
-          {/* <p className="mt-5 mb-4 text-center sizeText md:text-[1rem] xl:text-[1.125rem]  ">
-            ¡Gracias por visitar mi portfolio!
-          </p> */}
         </div>
       </div>
     </article>

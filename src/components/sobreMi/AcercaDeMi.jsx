@@ -4,7 +4,7 @@ import perfil from "../../assets/perfilbg.png";
 const AcercaDeMi = () => {
   const handleDownloadPDF = () => {
     const urlPDF = cv;
-    window.open(urlPDF, "_blank");
+    window.open(urlPDF, "_blank", "noopener");
   };
 
   return (
