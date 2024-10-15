@@ -128,10 +128,10 @@ const proyectos = [
     duracion: "8 semanas",
     ultima_actualizacion: "Refactorizando...",
     descripcion:
-      "Sitio web desarrollado para el Hostal San Jorge ubicado en la ciudad de Cafayate, provincia de Salta. El objetivo consistía en realizar una web al hostal que brinde toda la información sobre el mismo y sus servicios. Como mejoras futuras, planeo modificar el diseño utilizando TailwindCSS para los estilos, incorporar reseñas realizadas en Google y añadir nuevas funcionalidades como la opción de reserva de habitaciones a través de una aplicación de reservas desarrollada con React que permitirá a los visitantes seleccionar fechas y confirmar su reserva, además de integrar métodos de pago online.",
+      "Desarrollé un sitio web para el Hostal San Jorge ubicado en Cafayate, provincia de Salta, con el objetivo consistía de proporcionar toda la información sobre el hostal y sus servicios. Actualmente estoy refactorizando el sitio hacia una aplicación web usando React y Tailwind donde rediseñaré las páginas, incorporaré reseñas de Google y añadiré nuevas funcionalidades, como la opción de reserva de habitaciones que permitirá a los visitantes seleccionar fechas y confirmar su reserva, integrando métodos de pago online.",
     proyecto: "Freelance",
     responsabilidades: [
-      "Posicioné el sitio web en los primeros resultados de búsqueda en Google mediante palabras claves como “hostal san jorge”, “hostal san jorge cafayate” o ”san jorge cafayate” gracias a la implementación de SEO y buenas prácticas de código.",
+      "Optimicé el posicionamiento del sitio web en los primeros resultados de búsqueda en Google mediante palabras claves como “hostal san jorge”, “hostal san jorge cafayate” o ”san jorge cafayate” gracias a la implementación de SEO y buenas prácticas de código.",
       "Implementé contacto vía WhatsApp y un formulario de contacto para que los visitantes realicen sus consultas",
       "Implementé traducción de español a inglés para todas las páginas del sitio",
       `Integré el sitio web con la opción de "Sitio web" que ofrece Google a los negocios registrados.`,
