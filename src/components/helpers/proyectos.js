@@ -128,7 +128,7 @@ const proyectos = [
     duracion: "8 semanas",
     ultima_actualizacion: "Refactorizando...",
     descripcion:
-      "Desarrollé un sitio web para el Hostal San Jorge ubicado en Cafayate, provincia de Salta, con el objetivo consistía de proporcionar toda la información sobre el hostal y sus servicios. Actualmente estoy refactorizando el sitio hacia una aplicación web usando React y Tailwind donde rediseñaré las páginas, incorporaré reseñas de Google y añadiré nuevas funcionalidades, como la opción de reserva de habitaciones que permitirá a los visitantes seleccionar fechas y confirmar su reserva, integrando métodos de pago online.",
+      "Desarrollé un sitio web para el Hostal San Jorge ubicado en Cafayate, provincia de Salta, con el objetivo de proporcionar toda la información sobre el hostal y sus servicios. Actualmente estoy refactorizando el sitio hacia una aplicación web usando React y Tailwind donde rediseñaré las páginas, incorporaré reseñas de Google y añadiré nuevas funcionalidades, como la opción de reserva de habitaciones que permitirá a los visitantes seleccionar fechas y confirmar su reserva, integrando métodos de pago online.",
     proyecto: "Freelance",
     responsabilidades: [
       "Optimicé el posicionamiento del sitio web en los primeros resultados de búsqueda en Google mediante palabras claves como “hostal san jorge”, “hostal san jorge cafayate” o ”san jorge cafayate” gracias a la implementación de SEO y buenas prácticas de código.",
