@@ -30,8 +30,7 @@ import redux from "../../assets/iconos/redux.svg";
 import tailwind from "../../assets/iconos/tailwind.svg";
 import axios from "../../assets/iconos/axios.svg";
 import netlify from "../../assets/iconos/netlify.svg";
-import reacthookform from "../../assets/iconos/reacthookform.svg"
-
+import reacthookform from "../../assets/iconos/reacthookform.svg";
 
 const proyectos = [
   {
@@ -53,6 +52,7 @@ const proyectos = [
       "Colaboré en el desarrollo de todas las páginas realizando las correcciones pertinentes con exhaustiva atención al detalle y verificando que cumplan con un diseño web responsive.",
       "Desarrollé las páginas de Profesionales, Opciones de Registro, Quiénes Somos, Perfil Profesional, Publicación del profesional, Publicaciones del profesional, Soporte Admin, Categorías Admin, y Menú Lateral.",
       "Desarrollé la funcionalidad para mostrar y agregar comentarios en el detalle de anuncio, eliminar comentarios como administrador, crear publicación como profesional, mostrar publicaciones en perfil profesional, mostrar mensajes en Soporte Admin",
+      "Implementé buenas prácticas de SEO",
       "Colaboré en el desarrollo de funcionalidad para iniciar sesión."
     ],
     github: "https://github.com/brunomry/LaburandoAndo",
@@ -88,15 +88,15 @@ const proyectos = [
     duracion: "4 semanas",
     ultima_actualizacion: "Octubre 2024",
     descripcion:
-      "Aplicación web de Restaurante donde el objetivo principal consistía en que los usuarios luego de registrarse e iniciar sesión puedan realizar un pedido.",
+      "Aplicación web de Restaurante donde el objetivo principal consistía en que los usuarios luego de registrarse e iniciar sesión puedan realizar un pedido. Como funcionalidad extra se integró la API de MercadoPago para realizar el pago de pedidos.",
     proyecto: "En equipo",
     responsabilidades: [
-      "Rediseñe todas las páginas de la aplicación y modifique estructura de proyecto (octubre 2024)",
+      "Rediseñe todas las páginas de la aplicación, mejoré funcionalidad de proceso de pago y modifiqué estructura de proyecto (octubre 2024).",
       "Desempeñé rol de Scrummaster.",
-      "Realicé los mockups de interfaces de toda la aplicación mediante la herramienta Draw.",
-      "Desarrollé las páginas de Inicio, Detalle de producto, Administración, Gestión de productos, usuarios y pedidos, Detalle de compra, Historial de pedidos.",
+      "Realicé los mockups de interfaces de toda la aplicación mediante la herramienta Draw.io.",
+      "Desarrollé las páginas de Inicio, Detalle de producto, Administración, Detalle de compra, Historial de pedidos.",
       "Desarrollé la funcionalidad de listar productos por categoría, filtrar productos por nombre y descarga de PDF en página de Menú, entre otras.",
-      "Implementación de método de pago como funcionalidad extra mediante MercadoPago."
+      "Colaboré en el desarrollo de la funcionalidad de pago integrando la API de MercadoPago."
     ],
     github: "https://github.com/brunomry/frontendProyectoFinal_RollingCode",
     enlace: "https://ambiente-bohemio-restaurante.netlify.app/",
