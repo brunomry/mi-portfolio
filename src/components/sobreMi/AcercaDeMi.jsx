@@ -57,11 +57,11 @@ const AcercaDeMi = () => {
           </div>
           <div className="hidden md:flex w-[80%] xl:w-[70vw] aboutMe mx-auto text-center lg:text-start bg-[#fff] shadow-xl lg:mt-2  p-3 rounded-2xl mb-2 xl:mb-3 border-[1px] ">
             <div className="mx-2 xl:mx-5 my-2  md:text-[1rem] xl:text-[1.125rem] ">
-              <h2 className="text-[20px] text-[#333] xl:text-[22px] font-bold leading-8 md:leading-normal">
+              {/* <h2 className="text-[20px] text-[#333] xl:text-[22px] font-bold leading-8 md:leading-normal">
                 Buenas prácticas
-              </h2>
+              </h2> */}
               <p className="text-[#787777]">
-                Como desarrollador, creo en la importancia de seguir buenas
+                Como desarrollador, creo en la importancia de aprender y seguir buenas
                 prácticas y en la capacidad de recibir y dar feedback
                 constructivo. Cada proyecto que surje es una oportunidad para
                 seguir creciendo, practicar y a su vez prepararme para los
