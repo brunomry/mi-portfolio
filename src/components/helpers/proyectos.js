@@ -42,7 +42,7 @@ const proyectos = [
     duracion: "6 semanas",
     ultima_actualizacion: "-",
     descripcion:
-      "LaburandoAndo es una plataforma web diseñada para conectar a trabajadores independientes con clientes que necesitan sus servicios. La aplicación permite a los profesionales crear y gestionar sus perfiles, publicar anuncios de trabajo y recibir opiniones de sus clientes. Los usuarios pueden buscar y filtrar profesionales por categorías, ver detalles de sus servicios y contratar directamente desde la plataforma.",
+      "LaburandoAndo es una plataforma web diseñada para conectar a trabajadores independientes con clientes que necesitan sus servicios. La aplicación permite a los profesionales crear y gestionar sus perfiles, publicar anuncios de trabajo y recibir opiniones de sus clientes. Los usuarios pueden buscar y filtrar profesionales por categorías, ver detalles de sus servicios y contratar directamente desde la plataforma. Nota: El backend fue deployado con Render por lo que debes esperar al menos un minuto hasta que puedas ver los anuncios de trabajo en la página de profesionales.",
     proyecto: "En equipo",
     responsabilidades: [
       "Desempeñé rol de Scrummaster.",
@@ -76,7 +76,7 @@ const proyectos = [
       { name: "Express JS", icon: express },
       { name: "MongoDB", icon: mongodb },
       { name: "Postman", icon: postman},
-      { name: "Netlify", icon: netlify}
+      { name: "Netlify", icon: netlify},
     ],
   },
   {
@@ -91,7 +91,7 @@ const proyectos = [
       "Aplicación web de Restaurante donde el objetivo principal consistía en que los usuarios luego de registrarse e iniciar sesión puedan realizar un pedido. Como funcionalidad extra se integró la API de MercadoPago para realizar el pago de pedidos.",
     proyecto: "En equipo",
     responsabilidades: [
-      "Rediseñe todas las páginas de la aplicación, mejoré funcionalidad de proceso de pago y modifiqué estructura de proyecto (octubre 2024).",
+      "Realicé mejoras significativas de diseño en todas las páginas de la aplicación, modifiqué funcionalidad de proceso de pago y estructura de proyecto (octubre 2024).",
       "Desempeñé rol de Scrummaster.",
       "Realicé los mockups de interfaces de toda la aplicación mediante la herramienta Draw.io.",
       "Desarrollé las páginas de Inicio, Detalle de producto, Administración, Detalle de compra, Historial de pedidos.",
@@ -213,7 +213,7 @@ const proyectos = [
     ultima_actualizacion: "Septiembre 2024",
     descripcion: "El proyecto realizado es un sitio web de tienda de calzados donde el objetivo consistía en desarrollar un E-commerce estático donde se visualice toda la información relacionada a los productos y cuente además con un carrito de compras.",
     proyecto: "En equipo",
-    responsabilidades: ["Desempeñe rol de scrummaster facilitando la comunicación y resolviendo problemas del equipo", "Realicé los mockups de interfaces","Desarrollé las páginas de contacto, carrito de compras y detalle de producto", "Desarrollé menú de navegación"],
+    responsabilidades: ["Desempeñe rol de scrummaster facilitando la comunicación y resolviendo problemas del equipo", "Realicé los mockups de interfaces","Desarrollé las páginas de contacto, carrito de compras y detalle de producto", "Desarrollé menú de navegación", "Realicé mejoras de diseño en todas las páginas (septiembre 2024)"],
     github: "https://github.com/brunomry/RollingShoesStore",
     enlace: "https://rollingshoesstore-rss.netlify.app/",
     tecnologias: [
@@ -277,7 +277,7 @@ const proyectos = [
     fecha: "Mayo 2024",
     duracion: "1 semana",
     ultima_actualizacion: "-",
-    descripcion: "Challengue propuesto por RollingCodeSchool donde el objetivo consistía en replicar la pantalla principal de WhatsApp web utilizando HTML5 y CSS3",
+    descripcion: "Challenge propuesto por RollingCodeSchool donde el objetivo consistía en replicar la pantalla principal de WhatsApp web al menos para desktop utilizando HTML5 y CSS3.",
     proyecto: "Individual",
     responsabilidades: ["Buenas prácticas de SEO", "HTML semántico", "Buenas prácticas de código", "Uso de metodología BEM", "Diseño fiel"],
     github: "https://github.com/brunomry/challengeRollingCode",
@@ -297,7 +297,7 @@ const proyectos = [
     ultima_actualizacion: "Julio 2024",
     descripcion: "El proyecto desarrollado es un sitio web donde el objetivo principal consistía en replicar los diseños predefinidos y practicar el uso de git y github.",
     proyecto: "Trabajo en equipo",
-    responsabilidades: ["Desempeñe rol de Scrummaster facilitando la comunicación y resolviendo problemas del equipo.","Desarrollé la tercera sección de la página principal","Desarrollé segunda sección de la página de Seguridad"],
+    responsabilidades: ["Desarrollé la tercera sección de la página principal","Desarrollé segunda sección de la página de Seguridad"],
     github: "https://github.com/brunomry/RollingBank",
     enlace: "https://rolling-bank-rb.netlify.app/",
     tecnologias: [
@@ -318,7 +318,7 @@ const proyectos = [
     ultima_actualizacion: "-",
     descripcion: "El proyecto realizado tenía como objetivo replicar el diseño brindado usando HTML5 y CSS3 además de hacer que la página sea responsive.",
     proyecto: "Individual",
-    responsabilidades: [],
+    responsabilidades: ["Diseño responsive", "HTML semántico"],
     github: "https://github.com/brunomry/LaParrillada",
     enlace: "https://r-parrillada-resto.netlify.app/",
     tecnologias: [
