@@ -1,16 +1,13 @@
-import FormContacto from "./FormContacto";
-
 const Contacto = () => {
   return (
     <article
-      className="flex flex-col items-center justify-start gap-2 min-h-[400px] xl:h-[450px] w-[95%] px-3 xl:py-4 containerContact sm:gap-5 contact"
+      className="flex flex-col items-center justify-start gap-2 min-h-[400px] xl:h-[450px] w-[95%] px-3 xl:py-12 containerContact sm:gap-5 contact"
       id="contacto"
     >
       <h2 className="font-bold text-[25px] xl:text-[30px] text-[#333]">
         &lt; Contacto /&gt;
       </h2>
       <div className="flex flex-col justify-center gap-2 md:flex-row xl:gap-3 ">
-        <FormContacto></FormContacto>
         <div className="flex flex-col  items-center md:w-[65%]">
           <p className="text-[#787777] text-center descriptionContact w-[100%] lg:text-start md:text-[1rem] xl:text-[1.125rem]  ">
             ¿Tienes un proyecto en mente o estás interesado en que forme parte

@@ -4,13 +4,13 @@ const Footer = () => {
       <p className="text-center text-black">
         &copy;2024. Diseñado con React y Tailwind por
         <a
-          className="font-bold text-blue-500 ms-1 lg:hover:underline"
+          className=" text-blue-500 ms-1 lg:hover:underline"
           href="https://www.linkedin.com/in/bruno-madozzo/"
           target="_blank"
           title="Visita mi perfil de LinkedIn"
           rel="noopener"
         >
-          Bruno Madozzo
+          BRUNO MADOZZO
         </a>
         .
       </p>

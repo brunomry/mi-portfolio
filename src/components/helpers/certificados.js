@@ -1,7 +1,7 @@
 const certificados = [
   {
     id: 9876,
-    titulo: "Especialización Frontend en React",
+    titulo: "Especialización Frontend con React",
     org: "RollingCodeSchool",
     fechaInicio: "Mayo 2024",
     fechaFin: "Agosto 2024",
