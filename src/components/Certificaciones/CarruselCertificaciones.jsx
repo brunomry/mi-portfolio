@@ -6,7 +6,7 @@ const CarruselCertificaciones = () => {
   return (
     <div
     id="animation-carousel"
-    className="relative w-[100%] my-10 md:mt-0 md:w-[100%] lg:w-[75%] h-[30vh] md:h-[50vh] lg:h-[60vh] 2xl:h-[75vh] 2xl: border-[8px] border-gray-200"
+    className="relative w-[100%] my-10 md:mt-0 md:w-[100%] lg:w-[75%] vsm:h-[40vh] mb:h-[30vh] md:h-[50vh] lg:h-[60vh] 2xl:h-[75vh] 2xl: border-[8px] border-gray-200"
     data-carousel="static"
   >
     <div className="relative h-[100%] overflow-hidden rounded-lg ">
