@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const ModalProyect = ({ show, handleShowModal, proyecto }) => {
   const cerrarModal = () => {};
 
@@ -45,7 +47,9 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
                       className="iconTechModal w-[40px]"
                       title={t.name}
                     />
-                    <figcaption className="text-[1rem] text-[#5c5c5c]">{t.name}</figcaption>
+                    <figcaption className="text-[1rem] text-[#5c5c5c]">
+                      {t.name}
+                    </figcaption>
                   </div>
                 ))}
               </ul>
@@ -55,19 +59,27 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
             <div className="flex gap-5 mb-2 rounded-md">
               <div className="flex flex-col rounded-md p-2 py-0 text-[1rem]">
                 <p className="font-bold text-[#333]">Tipo</p>
-                <span className="font-normal text-[#5c5c5c]">{proyecto.tipo}</span>
+                <span className="font-normal text-[#5c5c5c]">
+                  {proyecto.tipo}
+                </span>
               </div>
               <div className="flex flex-col rounded-md p-2 py-0 text-[1rem]">
                 <p className="font-bold">Proyecto</p>
-                <span className="font-normal text-[#5c5c5c]">{proyecto.proyecto}</span>
+                <span className="font-normal text-[#5c5c5c]">
+                  {proyecto.proyecto}
+                </span>
               </div>
               <div className="flex flex-col rounded-md p-2 py-0 text-[1rem]">
                 <p className="font-bold">Inicio</p>
-                <span className="font-normal text-[#5c5c5c]">{proyecto.fecha}</span>
+                <span className="font-normal text-[#5c5c5c]">
+                  {proyecto.fecha}
+                </span>
               </div>
               <div className="flex flex-col rounded-md p-2 py-0 text-[1rem]">
                 <p className="font-bold">Duración</p>
-                <span className="font-normal text-[#5c5c5c]">{proyecto.duracion}</span>
+                <span className="font-normal text-[#5c5c5c]">
+                  {proyecto.duracion}
+                </span>
               </div>
               <div className="flex flex-col rounded-md p-2 py-0 text-[1rem]">
                 <p className="font-bold">Última actualización</p>
@@ -80,6 +92,17 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
             <div className="flex flex-col rounded-md p-2 py-0 text-[1rem] mb-2">
               <p className="font-bold">Descripción:</p>
               <p className="text-[#5c5c5c]">{proyecto.descripcion}</p>
+              <a
+                href={"https://hostalsanjorge-progreso.netlify.app/"}
+                target="_blank"
+                className={`${
+                  proyecto.nombre.includes("San Jorge")
+                    ? "block cursor-pointer text-blue-500 hover:underline"
+                    : "hidden"
+                }`}
+              >
+                Puedes ver mi progreso aquí
+              </a>
             </div>
             <div
               className={`text-[1rem] p-2 pb-3 py-0 rounded-md mb-2 ${
