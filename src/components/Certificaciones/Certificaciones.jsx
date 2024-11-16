@@ -1,6 +1,5 @@
 import CardCertificacion from "./CardCertificacion";
 import certificados from "../helpers/certificados";
-import CarruselCertificaciones from "./CarruselCertificaciones";
 
 const Certificaciones = () => {
   return (
@@ -13,14 +12,14 @@ const Certificaciones = () => {
         &lt; Certificaciones /&gt;
       </h2>
       <div className="flex w-[100%] md:flex-col xl:flex-row md:gap-2 md:w-[75%] xl:w-[100%] 2xl:w-[75%] containerCertifications h-[250px] mt-8 sm:h-[100%] pb-[20px] md:justify-center md:items-center gap-3 lg:gap-4 ">
-        {certificados.map((certificado) => (
+        {certificados.map((certificado, index) => (
           <CardCertificacion
             key={certificado.id}
             certificado={certificado}
+            index={index}
           ></CardCertificacion>
         ))}
       </div>
-     <CarruselCertificaciones></CarruselCertificaciones>
     </article>
   );
 };

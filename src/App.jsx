@@ -2,6 +2,7 @@ import "./styles.css";
 import Secciones from "./components/Secciones";
 import Sidebar from "./components/Sidebar";
 import 'flowbite';
+import "flowbite-react";
 
 function App() {
   return (
