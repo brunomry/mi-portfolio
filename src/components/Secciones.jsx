@@ -5,6 +5,7 @@ import Proyectos from "./Proyectos/Proyectos";
 import Certificaciones from "./Certificaciones/Certificaciones";
 import Contacto from "./Contacto/Contacto";
 import Footer from "./Footer";
+import Servicios from "./servicios/Servicios";
 
 const Secciones = () => {
   const [scrollTop, setScrollTop] = useState(0);
@@ -24,6 +25,7 @@ const Secciones = () => {
       <Tecnologias></Tecnologias>
       <Proyectos></Proyectos>
       <Certificaciones></Certificaciones>
+      <Servicios></Servicios>
       <Contacto></Contacto>
       <Footer></Footer>
       {scrollTop > 0 && (

@@ -33,7 +33,7 @@ const AcercaDeMi = () => {
           <h2 className="text-[20px] text-[#222] leading-8 md:leading-normal text-center align-middle sm:text-[25px] xl:text-[33px] font-bold ">
             &lt; Desarrollador web Front-end /&gt;
           </h2>
-          <div className="w-[80%] xl:w-[70vw] aboutMe mx-auto text-center lg:text-start bg-[#fff] shadow-xl mt-2 md:mt-4  p-3 rounded-2xl mb-2 xl:mb-3 border-[1px] ">
+          <div className="w-[80%] 2xl:w-[100%] aboutMe mx-auto text-center lg:text-start bg-[#fff] shadow-xl mt-2 md:mt-4  p-3 rounded-2xl mb-2 xl:mb-3 border-[1px] ">
             <div className="block sm:hidden mx-auto w-[175px] h-[250px] rounded-[20px] border-[1px] border-[#f7f7f7] lg:w-[180px] lg:h-[180px] mb-2">
               <img
                 src={perfil}
@@ -48,28 +48,22 @@ const AcercaDeMi = () => {
               </h2>
               <p className="text-[#787777]">
                 Soy estudiante de Ingeniería en Sistemas de Información con
-                enfoque en el desarrollo web Front-end. Me destaco por mi
-                atención al detalle, por aportar ideas creativas de diseño y por
-                mi dedicación en cada proyecto que emprendo o me toca
-                participar.
+                enfoque en el desarrollo web Front-end. Me destaco por realizar
+                páginas de forma rápida y responsivas, por mi atención al detalle,
+                por aportar ideas creativas de diseño, y también por mi compromiso y dedicación en
+                cada proyecto que surje.
               </p>
             </div>
           </div>
-          <div className="hidden md:flex w-[80%] xl:w-[70vw] aboutMe mx-auto text-center lg:text-start bg-[#fff] shadow-xl lg:mt-2  p-3 rounded-2xl mb-2 xl:mb-3 border-[1px] ">
+          <div className="hidden w-[80%] xl:w-[70vw] aboutMe mx-auto text-center lg:text-start bg-[#fff] shadow-xl lg:mt-2  p-3 rounded-2xl mb-2 xl:mb-3 border-[1px] ">
             <div className="mx-2 xl:mx-5 my-2  md:text-[1rem] xl:text-[1.125rem] ">
-              {/* <h2 className="text-[20px] text-[#333] xl:text-[22px] font-bold leading-8 md:leading-normal">
-                Buenas prácticas
-              </h2> */}
-              <p className="text-[#787777]">
-                Como desarrollador, creo en la importancia de aprender y seguir buenas
-                prácticas y en la capacidad de recibir y dar feedback
-                constructivo. Cada proyecto que surje es una oportunidad para
-                seguir creciendo, practicar y a su vez prepararme para los
-                desafíos profesionales que vendrán.
-              </p>
+               <h2 className="text-[20px] text-[#333] xl:text-[22px] font-bold leading-8 md:leading-normal">
+                
+              </h2>
+                <p>a</p>
             </div>
           </div>
-          <div className="flex flex-col items-center mt-5 justify-center gap-4 md:gap-4 xl:gap-5">
+          <div className="flex flex-col items-center mt-8 justify-center gap-4 md:gap-4 xl:gap-5">
             <div className="flex flex-col gap-2 md:flex-row md:gap-3">
               <button
                 className=" px-5 py-[10px] w-[250px] rounded-[25px] bg-[#fff] text-[#222] hover:bg-[#000] hover:text-[#fff] border-[#222] border-[1px] hover:border-[#000] text-[16px] md:text-[1rem] xl:text-[1.125rem]"

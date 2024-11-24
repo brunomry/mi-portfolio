@@ -120,6 +120,15 @@ const Sidebar = () => {
                 <li>
                   <a
                     className="block xl:mb-2 navLink text-[#414141] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px] xl:text-[1.125rem]  text-center"
+                    href="#servicios"
+                    onClick={() => desplegarMenu(false)}
+                  >
+                    Servicios
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="block xl:mb-2 navLink text-[#414141] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px] xl:text-[1.125rem]  text-center"
                     href="#contacto"
                     onClick={() => desplegarMenu(false)}
                   >
