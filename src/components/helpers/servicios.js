@@ -27,7 +27,7 @@ const servicios = [
       {
         id: 6,
         servicio: "Optimización de velocidad y rendimiento",
-        descripcion: "Me aseguro que tu página cargue de forma rápida para una mejor experiencia de tus usuarios."
+        descripcion: "Me aseguro que tu página cargue de forma rápida para una mejor experiencia de tus clientes."
       },
       {
         id: 7,
