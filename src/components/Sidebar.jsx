@@ -75,7 +75,6 @@ const Sidebar = () => {
                 target="_blank"
                 title="Visita mi perfil de LinkedIn"
                 className="border-[1px] rounded-[4px] bg-[#fff] pt-2 "
-                rel="noopener "
               >
                 <i className="px-3 text-3xl text-blue-600 rounded-[6px] bi bi-linkedin sm:text-[30px]"></i>
               </a>

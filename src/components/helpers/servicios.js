@@ -1,13 +1,13 @@
 const servicios = [
     {
         id: 1,
-        servicio: "Diseño y creación de páginas web pesponsivas",
+        servicio: "Diseño y creación de páginas web responsivas",
         descripcion: "Creación de páginas que se adaptan y funcionan en cualquier dispositivo (celulares, tablets y computadoras)"
       },
       {
         id: 2,
         servicio: "Creación de landing pages",
-        descripcion: "Desarrollo de páginas simples para promocionar tus productos o servicios."
+        descripcion: "Desarrollo de páginas simples y minimalistas para promocionar tus productos o servicios."
       },
       {
         id: 3,
@@ -32,7 +32,7 @@ const servicios = [
       {
         id: 7,
         servicio: "Integración de WhatsApp",
-        descripcion: "Enlace de WhatsApp en tu página para que tus clientes se puedan comunicar contigo de forma fácil."
+        descripcion: "Botón de WhatsApp en tu página para que tus clientes se puedan comunicar contigo de forma fácil."
       }
   ];
   
