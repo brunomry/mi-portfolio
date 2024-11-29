@@ -45,7 +45,6 @@ const proyectos = [
       "LaburandoAndo es una plataforma web diseñada para conectar a trabajadores independientes con clientes que necesitan sus servicios. La aplicación permite a los profesionales crear y gestionar sus perfiles, publicar anuncios de trabajo y recibir opiniones de sus clientes. Los usuarios pueden buscar y filtrar profesionales por categorías, ver detalles de sus servicios y contratar directamente desde la plataforma. Nota: El backend fue deployado con Render por lo que debes esperar al menos un minuto hasta que puedas ver los anuncios de trabajo en la página de profesionales.",
     proyecto: "En equipo",
     responsabilidades: [
-      "Desempeñé rol de Scrummaster.",
       "Realicé los mockups de interfaces de toda la aplicación mediante la herramienta Draw.",
       "Colaboré en la definición de requerimientos.",
       "Refactoricé la estructura del proyecto utilizando Arquitectura basada en dominios para facilitar el mantenimiento, escalabilidad y la colaboración entre los miembros del equipo",
@@ -92,7 +91,6 @@ const proyectos = [
     proyecto: "En equipo",
     responsabilidades: [
       "Realicé mejoras significativas de diseño en todas las páginas de la aplicación, modifiqué funcionalidad de proceso de pago y estructura de proyecto (octubre 2024).",
-      "Desempeñé rol de Scrummaster.",
       "Realicé los mockups de interfaces de toda la aplicación mediante la herramienta Draw.io.",
       "Desarrollé las páginas de Inicio, Detalle de producto, Administración, Detalle de compra, Historial de pedidos.",
       "Desarrollé la funcionalidad de listar productos por categoría, filtrar productos por nombre y descarga de PDF en página de Menú, entre otras.",
@@ -213,7 +211,7 @@ const proyectos = [
     ultima_actualizacion: "Septiembre 2024",
     descripcion: "El proyecto realizado es un sitio web de tienda de calzados donde el objetivo consistía en desarrollar un E-commerce estático donde se visualice toda la información relacionada a los productos y cuente además con un carrito de compras.",
     proyecto: "En equipo",
-    responsabilidades: ["Desempeñe rol de scrummaster facilitando la comunicación y resolviendo problemas del equipo", "Realicé los mockups de interfaces","Desarrollé las páginas de contacto, carrito de compras y detalle de producto", "Desarrollé menú de navegación", "Realicé mejoras de diseño en todas las páginas (septiembre 2024)"],
+    responsabilidades: ["Realicé los mockups de interfaces","Desarrollé las páginas de contacto, carrito de compras y detalle de producto", "Desarrollé menú de navegación", "Realicé mejoras de diseño en todas las páginas (septiembre 2024)"],
     github: "https://github.com/brunomry/RollingShoesStore",
     enlace: "https://rollingshoesstore-rss.netlify.app/",
     tecnologias: [
