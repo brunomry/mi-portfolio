@@ -45,10 +45,11 @@ const proyectos = [
       "LaburandoAndo es una plataforma web diseñada para conectar a trabajadores independientes con clientes que necesitan sus servicios. La aplicación permite a los profesionales crear y gestionar sus perfiles, publicar anuncios de trabajo y recibir opiniones de sus clientes. Los usuarios pueden buscar y filtrar profesionales por categorías, ver detalles de sus servicios y contratar directamente desde la plataforma. Nota: El backend fue deployado con Render por lo que debes esperar al menos un minuto hasta que puedas ver los anuncios de trabajo en la página de profesionales.",
     proyecto: "En equipo",
     responsabilidades: [
+      "Desempeñé rol de Scrummaster (definición de sprints y organización de backlog, completar descripciones de tareas, colaborar y resolver cuestiones relacionadas al maquetado, guiar al equipo)",
       "Realicé los mockups de interfaces de toda la aplicación mediante la herramienta Draw.",
       "Colaboré en la definición de requerimientos.",
       "Refactoricé la estructura del proyecto utilizando Arquitectura basada en dominios para facilitar el mantenimiento, escalabilidad y la colaboración entre los miembros del equipo",
-      "Colaboré en el desarrollo de todas las páginas realizando las correcciones pertinentes con exhaustiva atención al detalle y verificando que cumplan con un diseño web responsive.",
+      "Colaboré en el desarrollo de todas las páginas realizando las correcciones pertinentes y verificando que cumplan con un diseño web responsive",
       "Desarrollé las páginas de Profesionales, Opciones de Registro, Quiénes Somos, Perfil Profesional, Publicación del profesional, Publicaciones del profesional, Soporte Admin, Categorías Admin, y Menú Lateral.",
       "Desarrollé la funcionalidad para mostrar y agregar comentarios en el detalle de anuncio, eliminar comentarios como administrador, crear publicación como profesional, mostrar publicaciones en perfil profesional, mostrar mensajes en Soporte Admin",
       "Implementé buenas prácticas de SEO",
@@ -90,6 +91,7 @@ const proyectos = [
       "Aplicación web de Restaurante donde el objetivo principal consistía en que los usuarios luego de registrarse e iniciar sesión puedan realizar un pedido. Como funcionalidad extra se integró la API de MercadoPago para realizar el pago de pedidos.",
     proyecto: "En equipo",
     responsabilidades: [
+      "Desempeñé rol de scrummaster (organización de backlog, completar descripciones de tareas, establecer prioridad a tareas, colaborar y resolver cuestiones relacionadas al maquetado, guiar al equipo)",
       "Realicé mejoras significativas de diseño en todas las páginas de la aplicación, modifiqué funcionalidad de proceso de pago y estructura de proyecto (octubre 2024).",
       "Realicé los mockups de interfaces de toda la aplicación mediante la herramienta Draw.io.",
       "Desarrollé las páginas de Inicio, Detalle de producto, Administración, Detalle de compra, Historial de pedidos.",
@@ -158,7 +160,7 @@ const proyectos = [
     descripcion:
       "Aplicación web sobre Blog de recetas donde el objetivo principal consistía en que el administrador pueda iniciar sesión y gestionar las recetas. El proyecto comenzó siendo en equipo desarrollándose todo el frontend y su continuación consistía en desarrollar de forma individual el backend de la aplicación.",
     proyecto: "En equipo",
-    responsabilidades: ["Realicé los mockups de interfaces","Desarrollé la página de detalle de receta", "Desarrollé menú de navegación y pie de página", "Desarrollé el backend de la aplicación"],
+    responsabilidades: ["Realicé los mockups de interfaces mediante la herramienta Draw.io","Desarrollé la página de detalle de receta", "Desarrollé menú de navegación y pie de página", "Desarrollé el backend de la aplicación"],
     github: "https://github.com/brunomry/frontendBlogDeRecetas",
     enlace: "https://rincondeplaceresgastronomicos-rpg.netlify.app/",
     tecnologias: [
@@ -211,7 +213,7 @@ const proyectos = [
     ultima_actualizacion: "Septiembre 2024",
     descripcion: "El proyecto realizado es un sitio web de tienda de calzados donde el objetivo consistía en desarrollar un E-commerce estático donde se visualice toda la información relacionada a los productos y cuente además con un carrito de compras.",
     proyecto: "En equipo",
-    responsabilidades: ["Realicé los mockups de interfaces","Desarrollé las páginas de contacto, carrito de compras y detalle de producto", "Desarrollé menú de navegación", "Realicé mejoras de diseño en todas las páginas (septiembre 2024)"],
+    responsabilidades: ["Realicé los mockups de interfaces mediante Draw.io","Desarrollé las páginas de contacto, carrito de compras y detalle de producto", "Desarrollé menú de navegación", "Realicé mejoras de diseño en todas las páginas (septiembre 2024)"],
     github: "https://github.com/brunomry/RollingShoesStore",
     enlace: "https://rollingshoesstore-rss.netlify.app/",
     tecnologias: [

@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="w-[100%] py-[50px] bg-[#fff] border-t">
+    <footer className="w-[100%] py-[50px] bg-[#fff] border-t px-[5px]">
       <p className="text-center text-black">
         &copy;2024. Diseñado con React y Tailwind por
         <a
