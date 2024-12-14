@@ -126,9 +126,9 @@ const proyectos = [
     tipo: "Sitio web",
     fecha: "Enero 2024",
     duracion: "8 semanas",
-    ultima_actualizacion: "Refactorizando...",
+    ultima_actualizacion: "Actualizando...",
     descripcion:
-      "Desarrollé un sitio web para el Hostal San Jorge ubicado en Cafayate, provincia de Salta, con el objetivo de proporcionar toda la información sobre el hostal y sus servicios. Actualmente estoy refactorizando el sitio hacia una aplicación web usando React y Tailwind donde rediseñaré las páginas, incorporaré reseñas de Google y añadiré nuevas funcionalidades, como la opción de reserva de habitaciones que permitirá a los visitantes seleccionar fechas y confirmar su reserva, integrando métodos de pago online.",
+      "Desarrollé un sitio web para el Hostal San Jorge ubicado en Cafayate, provincia de Salta, con el objetivo de proporcionar toda la información sobre el hostal y sus servicios. Actualmente migré el sitio hacia una aplicación web de React y Tailwind donde cambié el diseño de las páginas para que luzca más moderno y además me encuentro realizando la optimización SEO mediante la librería react-helmet, quedando pendiente la funcionalidad de traducción de español a inglés, formulario de contacto y mostrar reseñas de Google mediante API Google My Business. En una siguiente versión añadiré la funcionalidad de reserva de habitaciones que permitirá a los visitantes seleccionar fechas y confirmar su reserva, integrando métodos de pago online.",
     proyecto: "Freelance",
     responsabilidades: [
       "Optimicé el posicionamiento del sitio web en los primeros resultados de búsqueda en Google mediante palabras claves como “hostal san jorge”, “hostal san jorge cafayate” o ”san jorge cafayate” gracias a la implementación de SEO y buenas prácticas de código.",
@@ -210,10 +210,10 @@ const proyectos = [
     tipo: "Sitio web",
     fecha: "Octubre 2023",
     duracion:"2 semanas",
-    ultima_actualizacion: "Septiembre 2024",
+    ultima_actualizacion: "Diciembre 2024",
     descripcion: "El proyecto realizado es un sitio web de tienda de calzados donde el objetivo consistía en desarrollar un E-commerce estático donde se visualice toda la información relacionada a los productos y cuente además con un carrito de compras.",
     proyecto: "En equipo",
-    responsabilidades: ["Realicé los mockups de interfaces mediante Draw.io","Desarrollé las páginas de contacto, carrito de compras y detalle de producto", "Desarrollé menú de navegación", "Realicé mejoras de diseño en todas las páginas (septiembre 2024)"],
+    responsabilidades: ["Realicé los mockups de interfaces mediante Draw.io","Desarrollé las páginas de contacto, carrito de compras y detalle de producto", "Desarrollé menú de navegación", "Realicé mejoras de diseño en todas las páginas (diciembre 2024)"],
     github: "https://github.com/brunomry/RollingShoesStore",
     enlace: "https://rollingshoesstore-rss.netlify.app/",
     tecnologias: [
