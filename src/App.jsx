@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./styles-min.css";
 import Secciones from "./components/Secciones";
 import Sidebar from "./components/Sidebar";
 import 'flowbite';
