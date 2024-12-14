@@ -30,7 +30,7 @@ const tecnologias = {
       { name: "React Bootstrap", icon: reactbootstrap},
       { name: "React Router", icon: reactrouter},   
       { name: "React Hook Form", icon: form},    
-      { name: "Node JS", icon: node },
+      { name: "NodeJS", icon: node },
       // { name: "Express JS", icon: express },  
       { name: "MySQL", icon: mysql },    
       { name: "MongoDB", icon: mongodb },

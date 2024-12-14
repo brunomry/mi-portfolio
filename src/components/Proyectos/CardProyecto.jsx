@@ -46,7 +46,7 @@ const CardProyecto = ({ proyecto }) => {
             <span>Visitar</span>
           </a>
           <button
-            className="hidden md:flex md:text-[1rem] xl:text-[1rem] bg-[#fff] rounded-[8px] px-3 pt-1 text-[#000] border-[1px] border-[#999] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#000] hover:border-[#000] hover:text-[#fff] flex-col items-center hover:shadow-xl"
+            className="flex md:text-[1rem] xl:text-[1rem] bg-[#fff] rounded-[8px] px-3 pt-1 text-[#000] border-[1px] border-[#999] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#000] hover:border-[#000] hover:text-[#fff] flex-col items-center hover:shadow-xl"
             title="Ver más información del proyecto"
             onClick={()=>handleShowModal(true)}
           >

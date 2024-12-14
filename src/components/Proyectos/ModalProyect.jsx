@@ -10,8 +10,8 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
       }`}
       onClick={cerrarModal}
     >
-      <div className="lg:w-[75%] modal mt-4 fontSizeModal xl:w-[75%]  lg:h-[100] mx-auto flex flex-col justify-between bg-[#fff] lg:overflow-auto rounded-md p-2 md:p-2 lg:p-2 ">
-        <div className=" lg:min-h-[50vh] lg:max-h-[80vh] xl:h-[inherit] xl:min-h-[25vh]">
+      <div className="w-[85%] overflow-auto h-[100%] md:h-[initial] lg:w-[75%] modal mt-4 fontSizeModal xl:w-[75%] mx-auto flex flex-col justify-between bg-[#fff] lg:overflow-auto rounded-md p-2 md:p-2 lg:p-2 ">
+        <div className="lg:max-h-[80vh] xl:h-[inherit] xl:min-h-[25vh]">
           <div className="flex justify-between items-center py-2 px-3 w-[100%] ">
             <div className="flex items-center gap-2 ">
               <h3 className="text-lg font-bold text-[#333] md:text-2xl lg:text-3xl">
@@ -38,13 +38,13 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
           <article className="mb-2 ">
             <div className="p-2 rounded-md">
               <p className="mb-2 font-bold">Tecnologías utilizadas:</p>
-              <ul className="flex flex-wrap gap-4">
+              <ul className="flex flex-wrap gap-2 lg:gap-4">
                 {proyecto.tecnologias.map((t) => (
                   <div key={t.name} className="flex flex-col items-center">
                     <img
                       src={t.icon}
                       alt={t.name}
-                      className="iconTechModal w-[40px]"
+                      className="hidden lg:block iconTechModal w-[40px]"
                       title={t.name}
                     />
                     <figcaption className="text-[1rem] text-[#5c5c5c]">
@@ -56,7 +56,7 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
             </div>
           </article>
           <article>
-            <div className="flex gap-5 mb-2 rounded-md">
+            <div className="flex flex-wrap gap-5 mb-2 rounded-md">
               <div className="flex flex-col rounded-md p-2 py-0 text-[1rem]">
                 <p className="font-bold text-[#333]">Tipo</p>
                 <span className="font-normal text-[#5c5c5c]">
