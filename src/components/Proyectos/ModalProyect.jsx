@@ -92,18 +92,6 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
             <div className="flex flex-col rounded-md p-2 py-0 text-[1rem] mb-2">
               <p className="font-bold">Descripción:</p>
               <p className="text-[#5c5c5c]">{proyecto.descripcion}</p>
-              <a
-                href={"https://hostalsanjorge-dev.netlify.app/"}
-                target="_blank"
-                className={`${
-                  proyecto.nombre.includes("San Jorge")
-                    ? "w-[250px] flex gap-1 items-center p-2  cursor-pointer text-blue-500 hover:underline"
-                    : "hidden"
-                }`}
-              >
-                           <i className="text-2xl bi bi-link-45deg"></i>
-                           <span>Nueva versión en progreso</span>
-              </a>
             </div>
             <div
               className={`text-[1rem] p-2 pb-3 py-0 rounded-md mb-2 ${
