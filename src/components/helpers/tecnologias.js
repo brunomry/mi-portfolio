@@ -19,31 +19,39 @@ import axios from "../../assets/iconos/axios.svg";
 import form from "../../assets/iconos/reacthookform.svg";
 import mysql from "../../assets/iconos/mysql.svg";
 import netlify from "../../assets/iconos/netlify.svg";
+import typescript from "../../assets/iconos/typescript.svg";
+import php from "../../assets/iconos/php.svg";
+import wordpress from "../../assets/iconos/wordpress.svg";
+import materialui from "../../assets/iconos/materialui.svg";
 
 const tecnologias = {
       actuales: [
       { name: "HTML5", icon: html5},
       { name: "CSS3", icon: css3 },
       { name: "Bootstrap5", icon: bootstrap5 },
+      { name: "TailwindCSS", icon:tailwind},
       { name: "Javascript", icon: javascript },
       { name: "React", icon: react },
       { name: "React Bootstrap", icon: reactbootstrap},
       { name: "React Router", icon: reactrouter},   
       { name: "React Hook Form", icon: form},    
       { name: "NodeJS", icon: node },
-      // { name: "Express JS", icon: express },  
+      { name: "Express JS", icon: express },  
       { name: "MySQL", icon: mysql },    
       { name: "MongoDB", icon: mongodb },
       { name: "Postman", icon: postman},
+      { name: "Redux", icon: redux},
+      { name: "Redux-Toolkit", icon: redux},
+      { name: "Axios", icon: axios}
       // { name: "Git", icon: git},
       // { name: "Github", icon: github},
       // { name: "Trello", icon: trello}   
     ],
     aprendiendo: [
-      { name: "Redux", icon: redux},
-      { name: "Redux-Toolkit", icon: redux},
-      { name: "TailwindCSS", icon:tailwind},
-      { name: "Axios", icon: axios}
+      { name: "PHP", icon: php},
+      { name: "Wordpress", icon: wordpress},
+      { name: "Typescript", icon: typescript },
+      { name: "Material UI", icon: materialui },
     ]
   }
 
