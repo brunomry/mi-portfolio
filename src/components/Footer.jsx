@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer className="w-[100%] py-[50px] bg-[#fff] border-t px-[5px]">
       <p className="text-center text-black">
-        &copy;2024. Diseñado con React y Tailwind por
+        &copy;2024. Desarrollado con React y Tailwind por
         <a
           className=" text-blue-500 ms-1 lg:hover:underline"
           href="https://www.linkedin.com/in/bruno-madozzo/"
