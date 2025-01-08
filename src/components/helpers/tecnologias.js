@@ -34,15 +34,15 @@ const tecnologias = {
       { name: "React", icon: react },
       { name: "React Bootstrap", icon: reactbootstrap},
       { name: "React Router", icon: reactrouter},   
-      { name: "React Hook Form", icon: form},    
+      { name: "React Hook Form", icon: form}, 
+      { name: "Redux", icon: redux},
+      { name: "Redux-Toolkit", icon: redux},
+      { name: "Axios", icon: axios},   
       { name: "NodeJS", icon: node },
       { name: "Express JS", icon: express },  
       { name: "MySQL", icon: mysql },    
       { name: "MongoDB", icon: mongodb },
-      { name: "Postman", icon: postman},
-      { name: "Redux", icon: redux},
-      { name: "Redux-Toolkit", icon: redux},
-      { name: "Axios", icon: axios}
+      { name: "Postman", icon: postman}
       // { name: "Git", icon: git},
       // { name: "Github", icon: github},
       // { name: "Trello", icon: trello}   

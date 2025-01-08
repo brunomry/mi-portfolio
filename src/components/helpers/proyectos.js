@@ -42,23 +42,21 @@ const proyectos = [
     duracion: "6 semanas",
     ultima_actualizacion: "-",
     descripcion:
-      "LaburandoAndo es una plataforma web diseñada para conectar a trabajadores independientes con clientes que necesitan sus servicios. La aplicación permite a los profesionales crear y gestionar sus perfiles, publicar anuncios de trabajo y recibir opiniones de sus clientes. Los usuarios pueden buscar y filtrar profesionales por categorías, ver detalles de sus servicios y contratar directamente desde la plataforma. Nota: El backend fue deployado con Render por lo que debes esperar al menos un minuto hasta que puedas ver los anuncios de trabajo en la página de profesionales.",
+      "LaburandoAndo es una plataforma web diseñada para conectar a trabajadores independientes con clientes que necesitan sus servicios. La aplicación permite a los profesionales crear y gestionar sus perfiles, publicar anuncios de trabajo y recibir opiniones de sus clientes. Los usuarios pueden buscar y filtrar profesionales por categorías, ver detalles de sus servicios y contratar directamente desde la plataforma. Proyecto final correspondiente al curso Especialización en React. Nota: El backend fue deployado con Render por lo que debes esperar al menos un minuto hasta que puedas ver los anuncios de trabajo en la página de profesionales.",
     proyecto: "En equipo",
     responsabilidades: [
       "Desempeñé rol de Scrummaster (definición de sprints y organización de backlog, completar descripciones de tareas, colaborar y resolver cuestiones relacionadas al maquetado, guiar al equipo)",
       "Realicé los mockups de interfaces de toda la aplicación mediante la herramienta Draw.",
       "Colaboré en la definición de requerimientos.",
-      "Refactoricé la estructura del proyecto utilizando Arquitectura basada en dominios para facilitar el mantenimiento, escalabilidad y la colaboración entre los miembros del equipo",
       "Colaboré en el desarrollo de todas las páginas realizando las correcciones pertinentes y verificando que cumplan con un diseño web responsive",
       "Desarrollé las páginas de Profesionales, Opciones de Registro, Quiénes Somos, Perfil Profesional, Publicación del profesional, Publicaciones del profesional, Soporte Admin, Categorías Admin, y Menú Lateral.",
       "Desarrollé la funcionalidad para mostrar y agregar comentarios en el detalle de anuncio, eliminar comentarios como administrador, crear publicación como profesional, mostrar publicaciones en perfil profesional, mostrar mensajes en Soporte Admin",
-      "Implementé buenas prácticas de SEO",
-      "Colaboré en el desarrollo de funcionalidad para iniciar sesión."
+      "Implementé buenas prácticas de SEO y accesibilidad",
+      "Colaboré en el desarrollo de funcionalidad de iniciar sesión."
     ],
     github: "https://github.com/brunomry/LaburandoAndo",
     enlace: "https://laburando-ando.netlify.app/",
     tecnologias: [
-      { name: "HTML5", icon: html5 },
       { name: "CSS3", icon: css3 },
       { name: "Bootstrap5", icon: bootstrap5 },
       { name: "Javascript", icon: javascript },
@@ -89,7 +87,7 @@ const proyectos = [
     duracion: "4 semanas",
     ultima_actualizacion: "Octubre 2024",
     descripcion:
-      "Aplicación web de Restaurante donde el objetivo principal consistía en que los usuarios luego de registrarse e iniciar sesión puedan realizar un pedido. Como funcionalidad extra se integró la API de MercadoPago para realizar el pago de pedidos.",
+      "Aplicación web de Restaurante donde el objetivo principal consistía en que los usuarios luego de registrarse e iniciar sesión puedan realizar un pedido. Como funcionalidad extra se integró la API de MercadoPago para realizar el pago de pedidos. Proyecto final correspondiente al curso Desarrollador Full Stack.",
     proyecto: "En equipo",
     responsabilidades: [
       "Desempeñé rol de scrummaster (organización de backlog, completar descripciones de tareas, establecer prioridad a tareas, colaborar y resolver cuestiones relacionadas al maquetado, guiar al equipo)",
@@ -102,7 +100,6 @@ const proyectos = [
     github: "https://github.com/brunomry/frontendProyectoFinal_RollingCode",
     enlace: "https://ambiente-bohemio-restaurante.netlify.app/",
     tecnologias: [
-      { name: "HTML5", icon: html5 },
       { name: "CSS3", icon: css3 },
       { name: "Bootstrap5", icon: bootstrap5 },
       { name: "Javascript", icon: javascript },
@@ -137,14 +134,11 @@ const proyectos = [
       "Incorporé contacto directo vía WhatsApp, además de formularios de contacto y reserva para que los usuarios realicen consultas y solicitudes de reserva.",
       "Implementé traducción de español a inglés para todas las páginas de la aplicación.",
       "Vinculé la aplicación web con la opción de 'Sitio web' para negocios registrados en Google.",
-      "Trabajé con una fotógrafa para obtener imágenes de alta calidad que destacan los espacios y servicios del hostal.",
-      "Diseñé la aplicación para adaptarse a distintos dispositivos y tamaños de pantalla, ofreciendo una experiencia consistente en móviles, tablets y desktops.",
-      "Implementé un diseño intuitivo que facilita la navegación, destacando las características del hostal para captar la atención de los visitantes."
+      "Trabajé con una fotógrafa para obtener imágenes de alta calidad que destacan los espacios y servicios del hostal."
     ],
     github: "https://github.com/brunomry/HostalSanJorgeCafayate",
     enlace: "https://hostalsanjorgecafayate.netlify.app/",
     tecnologias: [
-      { name: "HTML5", icon: html5 },
       { name: "CSS3", icon: css3 },
       { name: "Javascript", icon: javascript },      
       { name: "React", icon: react },
@@ -171,7 +165,6 @@ const proyectos = [
     github: "https://github.com/brunomry/frontendBlogDeRecetas",
     enlace: "https://rincondeplaceresgastronomicos-rpg.netlify.app/",
     tecnologias: [
-      { name: "HTML5", icon: html5 },
       { name: "CSS3", icon: css3 },
       { name: "Bootstrap5", icon: bootstrap5 },
       { name: "Javascript", icon: javascript },
@@ -279,12 +272,12 @@ const proyectos = [
   {
     id: 1267,
     imagen: wpp,
-    nombre: "Pantalla WhatsApp Web",
+    nombre: "WhatsApp Web",
     tipo: "Challenge",
     fecha: "Mayo 2024",
     duracion: "1 semana",
     ultima_actualizacion: "-",
-    descripcion: "Challenge propuesto por RollingCodeSchool donde el objetivo consistía en replicar la pantalla principal de WhatsApp web al menos para desktop utilizando HTML5 y CSS3.",
+    descripcion: "Challenge propuesto por RollingCodeSchool donde el objetivo consistía en replicar la vista de WhatsApp web al menos para desktop utilizando HTML5 y CSS3.",
     proyecto: "Individual",
     responsabilidades: ["Buenas prácticas de SEO", "HTML semántico", "Buenas prácticas de código", "Uso de metodología BEM", "Diseño fiel"],
     github: "https://github.com/brunomry/challengeRollingCode",

@@ -33,7 +33,7 @@ const AcercaDeMi = () => {
           <h2 className="text-[20px] text-[#222] leading-8 md:leading-normal text-center align-middle sm:text-[25px] xl:text-[33px] font-bold ">
             &lt; Desarrollador web Front-end /&gt;
           </h2>
-          <div className="w-[80%] 2xl:w-[100%] aboutMe mx-auto text-center lg:text-start bg-[#fff] mt-2 md:mt-4  p-3 rounded-2xl mb-2 xl:mb-3 border-[1px] ">
+          <div className="w-[80%] 2xl:w-[100%] aboutMe mx-auto text-center lg:text-start bg-[#fff] mt-2 md:mt-4  p-3 rounded-2xl mb-2 xl:mb-3 border-[1px] shadow">
             <div className="block sm:hidden mx-auto w-[175px] h-[250px] rounded-[20px] border-[1px] border-[#f7f7f7] lg:w-[180px] lg:h-[180px] mb-2">
               <img
                 src={perfil}
@@ -42,16 +42,12 @@ const AcercaDeMi = () => {
                 className="w-[100%] h-[100%] rounded-[20px] object-cover"
               />
             </div>
-            <div className="mx-2 xl:mx-5 my-2 text-center lg:text-start md:text-[1rem] xl:text-[1.125rem] ">
+            <div className="mx-2 xl:mx-5 my-2 text-center lg:text-start md:text-[1rem] xl:text-[1.125rem]">
               <h2 className="text-[20px] text-[#333] xl:text-[22px] font-bold leading-8 md:leading-normal">
                 Acerca de mí
               </h2>
               <p className="text-[#787777]">
-                Soy estudiante de Ingeniería en Sistemas de Información con
-                enfoque en el desarrollo web Front-end. Me destaco por realizar
-                páginas de forma rápida y responsivas, por mi atención al detalle,
-                por aportar ideas creativas de diseño, y también por mi compromiso y dedicación en
-                cada proyecto que surje.
+              Soy estudiante de Ingeniería en Sistemas de Información con enfoque en desarrollo web Front-end. Me destaco por crear páginas rápidas, responsivas y optimizadas para SEO, aportando ideas creativas de diseño. También poseo conocimientos en análisis de requerimientos, lo que me permite comprender las necesidades de cada proyecto. Además mi alto compromiso y dedicación me permitieron contribuir de forma efectiva y obtener buenos resultados en los proyectos en los que participé.
               </p>
             </div>
           </div>
