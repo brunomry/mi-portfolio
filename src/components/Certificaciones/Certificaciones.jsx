@@ -7,7 +7,7 @@ const Certificaciones = () => {
       className="flex flex-col items-center w-[100%] min-h-[35vh] sm:min-h-[100vh] md:min-h-[50vh] lg:min-h-[50vh] mt-3 lg:mt-0 bg-[#fff] gap-2 sm:gap-4 xl:py-5 certifications px-2 md:px-5 xl:px-[50px]"
       id="certificaciones"
     >
-      <h2 className="text-center font-bold text-[25px] xl:text-[30px] text-[#333]">
+      <h2 className="text-center font-bold text-[25px] xl:text-[30px] 2xl:text-[35px] text-[#333]">
         {" "}
         &lt; Certificaciones /&gt;
       </h2>

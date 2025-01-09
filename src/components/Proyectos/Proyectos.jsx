@@ -14,7 +14,7 @@ const Proyectos = () => {
       className="py-3 flex flex-col gap-3 xl:gap-4 items-center px-3 w-[95%] md:min-h-[100vh] lg:min-h-[90vh]"
       id="proyectos"
     >
-      <h2 className="text-center font-bold text-[25px] xl:text-[30px] text-[#333]">
+      <h2 className="text-center font-bold text-[25px] xl:text-[30px] 2xl:text-[35px] text-[#333]">
       &lt; Proyectos /&gt;
       </h2>
       <Tabs

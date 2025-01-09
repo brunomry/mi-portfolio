@@ -21,10 +21,10 @@ const CardCertificacion = ({ certificado, index }) => {
         <div className="flex flex-col justify-between rounded-[4px] min-h-[100%]">
           <div className="flex flex-col ">
             <div className="min-h-[120px] xl:min-h-[150px] flex flex-col">
-              <h5 className="mb-1 font-bold text-[#444] md:text-[20px]">
+              <h5 className="mb-1 font-bold text-[#444] md:text-[20px] 2xl:text-[22px]">
                 {certificado.titulo}
               </h5>
-              <p className="text-gray-600 md:text-[1rem] xl:text-[1.125rem] ">
+              <p className="text-gray-600 md:text-[1rem] xl:text-[1.125rem] 2xl:text-[20px]">
                 {certificado.org}
               </p>
               <p className="text-gray-500">

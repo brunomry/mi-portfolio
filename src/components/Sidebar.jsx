@@ -60,23 +60,23 @@ const Sidebar = () => {
               <h2 className="text-center text-[#414141] text-[20px] mb-2">
                 Bruno Madozzo
               </h2>
-              <div className="flex justify-center gap-3 mt-2">
+              <div className="flex justify-center items-center gap-3">
               <a
                 href="https://github.com/brunomry"
                 target="_blank"
                 title="Visita mis proyectos en mi repositorio de Github"
-                className="border-[1px] rounded-[4px] bg-[#fff] pt-2 "
+                className="border-[1px] rounded-[100%] bg-[#fff] p-1 flex items-center justify-center"
                 rel="noopener noreferrer"
               >
-                <i className=" px-3 text-3xl text-[#222] rounded-[6px] bi bi-github sm:text-[30px]"></i>
+                <i className="px-2 text-[#375c86] rounded-[6px] pt-1 bi bi-github sm:text-[25px]"></i>
               </a>
               <a
                 href="https://www.linkedin.com/in/bruno-madozzo/"
                 target="_blank"
                 title="Visita mi perfil de LinkedIn"
-                className="border-[1px] rounded-[4px] bg-[#fff] pt-2 "
+                className="border-[1px] rounded-[100%] bg-[#fff] py-1 flex items-center justify-center"
               >
-                <i className="px-3 text-3xl text-blue-600 rounded-[6px] bi bi-linkedin sm:text-[30px]"></i>
+                <i className="px-3  text-[#375c86] rounded-[6px] pt-1 bi bi-linkedin sm:text-[25px]"></i>
               </a>
             </div>
               <ul className="rounded-[4px] pt-[30px] w-[100%] h-[100%]">
