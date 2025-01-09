@@ -47,7 +47,7 @@ const AcercaDeMi = () => {
                 Acerca de mí
               </h2>
               <p className="text-[#787777]">
-              Soy estudiante de Ingeniería en Sistemas de Información con enfoque en desarrollo web Front-end. Me destaco por crear páginas rápidas, responsivas y optimizadas para SEO, aportando ideas creativas de diseño. También poseo conocimientos en análisis de requerimientos, lo que me permite comprender las necesidades de cada proyecto. Además mi alto compromiso y dedicación me permiten contribuir de forma efectiva y obtener buenos resultados en los proyectos en los que participo.
+              Soy estudiante de Ingeniería en Sistemas de Información con enfoque en desarrollo web Front-end. Me destaco por crear páginas rápidas, responsivas y optimizadas para SEO, aportando ideas creativas de diseño. También poseo conocimientos en documentación técnica, lo que me permite analizar y comprender mejor las necesidades de cada proyecto. Con un alto compromiso y atención al detalle además de una mentalidad orientada a resultados, permiten que pueda contribuir de forma efectiva en los proyectos en los que participo.
               </p>
             </div>
           </div>
