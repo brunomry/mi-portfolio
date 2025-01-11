@@ -31,7 +31,7 @@ const AcercaDeMi = () => {
             Hola, soy Bruno Madozzo
           </h1>
           <h2 className="text-[20px] 2xl:text-[35px] text-[#222] leading-8 md:leading-normal text-center align-middle sm:text-[25px] xl:text-[30px] font-bold ">
-            &lt; Desarrollador web Front-end /&gt;
+            &lt; Desarrollador web /&gt;
           </h2>
           <div className="w-[80%] 2xl:w-[100%] aboutMe mx-auto text-center lg:text-start bg-[#fff] mt-2 md:mt-4  p-3 rounded-2xl mb-2 xl:mb-3 border-[1px] shadow">
             <div className="block sm:hidden mx-auto w-[175px] h-[250px] rounded-[20px] border-[1px] border-[#f7f7f7] lg:w-[180px] lg:h-[180px] mb-2">
@@ -47,7 +47,7 @@ const AcercaDeMi = () => {
                 Acerca de mí
               </h2>
               <p className="text-[#787777] 2xl:text-[20px]">
-              Soy estudiante de Ingeniería en Sistemas de Información con enfoque en desarrollo web Front-end. Me destaco por crear páginas rápidas, responsivas y optimizadas para SEO, aportando ideas creativas de diseño. También poseo conocimientos en documentación técnica, lo que me permite analizar y comprender mejor las necesidades de cada proyecto. Además, mi alto compromiso y atención al detalle además de una mentalidad orientada a resultados, me permiten contribuir de forma efectiva en los proyectos en los que participo.
+              Soy estudiante de Ingeniería en Sistemas de Información con fuerte enfoque en desarrollo web y orientado al Front-end. Me destaco por crear páginas rápidas, responsivas y optimizadas para SEO, aportando ideas creativas de diseño. También poseo conocimientos en documentación técnica, lo que me permite analizar y comprender mejor las necesidades de cada proyecto. Además, mi alto compromiso y atención al detalle además de una mentalidad orientada a resultados, me permiten contribuir de forma efectiva en los proyectos en los que participo.
               </p>
             </div>
           </div>
