@@ -1,5 +1,5 @@
 import cv from "../../assets/CV Bruno Madozzo Romay.pdf";
-import perfil from "../../assets/perfilbg.png";
+import perfil from "../../assets/perfil.png";
 
 const AcercaDeMi = () => {
   const handleDownloadPDF = () => {
@@ -31,10 +31,10 @@ const AcercaDeMi = () => {
             Hola, soy Bruno Madozzo
           </h1>
           <h2 className="text-[20px] 2xl:text-[35px] text-[#222] leading-8 md:leading-normal text-center align-middle sm:text-[25px] xl:text-[30px] font-bold ">
-            &lt; Desarrollador web Fullstack/&gt;
+            &lt; Desarrollador web Fullstack /&gt;
           </h2>
           <div className="w-[80%] 2xl:w-[100%] aboutMe mx-auto text-center lg:text-start bg-[#fff] mt-2 md:mt-4  p-3 rounded-2xl mb-2 xl:mb-3 border-[1px] shadow">
-            <div className="block sm:hidden mx-auto w-[175px] h-[250px] rounded-[20px] border-[1px] border-[#f7f7f7] lg:w-[180px] lg:h-[180px] mb-2">
+            <div className="block sm:hidden mx-auto mt-4 w-[200px] h-[250px] rounded-[20px] border-[1px] border-[#f7f7f7] lg:w-[180px] lg:h-[180px] mb-2">
               <img
                 src={perfil}
                 alt="Bruno Madozzo"

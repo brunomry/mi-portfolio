@@ -1,5 +1,6 @@
-import perfil from "../assets/perfilbg.png";
+import perfil from "../assets/perfil.png";
 import { useState } from "react";
+import logo from "../assets/logo.png";
 
 const Sidebar = () => {
   const [desplegado, setDesplegado] = useState();
@@ -16,20 +17,24 @@ const Sidebar = () => {
             desplegado ? "hidden" : "block"
           }`}
         >
-          <h2 className="block my-auto text-[#222] text-[1.125rem]">
-            Bruno Madozzo
-          </h2>
+          <div className="flex items-center">
+            <img src={logo} className="w-[60px] h-[60px]" />
+          </div>
           <button
-            className={`text-[#222] lg:hidden ${desplegado ? "hidden" : "block"}`}
+            className={`text-[#222] lg:hidden ${
+              desplegado ? "hidden" : "block"
+            }`}
             type="button"
             title="menu"
             onClick={() => desplegarMenu(true)}
           >
-            <i className="bi bi-list text-[50px]"></i>
+            <i className="bi bi-list text-[35px]"></i>
           </button>
         </div>
         <div
-          className={`w-[100%] py-4 lg:block ${desplegado ? "block" : "hidden"}`}
+          className={`w-[100%] py-4 lg:block ${
+            desplegado ? "block" : "hidden"
+          }`}
         >
           <div className="flex justify-end px-4">
             <button
@@ -49,36 +54,36 @@ const Sidebar = () => {
                 desplegado ? "flex flex-col bg-[#f7f7f7]" : "hidden"
               } `}
             >
-              <div className="hidden lg:block mx-auto md:w-[125px] md:h-[150px] lg:w-[150px] lg:h-[200px] rounded-[20px] border-[1px] border-[#d5d5d5] mb-2 ">
+              <div className="hidden lg:block mx-auto md:w-[125px] md:h-[150px] lg:w-[200px] lg:h-[200px] rounded-[20px] border-[8px] border-[#e2e2e2] mb-2 ">
                 <img
                   src={perfil}
                   alt="Bruno Madozzo"
                   title="Bruno Madozzo"
-                  className="w-[100%] h-[100%] bg-slate-100 rounded-[20px] object-cover"
+                  className="w-[100%] h-[100%] bg-slate-100 rounded-[12px] object-cover"
                 />
               </div>
               <h2 className="text-center text-[#414141] text-[20px] mb-2">
                 Bruno Madozzo
               </h2>
               <div className="flex justify-center items-center gap-3">
-              <a
-                href="https://github.com/brunomry"
-                target="_blank"
-                title="Visita mis proyectos en mi repositorio de Github"
-                className="border-[1px] rounded-[100%] bg-[#fff] p-1 flex items-center justify-center"
-                rel="noopener noreferrer"
-              >
-                <i className="px-2 text-[#375c86] rounded-[6px] pt-1 bi bi-github sm:text-[25px]"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/bruno-madozzo/"
-                target="_blank"
-                title="Visita mi perfil de LinkedIn"
-                className="border-[1px] rounded-[100%] bg-[#fff] py-1 flex items-center justify-center"
-              >
-                <i className="px-3  text-[#375c86] rounded-[6px] pt-1 bi bi-linkedin sm:text-[25px]"></i>
-              </a>
-            </div>
+                <a
+                  href="https://github.com/brunomry"
+                  target="_blank"
+                  title="Visita mis proyectos en mi repositorio de Github"
+                  className="border-[1px] rounded-[100%] bg-[#fff] p-1 flex items-center justify-center"
+                  rel="noopener noreferrer"
+                >
+                  <i className="px-2 text-[#375c86] rounded-[6px] pt-1 bi bi-github sm:text-[25px]"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/bruno-madozzo/"
+                  target="_blank"
+                  title="Visita mi perfil de LinkedIn"
+                  className="border-[1px] rounded-[100%] bg-[#fff] py-1 flex items-center justify-center"
+                >
+                  <i className="px-3  text-[#375c86] rounded-[6px] pt-1 bi bi-linkedin sm:text-[25px]"></i>
+                </a>
+              </div>
               <ul className="rounded-[4px] pt-[30px] w-[100%] h-[100%]">
                 <li>
                   <a
