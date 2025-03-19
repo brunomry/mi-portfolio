@@ -21,14 +21,14 @@ const Tecnologias = () => {
           <CardTecnologia key={pos} tech={tech} />
         ))}
       </div>
-      <h3 className="px-2 md:px-10 text-[#444] me-auto font-bold mt-3 sm:flex-wrap md:text-[20px] lg:text-[25px]">
+      {/* <h3 className="px-2 md:px-10 text-[#444] me-auto font-bold mt-3 sm:flex-wrap md:text-[20px] lg:text-[25px]">
         Actualmente aprendiendo...
       </h3>
       <div className="flex containerTech w-[100%] h-[200px] sm:h-[100%] sm:flex-wrap gap-2 md:gap-3 xl:gap-6 items-center sm:justify-center lg:pt-5 px-5 ">
         {tecnologias.aprendiendo.map((tech, pos) => (
           <CardTecnologia key={pos} tech={tech} />
         ))}
-      </div>
+      </div> */}
     </article>
   );
 };
