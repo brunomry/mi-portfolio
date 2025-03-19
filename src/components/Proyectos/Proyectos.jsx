@@ -87,7 +87,7 @@ const Proyectos = () => {
             </div>
           )}
         </Tab>
-        <Tab
+        {/* <Tab
           eventKey="otros"
           title="Otros"
           className="flex flex-wrap items-center justify-center gap-3 gap-lg-4"
@@ -108,7 +108,7 @@ const Proyectos = () => {
               ))}
             </div>
           )}
-        </Tab>
+        </Tab> */}
       </Tabs>
     </article>
   );
