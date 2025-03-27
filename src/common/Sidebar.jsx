@@ -1,6 +1,7 @@
 import perfil from "../assets/perfil.png";
 import { useState } from "react";
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [desplegado, setDesplegado] = useState();
@@ -10,7 +11,7 @@ const Sidebar = () => {
   };
 
   return (
-    <nav className="w-[100%] h-[80px] lg:h-[100vh] lg:w-[25%] xl:w-[20%] fixed top-0 left-0 bg-slate-100 flex justify-center z-[99]">
+    <nav className="w-[100%] h-[80px] lg:h-[100vh] lg:w-[25%] xl:w-[20%] fixed top-0 right-0 bg-slate-100 flex justify-center ">
       <div className="lg:px-0 flex justify-between w-[100%] lg:w-[initial]">
         <div
           className={`flex w-[100%] justify-between px-4 lg:hidden ${
@@ -86,58 +87,68 @@ const Sidebar = () => {
               </div>
               <ul className="rounded-[4px] pt-[30px] w-[100%] h-[100%]">
                 <li>
-                  <a
-                    className=" block w-[100%] xl:mb-2 navLink text-[#414141] duration-[0.5s] hover:duration-[0.5s] relative pb-[15px] xl:text-[1.125rem]  text-center"
-                    href="#sobremi"
+                  <Link
+                    className=" block w-[100%] xl:mb-2 navLink text-[#414141] duration-[0.5s] hover:duration-[0.5s] relative pb-[15px]   text-center"
+                  
+                    to={"/"}
                     onClick={() => desplegarMenu(false)}
                   >
                     Acerca de mí
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    className="block w-[100%] xl:mb-2 navLink text-[#414141] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px] xl:text-[1.125rem]  text-center"
-                    href="#tecnologias"
+                  <Link
+                    className="block w-[100%] xl:mb-2 navLink text-[#414141] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px]   text-center"
+                    to={"/tecnologias"}
                     onClick={() => desplegarMenu(false)}
                   >
                     Tecnologías
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    className="block xl:mb-2 navLink text-[#414141] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px] xl:text-[1.125rem]  text-center"
-                    href="#proyectos"
+                  <Link
+                    className="block xl:mb-2 navLink text-[#414141] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px]   text-center"
+                    to={"/proyectos"}
                     onClick={() => desplegarMenu(false)}
                   >
                     Proyectos
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    className="block xl:mb-2 navLink text-[#414141] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px] xl:text-[1.125rem]  text-center"
-                    href="#certificaciones"
+                  <Link
+                    className="block xl:mb-2 navLink text-[#414141] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px]   text-center"
+                    to={"/educacion"}
                     onClick={() => desplegarMenu(false)}
                   >
-                    Certificaciones
-                  </a>
+                    Educación
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    className="block xl:mb-2 navLink text-[#414141] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px] xl:text-[1.125rem]  text-center"
-                    href="#servicios"
+                  <Link
+                    className="block xl:mb-2 navLink text-[#414141] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px]   text-center"
+                    to={"/servicios"}
                     onClick={() => desplegarMenu(false)}
                   >
                     Servicios
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    className="block xl:mb-2 navLink text-[#414141] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px] xl:text-[1.125rem]  text-center"
-                    href="#contacto"
+                  <Link
+                    className="block xl:mb-2 navLink text-[#414141] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px]   text-center"
+                    to={"/testimonios"}
+                    onClick={() => desplegarMenu(false)}
+                  >
+                    Testimonios
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="block xl:mb-2 navLink text-[#414141] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px]   text-center"
+                    to={"/contacto"}
                     onClick={() => desplegarMenu(false)}
                   >
                     Contacto
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

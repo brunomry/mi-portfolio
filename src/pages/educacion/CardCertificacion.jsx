@@ -1,6 +1,6 @@
 import { useState } from "react";
 import CarruselCertificaciones from "./CarruselCertificaciones";
-import certificados from "../helpers/certificados";
+import certificados from "../../helpers/certificados";
 
 const CardCertificacion = ({ certificado, index }) => {
   const [visible, setVisible] = useState(false);

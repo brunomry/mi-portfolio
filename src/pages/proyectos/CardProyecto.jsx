@@ -10,7 +10,7 @@ const CardProyecto = ({ proyecto }) => {
 
   return (
     <>
-     <div className=" flex gap-[50px] rounded-[10px] w-[75%] min-w-[280px] h-[350px] bg-[#fff] duration-[0.8s]    lg:duration-[0.7s]  ">
+     <div className=" flex gap-[50px] rounded-[10px] w-[75%] min-w-[280px] h-[300px] bg-[#fff] duration-[0.8s]    lg:duration-[0.7s]  ">
       <div className=''>
       <img
         src={proyecto.imagen}

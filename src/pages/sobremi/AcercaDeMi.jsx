@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import cv from "../../assets/CV Bruno Madozzo Romay.pdf";
 import perfil from "../../assets/perfil.png";
 
@@ -9,7 +10,7 @@ const AcercaDeMi = () => {
 
   return (
     <article
-      className="flex flex-col justify-center xl:items-center w-[95%] min-h-[40vh] bg-[#fff] md:min-h-[70vh] mt-[100px] sm:mt-[75px] lg:min-h-[100vh] xl:min-h-[80vh] rounded-2 lg:pt-0 lg:mt-0"
+      className="flex flex-col  xl:items-center xl:w-[80%]  bg-[#fff]  mt-[100px] min-h-[100vh]  rounded-2 lg:pt-0 "
       id="sobremi"
     >
       <div className="hidden justify-center pb-md-3 w-[100%] mb-5 gap-5">
@@ -68,13 +69,13 @@ const AcercaDeMi = () => {
               >
                 Descargar CV <i className="bi bi-download ms-2"></i>
               </button>
-              <a
+              <Link
                 className="flex items-center justify-center px-5 py-[10px] 2xl:py-[15px] w-[250px] rounded-[45px] bg-[#000] text-white hover:bg-[#f7f7f7] hover:text-[#222] hover:border hover:border-[#000] text-[16px] md:text-[1rem] xl:text-[1.125rem]"
-                href="#contacto"
+                to={"/contacto"}
                 title="Contáctame a través de mis redes sociales"
               >
                 <span>Contactarse</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

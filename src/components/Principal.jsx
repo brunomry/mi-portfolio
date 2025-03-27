@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
-import Tecnologias from "./tecnologias/Tecnologias";
-import AcercaDeMi from "./sobreMi/AcercaDeMi";
-import Proyectos from "./Proyectos/Proyectos";
-import Certificaciones from "./Certificaciones/Certificaciones";
-import Contacto from "./Contacto/Contacto";
-import Footer from "./Footer";
-import Servicios from "./servicios/Servicios";
+import Tecnologias from "../pages/tecnologias/Tecnologias";
+import AcercaDeMi from "../pages/sobremi/AcercaDeMi";
+import Proyectos from "../pages/proyectos/Proyectos";
+import Certificaciones from "../pages/certificaciones/Certificaciones";
+import Contacto from "../pages/contacto/Contacto";
+import Footer from "../common/Footer";
+import Servicios from "../pages/servicios/Servicios";
+import Sidebar from "../common/Sidebar";
 
 const Secciones = () => {
   const [scrollTop, setScrollTop] = useState(0);
@@ -17,11 +18,12 @@ const Secciones = () => {
   }, []);
 
   return (
+    <>
     <section
       id="section"
       className="w-[100%] absolute min-h-screen lg:w-[75%] lg:ml-[25%] xl:w-[80%] xl:ml-[20%] bg-[#fff] flex flex-col items-center gap-3 pt-2 xl:pt-3"
     >
-      <AcercaDeMi></AcercaDeMi>
+
       <Tecnologias></Tecnologias>
       <Proyectos></Proyectos>
       <Certificaciones></Certificaciones>
@@ -37,6 +39,9 @@ const Secciones = () => {
         </a>
       )}
     </section>
+    <Sidebar></Sidebar>
+    </>
+    
   );
 };
 

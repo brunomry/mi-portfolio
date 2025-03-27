@@ -1,11 +1,11 @@
 import React from "react";
 import CardServicio from "./CardServicio";
-import servicios from "../helpers/servicios";
+import servicios from "../../helpers/servicios";
 
 function Servicios() {
   return (
     <article
-      className="flex flex-col items-center w-[100%] min-h-[35vh] sm:min-h-[100vh] md:min-h-[50vh] lg:min-h-[50vh] mt-3 lg:mt-0 bg-[#fff] gap-2 sm:gap-4 xl:py-5 services px-2 md:px-5 xl:px-[50px]"
+      className="flex flex-col items-center w-[100%] xl:w-[80%] min-h-[100vh]  mt-[100px] bg-[#fff] gap-2 sm:gap-4 xl:py-5 services px-2 md:px-5 xl:px-[50px]"
       id="servicios"
     >
       <h2 className="text-center font-bold text-[25px] xl:text-[30px] 2xl:text-[35px] text-[#333]">
