@@ -12,7 +12,7 @@ const Proyectos = () => {
 
   return (
     <article
-      className="py-3 flex flex-col gap-3 xl:gap-4 items-center px-3 xl:w-[80%] min-h-[100vh] mt-[100px]"
+      className="py-3 flex flex-col gap-3 xl:gap-4 items-center px-3 xl:w-[80%] min-h-[100vh] xl:py-[100px]"
       id="proyectos"
     >
       <h2 className=" mb-8 font-bold text-[25px] xl:text-[30px] 2xl:text-[35px] text-[#333]">

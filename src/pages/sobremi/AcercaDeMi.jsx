@@ -3,15 +3,11 @@ import cv from "../../assets/CV Bruno Madozzo Romay.pdf";
 import perfil from "../../assets/perfil.png";
 
 const AcercaDeMi = () => {
-  const handleDownloadPDF = () => {
-    const urlPDF = cv;
-    window.open(urlPDF, "_blank", "noopener");
-  };
+  const handleDownloadPDF = () => window.open(cv, "_blank", "noopener");
 
   return (
-    <article
-      className="flex flex-col  xl:items-center xl:w-[80%]  bg-[#fff]  mt-[100px] min-h-[100vh]  rounded-2 lg:pt-0 "
-      id="sobremi"
+    <section
+      className="flex flex-col  xl:items-center xl:w-[80%]  bg-[#fff]  mt-[100px] min-h-[100vh]  rounded-2 "
     >
       <div className="hidden justify-center pb-md-3 w-[100%] mb-5 gap-5">
         <div className="rounded-[5px] border-1 flex items-center gap-2">
@@ -80,7 +76,7 @@ const AcercaDeMi = () => {
           </div>
         </div>
       </div>
-    </article>
+    </section>
   );
 };
 

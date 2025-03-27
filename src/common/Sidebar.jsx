@@ -2,6 +2,7 @@ import perfil from "../assets/perfil.png";
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
+import cv from "../assets/CV Bruno Madozzo Romay.pdf";
 
 const Sidebar = () => {
   const [desplegado, setDesplegado] = useState();
@@ -10,6 +11,8 @@ const Sidebar = () => {
     setDesplegado(value);
   };
 
+    const handleDownloadPDF = () => window.open(cv, "_blank", "noopener");;
+  
   return (
     <nav className="w-[100%] h-[80px] lg:h-[100vh] lg:w-[25%] xl:w-[20%] fixed top-0 right-0 bg-slate-100 flex justify-center ">
       <div className="lg:px-0 flex justify-between w-[100%] lg:w-[initial]">
@@ -63,26 +66,30 @@ const Sidebar = () => {
                   className="w-[100%] h-[100%] bg-slate-100 rounded-[12px] object-cover"
                 />
               </div>
-              <h2 className="text-center text-[#414141] text-[20px] mb-2">
+              <div className="text-center mb-2">
+              <h2 className="text-center font-bold text-[#414141] text-[20px] ">
                 Bruno Madozzo
               </h2>
+              <p className="text-gray-600">Desarrollador Frontend</p>
+              </div>
+              
               <div className="flex justify-center items-center gap-3">
                 <a
                   href="https://github.com/brunomry"
                   target="_blank"
                   title="Visita mis proyectos en mi repositorio de Github"
-                  className="border-[1px] rounded-[100%] bg-[#fff] p-1 flex items-center justify-center"
+                  className="rounded-[100%] border-[1px] border-[#375c86] p-1 flex items-center justify-center"
                   rel="noopener noreferrer"
                 >
-                  <i className="px-2 text-[#375c86] rounded-[6px] pt-1 bi bi-github sm:text-[25px]"></i>
+                  <i className="px-2 text-[#375c86] rounded-[6px] pt-1 bi bi-github sm:text-[20px]"></i>
                 </a>
                 <a
                   href="https://www.linkedin.com/in/bruno-madozzo/"
                   target="_blank"
                   title="Visita mi perfil de LinkedIn"
-                  className="border-[1px] rounded-[100%] bg-[#fff] py-1 flex items-center justify-center"
+                  className=" rounded-full border-[1px] border-[#375c86] py-1 flex items-center justify-center"
                 >
-                  <i className="px-3  text-[#375c86] rounded-[6px] pt-1 bi bi-linkedin sm:text-[25px]"></i>
+                  <i className="px-3  text-[#375c86] rounded-[6px] pt-1 bi bi-linkedin sm:text-[20px]"></i>
                 </a>
               </div>
               <ul className="rounded-[4px] pt-[30px] w-[100%] h-[100%]">
@@ -141,15 +148,27 @@ const Sidebar = () => {
                     Testimonios
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    className="block xl:mb-2 navLink text-[#414141] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px]   text-center"
-                    to={"/contacto"}
-                    onClick={() => desplegarMenu(false)}
-                  >
-                    Contacto
-                  </Link>
+                <li className="flex justify-center mb-2 w-[100%]">
+                  <Link 
+                  as={Link}
+                className="text-center px-5 py-[7px] w-[175px] rounded-[45px] bg-[#000] text-white hover:bg-[#f7f7f7] hover:text-[#222] border hover:border hover:border-[#000] text-[1rem] "
+                to={"/contacto"}
+                onClick={() => desplegarMenu(false)}
+                title="Contáctame a través de mis redes sociales"
+              >
+                <span>Contactarse</span>
+              </Link>
                 </li>
+                <li className="text-center">
+                <button
+                className=" px-5 py-[5px]  w-[175px] rounded-[45px] bg-[#fff] text-[#222] hover:bg-[#000] hover:text-[#fff] border-[#303030] border-[1px] hover:py-[7px] hover:border-[#000] text-[1rem]"
+                onClick={handleDownloadPDF}
+                title="haz clic para descargar mi CV"
+              >
+                Descargar CV <i className="bi bi-download ms-2"></i>
+              </button>
+                </li>
+              
               </ul>
             </div>
           </div>
