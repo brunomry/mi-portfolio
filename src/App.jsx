@@ -1,8 +1,9 @@
-import "./styles-min.css";
-import 'flowbite';
+import "./styles.css";
+import "flowbite";
 import "flowbite-react";
 import { BrowserRouter } from "react-router-dom";
 import AppRouter from "./routes/AppRouter";
+import ScrollTop from "./common/ScrollTop";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     //   <Secciones></Secciones>
     // </div>
     <BrowserRouter>
+      <ScrollTop></ScrollTop>
       <AppRouter></AppRouter>
     </BrowserRouter>
   );

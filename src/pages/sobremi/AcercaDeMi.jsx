@@ -7,7 +7,7 @@ const AcercaDeMi = () => {
 
   return (
     <section
-      className="flex flex-col  xl:items-center xl:w-[80%]  bg-[#fff]  mt-[100px] min-h-[100vh]  rounded-2 "
+      className="flex flex-col  xl:w-[80%]  bg-[#fff]  pt-[150px] min-h-[100vh] fondo "
     >
       <div className="hidden justify-center pb-md-3 w-[100%] mb-5 gap-5">
         <div className="rounded-[5px] border-1 flex items-center gap-2">

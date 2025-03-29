@@ -11,25 +11,28 @@ const Proyectos = () => {
     proyectos.filter((p) => p.tipo === tipoProyecto);
 
   return (
-    <article
-      className="py-3 flex flex-col gap-3 xl:gap-4 items-center px-3 xl:w-[80%] min-h-[100vh] xl:py-[100px]"
+    <section
+      className="py-3 flex flex-col gap-3 xl:gap-4 items-center px-3 xl:w-[80%] min-h-[100vh] xl:py-[100px] fondo"
       id="proyectos"
     >
       <h2 className=" mb-8 font-bold text-[25px] xl:text-[30px] 2xl:text-[35px] text-[#333]">
-      &lt; Proyectos destacados /&gt;
+        &lt; Proyectos destacados /&gt;
       </h2>
 
-            <div className="flex flex-col px-3 containerTabProyects sm:flex-wrap h-[450px] w-[100vw] sm:w-[100%]  sm:h-[100%] sm:pb-[50px]  sm:justify-center md:items-center gap-3 lg:gap-8 ">
-              {filtrarPorTipo("Aplicación web").length > 0 &&
-                filtrarPorTipo("Aplicación web").map((proyecto) => (
-                  <CardProyecto
-                    key={proyecto.id}
-                    proyecto={proyecto}
-                  ></CardProyecto>
-                ))}
-            </div>
+      <article className="flex flex-col px-3 containerTabProyects sm:flex-wrap h-[450px] w-[100vw] sm:w-[100%]  sm:h-[100%] sm:pb-[50px]  sm:justify-center md:items-center gap-3 lg:gap-8 ">
+        {filtrarPorTipo("Aplicación web").length > 0 &&
+          filtrarPorTipo("Aplicación web").map((proyecto) => (
+            <CardProyecto key={proyecto.id} proyecto={proyecto}></CardProyecto>
+          ))}
+      </article>
 
-            <Link to={"/masproyectos"}>mas proeyctos</Link>
+      <Link
+        className=" px-5 py-[15px] text-center w-[200px] rounded-[45px] bg-[#fff] text-[#222] hover:bg-[#000] hover:text-[#fff] border-[#303030] border-[1px] hover:border-[#000] text-[1rem]"
+        to={"/masproyectos"}
+        title="haz clic para descargar mi CV"
+      >
+        MÁS PROYECTOS
+      </Link>
       {/* <Tabs
         activeKey={key}
         onSelect={(k) => setKey(k)}
@@ -123,7 +126,7 @@ const Proyectos = () => {
           )}
         </Tab>
       </Tabs> */}
-    </article>
+    </section>
   );
 };
 

@@ -1,5 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,11 +8,15 @@
 * {
   scroll-margin-top: 100px;
   scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif;
+  font-family: "Questrial", sans-serif;
 }
 
 .active {
   color: #000 !important;
+}
+
+.fondo{
+  background: linear-gradient(to top right, white 50%, #f3fafd 50%);
 }
 
 .tabs button {
@@ -84,7 +88,7 @@
   }
 
   ::-webkit-scrollbar {
-    width: 7px;
+    width: 8px;
   }
 
   ::-webkit-scrollbar-track {

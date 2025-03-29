@@ -1,39 +1,50 @@
 const servicios = [
-    {
-        id: 1,
-        servicio: "Diseño y creación de páginas web responsivas",
-        descripcion: "Creación de páginas que se adaptan y funcionan en todos los dispositivos (celulares, tablets y computadoras)"
-      },
-      {
-        id: 2,
-        servicio: "Creación de landing pages",
-        descripcion: "Desarrollo de páginas simples y minimalistas para promocionar tus productos o servicios."
-      },
-      {
-        id: 3,
-        servicio: "Desarrollo de sitios web",
-        descripcion: "Creación de sitios web informativos para que tu negocio tenga presencia online."
-      },
-    //   {
-    //     id: 4,
-    //     servicio: "Creación de aplicaciones web",
-    //     descripcion: "Desarrollo de aplicaciones para que tus clientes puedan registrarse, iniciar sesión y realizar compras de forma online."
-    //   },
-      {
-        id: 5,
-        servicio: "Optimización SEO",
-        descripcion: "Puedo hacer que tu página aparezca en Google al realizar una búsqueda."
-      },
-      {
-        id: 6,
-        servicio: "Optimización de velocidad y rendimiento",
-        descripcion: "Me aseguro que tu página cargue de forma rápida para una mejor experiencia de tus clientes."
-      },
-      {
-        id: 7,
-        servicio: "Integración de WhatsApp",
-        descripcion: "Botón de WhatsApp en tu página para que tus clientes se puedan comunicar contigo de forma fácil."
-      }
-  ];
-  
-  export default servicios;
+  {
+    id: 1,
+    titulo: "Diseño y Desarrollo de Sitios web",
+    descripcion:
+      "Creación de páginas que se adaptan a todos los dispositivos (celulares, tablets y pc)",
+    servicios: [
+      "Diseño atractivo y moderno",
+      "Páginas adaptadas a celulares, tablets y computadoras",
+      "Sitios web informativos para que tu negocio tenga presencia online.",
+      "Landing pages para promocionar tus productos o servicios",
+    ],
+  },
+  {
+    id: 2,
+    titulo: "Desarrollo de Tienda online",
+    descripcion:
+      "Desarrollo de aplicaciones para que tus clientes puedan registrarse, iniciar sesión y realizar compras de forma online.",
+    servicios: [
+      "Catálogo de productos fácil de gestionar.",
+      "Carrito de compras y pagos en línea.",
+      "Integración con pasarelas de pago seguras.",
+      "Panel de administración para gestionar pedidos.",
+    ],
+  },
+  {
+    id: 3,
+    titulo: "Desarrollo de aplicaciones web",
+    descripcion:
+      "Puedo hacer que tu página aparezca en Google al realizar una búsqueda.",
+    servicios: [
+      "Aplicaciones web a medida según tus necesidades",
+      "Registros de usuarios, pagos en línea y gestión de datos",
+      "Integración con bases de datos",
+    ],
+  },
+  {
+    id: 4,
+    titulo: "Optimización SEO y rendimiento web",
+    descripcion:
+      "Puedo hacer que tu página aparezca en Google al realizar una búsqueda.",
+    servicios: [
+      "Ajustes para que tu sitio aparezca en Google",
+      "Uso de palabras clave para posicionamiento",
+      "Optimización de imágenes y contenido para que tu sitio cargue rápido y sea fácil de navegar",
+    ],
+  }
+];
+
+export default servicios;

@@ -10,13 +10,13 @@ const CardProyecto = ({ proyecto }) => {
 
   return (
     <>
-     <div className=" flex gap-[50px] rounded-[10px] w-[75%] min-w-[280px] h-[300px] bg-[#fff] duration-[0.8s]    lg:duration-[0.7s]  ">
+     <div className=" flex gap-[50px] rounded-[10px] w-[75%] min-w-[280px] h-[300px] bg-[#fff] duration-[0.8s]    lg:duration-[0.7s] shadow-xl ">
       <div className=''>
       <img
         src={proyecto.imagen}
         alt={proyecto.nombre}
         title={proyecto.nombre}
-        className=" border-b max-w-[100%] h-[100%] object-cover"
+        className="rounded-s-[10px] border-b max-w-[100%] h-[100%] object-cover"
       />
       </div>
       <div className="flex flex-col justify-center w-[50%] gap-2 ">
@@ -44,7 +44,7 @@ const CardProyecto = ({ proyecto }) => {
             rel="noopener"
           >
             <i className="text-2xl bi bi-link-45deg"></i>
-            <span>VISITAR PROYECTO</span>
+            <span>VISITAR WEB</span>
           </a>
           <button
                 className="flex items-center justify-center px-5 py-[8px] 2xl:py-[10px] w-[250px] rounded-[45px] bg-pink-800 text-white border-[1px] text-[16px] md:text-[1rem] xl:text-[1.125rem] gap-4"

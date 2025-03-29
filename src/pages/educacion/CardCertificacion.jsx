@@ -13,7 +13,7 @@ const CardCertificacion = ({ formacion, index }) => {
 
   return (
     <>
-      <div
+      <article
         onClick={() => {
           if (formacion.img !== "") {
             openCarousel(index);
@@ -25,12 +25,11 @@ const CardCertificacion = ({ formacion, index }) => {
             );
           }
         }}
-        className="cursor-pointer rounded-[6px] bg-[#fff] py-8 cardCertification w-[90%] min-w-[260px] min-h-[225px] md:h-[150px] xl:h-[200px] duration-[0.8s] border-[1px] border-s-[#000] border-s-[5px] text-center md:text-start flex flex-col px-2 md:px-4 xl:px-5 lg:hover:shadow-xl"
+        className="cursor-pointer rounded-[6px] bg-[#fff] py-8 cardCertification w-[90%] min-w-[260px] max-w-[500px] min-h-[225px] md:h-[150px] xl:h-[270px] duration-[0.8s] text-center md:text-start flex flex-col px-2 md:px-4 xl:px-5 lg:shadow-xl border"
         title="clic para ver certificación"
       >
-        <div className="flex flex-col justify-between rounded-[4px] min-h-[100%]">
-          <div className="flex flex-col ">
-            <div className="min-h-[120px] xl:min-h-[150px] flex flex-col gap-2">
+            <div className="h-[100%] flex flex-col justify-between gap-2">
+              <div>
               <h5 className="mb-1 font-bold text-[#444] md:text-[20px] 2xl:text-[22px]">
                 {formacion.titulo}
               </h5>
@@ -40,9 +39,10 @@ const CardCertificacion = ({ formacion, index }) => {
               <p className="text-gray-500">
                 {formacion.fechaInicio} | {formacion.fechaFin}
               </p>
-              <div className="flex w-[100%] md:justify-end">
+              </div>     
+              <div className="flex w-[100%] md:justify-end ">
                 <button
-                  className="px-5 py-[10px] w-[100%] md:w-[50%] xl:w-[25%] rounded-[25px] bg-[#fff] text-[#222] hover:bg-[#000] hover:text-[#fff] border-[#222] border-[1px] hover:border-[#000] text-[16px] md:text-[1rem] xl:text-[1.125rem]"
+                  className="px-5 py-[10px] w-[100%] md:w-[50%] xl:w-[45%] rounded-[25px] bg-[#fff] text-[#375c86] hover:bg-[#000] hover:text-[#fff] border-[1px] border-[#375c86] hover:border-[#000] text-[16px] md:text-[1rem] xl:text-[1.125rem]"
                   onClick={() => {
                     if (formacion.img !== "") {
                       openCarousel(index);
@@ -64,9 +64,7 @@ const CardCertificacion = ({ formacion, index }) => {
                 </button>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+      </article>
       {visible && (
         <CarruselCertificaciones
           setVisible={setVisible}

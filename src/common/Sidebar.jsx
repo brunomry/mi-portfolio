@@ -14,7 +14,7 @@ const Sidebar = () => {
     const handleDownloadPDF = () => window.open(cv, "_blank", "noopener");;
   
   return (
-    <nav className="w-[100%] h-[80px] lg:h-[100vh] lg:w-[25%] xl:w-[20%] fixed top-0 right-0 bg-slate-100 flex justify-center ">
+    <nav className="w-[100%] h-[80px] lg:h-[100vh] lg:w-[25%] xl:w-[20%] fixed top-0 right-0  flex justify-center ">
       <div className="lg:px-0 flex justify-between w-[100%] lg:w-[initial]">
         <div
           className={`flex w-[100%] justify-between px-4 lg:hidden ${
@@ -22,9 +22,10 @@ const Sidebar = () => {
           }`}
         >
           <div className="flex items-center">
-            <img src={logo} className="w-[60px] h-[60px]" />
+          <p className=" mb-3 text-[20px]">BM Soluciones web</p>
+
           </div>
-          <button
+      <button
             className={`text-[#222] lg:hidden ${
               desplegado ? "hidden" : "block"
             }`}
@@ -133,19 +134,19 @@ const Sidebar = () => {
                 <li>
                   <Link
                     className="block xl:mb-2 navLink text-[#414141] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px]   text-center"
-                    to={"/servicios"}
+                    to={"/testimonios"}
                     onClick={() => desplegarMenu(false)}
                   >
-                    Servicios
+                    Testimonios
                   </Link>
                 </li>
                 <li>
                   <Link
                     className="block xl:mb-2 navLink text-[#414141] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px]   text-center"
-                    to={"/testimonios"}
+                    to={"/servicios"}
                     onClick={() => desplegarMenu(false)}
                   >
-                    Testimonios
+                    Servicios
                   </Link>
                 </li>
                 <li className="flex justify-center mb-2 w-[100%]">
@@ -156,7 +157,7 @@ const Sidebar = () => {
                 onClick={() => desplegarMenu(false)}
                 title="Contáctame a través de mis redes sociales"
               >
-                <span>Contactarse</span>
+                <span>Contáctame</span>
               </Link>
                 </li>
                 <li className="text-center">

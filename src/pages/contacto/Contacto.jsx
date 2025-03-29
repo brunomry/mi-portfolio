@@ -32,7 +32,7 @@ const Contacto = () => {
               target="_blank"
               title="Contáctame por LinkedIn"
               rel="noopener noreferrer"
-              className="flex items-center gap-5 p-5   hover:text-[#000] bg-white hover:hover:shadow-lg border-[1px]  w-[100%] rounded-[25px]"
+              className="flex items-center gap-5 p-5   hover:text-[#000] bg-white hover:hover:border-gray-500 border-[1px]  w-[100%] rounded-[25px]"
             >
               <i className="text-4xl text-blue-600 bi bi-linkedin"></i>
               <div className="flex flex-col">
