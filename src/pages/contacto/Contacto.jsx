@@ -1,7 +1,7 @@
 const Contacto = () => {
   return (
     <article
-      className="flex flex-col items-center justify-start gap-2 min-h-[100vh] xl:w-[80%] mt-[100px] px-3 py-5 xl:py-12 containerContact sm:gap-5 contact"
+      className="flex flex-col items-center justify-start gap-2 min-h-[100vh] xl:w-[80%] pt-[100px] px-3 py-5  containerContact sm:gap-5 contact fondo"
       id="contacto"
     >
       <h2 className="font-bold text-[25px] xl:text-[30px] 2xl:text-[35px] text-[#333]">

@@ -7,6 +7,8 @@ import Educacion from "../pages/educacion/Educacion";
 import Servicios from "../pages/servicios/Servicios";
 import Contacto from "../pages/contacto/Contacto";
 import Testimonios from "../pages/testimonios/Testimonios";
+import Login from "../pages/auth/Login";
+import FormularioTestimonio from "../pages/testimonios/FormularioTestimonio";
 
 const AppRouter = () => {
   return (
@@ -30,9 +32,17 @@ const AppRouter = () => {
           path="/testimonios"
           element={<Testimonios></Testimonios>}
         ></Route>
-           <Route
+        <Route
+          path="/formtestimonio"
+          element={<FormularioTestimonio></FormularioTestimonio>}
+        ></Route>
+          <Route
           path="/contacto"
           element={<Contacto></Contacto>}
+        ></Route> 
+        <Route
+          path="/login"
+          element={<Login></Login>}
         ></Route>
       </Routes>
     </MainLayout>
