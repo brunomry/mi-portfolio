@@ -19,18 +19,18 @@ const Tecnologias = () => {
         Estas son las tecnologías, herramientas y más que aplico en mis proyectos o de las cuales
         tengo conocimientos.
       </p>
-      <article className="flex flex-col items-center gap-5 mt-10 xl:w-[80%]">
+      <article className="flex flex-col  gap-5 mt-10 xl:w-[80%]">
       <h3 className=" rounded-[20px] bg-[#375c86] py-2 px-4 text-[#fff] w-[fit-content] text-[20px] xl:text-[22px]">Frontend</h3>
-      <div className="flex justify-center containerTech xl:w-[100%] h-[200px] sm:h-[100%] gap-2 md:gap-3 xl:gap-6 items-center  sm:flex-wrap lg:pt-5 px-5 ">
+      <div className="flex containerTech xl:w-[100%] h-[200px] sm:h-[100%] gap-2 md:gap-3 xl:gap-6 items-center  sm:flex-wrap lg:pt-5 px-5 ">
       
         {filtrarTecnologiasPorCategoria("frontend").length > 0 && filtrarTecnologiasPorCategoria("frontend").map((tech, pos) => (
           <CardTecnologia key={pos} tech={tech} />
         ))}
       </div>
       </article>
-      <article className="flex flex-col items-center gap-5 mt-10 xl:w-[80%]">
+      <article className="flex flex-col gap-5 mt-10 xl:w-[80%]">
       <h3 className="rounded-[20px] bg-[#375c86] py-2 px-4 text-[#fff] w-[fit-content] text-[20px] xl:text-[22px]">Backend</h3>
-      <div className="flex justify-center containerTech xl:w-[100%] h-[200px] sm:h-[100%] gap-2 md:gap-3 xl:gap-6 items-center sm:flex-wrap lg:pt-5 px-5 ">
+      <div className="flex containerTech xl:w-[100%] h-[200px] sm:h-[100%] gap-2 md:gap-3 xl:gap-6 items-center sm:flex-wrap lg:pt-5 px-5 ">
        
        {filtrarTecnologiasPorCategoria("backend").length > 0 && filtrarTecnologiasPorCategoria("backend").map((tech, pos) => (
          <CardTecnologia key={pos} tech={tech} />

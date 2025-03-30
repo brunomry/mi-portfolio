@@ -13,7 +13,7 @@ const Educacion = () => {
       
       <article className="flex flex-col xl:w-[80%]">
       <h3 className=" rounded-[20px] bg-[#375c86] py-2 px-4 text-[#fff] w-[fit-content] text-[20px] xl:text-[25px]">Cursos</h3>
-      <div className="flex flex-wrap w-[100%] md:gap-2 containerCertifications h-[250px] mt-8 sm:h-[100%] pb-[20px] gap-3 lg:gap-4 xl:gap-8 ">
+      <div className="flex flex-wrap w-[100%] md:gap-2 containerCertifications h-[250px] mt-8 sm:h-[100%] pb-[20px] ">
         {educacion.filter(e=> e.categoria === "Cursos").map((formacion, index) => (
           <CardCertificacion
             key={formacion.id}
@@ -23,9 +23,9 @@ const Educacion = () => {
         ))}
       </div>
       </article>
-      <article className="flex flex-col mt-10 xl:w-[80%]">
+      <article className="flex flex-col xl:w-[80%]">
       <h3 className=" rounded-[20px] bg-[#375c86] py-2 px-4 text-[#fff] w-[fit-content] text-[20px] xl:text-[25px]">Universidad</h3>
-      <div className="flex w-[100%] md:gap-2 md:w-[75%] xl:w-[100%] 2xl:w-[80%] containerCertifications h-[250px] mt-8 sm:h-[100%] pb-[20px]  gap-3 lg:gap-4 ">
+      <div className="flex w-[100%] md:gap-2 md:w-[75%] xl:w-[100%] containerCertifications h-[250px] mt-8 sm:h-[100%] pb-[20px] ">
         {educacion.filter(e=> e.categoria === "Universidad").map((formacion, index) => (
           <CardCertificacion
             key={formacion.id}

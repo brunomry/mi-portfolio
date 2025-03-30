@@ -32,6 +32,7 @@ const servicios = [
       "Aplicaciones web a medida según tus necesidades",
       "Registros de usuarios, pagos en línea y gestión de datos",
       "Integración con bases de datos",
+      "Integración con bases de datos",
     ],
   },
   {

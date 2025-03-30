@@ -10,8 +10,8 @@ const Sidebar = () => {
     setDesplegado(value);
   };
 
-    const handleDownloadPDF = () => window.open(cv, "_blank", "noopener");;
-  
+  const handleDownloadPDF = () => window.open(cv, "_blank", "noopener");
+
   return (
     <nav className="w-[100%] h-[80px] lg:h-[100vh] lg:w-[25%] xl:w-[20%] fixed top-0 right-0  flex justify-center ">
       <div className="lg:px-0 flex justify-between w-[100%] lg:w-[initial]">
@@ -21,10 +21,9 @@ const Sidebar = () => {
           }`}
         >
           <div className="flex items-center">
-          <p className=" mb-3 text-[20px]">BM Soluciones web</p>
-
+            <p className=" mb-3 text-[20px]">BM Soluciones web</p>
           </div>
-      <button
+          <button
             className={`text-[#222] lg:hidden ${
               desplegado ? "hidden" : "block"
             }`}
@@ -67,12 +66,12 @@ const Sidebar = () => {
                 />
               </div>
               <div className="text-center mb-2">
-              <h2 className="text-center font-bold text-[#414141] text-[20px] ">
-                Bruno Madozzo
-              </h2>
-              <p className="text-gray-600">Desarrollador Frontend</p>
+                <h2 className="text-center font-bold text-[#414141] text-[20px] ">
+                  Bruno Madozzo
+                </h2>
+                <p className="text-gray-600">Desarrollador Frontend</p>
               </div>
-              
+
               <div className="flex justify-center items-center gap-3">
                 <a
                   href="https://github.com/brunomry"
@@ -96,11 +95,10 @@ const Sidebar = () => {
                 <li>
                   <Link
                     className=" block w-[100%] xl:mb-2 navLink text-[#414141] duration-[0.5s] hover:duration-[0.5s] relative pb-[15px]   text-center"
-                  
                     to={"/"}
                     onClick={() => desplegarMenu(false)}
                   >
-                    Acerca de mí
+                    Sobre mí
                   </Link>
                 </li>
                 <li>
@@ -124,19 +122,19 @@ const Sidebar = () => {
                 <li>
                   <Link
                     className="block xl:mb-2 navLink text-[#414141] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px]   text-center"
-                    to={"/educacion"}
+                    to={"/testimonios"}
                     onClick={() => desplegarMenu(false)}
                   >
-                    Educación
+                    Testimonios
                   </Link>
                 </li>
                 <li>
                   <Link
                     className="block xl:mb-2 navLink text-[#414141] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px]   text-center"
-                    to={"/testimonios"}
+                    to={"/educacion"}
                     onClick={() => desplegarMenu(false)}
                   >
-                    Testimonios
+                    Educación
                   </Link>
                 </li>
                 <li>
@@ -149,26 +147,25 @@ const Sidebar = () => {
                   </Link>
                 </li>
                 <li className="flex justify-center mb-2 w-[100%]">
-                  <Link 
-                  as={Link}
-                className="text-center px-5 py-[7px] w-[175px] rounded-[45px] bg-[#000] text-white hover:bg-[#f7f7f7] hover:text-[#222] border hover:border hover:border-[#000] text-[1rem] "
-                to={"/contacto"}
-                onClick={() => desplegarMenu(false)}
-                title="Contáctame a través de mis redes sociales"
-              >
-                <span>Contáctame</span>
-              </Link>
+                  <Link
+                    as={Link}
+                    className="text-center px-5 py-[7px] w-[175px] rounded-[45px] bg-[#000] text-white hover:bg-[#f7f7f7] hover:text-[#222] border hover:border hover:border-[#000] text-[1rem] "
+                    to={"/contacto"}
+                    onClick={() => desplegarMenu(false)}
+                    title="Contáctame a través de mis redes sociales"
+                  >
+                    <span>Contáctame</span>
+                  </Link>
                 </li>
                 <li className="text-center">
-                <button
-                className=" px-5 py-[5px]  w-[175px] rounded-[45px] bg-[#fff] text-[#222] hover:bg-[#000] hover:text-[#fff] border-[#303030] border-[1px] hover:py-[7px] hover:border-[#000] text-[1rem]"
-                onClick={handleDownloadPDF}
-                title="haz clic para descargar mi CV"
-              >
-                Descargar CV <i className="bi bi-download ms-2"></i>
-              </button>
+                  <button
+                    className=" px-5 py-[5px]  w-[175px] rounded-[45px] bg-[#fff] text-[#222] hover:bg-[#000] hover:text-[#fff] border-[#303030] border-[1px] hover:py-[7px] hover:border-[#000] text-[1rem]"
+                    onClick={handleDownloadPDF}
+                    title="haz clic para descargar mi CV"
+                  >
+                    Descargar CV <i className="bi bi-download ms-2"></i>
+                  </button>
                 </li>
-              
               </ul>
             </div>
           </div>

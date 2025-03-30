@@ -25,11 +25,11 @@ const CardCertificacion = ({ formacion, index }) => {
             );
           }
         }}
-        className="cursor-pointer rounded-[6px] bg-[#fff] py-8 cardCertification w-[90%] min-w-[260px] max-w-[500px] min-h-[225px] md:h-[150px] xl:h-[270px] duration-[0.8s] text-center md:text-start flex flex-col px-2 md:px-4 xl:px-5 lg:shadow-xl border"
+        className="cursor-pointer rounded-[6px] cardCertification w-[100%] min-w-[260px]  min-h-[150px]  duration-[0.8s] text-center md:text-start  px-2 md:px-4 xl:px-5 "
         title="clic para ver certificación"
       >
-            <div className="h-[100%] flex flex-col justify-between gap-2">
-              <div>
+            <div className="h-[100%] flex w-[100%] justify-between">
+              <div className="w-[80%]">
               <h5 className="mb-1 font-bold text-[#444] md:text-[20px] 2xl:text-[22px]">
                 {formacion.titulo}
               </h5>
@@ -40,9 +40,9 @@ const CardCertificacion = ({ formacion, index }) => {
                 {formacion.fechaInicio} | {formacion.fechaFin}
               </p>
               </div>     
-              <div className="flex w-[100%] md:justify-end ">
+              <div className="flex w-[20%] items-start">
                 <button
-                  className="px-5 py-[10px] w-[100%] md:w-[50%] xl:w-[45%] rounded-[25px] bg-[#fff] text-[#375c86] hover:bg-[#000] hover:text-[#fff] border-[1px] border-[#375c86] hover:border-[#000] text-[16px] md:text-[1rem] xl:text-[1.125rem]"
+                  className=" py-2 w-[80%] rounded-[25px] bg-[#fff] text-[#375c86] hover:bg-[#000] hover:text-[#fff] border-[1px] border-[#375c86] hover:border-[#000] text-[16px] md:text-[1rem] xl:text-[1.125rem]"
                   onClick={() => {
                     if (formacion.img !== "") {
                       openCarousel(index);
@@ -55,11 +55,8 @@ const CardCertificacion = ({ formacion, index }) => {
                     }
                   }}
                 >
-                  {formacion.img === "" && (
-                    <i className="px-2 text-[#375c86] hover:text-[#fff] rounded-[6px] pt-1 bi bi-github sm:text-[20px]"></i>
-                  )}
                   {`${
-                    formacion.img === "" ? "Repositorio" : "ver certificación"
+                    formacion.img === "" ? "ver repositorio" : "ver certificación"
                   } `}
                 </button>
               </div>

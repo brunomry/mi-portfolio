@@ -28,10 +28,10 @@ const Login = () => {
   };
 
   return (
-    <div onClick={handleSubmit}>
-      Login
-      <button>Ingresar con google</button>
-    </div>
+    <section >
+      <h1>Inicia sesión con tu cuenta de Google</h1>
+      <button onClick={handleSubmit}>Ingresar con google</button>
+    </section>
   );
 };
 

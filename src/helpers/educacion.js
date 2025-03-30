@@ -15,7 +15,7 @@ const educacion = [
   {
     id: 9876,
     titulo: "Especialización Frontend con React",
-    org: "RollingCodeSchool",
+    org: "RollingCode School",
     fechaInicio: "Mayo 2024",
     fechaFin: "Agosto 2024",
     categoria: "Cursos",
@@ -24,7 +24,7 @@ const educacion = [
   {
     id: 4321,
     titulo: "Desarrollador FullStack MERN",
-    org: "RollingCodeSchool",
+    org: "RollingCode School",
     fechaInicio: "Agosto 2023",
     fechaFin: "Abril 2024",
     categoria: "Cursos",
