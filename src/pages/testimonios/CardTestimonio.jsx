@@ -17,29 +17,16 @@ const CardTestimonio = ({ testimonio }) => {
             <h3 className=" font-bold text-[#444] md:text-[20px]">
               {testimonio.nombre}
             </h3>
-            <p className="text-gray-600 mb-0">{testimonio.rol}</p>
             <p className="text-gray-400">{testimonio.relacion}</p>
 
             <div className="flex pt-2  gap-3">
-              {testimonio.github !== "" && (
-                <a
-                  href={testimonio.github}
-                  target="_blank"
-                  title="perfil de Github"
-                  className=" "
-                  rel="noopener noreferrer"
-                >
-                  <i className="px-2 text-[#000] rounded-[6px] pt-1 bi bi-github sm:text-[25px]"></i>
-                </a>
-              )}
               {testimonio.linkedin !== "" && (
                 <a
                   href="https://www.linkedin.com/in/bruno-madozzo/"
                   target="_blank"
                   title="perfil de LinkedIn"
-                  className="  "
                 >
-                  <i className=" text-blue-500 rounded-[6px] bi bi-linkedin sm:text-[25px]"></i>
+                  <i className=" text-blue-400 hover:text-blue-500 rounded-[6px] bi bi-linkedin sm:text-[25px]"></i>
                 </a>
               )}
             </div>

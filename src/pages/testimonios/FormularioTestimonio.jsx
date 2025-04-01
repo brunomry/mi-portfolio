@@ -55,6 +55,9 @@ const FormularioTestimonio = () => {
               <option value="rc">en RollingCode School</option>
               <option value="utn">en UTN-FRT</option>
               <option value="">como Cliente</option>
+              <option value="">por Discord</option>
+              <option value="">por LinkedIn</option>
+              <option value="">por Instagram</option>
             </select>
           {errors.relacion && errors.relacion.type !== "required" && (
             <small className="text-red-400">{errors.relacion?.message}</small>
@@ -99,41 +102,23 @@ const FormularioTestimonio = () => {
             htmlFor="linkedin"
             className="block  font-bold text-[#094067] dark:text-white"
           >
-            Tu perfil de LinkedIn (opcional)
+            Perfil de LinkedIn (opcional)
           </label>
           <input
-            type="url"
+            type="text"
             id="linkedin"
-            title="Pega tu URL de linkedIn"
+            title="Tu URL de linkedIn"
             className=" text-[#094067] block w-full p-3 focus:border-none border-gray-300 "
-            placeholder="URL de linkedin"
+            placeholder="www.linkedin.com/in/nombre-usuario"
             {...register("linkedin", {
-
+              pattern: {
+                value: /^(https?:\/\/)www\.linkedin\.com\/in\/[a-zA-Z0-9\-]+$/i,
+                message: ``,
+              },
             })}
           />
           {errors.linkedin && (
             <small className="text-red-400">{errors.linkedin?.message}</small>
-          )}
-        </div>
-        <div className="mb-2 lg:mb-0 w-[100%]">
-          <label
-            htmlFor="github"
-            className="block  font-bold text-[#094067] dark:text-white"
-          >
-            Tu perfil de Github (opcional)
-          </label>
-          <input
-            type="url"
-            id="github"
-            title="Pega tu URL de Github"
-            className=" text-[#094067] block w-full p-3 focus:border-none border-gray-300"
-            placeholder="URL de github"
-            {...register("github", {
-
-            })}
-          />
-          {errors.github && (
-            <small className="text-red-400">{errors.github?.message}</small>
           )}
         </div>
         <div className="flex justify-center w-[100%]">
