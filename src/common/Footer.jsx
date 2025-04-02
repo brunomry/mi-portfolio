@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="w-[100%] xl:w-[80%] pt-[50px] pb-2 bg-[#fff] border-t px-[5px]">
-      <p className="text-center mb-3 text-[20px]">BM Soluciones web</p>
+      {/* <p className="text-center mb-3 text-[20px]">Bruno Madozzo</p> */}
       <div className="flex justify-center items-center gap-3 mb-8">
         <a
           href="https://github.com/brunomry"

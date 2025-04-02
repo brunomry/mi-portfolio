@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import ModalProyect from './ModalProyect';
+import { Link } from 'react-router-dom';
 
 const CardProyecto = ({ proyecto }) => {
   const [abrirModal, setAbrirModal] = useState(false);
@@ -10,13 +11,13 @@ const CardProyecto = ({ proyecto }) => {
 
   return (
     <>
-     <div className=" flex gap-[50px] rounded-[10px] w-[75%] min-w-[280px] h-[300px] duration-[0.8s]    lg:duration-[0.7s]  ">
+     <div className=" flex justify-center gap-[50px] rounded-[10px] w-[100%] min-w-[280px] h-[300px] duration-[0.8s]    lg:duration-[0.7s]  ">
       <div className=''>
       <img
         src={proyecto.imagen}
         alt={proyecto.nombre}
         title={proyecto.nombre}
-        className="rounded-s-[10px] border-b max-w-[100%] h-[100%] object-cover"
+        className=" max-w-[100%] h-[100%] object-cover"
       />
       </div>
       <div className="flex flex-col justify-center w-[50%] gap-2 ">
@@ -38,21 +39,28 @@ const CardProyecto = ({ proyecto }) => {
           </a> */}
           <a
             href={proyecto.enlace}
-            className="flex items-center justify-center gap-4 px-5 py-[8px] 2xl:py-[10px] w-[250px] rounded-[45px] bg-[#fff] text-[#375c86]  border-[#375c86] border-[1px] hover:border-[1px] text-[16px] md:text-[1rem] xl:text-[1.125rem]"
+            className="flex items-center justify-center gap-4 px-5 py-[8px] 2xl:py-[10px] w-[fit-content] rounded-[45px] bg-[#fff] text-[#375c86]  border-[#375c86] border-[1px] hover:border-[1px] text-[16px] md:text-[1rem] xl:text-[1.25rem]"
             target="_blank"
             title="Ver página"
             rel="noopener"
           >
             <i className="text-2xl bi bi-link-45deg"></i>
-            <span>VISITAR WEB</span>
+            <span>VER DEMO</span>
           </a>
-          <button
+          <Link className="flex items-center justify-center px-5 py-[8px] 2xl:py-[10px] w-[fit-content] rounded-[45px] bg-pink-800 text-white border-[1px] text-[16px] md:text-[1rem] xl:text-[1.25rem] gap-2"
+          title="Ver más información del proyecto"
+          to={`/detalleproyecto/${proyecto.id}`}
+          >
+            <i className="text-2xl bi bi-info-circle" ></i> 
+            <span>MÁS INFORMACIÓN</span>
+          </Link>
+          {/* <button
                 className="flex items-center justify-center px-5 py-[8px] 2xl:py-[10px] w-[250px] rounded-[45px] bg-pink-800 text-white border-[1px] text-[16px] md:text-[1rem] xl:text-[1.125rem] gap-4"
                 title="Ver más información del proyecto"
             onClick={()=>handleShowModal(true)}
           >
             <i className="text-2xl bi bi-info-circle" ></i> <span>MÁS INFORMACIÓN</span>
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

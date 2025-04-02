@@ -43,7 +43,7 @@ const proyectos = [
     duracion: "6 semanas",
     ultima_actualizacion: "-",
     descripcion:
-      "LaburandoAndo es una plataforma web diseñada para conectar a trabajadores independientes con clientes que necesitan sus servicios. La aplicación permite a los profesionales crear y gestionar sus perfiles, publicar anuncios de trabajo y recibir opiniones de sus clientes. Los usuarios pueden buscar y filtrar profesionales por categorías, ver detalles de sus servicios y contratar directamente desde la plataforma. Proyecto final correspondiente al curso Especialización en React. Nota: El backend fue deployado con Render por lo que debes esperar al menos un minuto hasta que puedas ver los anuncios de trabajo en la página de profesionales.",
+      "LaburandoAndo es una plataforma web diseñada para conectar a trabajadores independientes con clientes que necesitan sus servicios. La aplicación permite a los profesionales crear y gestionar sus perfiles, publicar anuncios de trabajo y recibir opiniones de sus clientes. Los usuarios pueden buscar y filtrar profesionales por categorías, ver detalles de sus servicios y comunicarse directamente mediante la opción de WhatsApp. Proyecto final correspondiente al curso Especialización Frontend en React.",
     proyecto: "En equipo",
     responsabilidades: [
       "Desempeñé rol de Scrummaster (definición de sprints y organización de backlog, completar descripciones de tareas, colaborar y resolver cuestiones relacionadas al maquetado, guiar al equipo)",
@@ -52,7 +52,7 @@ const proyectos = [
       "Colaboré en el desarrollo de todas las páginas realizando las correcciones pertinentes y verificando que cumplan con un diseño web responsive",
       "Desarrollé las páginas de Profesionales, Opciones de Registro, Quiénes Somos, Perfil Profesional, Publicación del profesional, Publicaciones del profesional, Soporte Admin, Categorías Admin, y Menú Lateral.",
       "Desarrollé la funcionalidad para mostrar y agregar comentarios en el detalle de anuncio, eliminar comentarios como administrador, crear publicación como profesional, mostrar publicaciones en perfil profesional, mostrar mensajes en Soporte Admin",
-      "Implementé buenas prácticas de SEO y accesibilidad",
+      "Implementé buenas prácticas de SEO",
       "Colaboré en el desarrollo de funcionalidad de iniciar sesión."
     ],
     github: "https://github.com/brunomry/LaburandoAndo",
@@ -66,18 +66,29 @@ const proyectos = [
       { name: "React-Hook-Form", icon: reacthookform },
       { name: "React-Router", icon: reactrouter },
       { name: "Redux-Toolkit", icon: redux },
+      { name: "React-Icons", icon: ""},
       { name: "Axios", icon: axios },
       { name: "Git", icon: git },
       { name: "Github", icon: github },
       { name: "Trello", icon: trello },
-      { name: "Draw", icon: draw },
-      { name: "NodeJS", icon: node },
-      { name: "ExpressJS", icon: express },
+      { name: "Draw.io", icon: draw },
+      { name: "Node js", icon: node },
+      { name: "Express js", icon: express },
+      { name: "Express-validator", icon: "" },
+      { name: "JWT", icon: "" },
       { name: "MongoDB", icon: mongodb },
       { name: "Postman", icon: postman},
       { name: "Netlify", icon: netlify},
       { name: "Render", icon: ""},
     ],
+    features: [
+      "Búsqueda de profesionales mediante filtros y paginación",
+      "Publicación y gestión de anuncios para profesionales.",
+      "Valoraciones y comentarios de usuarios.",
+      "Autenticación de usuarios.",
+      "Edición de perfil para profesionales.",
+      "Soporte y gestión de consultas."
+    ]
   },
   {
     id: 222,
@@ -110,7 +121,14 @@ const proyectos = [
       { name: "React-Router", icon: reactrouter },
       { name: "Git", icon: git },
       { name: "Github", icon: github },
-      { name: "Netlify", icon: netlify},
+      { name: "Nodemailer", icon: "" },
+      { name: "Node js", icon: "" },
+      { name: "Express js", icon: "" },
+      { name: "Netlify", icon: ""},
+      { name: "Vercel", icon: ""},
+      { name: "SEO", icon: ""},
+      { name: "React-Helmet", icon: "" },
+      { name: "Google Search Console", icon: ""}
     ],
   },
   {
@@ -143,15 +161,29 @@ const proyectos = [
       { name: "React-Bootstrap", icon: reactbootstrap },
       { name: "React-Hook-Form", icon: reacthookform },
       { name: "React-Router", icon: reactrouter },
-      { name: "NodeJS", icon: node },
-      { name: "ExpressJS", icon: express },
+      { name: "Sweet-Alert", icon: ""},
+      { name: "Node js", icon: node },
+      { name: "Express js", icon: express },
       { name: "MongoDB", icon: mongodb },
       { name: "Git", icon: git },
       { name: "Github", icon: github },
       { name: "Trello", icon: trello },
-      { name: "Draw", icon: draw },
-      { name: "Postman", icon: postman}
+      { name: "Draw.io", icon: draw },
+      { name: "Postman", icon: postman},
+      { name: "JWT", icon: ""},
+      { name: "Nodemailer", icon: ""},
+      { name: "MercadoPago", icon: ""},
+      { name: "Netlify", icon: ""},
+      { name: "Vercel", icon: ""}
     ],
+    features: [
+      "Búsqueda de profesionales mediante filtro",
+      "Autenticación de usuarios.",
+      "Solicitud y pago de pedidos",
+      "Gestión de productos y pedidos para administradores",
+      "Gestión de usuarios para administrador",
+      ""
+    ]
   },
   
   // {

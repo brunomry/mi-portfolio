@@ -9,6 +9,7 @@ import Contacto from "../pages/contacto/Contacto";
 import Testimonios from "../pages/testimonios/Testimonios";
 import Login from "../pages/auth/Login";
 import FormularioTestimonio from "../pages/testimonios/FormularioTestimonio";
+import DetalleProyecto from "../pages/proyectos/DetalleProyecto";
 
 const AppRouter = () => {
   return (
@@ -43,6 +44,10 @@ const AppRouter = () => {
         <Route
           path="/login"
           element={<Login></Login>}
+        ></Route>
+         <Route
+          path="/detalleproyecto/:id"
+          element={<DetalleProyecto></DetalleProyecto>}
         ></Route>
       </Routes>
     </MainLayout>

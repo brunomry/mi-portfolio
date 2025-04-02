@@ -13,26 +13,27 @@ const Proyectos = () => {
   return (
     <section
       className="py-3 flex flex-col gap-3 xl:gap-4 items-center px-3 xl:w-[80%] min-h-[100vh] xl:py-[100px] fondo"
-      id="proyectos"
     >
-      <h2 className=" mb-8 font-bold text-[25px] xl:text-[30px] 2xl:text-[35px] text-[#333]">
-        &lt; Proyectos destacados /&gt;
-      </h2>
-
+      <div className="w-[80%] rounded-[10px] px-10 py-10 shadow-xl bg-[white]">
+      <h1 className=" mb-8 font-bold text-[25px] xl:text-[30px] 2xl:text-[40px] text-[#333]">
+        Proyectos destacados
+      </h1>
       <article className="flex flex-col px-3 containerTabProyects sm:flex-wrap h-[450px] w-[100vw] sm:w-[100%]  sm:h-[100%] sm:pb-[50px]  sm:justify-center md:items-center gap-3 lg:gap-8 ">
         {filtrarPorTipo("Aplicación web").length > 0 &&
           filtrarPorTipo("Aplicación web").map((proyecto) => (
             <CardProyecto key={proyecto.id} proyecto={proyecto}></CardProyecto>
           ))}
       </article>
-
-      <Link
-        className=" px-5 py-[15px] text-center w-[200px] rounded-[45px] bg-[#fff] text-[#222] hover:bg-[#000] hover:text-[#fff] border-[#303030] border-[1px] hover:border-[#000] text-[1rem]"
+          <div className="text-center mb-5">
+          <Link
+        className=" px-10 py-[20px] text-center w-[200px] rounded-[45px] bg-[#fff] text-[#222] hover:bg-[#000] hover:text-[#fff] border-[#747373] border-[1px] hover:border-[#000] text-[1rem]"
         to={"/masproyectos"}
         title="haz clic para descargar mi CV"
       >
         MÁS PROYECTOS
       </Link>
+          </div>
+     
       {/* <Tabs
         activeKey={key}
         onSelect={(k) => setKey(k)}
@@ -126,6 +127,7 @@ const Proyectos = () => {
           )}
         </Tab>
       </Tabs> */}
+      </div>
     </section>
   );
 };

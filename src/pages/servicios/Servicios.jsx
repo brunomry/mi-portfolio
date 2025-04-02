@@ -5,7 +5,7 @@ import servicios from "../../helpers/servicios";
 function Servicios() {
   return (
     <section
-      className="flex flex-col items-center w-[100%] xl:w-[80%] min-h-[100vh]  pt-[100px] bg-[#fff] gap-2 sm:gap-4 services px-2 md:px-5 xl:px-[50px] fondo"
+      className=" flex flex-col items-center w-[100%] xl:w-[80%] min-h-[100vh]  pt-[100px] bg-[#fff] gap-2 sm:gap-4 services px-2 md:px-5 xl:px-[50px] fondo"
     >
       <h1 className="text-center font-bold text-[25px] xl:text-[30px] 2xl:text-[35px] text-[#333]">
         {" "}
