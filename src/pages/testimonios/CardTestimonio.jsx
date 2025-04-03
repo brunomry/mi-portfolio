@@ -2,7 +2,7 @@ import React from "react";
 
 const CardTestimonio = ({ testimonio }) => {
   return (
-    <article className="rounded-[15px]  bg-[#fff] py-8 w-[100%] shadow-lg min-w-[460px] md:max-w-[300px]  min-h-[225px]  2xl:max-w-[450px] duration-[0.8s]  text-center md:text-start flex flex-col px-2 md:px-4 xl:px-5">
+    <article className="rounded-[15px]  bg-[#fff] py-8 w-[100%] shadow-lg  min-h-[225px]  2xl:w-[45%] duration-[0.8s]  text-center md:text-start flex flex-col px-2 md:px-4 xl:px-5">
       <div className=" flex flex-col gap-5 justify-between h-[100%]">
         <p className="text-[#2c2c2c] md:text-[1rem] xl:text-[1.125rem]">
           "{testimonio.opinion}" asidjasiodj aoisdjaoisd asda sdasd
