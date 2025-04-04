@@ -7,7 +7,7 @@ const ContenedorTecnologia = ({ categoria, subtitulo }) => {
   };
 
   return (
-    <article className="flex flex-col gap- mt-10 xl:w-[80%]">
+    <article className="flex flex-col gap- mt-10 xl:w-[100%]">
       <h2 className="rounded-[20px] text-[#333] font-bold w-[fit-content] text-[20px] xl:text-[25px]">
         {subtitulo}
       </h2>

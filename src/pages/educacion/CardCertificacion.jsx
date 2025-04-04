@@ -25,14 +25,14 @@ const CardCertificacion = ({ formacion, index }) => {
             );
           }
         }}
-        className="cursor-pointer rounded-[6px] cardCertification w-[100%] min-w-[260px]  min-h-[150px]  duration-[0.8s] text-center md:text-start  px-2 md:px-4 xl:px-5 "
+        className="cursor-pointer rounded-[6px] cardCertification w-[100%] min-w-[260px]  min-h-[100px]  duration-[0.8s] text-center md:text-start  px-2 md:px-4 xl:px-5 "
         title="clic para ver certificación"
       >
             <div className="h-[100%] flex w-[100%] justify-between">
               <div className="w-[80%]">
-              <h5 className="mb-1 font-bold text-[#444] md:text-[20px] 2xl:text-[22px]">
+              <h3 className="mb-1 font-bold text-[#375c86] md:text-[20px] 2xl:text-[22px]">
                 {formacion.titulo}
-              </h5>
+              </h3>
               <p className="text-gray-600 md:text-[1rem] xl:text-[1.125rem] 2xl:text-[20px]">
                 {formacion.org}
               </p>
@@ -42,7 +42,7 @@ const CardCertificacion = ({ formacion, index }) => {
               </div>     
               <div className="flex w-[20%] items-start">
                 <button
-                  className=" py-2 w-[80%] rounded-[25px] bg-[#fff] text-[#375c86] hover:bg-[#000] hover:text-[#fff] border-[1px] border-[#375c86] hover:border-[#000] text-[16px] md:text-[1rem] xl:text-[1.125rem]"
+                  className=" py-2 w-[80%] rounded-[25px] bg-[#fff] text-[#375c86] hover:bg-[#375c86] hover:text-[#fff] border-[1px] border-[#375c86] hover:border-[#fff] text-[16px] md:text-[1rem] xl:text-[1.125rem]"
                   onClick={() => {
                     if (formacion.img !== "") {
                       openCarousel(index);

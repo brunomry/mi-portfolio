@@ -27,7 +27,7 @@ const DetalleProyecto = () => {
           </h1>
           <div className="flex gap-3">
             <Link
-              className="flex items-center justify-center px-5 w-[fit-content] text-[#375c86]  border-[#375c86] hover:border-[#091018] rounded-[45px] border text-[1rem] xl:text-[1.25rem] gap-3"
+              className="flex items-center justify-center px-5 w-[fit-content] text-[#375c86]  border-[#375c86] hover:bg-[#375c86] hover:text-[#fff] rounded-[45px] border text-[1rem] xl:text-[1.25rem] gap-3"
               title="Ver más información del proyecto"
               to={`/detalleproyecto/${proyecto.id}`}
             >

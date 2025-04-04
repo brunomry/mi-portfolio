@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="w-[100%] xl:w-[80%] pt-[50px] pb-2 bg-[#fff] border-t px-[5px]">
       {/* <p className="text-center mb-3 text-[20px]">Bruno Madozzo</p> */}
-      <div className="flex justify-center items-center gap-3 mb-8">
+      {/* <div className="flex gap-3 mb-8">
         <a
           href="https://github.com/brunomry"
           target="_blank"
@@ -20,18 +22,9 @@ const Footer = () => {
         >
           <i className="px-3  text-[#375c86] rounded-[6px] pt-1 bi bi-linkedin sm:text-[20px]"></i>
         </a>
-      </div>
-      <p className="text-center text-black">
-        &copy;2024. Desarrollado con React y Tailwind por
-        <a
-          className=" text-blue-500 ms-1 lg:hover:underline"
-          href="https://www.linkedin.com/in/bruno-madozzo/"
-          target="_blank"
-          title="Visita mi perfil de LinkedIn"
-        >
-          Bruno Madozzo
-        </a>
-        .
+      </div> */}
+      <p className="text-center text-black text-[1.125rem] mb-5">
+        &copy;2024 Bruno Madozzo. Desarrollador web.
       </p>
     </footer>
   );

@@ -22,7 +22,7 @@ const CardProyecto = ({ proyecto }) => {
       </div>
       <div className="flex flex-col justify-center w-[50%] gap-2 ">
         <div className=" rounded-[4px] py-1 flex flex-col gap-2 mb-2">
-          <span className='rounded-[20px] bg-[#375c86] py-2 px-4 text-[#fff] w-[fit-content]'>{proyecto.categoria}</span>
+          <span className='rounded-[20px] bg-[#ececec] py-2 px-4 text-[#333] w-[fit-content]'>{proyecto.categoria}</span>
           <h4 className="font-bold text-[20px] md:text-[25px] text-[#222] 2xl:text-[32px]">{proyecto.nombre}</h4>
           <p className="md:text-[1rem] xl:text-[1.125rem]  mb-0 text-[#787777]">{proyecto.tipo}</p>
         </div>
@@ -39,7 +39,7 @@ const CardProyecto = ({ proyecto }) => {
           </a> */}
           <a
             href={proyecto.enlace}
-            className="flex items-center justify-center gap-4 px-5 py-[8px] 2xl:py-[10px] w-[fit-content] rounded-[45px] bg-[#fff] text-[#375c86]  border-[#375c86] border-[1px] hover:border-[1px] text-[16px] md:text-[1rem] xl:text-[1.25rem]"
+            className="flex items-center justify-center gap-4 px-5 py-[8px] 2xl:py-[10px] w-[fit-content] rounded-[45px] bg-[#fff] text-[#375c86] hover:bg-[#375c86] hover:text-[#fff] border-[#375c86] border-[1px] hover:border-[1px] text-[16px] md:text-[1rem] xl:text-[1.25rem]"
             target="_blank"
             title="Ver página"
             rel="noopener"
@@ -47,7 +47,7 @@ const CardProyecto = ({ proyecto }) => {
             <i className="text-2xl bi bi-link-45deg"></i>
             <span>VER DEMO</span>
           </a>
-          <Link className="flex items-center justify-center px-5 py-[8px] 2xl:py-[10px] w-[fit-content] rounded-[45px] bg-pink-800 text-white border-[1px] text-[16px] md:text-[1rem] xl:text-[1.25rem] gap-2"
+          <Link className="flex items-center justify-center px-5 py-[8px] 2xl:py-[10px] w-[fit-content] rounded-[45px] bg-pink-800 hover:bg-pink-700 text-white border-[1px] text-[16px] md:text-[1rem] xl:text-[1.25rem] gap-2"
           title="Ver más información del proyecto"
           to={`/detalleproyecto/${proyecto.id}`}
           >

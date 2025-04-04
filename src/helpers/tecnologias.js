@@ -51,7 +51,7 @@ const tecnologias = {
       { name: "Kanban", icon: "kanban", categoria: "colaboracion"},
       { name: "Documentación técnica", icon: "", categoria: "documentacion"},
       { name: "estándar IEEE 830", icon: "", categoria: "documentacion"},
-      { name: "Modelado UML", icon: "", categoria: "documentacion"},
+      { name: "UML", icon: "", categoria: "documentacion"},
       { name: "Express-validator", icon: "", categoria: "otras"},
       { name: "Nodemon", icon: "", categoria: "otras"},
       { name: "JWT", icon: "", categoria: "otras"},

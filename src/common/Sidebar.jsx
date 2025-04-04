@@ -137,7 +137,7 @@ const Sidebar = () => {
                     Educación
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     className="block xl:mb-2 navLink text-[#414141] duration-[0.7s] hover:duration-[0.7s] relative pb-[15px]   text-center"
                     to={"/servicios"}
@@ -145,17 +145,17 @@ const Sidebar = () => {
                   >
                     Servicios
                   </Link>
-                </li>
+                </li> */}
                 <li className="flex justify-center mb-2 w-[100%]">
-                  <Link
+                  <a
                     as={Link}
                     className="text-center px-5 py-[7px] w-[175px] rounded-[45px] bg-[#000] text-white hover:bg-[#f7f7f7] hover:text-[#222] border hover:border hover:border-[#000] text-[1rem] "
-                    to={"/contacto"}
+                    href="#footer"
                     onClick={() => desplegarMenu(false)}
                     title="Contáctame a través de mis redes sociales"
                   >
                     <span>Contáctame</span>
-                  </Link>
+                  </a>
                 </li>
                 <li className="text-center">
                   <button
