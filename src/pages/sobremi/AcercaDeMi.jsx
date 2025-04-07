@@ -6,7 +6,7 @@ const AcercaDeMi = () => {
   const handleDownloadPDF = () => window.open(cv, "_blank", "noopener");
 
   return (
-    <section className="flex flex-col items-center w-[100%]  xl:w-[80%]  bg-[#fff] pt-5 sm:pt-[150px]  fondo mainSection">
+    <section className="flex flex-col items-center w-[100%]  xl:w-[80%]  bg-[#fff] pt-[100px] sm:pt-[150px]  fondo mainSection">
       <div className="hidden justify-center pb-md-3 w-[100%] mb-5 gap-5">
         <div className="rounded-[5px] border-1 flex items-center gap-2">
           <i className="bi bi-brightness-high " title="tema"></i>
