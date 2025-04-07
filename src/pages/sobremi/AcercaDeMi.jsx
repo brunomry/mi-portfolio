@@ -70,14 +70,14 @@ const AcercaDeMi = () => {
           <div className="flex flex-col items-center justify-center md:gap-4 xl:gap-5">
             <div className="flex  gap-2 md:flex-row md:gap-3">
               <button
-                className="text-[12px] px-2 py-1 md:px-5 md:py-[10px] 2xl:py-[15px] w-[125px] rounded-[45px] text-[#222] hover:bg-[#000] hover:text-[#fff] border-indigo-500 bg-indigo-200 border-[1px] hover:border-[#000] md:text-[1rem] xl:text-[1.125rem]"
+                className="text-[12px] px-2 py-2 md:px-5 md:py-[10px] 2xl:py-[15px] w-[135px] rounded-[45px] hover:bg-[#000] hover:text-[#fff] border-[#375c86] text-[#375c86] border-[1px] hover:border-[#000] md:text-[1rem] xl:text-[1.125rem]"
                 onClick={handleDownloadPDF}
                 title="haz clic para descargar mi CV"
               >
                 DESCARGAR CV <i className="bi bi-download ms-2"></i>
               </button>
               <Link
-                className="bg-gray-50 text-[12px] px-2 py-1 w-[125px] flex items-center justify-center md:px-5 md:py-[10px] 2xl:py-[15px] md:w-[fit-content] rounded-[45px] hover:bg-[#f7f7f7] hover:text-[#222] border-gray-400 border-[1px] hover:border hover:border-[#000] md:text-[1rem] xl:text-[1.125rem]"
+                className="bg-gray-50 text-[12px] px-2 py-1 w-[135px] flex items-center justify-center md:px-5 md:py-[10px] 2xl:py-[15px] md:w-[fit-content] rounded-[45px] hover:bg-[#f7f7f7] hover:text-[#222] border-gray-400 border-[1px] hover:border hover:border-[#000] md:text-[1rem] xl:text-[1.125rem]"
                 to={"/proyectos"}
                 title="Mira mis proyectos más destacados"
               >

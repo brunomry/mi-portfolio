@@ -41,7 +41,7 @@ const CardProyecto = ({ proyecto }) => {
               {proyecto.tipo}
             </p>
             <Link
-              className="flex md:hidden items-center justify-center gap-2 px-3 py-1 mt-3 md:px-5 md:py-[8px] 2xl:py-[10px] w-[fit-content] h-[fit-content] rounded-[45px] border-[#375c86] text-[#375c86] border-[1px] text-[10px] md:text-[1rem] xl:text-[1.25rem]"
+              className="flex md:hidden items-center justify-center gap-2 px-3 py-1 mt-3 md:px-5 md:py-[8px] 2xl:py-[10px] w-[fit-content] h-[fit-content] rounded-[45px] border-[#375c86] text-[#375c86] border-[1px] text-[12px] md:text-[1rem] xl:text-[1.25rem]"
               title="Ver más información del proyecto"
               to={`/detalleproyecto/${proyecto.id}`}
             >
@@ -52,7 +52,7 @@ const CardProyecto = ({ proyecto }) => {
           <div className="md:flex hidden gap-2 xl:gap-3">
             <a
               href={proyecto.enlace}
-              className="flex items-center justify-center gap-2 p-2 md:px-5 md:py-[8px] 2xl:py-[10px] w-[fit-content] h-[fit-content] rounded-[45px] bg-[#fff] text-[#375c86] hover:bg-[#375c86] hover:text-[#fff] border-[#375c86] border-[1px] hover:border-[1px] text-[10px] lg:text-[1rem] xl:text-[1.25rem]"
+              className="flex items-center justify-center gap-2 px-4 py-2 md:px-5 md:py-[8px] 2xl:py-[10px] w-[fit-content] h-[fit-content] rounded-[45px] bg-[#fff] text-[#375c86] hover:bg-[#375c86] hover:text-[#fff] border-[#375c86] border-[1px] hover:border-[1px] text-[10px] lg:text-[1rem] xl:text-[1.25rem]"
               target="_blank"
               title="Ver página"
               rel="noopener"
