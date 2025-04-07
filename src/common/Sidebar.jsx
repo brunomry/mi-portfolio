@@ -13,16 +13,13 @@ const Sidebar = () => {
   const handleDownloadPDF = () => window.open(cv, "_blank", "noopener");
 
   return (
-    <nav className="hidden w-[100%] h-[80px] lg:h-[100vh] lg:w-[25%] xl:w-[20%] fixed top-0 right-0  sm:flex justify-center ">
+    <nav className="hidden bg-white w-[100%] h-[80px] lg:h-[100vh] lg:w-[25%] xl:w-[20%] fixed top-0 right-0  sm:flex justify-center ">
       <div className="lg:px-0 flex justify-between w-[100%] lg:w-[initial]">
         <div
           className={`flex w-[100%] justify-between px-4 lg:hidden ${
             desplegado ? "hidden" : "block"
           }`}
         >
-          <div className="flex items-center">
-            <p className=" mb-3 text-[20px]">BM Soluciones web</p>
-          </div>
           <button
             className={`text-[#222] lg:hidden ${
               desplegado ? "hidden" : "block"
@@ -57,7 +54,7 @@ const Sidebar = () => {
                 desplegado ? "flex flex-col bg-[#f7f7f7]" : "hidden"
               } `}
             >
-              <div className="hidden lg:block mx-auto md:w-[125px] md:h-[150px] lg:w-[200px] lg:h-[200px] rounded-[20px] border-[8px] border-[#e2e2e2] mb-2 ">
+              <div className="hidden lg:block mx-auto md:w-[125px] md:h-[150px] lg:w-[150px] lg:h-[150px] xl:w-[200px] xl:h-[200px] rounded-[20px] border-[8px] border-[#e2e2e2] mb-2 ">
                 <img
                   src={perfil}
                   alt="Bruno Madozzo"
