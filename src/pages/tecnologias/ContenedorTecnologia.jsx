@@ -7,25 +7,25 @@ const ContenedorTecnologia = ({ categoria, subtitulo }) => {
   };
 
   return (
-    <article className="flex flex-col gap- mt-10 xl:w-[100%]">
-      <h2 className="rounded-[20px] text-[#333] font-bold w-[fit-content] text-[20px] xl:text-[25px]">
+    <article className="flex overflow-x-hidden w-[100%] flex-col md:mt-10 xl:w-[100%] mx-2">
+      <h2 className=" text-[#333] font-bold w-[100%] border-b-[1px] text-[14px] md:text-[20px] xl:text-[25px] mt-5">
         {subtitulo}
       </h2>
       {categoria === "frontend" || categoria === "backend" ? (
-         <div className="flex containerTech xl:w-[100%] min-h-[225px] sm:h-[100%] gap-2 md:gap-3 xl:gap-6 items-center  sm:flex-wrap   ">
+         <div className="flex flex-wrap w-[100%] min-h-[50px] sm:h-[100%] gap-4 xl:gap-6 mt-3  ">
       
          {filtrarTecnologiasPorCategoria(categoria).length > 0 && filtrarTecnologiasPorCategoria(categoria).map((tech, pos) => (
            <CardTecnologia key={pos} tech={tech} />
          ))}
        </div>
       ) : (
-        <div className="flex containerTech xl:w-[100%] h-[200px] sm:h-[100%] gap-2 md:gap-3 items-center sm:flex-wrap lg:pt-5 px-5 ">
+        <div className="flex w-[100%] h-[fit-content] sm:h-[100%] gap-2 md:gap-3 flex-wrap lg:pt-5  mt-3">
           {filtrarTecnologiasPorCategoria(categoria).length > 0 &&
             filtrarTecnologiasPorCategoria(categoria).map((tech, pos) => (
         
                 <p
                 key={pos}
-                className="rounded-[20px] py-2 px-4 bg-slate-100  text-[#375c86] w-[fit-content]  md:text-[1rem] xl:text-[1.25rem]"
+                className="rounded-[20px] py-2 px-2 bg-slate-100  text-[#375c86] w-[fit-content] h-[fit-content] text-[12px] md:text-[1rem] xl:text-[1.25rem]"
               >
                 {tech.name}
               </p>

@@ -13,7 +13,7 @@ const Sidebar = () => {
   const handleDownloadPDF = () => window.open(cv, "_blank", "noopener");
 
   return (
-    <nav className="w-[100%] h-[80px] lg:h-[100vh] lg:w-[25%] xl:w-[20%] fixed top-0 right-0  flex justify-center ">
+    <nav className="hidden w-[100%] h-[80px] lg:h-[100vh] lg:w-[25%] xl:w-[20%] fixed top-0 right-0  sm:flex justify-center ">
       <div className="lg:px-0 flex justify-between w-[100%] lg:w-[initial]">
         <div
           className={`flex w-[100%] justify-between px-4 lg:hidden ${

@@ -11,6 +11,16 @@
   font-family: "Questrial", sans-serif;
 }
 
+#root{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.mainSection{
+  flex-grow: 1;
+}
+
 .active {
   color: #000 !important;
 }

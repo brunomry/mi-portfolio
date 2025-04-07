@@ -58,11 +58,12 @@ const tecnologias = {
       { name: "MySQL", icon: "", categoria: "otras"},
       { name: "react-helmet", icon: "", categoria: "SEO"},
       { name: "meta tags", icon: "", categoria: "SEO"},
+      { name: "palabras clave", icon: "", categoria: "SEO"},
       { name: "optimización de contenido", icon: "", categoria: "SEO"},
       { name: "estructura de encabezados", icon: "", categoria: "SEO"},
       { name: "herramientas de auditoría y rendimiento", icon: "", categoria: "SEO"},
       { name: "robots.txt", icon: "", categoria: "SEO"},
-      { name: "palabras clave", icon: "", categoria: "SEO"},
+
       { name: "sitemap", icon: "", categoria: "SEO"},
       { name: "Draw.io", icon: "", categoria: "otras"},
       { name: "Vite", icon: "", categoria: "otras"},
