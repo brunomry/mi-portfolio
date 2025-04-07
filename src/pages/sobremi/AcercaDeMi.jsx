@@ -6,7 +6,7 @@ const AcercaDeMi = () => {
   const handleDownloadPDF = () => window.open(cv, "_blank", "noopener");
 
   return (
-    <section className="flex flex-col items-center w-[100%]  xl:w-[80%]  bg-[#fff] pt-[100px] sm:pt-[150px]  fondo mainSection">
+    <section className="flex flex-col items-center w-[100%]  xl:w-[80%]  bg-[#fff] pt-[50px] sm:pt-[150px]  fondo mainSection">
       <div className="hidden justify-center pb-md-3 w-[100%] mb-5 gap-5">
         <div className="rounded-[5px] border-1 flex items-center gap-2">
           <i className="bi bi-brightness-high " title="tema"></i>
@@ -22,13 +22,13 @@ const AcercaDeMi = () => {
           <div className="flex sm:justify-center md:flex-col sm:items-center px-5 sm:px-0">
             <div>
               <span className="hidden sm:block sm:text-[25px]">Hola, soy</span>
-              <h1 className="text-start text-[18px] sm:text-[25px] text-[#375c86] leading-5 sm:leading-10 md:leading-normal md:text-[35px] xl:text-[48px] 2xl:text-[72px] font-bold">
+              <h1 className="text-start text-[20px] sm:text-[25px] text-[#375c86] leading-5 sm:leading-10 md:leading-normal md:text-[35px] xl:text-[48px] 2xl:text-[72px] font-bold">
                 Bruno Madozzo
               </h1>
               <h2 className="text-start text-[16px] sm:text-[20px] 2xl:text-[35px] text-[#222] leading-5 md:leading-normal md:text-center align-middle md:text-[25px] xl:text-[30px] font-bold ">
                 Desarrollador Front-End
               </h2>
-              <p className="text-[14px] text-start leading-3 text-gray-500">
+              <p className="text-[12px] text-start leading-3 text-gray-500">
                 brunomadozzo@gmail.com
               </p>
             </div>
@@ -74,14 +74,14 @@ const AcercaDeMi = () => {
                 onClick={handleDownloadPDF}
                 title="haz clic para descargar mi CV"
               >
-                Descargar CV <i className="bi bi-download ms-2"></i>
+                DESCARGAR CV <i className="bi bi-download ms-2"></i>
               </button>
               <Link
                 className="bg-gray-50 text-[12px] px-2 py-1 w-[125px] flex items-center justify-center md:px-5 md:py-[10px] 2xl:py-[15px] md:w-[fit-content] rounded-[45px] hover:bg-[#f7f7f7] hover:text-[#222] border-gray-400 border-[1px] hover:border hover:border-[#000] md:text-[1rem] xl:text-[1.125rem]"
                 to={"/proyectos"}
                 title="Mira mis proyectos más destacados"
               >
-                <span>Proyectos</span>
+                <span>PROYECTOS</span>
               </Link>
             </div>
           </div>
