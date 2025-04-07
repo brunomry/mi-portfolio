@@ -22,13 +22,13 @@ const AcercaDeMi = () => {
           <div className="flex sm:justify-center md:flex-col sm:items-center px-5 sm:px-0">
             <div>
               <span className="hidden sm:block sm:text-[25px]">Hola, soy</span>
-              <h1 className="text-start  sm:text-[25px] text-[#375c86] leading-5 sm:leading-10 md:leading-normal md:text-[35px] xl:text-[48px] 2xl:text-[72px] font-bold">
+              <h1 className="text-start text-[18px] sm:text-[25px] text-[#375c86] leading-5 sm:leading-10 md:leading-normal md:text-[35px] xl:text-[48px] 2xl:text-[72px] font-bold">
                 Bruno Madozzo
               </h1>
-              <h2 className="text-start text-[14px] sm:text-[20px] 2xl:text-[35px] text-[#222] leading-5 md:leading-normal md:text-center align-middle md:text-[25px] xl:text-[30px] font-bold ">
+              <h2 className="text-start text-[16px] sm:text-[20px] 2xl:text-[35px] text-[#222] leading-5 md:leading-normal md:text-center align-middle md:text-[25px] xl:text-[30px] font-bold ">
                 Desarrollador Front-End
               </h2>
-              <p className="text-[10px] text-start leading-3 text-gray-500">
+              <p className="text-[14px] text-start leading-3 text-gray-500">
                 brunomadozzo@gmail.com
               </p>
             </div>
@@ -48,7 +48,7 @@ const AcercaDeMi = () => {
               {/* <h2 className="text-[20px] 2xl:text-[25px] text-[#333] xl:text-[22px] font-bold leading-8 md:leading-normal">
                 Sobre mí
               </h2> */}
-              <p className="text-[#4e4e4e] text-[12px] 2xl:text-[1.25rem] text-justify">
+              <p className="text-[#4e4e4e] text-[14px] 2xl:text-[1.25rem] text-justify">
                 Soy estudiante de Ingeniería en Sistemas de Información con
                 fuerte enfoque en desarrollo web y orientado al Front-end. Me
                 destaco por crear páginas rápidas y optimizadas para SEO,

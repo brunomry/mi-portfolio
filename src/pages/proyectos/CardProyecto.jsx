@@ -31,13 +31,13 @@ const CardProyecto = ({ proyecto }) => {
         </div>
         <div className="flex flex-col md:justify-center lg:w-[50%] lg:gap-2 ">
           <div className=" rounded-[4px] py-1 flex flex-col lg:gap-2 md:mb-2 min-h-[fit-content]">
-            <span className=" text-[10px] md:text-[12px] lg:text-[1rem] rounded-[20px] bg-[#ececec] px-2 py-1 lg:py-2 lg:px-4 text-[#333] w-[fit-content]">
+            <span className=" text-[12px] md:text-[12px] lg:text-[1rem] rounded-[20px] bg-[#ececec] px-2 py-1 lg:py-2 lg:px-4 text-[#333] w-[fit-content]">
               {proyecto.categoria}
             </span>
             <h4 className="font-bold md:text-[20px] lg:text-[25px] text-[#375c86] 2xl:text-[32px]">
               {proyecto.nombre}
             </h4>
-            <p className="text-[12px] md:text-[1rem] xl:text-[1.125rem]  mb-0 text-[#787777]">
+            <p className="text-[14px] md:text-[1rem] xl:text-[1.125rem]  mb-0 text-[#787777]">
               {proyecto.tipo}
             </p>
             <Link

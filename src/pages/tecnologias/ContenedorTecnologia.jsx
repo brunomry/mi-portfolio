@@ -8,7 +8,7 @@ const ContenedorTecnologia = ({ categoria, subtitulo }) => {
 
   return (
     <article className="flex overflow-x-hidden w-[100%] flex-col md:mt-10 xl:w-[100%] mx-2">
-      <h2 className=" text-[#333] font-bold w-[100%] border-b-[1px] text-[14px] md:text-[20px] xl:text-[25px] mt-5">
+      <h2 className=" text-[#333] font-bold w-[100%] border-b-[1px] text-[16px] md:text-[20px] xl:text-[25px] mt-5">
         {subtitulo}
       </h2>
       {categoria === "frontend" || categoria === "backend" ? (
