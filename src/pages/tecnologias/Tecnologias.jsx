@@ -2,7 +2,7 @@ import ContenedorTecnologia from "./ContenedorTecnologia";
 
 const Tecnologias = () => {
   return (
-    <section className="w-[100%] md:w-[90%] xl:w-[80%]  text-[#028891]  flex flex-col md:gap-2 items-center tecnologias py-[50px] md:py-[100px]  mb-[20px] fondo mainSection">
+    <section className="w-[100%] md:w-[100%] lg:w-[75%] xl:w-[80%]  text-[#028891]  flex flex-col md:gap-2 items-center tecnologias pt-[50px] md:pt-[50px] mb-[20px] fondo mainSection">
       <div className="w-[100%] rounded-[10px] p-2 md:px-10 md:py-10 ">
         <h1 className="font-bold text-[20px] mb-2 md:text-[25px] xl:text-[30px] 2xl:text-[40px] text-[#333]">
           Tecnologías

@@ -7,7 +7,7 @@ const ContenedorTecnologia = ({ categoria, subtitulo }) => {
   };
 
   return (
-    <article className="flex overflow-x-hidden w-[100%] flex-col md:mt-10 xl:w-[100%] mx-2">
+    <article className="flex overflow-x-hidden w-[100%] flex-col 2xl:mt-10 xl:w-[100%] mx-2">
       <h2 className=" text-[#333] font-bold w-[100%] border-b-[1px] text-[16px] md:text-[20px] xl:text-[25px] mt-5">
         {subtitulo}
       </h2>
@@ -25,7 +25,7 @@ const ContenedorTecnologia = ({ categoria, subtitulo }) => {
         
                 <p
                 key={pos}
-                className="rounded-[20px] py-2 px-2 bg-slate-100  text-[#375c86] w-[fit-content] h-[fit-content] text-[12px] md:text-[1rem] xl:text-[1.25rem]"
+                className="rounded-[20px] py-2 px-2 bg-slate-100  text-[#375c86] w-[fit-content] h-[fit-content] text-[14px] md:text-[1rem] xl:text-[1.25rem]"
               >
                 {tech.name}
               </p>

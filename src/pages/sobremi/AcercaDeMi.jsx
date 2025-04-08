@@ -49,9 +49,16 @@ const AcercaDeMi = () => {
                 >
                   <i className="px-2 md:px-3  text-[#375c86] rounded-[6px] pt-1 bi bi-linkedin sm:text-[20px]"></i>
                 </a>
+                <a
+                  href="https://www.linkedin.com/in/bruno-madozzo/"
+                  target="_blank"
+                  title="Visita mi perfil de LinkedIn"
+                  className=" rounded-[100%] border-[1px] border-[#375c86] md:py-1 flex items-center justify-center"
+                >
+                  <i className="px-2 md:px-3  text-[#375c86] rounded-[6px] pt-1 bi bi-whatsapp sm:text-[20px]"></i>
+                </a>
               </div>
             </div>
-
             <div className="block mx-auto md:mx-0 mt-4 w-[100px] sm:w-[150px] md:h-[150px] rounded-[20px] xl:w-[180px] xl:h-[180px] mb-2">
               <img
                 src={perfil}
