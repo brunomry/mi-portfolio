@@ -8,10 +8,9 @@ const Contacto = () => {
         &lt; Contacto /&gt;
       </h2>
       <div className="flex flex-col justify-center gap-2 md:flex-row xl:gap-3 ">
-        <div className="flex flex-col  items-center md:w-[65%]">
+        <div className="flex flex-col items-center   md:w-[100%]">
           <p className="text-[#787777] text-center descriptionContact w-[100%] lg:text-start md:text-[1rem] xl:text-[1.125rem]  2xl:text-[20px]">
-            ¿Tienes un proyecto en mente o estás interesado en que forme parte
-            de tu equipo? Hablemos
+            Si te interesa trabajar conmigo, hablemos!
           </p>
           <div className="flex flex-col gap-2 mt-6 md:text-[1rem] xl:text-[1.125rem] 2xl:text-[20px] w-[100%]">
             <div

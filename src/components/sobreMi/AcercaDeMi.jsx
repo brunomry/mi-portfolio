@@ -30,7 +30,7 @@ const AcercaDeMi = () => {
           <h1 className="text-[25px] text-[#111] leading-10 md:leading-normal sm:text-[35px] xl:text-[48px] 2xl:text-[60px] mb-2 md:mb-0 font-bold">
             Hola, soy Bruno Madozzo
           </h1>
-          <h2 className="text-[20px] 2xl:text-[35px] text-[#222] leading-8 md:leading-normal text-center align-middle sm:text-[25px] xl:text-[30px] font-bold ">
+          <h2 className="text-[20px] 2xl:text-[40px] text-[#222] leading-8 md:leading-normal text-center align-middle sm:text-[25px] xl:text-[30px] font-bold ">
             &lt; Desarrollador web Frontend /&gt;
           </h2>
           <div className="w-[80%] 2xl:w-[100%] aboutMe mx-auto text-center lg:text-start bg-[#fff] mt-2 md:mt-4  p-3 rounded-2xl mb-2 xl:mb-3 border-[1px] shadow">
@@ -43,12 +43,16 @@ const AcercaDeMi = () => {
               />
             </div>
             <div className="mx-2 xl:mx-5 my-2 text-center lg:text-start md:text-[1rem] xl:text-[1.125rem]">
-              <h2 className="text-[20px] 2xl:text-[25px] text-[#333] xl:text-[22px] font-bold leading-8 md:leading-normal">
-                Acerca de mí
-              </h2>
-              <p className="text-[#787777] 2xl:text-[20px]">
-              Soy estudiante de Ingeniería en Sistemas de Información con fuerte enfoque en desarrollo web y orientado al Front-end. Me destaco por crear páginas rápidas, responsivas y optimizadas para SEO, aportando ideas creativas de diseño. Además, mi alto compromiso y atención al detalle además de una mentalidad orientada a resultados, me permiten contribuir de forma efectiva en los proyectos en los que participo.
+              <p className="text-[#424242] 2xl:text-[25px]">
+              Soy Bruno, Desarrollador web y estudiante de Ingeniería en Sistemas de Información.
               </p>
+              <p className="text-[#787777] 2xl:text-[20px]">
+              Me especializo en crear sitios y aplicaciones web optimizadas para un buen rendimiento y posicionamiento SEO. 
+              </p>
+              <p className="text-[#333] mt-2 2xl:text-[25px] font-bold">¿Por qué elegirme? </p>
+              <p className="text-[#787777] mt-2 2xl:text-[20px]">Tengo una gran atención al detalle, me gusta aprender constantemente y aplicar buenas prácticas de código y diseño. </p>
+              <p className="text-[#787777] mt-2 2xl:text-[20px]">Además, soy una persona colaborativa, con habilidades de liderazgo, y siempre busco entregar buenos resultados.</p>
+              <p className="text-[#787777] mt-2 2xl:text-[20px]">Si estás buscando a alguien con seriedad y compromiso para sumarse a tu equipo, o necesitas una web para tu negocio, no dudes en contactarme.</p>
             </div>
           </div>
           <div className="hidden w-[80%] xl:w-[70vw] aboutMe mx-auto text-center lg:text-start bg-[#fff] shadow-xl lg:mt-2  p-3 rounded-2xl mb-2 xl:mb-3 border-[1px] ">
