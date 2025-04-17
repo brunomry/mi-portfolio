@@ -9,7 +9,7 @@ const AcercaDeMi = () => {
 
   return (
     <article
-      className="flex flex-col justify-center xl:items-center w-[95%] min-h-[40vh] bg-[#fff] md:min-h-[70vh] mt-[100px] sm:mt-[75px] lg:min-h-[100vh] xl:min-h-[80vh] rounded-2 lg:pt-0 lg:mt-0"
+      className="flex flex-col justify-center xl:items-center w-[95%] min-h-[40vh] bg-[#fff] md:min-h-[70vh] mt-[100px] sm:mt-[75px] lg:min-h-[100vh] xl:min-h-[80vh] rounded-2 lg:pt-0 lg:mt-16"
       id="sobremi"
     >
       <div className="hidden justify-center pb-md-3 w-[100%] mb-5 gap-5">
@@ -52,7 +52,7 @@ const AcercaDeMi = () => {
               <p className="text-[#333] mt-2 2xl:text-[25px] font-bold">¿Por qué elegirme? </p>
               <p className="text-[#787777] mt-2 2xl:text-[20px]">Tengo una gran atención al detalle, me gusta aprender constantemente y aplicar buenas prácticas de código y diseño. </p>
               <p className="text-[#787777] mt-2 2xl:text-[20px]">Además, soy una persona colaborativa, con habilidades de liderazgo, y siempre busco entregar buenos resultados.</p>
-              <p className="text-[#787777] mt-2 2xl:text-[20px]">Si estás buscando a alguien con seriedad y compromiso para sumarse a tu equipo, o necesitas una web para tu negocio, no dudes en contactarme.</p>
+              <p className="text-[#787777] mt-2 2xl:text-[20px]"></p>
             </div>
           </div>
           <div className="hidden w-[80%] xl:w-[70vw] aboutMe mx-auto text-center lg:text-start bg-[#fff] shadow-xl lg:mt-2  p-3 rounded-2xl mb-2 xl:mb-3 border-[1px] ">
