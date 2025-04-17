@@ -9,7 +9,7 @@ const AcercaDeMi = () => {
 
   return (
     <article
-      className="flex flex-col justify-center xl:items-center w-[95%] min-h-[40vh] bg-[#fff] md:min-h-[70vh] mt-[100px] sm:mt-[75px] lg:min-h-[100vh] xl:min-h-[80vh] rounded-2 lg:pt-0 lg:mt-16"
+      className="flex flex-col justify-center xl:items-center w-[95%] min-h-[40vh] bg-[#fff] md:min-h-[70vh] mt-[100px] sm:mt-[75px] lg:min-h-[100vh] xl:min-h-[80vh] rounded-2 lg:pt-0 2xl:mt-16"
       id="sobremi"
     >
       <div className="hidden justify-center pb-md-3 w-[100%] mb-5 gap-5">
