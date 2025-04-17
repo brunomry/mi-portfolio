@@ -27,11 +27,11 @@ const AcercaDeMi = () => {
           <p className="text-xl text-[#787777]">
             ¡Bienvenido! <span title="saludo">👋</span>
           </p>
-          <h1 className="text-[25px] text-[#111] leading-10 md:leading-normal sm:text-[35px] xl:text-[48px] 2xl:text-[60px] mb-2 md:mb-0 font-bold">
+          <h1 className="text-[25px] text-[#222] leading-10 md:leading-normal sm:text-[35px] xl:text-[48px] 2xl:text-[60px] mb-2 md:mb-0 font-bold">
             Hola, soy Bruno Madozzo
           </h1>
-          <h2 className="text-[20px] 2xl:text-[40px] text-[#222] leading-8 md:leading-normal text-center align-middle sm:text-[25px] xl:text-[30px] font-bold ">
-            &lt; Desarrollador web Frontend /&gt;
+          <h2 className="text-[20px] 2xl:text-[40px] text-[#333] leading-8 md:leading-normal text-center align-middle sm:text-[25px] xl:text-[30px] font-bold ">
+            Desarrollador Front-end
           </h2>
           <div className="w-[80%] 2xl:w-[100%] aboutMe mx-auto text-center lg:text-start bg-[#fff] mt-2 md:mt-4  p-3 rounded-2xl mb-2 xl:mb-3 border-[1px] shadow">
             <div className="block sm:hidden mx-auto mt-4 w-[200px] h-[250px] rounded-[20px] border-[1px] border-[#f7f7f7] lg:w-[180px] lg:h-[180px] mb-2">
@@ -44,7 +44,7 @@ const AcercaDeMi = () => {
             </div>
             <div className="mx-2 xl:mx-5 my-2 text-center lg:text-start md:text-[1rem] xl:text-[1.125rem]">
               <p className="text-[#424242] 2xl:text-[25px]">
-              Soy Bruno, Desarrollador web y estudiante de Ingeniería en Sistemas de Información.
+              Estudiante de Ingeniería en Sistemas de Información y Desarrollador web con enfoque en Front-end.
               </p>
               <p className="text-[#787777] 2xl:text-[20px]">
               Me especializo en crear sitios y aplicaciones web optimizadas para un buen rendimiento y posicionamiento SEO. 
