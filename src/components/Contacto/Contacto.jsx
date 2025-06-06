@@ -1,20 +1,23 @@
 const Contacto = () => {
   return (
     <article
-      className="flex flex-col items-center justify-start gap-2 min-h-[400px] xl:min-h-[450px] w-[95%] px-3 py-5 xl:py-12 containerContact sm:gap-5 contact"
+      className="flex flex-col lg:px-[250px] justify-start gap-2 min-h-[400px] xl:min-h-[450px] w-[100%] px-3 py-5 xl:py-40 bg-[#fff] containerContact sm:gap-5 contact"
       id="contacto"
     >
-      <h2 className="font-bold text-[25px] xl:text-[30px] 2xl:text-[35px] text-[#333]">
-        &lt; Contacto /&gt;
+      <h2 className="font-black text-center text-[25px] xl:text-[30px] 2xl:text-[30px] text-[#2B7FF7]">
+       ¿Estás buscando a alguien con seriedad y compromiso para sumarse a tu equipo? ¿Necesitas una web para tu negocio?
       </h2>
-      <div className="flex flex-col justify-center gap-2 md:flex-row xl:gap-3 ">
-        <div className="flex flex-col items-center   md:w-[65%]">
-          <p className="text-[#787777] text-center descriptionContact w-[100%] lg:text-start md:text-[1rem] xl:text-[1.125rem]  2xl:text-[20px]">
-          Si estás buscando a alguien con seriedad y compromiso para sumarse a tu equipo, o necesitas una web para tu negocio, no dudes en contactarme.
+      <h2 className="font-black text-center text-[25px] xl:text-[30px] 2xl:text-[30px] text-[#2B7FF7]">
+       No dudes en contactarme.
+      </h2>
+      <div className="flex flex-col  gap-2 md:flex-row justify-center xl:gap-3 w-[100%]">
+        <div className="flex flex-col ">
+          <p className="text-[#787777] text-center descriptionContact w-[100%] lg:text-start ">
+          
           </p>
-          <div className="flex flex-col gap-2 mt-6 md:text-[1rem] xl:text-[1.125rem] 2xl:text-[20px] w-[fit-content] ">
+          <div className="flex gap-12 mt-6 w-[100%] lg:mt-14">
             <div
-              className="w-[100%] bg-white border-[1px]  rounded-[25px] flex p-5   hover:text-[#000] items-center gap-5"
+              className="w-[420px] bg-white border  rounded-[8px] flex p-8   hover:text-[#000] items-center gap-5"
               title="Contáctame por correo"
             >
               <i
@@ -22,8 +25,8 @@ const Contacto = () => {
                 title="Email"
               ></i>
               <div className="flex flex-col">
-                <span className="text-[#787777]">Email</span>
-                <span className="">brunomadozzo@gmail.com</span>
+                <span className="text-[#787777] text-[14px]">Email</span>
+                <span className="text-[#444]">brunomadozzo@gmail.com</span>
               </div>
             </div>
             <a
@@ -31,12 +34,12 @@ const Contacto = () => {
               target="_blank"
               title="Contáctame por LinkedIn"
               rel="noopener noreferrer"
-              className="flex items-center gap-5 p-5   hover:text-[#000] bg-white hover:hover:shadow-lg border-[1px]  w-[100%] rounded-[25px]"
+              className="flex items-center gap-5 p-8  bg-[#fff] border hover:border-[#2B7FF7] hover:text-[#2B7FF7] hover:bg-[#fff] w-[420px] rounded-[8px]"
             >
-              <i className="text-4xl text-blue-600 bi bi-linkedin"></i>
+              <i className="text-4xl text-[#2B7FF7] bi bi-linkedin"></i>
               <div className="flex flex-col">
-                <span className="text-[#787777]">LinkedIn</span>
-                <span className="">Bruno Madozzo</span>
+                <span className="text-[#787777] text-[14px]">LinkedIn</span>
+                <span className="text-[#0a0a0a]">Bruno Madozzo</span>
               </div>
             </a>
           </div>

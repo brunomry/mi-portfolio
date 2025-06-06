@@ -10,47 +10,47 @@ const CardProyecto = ({ proyecto }) => {
 
   return (
     <>
-     <div className="border-[1px] shadow rounded-[10px] w-[100%] min-w-[280px] h-[425px] bg-[#fff] duration-[0.8s] sm:w-[300px] lg:w-[300px] lg:min-h-[300px] lg:duration-[0.7s] xl:w-[350px]  hover:shadow-xl">
+     <div className=" w-[100%] min-w-[250px] pb-8 bg-[#fff] duration-[0.8s] sm:w-[300px] lg:w-[320px] lg:min-h-[400px] lg:duration-[0.7s] xl:w-[400px] ">
       <div className=''>
       <img
         src={proyecto.imagen}
         alt={proyecto.nombre}
         title={proyecto.nombre}
-        className="rounded-t-[10px] border-b w-[100%] h-[225px] object-cover"
+        className=" border-b w-[100%] h-[300px] object-cover"
       />
       </div>
-      <div className="flex flex-col justify-between gap-2 mt-3">
-        <div className=" rounded-[4px] py-1 px-2 flex flex-col items-center mb-2">
-          <h4 className="mb-1 font-bold text-[20px] md:text-[20px] text-[#222] 2xl:text-[22px]">{proyecto.nombre}</h4>
-          <p className="md:text-[1rem] xl:text-[1.125rem]  mb-0 text-[#787777]">{proyecto.tipo}</p>
+      <div className="flex flex-col justify-between  gap-4 my-4">
+        <div className=" rounded-[4px] py-1 flex flex-col mb-2">
+          <h4 className="font-black text-[16px] md:text-[20px] mb-0 text-[#2B7FF7]">{proyecto.categoria}</h4>
+          <p className="text-[14px] lg:text-[1rem] mb-0 text-[#787777]">{proyecto.tipo}</p>
         </div>
-        <div className="flex justify-center gap-2 xl:gap-3">
+        <div className="flex flex-wrap gap-2 xl:gap-3">
           <a
             href={proyecto.github}
-            className="flex md:text-[1rem] xl:text-[1rem] bg-[#fff] rounded-[8px] px-3 pt-1 text-[#000] border-[1px] border-[#999] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#000] hover:border-[#000] hover:text-[#fff] flex-col items-center hover:shadow-xl"
+            className="flex gap-2 text-[14px]  bg-[#fff] rounded-[8px] px-3 pt-1 text-[#5a5a5a] border-[1px] border-[#cecece] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#000] hover:border-[#000] hover:text-[#fff] items-center "
             target="_blank"
             rel="noopener"
             title="Ver código"
           >
-            <i className="text-2xl bi bi-github"></i>
-            <span>Github</span>
+            <i className="text-lg bi bi-github"></i>
+            <span>Código</span>
           </a>
           <a
             href={proyecto.enlace}
-            className="flex md:text-[1rem] xl:text-[1rem] bg-[#fff] rounded-[8px] px-3 pt-1 text-[#000] border-[1px] border-[#999] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#000] hover:border-[#000] hover:text-[#fff] flex-col items-center hover:shadow-xl"
+            className="flex gap-2  text-[14px]  bg-[#fff] rounded-[8px] px-3 pt-1 text-[#5a5a5a] border-[1px] border-[#cecece] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#000] hover:border-[#000] hover:text-[#fff] items-center "
             target="_blank"
             title="Ver página"
             rel="noopener"
           >
-            <i className="text-2xl bi bi-link-45deg"></i>
-            <span>Visitar</span>
+            <i className="text-lg bi bi-link-45deg"></i>
+            <span>Web</span>
           </a>
           <button
-            className="flex md:text-[1rem] xl:text-[1rem] bg-[#fff] rounded-[8px] px-3 pt-1 text-[#000] border-[1px] border-[#999] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#000] hover:border-[#000] hover:text-[#fff] flex-col items-center hover:shadow-xl"
+            className="flex gap-2 text-[14px]  bg-[#fff] rounded-[8px] px-3 pt-1 text-[#5a5a5a] border-[1px] border-[#cecece] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#000] hover:border-[#000] hover:text-[#fff] items-center "
             title="Ver más información del proyecto"
             onClick={()=>handleShowModal(true)}
           >
-            <i className="text-2xl bi bi-info-circle" ></i> <span>Detalle</span>
+            <i className="text-lg bi bi-info-circle" ></i><span>Info</span>
           </button>
         </div>
       </div>

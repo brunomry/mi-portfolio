@@ -7,7 +7,7 @@ import Contacto from "./Contacto/Contacto";
 import Footer from "./Footer";
 import Servicios from "./servicios/Servicios";
 
-const Secciones = () => {
+const ContainerPrincipal = () => {
   const [scrollTop, setScrollTop] = useState(0);
   const handleScroll = () => setScrollTop(window.pageYOffset);
 
@@ -19,7 +19,7 @@ const Secciones = () => {
   return (
     <section
       id="section"
-      className="w-[100%] absolute min-h-screen lg:w-[75%] lg:ml-[25%] xl:w-[80%] xl:ml-[20%] bg-[#fff] flex flex-col items-center gap-3 pt-2 xl:pt-3"
+      className="w-[100%] absolute min-h-screen lg:w-[100%] xl:w-[100%]  bg-[#FAFAFA] flex flex-col justify-center items-center  pt-2 xl:pt-3"
     >
       <AcercaDeMi></AcercaDeMi>
       <Tecnologias></Tecnologias>
@@ -40,4 +40,4 @@ const Secciones = () => {
   );
 };
 
-export default Secciones;
+export default ContainerPrincipal;

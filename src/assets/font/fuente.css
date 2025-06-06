@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Satoshi-Black';
+  src: url('../font/Satoshi_Complete/Satoshi-Black.woff2') format('woff2'),
+       url('.../font/Satoshi_Complete/Satoshi-Black.woff') format('woff'),
+       url('../font/Satoshi_Complete/fonts/Satoshi-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-Regular';
+  src: url('../font/Satoshi_Complete/fonts/Satoshi-Regular.woff2') format('woff2'),
+       url('../font/Satoshi_Complete/fonts/Satoshi-Regular.woff') format('woff'),
+       url('../font/Satoshi_Complete/fonts/Satoshi-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}

@@ -1,7 +1,7 @@
 const servicios = [
     {
         id: 1,
-        servicio: "Diseño y creación de páginas web responsivas",
+        servicio: "Diseño de páginas web responsivas",
         descripcion: "Creación de páginas que se adaptan y funcionan en todos los dispositivos (celulares, tablets y computadoras)"
       },
       {

@@ -1,14 +1,14 @@
-import "./styles-min.css";
-import Secciones from "./components/Secciones";
-import Sidebar from "./components/Sidebar";
+import "./styles.css";
 import 'flowbite';
 import "flowbite-react";
+import MenuNavegacion from "./components/MenuNavegacion";
+import ContainerPrincipal from "./components/ContainerPrincipal";
 
 function App() {
   return (
-    <div className="h-[100vh] flex flex-col lg:flex-row gap-5">
-      <Sidebar></Sidebar>
-      <Secciones></Secciones>
+    <div className="h-[100vh] flex flex-col lg:flex-row">
+      <MenuNavegacion></MenuNavegacion>
+      <ContainerPrincipal></ContainerPrincipal>
     </div>
   );
 }
