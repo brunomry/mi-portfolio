@@ -11,7 +11,7 @@ const OtrosProyectos = () => {
       <h2 className="font-black text-[25px] xl:text-[30px] 2xl:text-[35px] text-[#333] md:mb-8">
         Todos los Proyectos
       </h2>
-      <div className=" flex containerTabProyects sm:flex-wrap h-[450px] w-[100vw] sm:w-[100%]  sm:h-[100%] sm:pb-[50px]  gap-3 lg:gap-8 2xl:gap-20">
+      <div className=" flex containerTabProyects sm:flex-wrap h-[450px] w-[100vw] sm:w-[100%]  sm:h-[100%] sm:pb-[50px]  md:gap-8 2xl:gap-20">
         {proyectos.map((proyecto) => (
           <CardProyecto key={proyecto.id} proyecto={proyecto}></CardProyecto>
         ))}

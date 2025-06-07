@@ -50,7 +50,7 @@ const NavbarPrincipal = () => {
               Servicios
             </a>
           </li>
-          <li className="">
+          {/* <li className="">
             <a
               className="block text-[14px] navLink text-[#787777]   text-center"
               href="#servicios"
@@ -58,7 +58,7 @@ const NavbarPrincipal = () => {
             >
               Testimonios
             </a>
-          </li>
+          </li> */}
           <li className="">
             <a
               className="block text-[14px] navLink text-[#787777]   text-center"
@@ -68,12 +68,12 @@ const NavbarPrincipal = () => {
               Contacto
             </a>
           </li>
-          <li className="">
+          {/* <li className="">
             <div className="">
               <i class="bi bi-moon text-[20px]"></i>
               <i class="bi bi-moon-fill text-[20px] hidden"></i>
             </div>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>

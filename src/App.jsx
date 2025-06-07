@@ -1,20 +1,26 @@
 import "./styles.css";
-import 'flowbite';
+import "flowbite";
 import "flowbite-react";
-import MenuNavegacion from "./components/NavbarPrincipal";
-import ContainerPrincipal from "./components/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MainPrincipal from "./Layout/MainPrincipal";
 import ProyectsRouter from "./ProyectsRouter";
 
 function App() {
   return (
-     <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<MainPrincipal></MainPrincipal>}></Route>
-          <Route path="/proyectos/*" element={<ProyectsRouter></ProyectsRouter>}></Route>
-        </Routes>
-     </BrowserRouter>
+    <>
+      <div className=" md:hidden h-screen flex  justify-center py-40 px-4 text-center bg-[#2B7FF7] text-[#FAFAFA] font-black">
+        Ups! Actualmente estoy actualizando el diseño en celulares. Puedes ingresar desde una tablet o PC para ver el mismo.
+      </div>
+
+      <div className="hidden md:block">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<MainPrincipal />} />
+            <Route path="/proyectos/*" element={<ProyectsRouter />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </>
   );
 }
 
