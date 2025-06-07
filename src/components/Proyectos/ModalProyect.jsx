@@ -5,14 +5,14 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
 
   return (
     <div
-      className={` fixed top-0 bottom-0 left-0 right-0 z-[99]  bg-[#000] bg-opacity-50  ${
+      className={`w-[100vw] fixed top-0 bottom-0 left-0 right-0 z-[99]  bg-[#000] bg-opacity-50 mt-0  ${
         show ? "block" : "hidden"
       }`}
       onClick={cerrarModal}
     >
-      <div className="w-[85%] overflow-auto h-[100%] md:h-[initial] lg:w-[75%] modal mt-4 fontSizeModal xl:w-[75%] mx-auto flex flex-col justify-between bg-[#fff] lg:overflow-auto rounded-md p-2 md:p-2 lg:p-2 ">
-        <div className="lg:max-h-[80vh] xl:h-[inherit] xl:min-h-[25vh]">
-          <div className="flex justify-between items-center py-2 px-3 w-[100%] ">
+      <div className="min-w-[100vw] overflow-auto h-[100%] xl:py-20 fontSizeModal flex flex-col bg-[#fff] mt-0">
+        <div className="min-w-[100vw] mt-0 xl:px-[150px] ">
+          <div className="flex justify-between items-center py-2 px-3  ">
             <div className="flex items-center gap-2 ">
               <h3 className="text-lg font-bold text-[#333] md:text-2xl lg:text-3xl">
                 {proyecto.nombre}
@@ -32,7 +32,7 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
               onClick={() => handleShowModal(false)}
               title="Cerrar"
             >
-              <i className="bi bi-x-lg text-[20px]"></i>
+              <i className="bi bi-x-lg text-[60px]"></i>
             </button>
           </div>
           <article className="mb-2 ">
@@ -90,6 +90,21 @@ const ModalProyect = ({ show, handleShowModal, proyecto }) => {
             </div>
 
             <div className="flex flex-col rounded-md p-2 py-0 text-[1rem] mb-2">
+              <p className="font-bold">Descripción:</p>
+              <p className="text-[#5c5c5c]">{proyecto.descripcion}</p>
+            </div>
+                <div className="flex flex-col rounded-md p-2 py-0 text-[1rem] mb-2">
+              <p className="font-bold">Descripción:</p>
+              <p className="text-[#5c5c5c]">{proyecto.descripcion}</p>
+            </div>    <div className="flex flex-col rounded-md p-2 py-0 text-[1rem] mb-2">
+              <p className="font-bold">Descripción:</p>
+              <p className="text-[#5c5c5c]">{proyecto.descripcion}</p>
+            </div>
+                <div className="flex flex-col rounded-md p-2 py-0 text-[1rem] mb-2">
+              <p className="font-bold">Descripción:</p>
+              <p className="text-[#5c5c5c]">{proyecto.descripcion}</p>
+            </div>
+                <div className="flex flex-col rounded-md p-2 py-0 text-[1rem] mb-2">
               <p className="font-bold">Descripción:</p>
               <p className="text-[#5c5c5c]">{proyecto.descripcion}</p>
             </div>

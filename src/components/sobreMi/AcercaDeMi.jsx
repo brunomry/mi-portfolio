@@ -12,16 +12,6 @@ const AcercaDeMi = () => {
       className="flex flex-col 2xl:px-[250px] w-[100%] min-h-[40vh] bg-[#FAFAFA] md:min-h-[60vh] md:items-center md:mt-[100px] lg:mt-[150px] xl:mt-[200px] lg:min-h-[70vh] xl:min-h-[72vh] rounded-2"
       id="sobremi"
     >
-      {/* <div className="hidden justify-center pb-md-3 w-[100%] mb-5 gap-5">
-        <div className="rounded-[5px] border-1 flex items-center gap-2">
-          <i className="bi bi-brightness-high " title="tema"></i>
-          <span>Tema</span>
-        </div>
-        <div className="gap-2 rounded-5 border-1 d-flex align-items-center">
-          <i className="bi bi-globe " title="idioma"></i>
-          <span>Idioma</span>
-        </div>
-      </div> */}
       <div className="flex flex-col px-4 lg:gap-[50px] xl:gap-[150px] lg:flex-row">
         <div className="flex flex-col gap-4 order-1 lg:order-1">
           <div>

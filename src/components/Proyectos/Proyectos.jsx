@@ -4,7 +4,7 @@ import proyectos from "../helpers/proyectos";
 const Proyectos = () => {
   return (
     <article
-      className="md:py-20 md:px-8 xl:py-40 lg:px-[100px] flex flex-col gap-3 xl:gap-4 px-3 w-[100%] bg-[#fff] md:min-h-[100vh] lg:min-h-[60vh]"
+      className="md:py-20 md:px-8 xl:py-40 lg:px-[100px] xl:px-[150px] flex flex-col gap-3 xl:gap-4 px-3 w-[100%] bg-[#fff] md:min-h-[100vh] lg:min-h-[60vh]"
       id="proyectos"
     >
       <h2 className="font-black text-[25px] xl:text-[30px] 2xl:text-[35px] text-[#333] md:mb-8">
