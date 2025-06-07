@@ -3,7 +3,7 @@ import { BsCheckSquareFill } from "react-icons/bs";
 const CardCertificacion = ({ servicio }) => {
   return (
     <div
-      className="rounded-[8px] bg-[#2B7FF7] py-8 w-[100%] min-w-[260px] md:max-w-[350px] min-h-[150px] xl:h-[200px] 2xl:max-w-[450px] duration-[0.8s]  text-center md:text-start flex flex-col px-2 md:px-4 xl:px-5"
+      className="rounded-[8px] bg-[#2B7FF7] w-[100%] min-w-[260px] md:max-w-[340px] lg:max-w-[375px] min-h-[150px]  xl:max-w-[450px] duration-[0.8s]  text-center md:text-start flex flex-col px-2 md:px-0 xl:px-5"
       title={servicio.servicio}
     >
       <div className="flex flex-col justify-between rounded-[4px] min-h-[100%]">

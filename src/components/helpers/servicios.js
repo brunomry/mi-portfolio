@@ -22,17 +22,17 @@ const servicios = [
       {
         id: 5,
         servicio: "Optimización SEO",
-        descripcion: "Puedo hacer que tu página aparezca en Google al realizar una búsqueda."
+        descripcion: "Tu página en los primeros resultados de Google al realizar una búsqueda."
       },
       {
         id: 6,
-        servicio: "Optimización de velocidad y rendimiento",
+        servicio: "Optimización de rendimiento",
         descripcion: "Me aseguro que tu página cargue de forma rápida para una mejor experiencia de tus clientes."
       },
       {
         id: 7,
         servicio: "Integración de WhatsApp",
-        descripcion: "Botón de WhatsApp en tu página para que tus clientes se puedan comunicar contigo de forma fácil."
+        descripcion: "Botón de WhatsApp en tu página para que tus clientes se puedan comunicar contigo de forma fácil y segura."
       }
   ];
   

@@ -10,13 +10,13 @@ const CardProyecto = ({ proyecto }) => {
 
   return (
     <>
-     <div className=" w-[100%] min-w-[250px] pb-8 bg-[#fff] duration-[0.8s] sm:w-[300px] lg:w-[320px] lg:min-h-[400px] lg:duration-[0.7s] xl:w-[400px] ">
+     <div className=" w-[100%] min-w-[250px] pb-8 bg-[#fff] duration-[0.8s] sm:w-[300px] lg:w-[350px] lg:min-h-[400px] lg:duration-[0.7s] xl:w-[400px] ">
       <div className=''>
       <img
         src={proyecto.imagen}
         alt={proyecto.nombre}
         title={proyecto.nombre}
-        className=" border-b w-[100%] h-[300px] object-cover"
+        className=" border-b w-[100%] md:h-[200px] lg:h-[300px] object-cover"
       />
       </div>
       <div className="flex flex-col justify-between  gap-4 my-4">

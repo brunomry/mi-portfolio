@@ -4,14 +4,14 @@ import certificados from "../helpers/certificados";
 const Certificaciones = () => {
   return (
     <article
-      className="flex flex-col py-40 lg:px-[150px] w-[100%] min-h-[35vh] sm:min-h-[50vh] md:min-h-[50vh] lg:min-h-[40vh] mt-3 lg:mt-0 bg-[#0a0a0a] gap-2 sm:gap-4 certifications px-2 md:px-5 "
+      className="flex flex-col md:py-20 md:px-8 xl:py-40 lg:px-[100px] xl:px-[150px] w-[100%] min-h-[35vh] sm:min-h-[50vh] md:min-h-[50vh] lg:min-h-[40vh] mt-3 lg:mt-0 bg-[#0a0a0a] gap-2 sm:gap-4 certifications px-2 "
       id="certificaciones"
     >
       <h2 className="font-black text-[25px] xl:text-[30px] 2xl:text-[35px] text-[#FAFAFA]">
         {" "}
         Certificaciones
       </h2>
-      <div className="flex w-[100%] md:flex-col xl:flex-row md:gap-2 md:w-[75%] xl:w-[100%] 2xl:w-[75%] containerCertifications h-[250px] mt-8 sm:h-[100%] pb-[20px]  gap-3 lg:gap-4 2xl:gap-8">
+      <div className="flex w-[100%]  xl:flex-row md:gap-8 md:flex-wrap  containerCertifications h-[250px] mt-8 sm:h-[100%] pb-[20px]  gap-4 lg:gap-4 xl:gap-12">
         {certificados.map((certificado, index) => (
           <CardCertificacion
             key={certificado.id}

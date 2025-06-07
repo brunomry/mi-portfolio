@@ -28,8 +28,8 @@ const tecnologias = {
       actuales: [
       { name: "HTML5", icon: html5},
       { name: "CSS3", icon: css3 },
-      { name: "Bootstrap5", icon: bootstrap5 },
-      { name: "TailwindCSS", icon:tailwind},
+      { name: "Bootstrap 5", icon: bootstrap5 },
+      { name: "Tailwind CSS", icon:tailwind},
       { name: "Javascript", icon: javascript },
       { name: "React", icon: react },
       { name: "React Bootstrap", icon: reactbootstrap},
@@ -38,8 +38,8 @@ const tecnologias = {
       { name: "Redux", icon: redux},
       { name: "Redux-Toolkit", icon: redux},
       { name: "Axios", icon: axios},   
-      { name: "NodeJS", icon: node },
-      { name: "Express JS", icon: express },  
+      { name: "Node js", icon: node },
+      { name: "Express js", icon: express },  
       { name: "MySQL", icon: mysql },    
       { name: "MongoDB", icon: mongodb },
       { name: "Postman", icon: postman}

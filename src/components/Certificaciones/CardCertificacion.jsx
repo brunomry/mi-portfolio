@@ -15,7 +15,7 @@ const CardCertificacion = ({ certificado, index }) => {
     <>
       <div
         onClick={() => openCarousel(index)}
-        className="cursor-pointer rounded-[6px] bg-[#0a0a0a] py-8 cardCertification w-[100%] min-w-[200px] max-w-[300px] h-[175px] duration-[0.8s] border-[1px] text-center md:text-start flex flex-col px-2 md:px-4 xl:px-5 hover:border-[#2B7FF7]"
+        className="cursor-pointer rounded-[6px] bg-[#0a0a0a] py-8 cardCertification w-[100%] min-w-[200px] md:max-w-[300px] lg:max-w-[400px] h-[175px] duration-[0.8s] border-[1px] text-center md:text-start flex flex-col px-2 md:px-4 xl:px-5 hover:border-[#2B7FF7]"
         title="clic para ver certificación"
       >
         <div className="flex flex-col justify-between rounded-[4px] min-h-[100%] h-[fit-content]">

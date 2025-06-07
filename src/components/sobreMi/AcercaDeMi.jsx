@@ -9,7 +9,7 @@ const AcercaDeMi = () => {
 
   return (
     <article
-      className="flex flex-col 2xl:px-[250px] w-[100%] min-h-[40vh] bg-[#FAFAFA] md:min-h-[70vh] lg:mt-[150px] xl:mt-[200px] lg:min-h-[70vh] xl:min-h-[72vh] rounded-2"
+      className="flex flex-col 2xl:px-[250px] w-[100%] min-h-[40vh] bg-[#FAFAFA] md:min-h-[60vh] md:items-center md:mt-[100px] lg:mt-[150px] xl:mt-[200px] lg:min-h-[70vh] xl:min-h-[72vh] rounded-2"
       id="sobremi"
     >
       {/* <div className="hidden justify-center pb-md-3 w-[100%] mb-5 gap-5">
@@ -22,8 +22,8 @@ const AcercaDeMi = () => {
           <span>Idioma</span>
         </div>
       </div> */}
-      <div className="flex flex-col  md:flex-row sm:gap-[150px] gap-[50px]">
-        <div className="flex flex-col gap-4">
+      <div className="flex flex-col px-4 lg:gap-[50px] xl:gap-[150px] lg:flex-row">
+        <div className="flex flex-col gap-4 order-1 lg:order-1">
           <div>
             <h1 className="text-[25px] text-[#000] leading-10 md:leading-normal sm:text-[35px] xl:text-[48px] 2xl:text-[60px] mb-2 md:mb-0 font-black">
               Hola, soy Bruno Madozzo
@@ -63,7 +63,7 @@ const AcercaDeMi = () => {
             </div>
           </div>
         </div>
-        <div className="block  mx-auto mt-4 w-[200px] h-[250px] rounded-[20px] border-[8px] border-[##2B7FF] lg:w-[280px] lg:h-[280px] mb-2">
+        <div className="block md:flex lg:order-1 lg:mx-auto mt-4 w-[100px] h-[100px] md:w-[150px] md:h-[150px] rounded-[20px] border-[8px] border-[##2B7FF] lg:w-[200px] lg:h-[200px] xl:w-[250px] xl:h-[250px] 2xl:w-[280px] 2xl:h-[280px] mb-2">
           <img
             src={perfil}
             alt="Bruno Madozzo"
