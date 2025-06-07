@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const MenuNavegacion = () => {
+const NavbarPrincipal = () => {
   const [desplegado, setDesplegado] = useState();
 
   const desplegarMenu = (value) => {
@@ -10,8 +10,8 @@ const MenuNavegacion = () => {
   return (
     <header className=" w-[100%] h-[48px] lg:h-[96px] fixed top-0 left-0 z-[99] bg-[#FAFAFA] flex items-center px-4 lg:px-10 xl:px-20 2xl:px-40">
       <nav className="w-[100%] flex justify-between">
-        <p className="xl:text-[25px] text-[#0A0A0A] font-black ">
-          Bruno Madozzo
+        <p className="xl:text-[20px] text-[#0A0A0A] font-black ">
+          BrunoMadozzo&#40;&#41;&#59;
         </p>
         <ul className="hidden lg:flex items-center gap-2 lg:gap-8 lg:justify-end xl:gap-12 min-w-[760px]">
           <li className="">
@@ -80,4 +80,4 @@ const MenuNavegacion = () => {
   );
 };
 
-export default MenuNavegacion;
+export default NavbarPrincipal;

@@ -1,7 +1,17 @@
 import CardProyecto from "./CardProyecto";
 import proyectos from "../helpers/proyectos";
+import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const Proyectos = () => {
+
+  const [listaProyectos, setListaProyectos] = useState({});
+
+  useEffect(()=>{
+    const proyectosActuales = proyectos.slice(0,3)
+    setListaProyectos(proyectosActuales)
+  },[])
+
   return (
     <article
       className="md:py-20 md:px-8 xl:py-40 lg:px-[100px] xl:px-[150px] flex flex-col gap-3 xl:gap-4 px-3 w-[100%] bg-[#fff] md:min-h-[100vh] lg:min-h-[60vh]"
@@ -11,19 +21,20 @@ const Proyectos = () => {
         Proyectos destacados
       </h2>
       <div className=" flex containerTabProyects sm:flex-wrap h-[450px] w-[100vw] sm:w-[100%]  sm:h-[100%] sm:pb-[50px]  gap-3 lg:gap-8 ">
-        {proyectos.map((proyecto) => (
+        {listaProyectos.length > 0 && listaProyectos.map((proyecto) => (
           <CardProyecto key={proyecto.id} proyecto={proyecto}></CardProyecto>
         ))}
       </div>
       <div className="flex flex-col mt-8 justify-center gap-4 md:gap-4 xl:gap-5">
         <div className="flex flex-col gap-2 md:flex-row md:gap-3">
-          <button
+          <Link
             className="flex gap-3 justify-center px-5 py-[10px] 2xl:py-[15px] w-[250px] rounded-[45px] bg-[#fff] text-[#2B7FF7] hover:bg-[#2B7FF7] hover:text-[#fff] border-[#2B7FF7] border-[1px] hover:border-[#2B7FF7] text-[16px] md:text-[1rem]"
             title="haz clic para descargar mi CV"
+            to={"/proyectos/otros-proyectos"}
           >
             <span className="font-black">Ver más Proyectos </span>
             <i className="bi bi-arrow-right"></i>
-          </button>
+          </Link>
         </div>
       </div>
     </article>

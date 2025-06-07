@@ -1,15 +1,20 @@
 import "./styles.css";
 import 'flowbite';
 import "flowbite-react";
-import MenuNavegacion from "./components/MenuNavegacion";
-import ContainerPrincipal from "./components/ContainerPrincipal";
+import MenuNavegacion from "./components/NavbarPrincipal";
+import ContainerPrincipal from "./components/Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MainPrincipal from "./Layout/MainPrincipal";
+import ProyectsRouter from "./ProyectsRouter";
 
 function App() {
   return (
-    <div className="h-[100vh] flex flex-col lg:flex-row">
-      <MenuNavegacion></MenuNavegacion>
-      <ContainerPrincipal></ContainerPrincipal>
-    </div>
+     <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainPrincipal></MainPrincipal>}></Route>
+          <Route path="/proyectos/*" element={<ProyectsRouter></ProyectsRouter>}></Route>
+        </Routes>
+     </BrowserRouter>
   );
 }
 

@@ -1,13 +1,8 @@
 import { useState, useEffect } from 'react';
-import ModalProyect from './ModalProyect';
+import ModalProyect from './DetalleProyecto';
+import { Link } from 'react-router-dom';
 
 const CardProyecto = ({ proyecto }) => {
-  const [abrirModal, setAbrirModal] = useState(false);
- 
-  const handleShowModal = (value) => {
-    setAbrirModal(value);
-  };
-
   return (
     <>
      <div className=" w-[100%] min-w-[250px] pb-8 bg-[#fff] duration-[0.8s] sm:w-[300px] lg:w-[350px] lg:min-h-[400px] lg:duration-[0.7s] xl:w-[400px] ">
@@ -45,24 +40,16 @@ const CardProyecto = ({ proyecto }) => {
             <i className="text-lg bi bi-link-45deg"></i>
             <span>Web</span>
           </a>
-          <button
+          <Link
             className="flex gap-2 text-[14px]  bg-[#fff] rounded-[8px] px-3 pt-1 text-[#5a5a5a] border-[1px] border-[#cecece] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#000] hover:border-[#000] hover:text-[#fff] items-center "
             title="Ver más información del proyecto"
-            onClick={()=>handleShowModal(true)}
+            to={`/proyectos/detalleproyecto/${proyecto.id}`}
           >
             <i className="text-lg bi bi-info-circle" ></i><span>Info</span>
-          </button>
+          </Link>
         </div>
       </div>
     </div>
-    <div className={`${abrirModal ? "flex justify-center w-[100%] md:mt-[150px]" : ""}`}>
-    <ModalProyect
-      show={abrirModal}
-      proyecto={proyecto}
-      handleShowModal={handleShowModal}
-      setAbrirModal={setAbrirModal}
-    ></ModalProyect>
-    </div>   
     </>  
   );
 };

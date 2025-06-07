@@ -7,7 +7,7 @@ import Contacto from "./Contacto/Contacto";
 import Footer from "./Footer";
 import Servicios from "./servicios/Servicios";
 
-const ContainerPrincipal = () => {
+const Home = () => {
   const [scrollTop, setScrollTop] = useState(0);
   const handleScroll = () => setScrollTop(window.pageYOffset);
 
@@ -40,4 +40,4 @@ const ContainerPrincipal = () => {
   );
 };
 
-export default ContainerPrincipal;
+export default Home;
