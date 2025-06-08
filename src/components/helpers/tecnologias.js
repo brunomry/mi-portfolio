@@ -9,20 +9,13 @@ import node from "../../assets/iconos/nodejs.svg";
 import express from "../../assets/iconos/express.svg";
 import mongodb from "../../assets/iconos/mongodb.svg";
 import postman from "../../assets/iconos/postman.svg";
-import draw from "../../assets/iconos/draw.png";
-import trello from "../../assets/iconos/trello.svg";
 import git from "../../assets/iconos/git.svg";
-import github from "../../assets/iconos/github.svg";
+import figma from "../../assets/iconos/figma.svg";
 import redux from "../../assets/iconos/redux.svg";
 import tailwind from "../../assets/iconos/tailwind.svg";
 import axios from "../../assets/iconos/axios.svg";
 import form from "../../assets/iconos/reacthookform.svg";
 import mysql from "../../assets/iconos/mysql.svg";
-import netlify from "../../assets/iconos/netlify.svg";
-import typescript from "../../assets/iconos/typescript.svg";
-import php from "../../assets/iconos/php.svg";
-import wordpress from "../../assets/iconos/wordpress.svg";
-import materialui from "../../assets/iconos/materialui.svg";
 
 const tecnologias = {
       actuales: [
@@ -37,21 +30,14 @@ const tecnologias = {
       { name: "React Hook Form", icon: form}, 
       { name: "Redux", icon: redux},
       { name: "Redux-Toolkit", icon: redux},
+      { name: "Figma", icon: figma},
       { name: "Axios", icon: axios},   
       { name: "Node js", icon: node },
       { name: "Express js", icon: express },  
       { name: "MySQL", icon: mysql },    
       { name: "MongoDB", icon: mongodb },
-      { name: "Postman", icon: postman}
-      // { name: "Git", icon: git},
-      // { name: "Github", icon: github},
-      // { name: "Trello", icon: trello}   
-    ],
-    aprendiendo: [
-      { name: "PHP", icon: php},
-      { name: "Wordpress", icon: wordpress},
-      { name: "Typescript", icon: typescript },
-      { name: "Material UI", icon: materialui },
+      { name: "Postman", icon: postman},
+      { name: "Git", icon: git}
     ]
   }
 
