@@ -103,15 +103,15 @@ const NavbarPrincipal = () => {
                   Contacto
                 </a>
               </li>
-              <li className="">
+              {/* <li className="">
                 <div className="">
                   <i class="bi bi-moon text-[25px]"></i>
                   <i class="bi bi-moon-fill text-[25px] hidden"></i>
                 </div>
-              </li>
+              </li> */}
             </ul>
           </nav>
-          {/* <button
+          <button
             onClick={() => {
               if (window.innerWidth < 768) {
                 desplegarMenu(false);
@@ -122,7 +122,7 @@ const NavbarPrincipal = () => {
             <i
               class={`bi ${desplegado ? "bi-x-lg" : "bi-list"} text-[40px] `}
             ></i>
-          </button> */}
+          </button>
         </header>
       )}
     </>
