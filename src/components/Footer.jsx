@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="w-[100%] md:py-[50px] bg-[#fff] border-t px-[5px]">
-      <p className="text-center text-[#787777] text-[14px]">
+      <p className="text-center text-[#a1a1a1] font-light text-[14px]">
         &copy;<a
           className=" text-blue-400 lg:hover:underline"
           href="https://www.linkedin.com/in/bruno-madozzo/"

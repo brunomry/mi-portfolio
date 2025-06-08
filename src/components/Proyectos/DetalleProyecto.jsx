@@ -20,19 +20,19 @@ const DetalleProyecto = () => {
   }, [id]);
 
   return (
-    <section className=" py-3 flex flex-col gap-3 xl:gap-4 items-center px-3 md:py-20 md:px-8 lg:px-20 lg:py-[150px] fondo xl:px-[150px] 2xl:px-[250px]">
+    <section className="flex flex-col mb-20 h-[100vh] gap-3 xl:gap-4 items-center px-3 pt-10 pb-20 md:py-20 md:px-8 lg:px-20 lg:py-[150px] fondo xl:px-[150px] 2xl:px-[250px]">
       <Link className="w-[100%] flex justify-start items-center gap-2 " to={"/proyectos/otros-proyectos"}>
         <i class="bi bi-arrow-left text-[20px] text-[#787777]"></i>
         <span className="text-[#787777]">Proyectos</span>
       </Link>
-      <div className=" rounded-[10px] 2xl:px-[100px] flex flex-col gap-4">
-        <div className="flex gap-12">
+      <div className="w-[100%] rounded-[10px] 2xl:px-[100px] flex flex-col gap-4">
+        <div className="flex flex-col md:flex-row gap-4 md:gap-12">
           <h1 className="  font-black text-[25px] text-start xl:text-[30px] text-[#333]">
             {proyecto.nombre}
           </h1>
           <div className="flex gap-3">
             <Link
-              className="flex items-center justify-center px-8 w-[fit-content] text-[#2B7FF7]  border-[#2B7FF7] hover:bg-[#2B7FF7] hover:text-[#fff] rounded-[45px] border text-[1rem] gap-3"
+              className="flex items-center justify-center py-1 px-8 w-[fit-content] text-[#2B7FF7]  border-[#2B7FF7] hover:bg-[#2B7FF7] hover:text-[#fff] rounded-[45px] border text-[1rem] gap-3"
               title="Ver más información del proyecto"
               to={`/detalleproyecto/${proyecto.id}`}
             >             
@@ -56,7 +56,7 @@ const DetalleProyecto = () => {
               </svg>
             </Link>
             <Link
-              className="flex items-center justify-center px-5 w-[fit-content] rounded-[45px] bg-zinc-900 text-white border-[1px] text-[1rem] gap-2"
+              className="flex items-center justify-center py-1 px-8 w-[fit-content] rounded-[45px] border-[#0a0a0a] hover:bg-[#0a0a0a] text-[#0a0a0a] hover:text-[#fafafa] border-[1px] text-[1rem] gap-2"
               title="Ver más información del proyecto"
               to={`${proyecto.github}`}
               target="_blank"
@@ -76,10 +76,10 @@ const DetalleProyecto = () => {
             </Link>
           </div>
         </div>
-        <p className="w-[100%] text-[#787777]">
+        <p className="w-[100%] text-[#787777] text-[14px] md:text-[1rem] font-light">
           {proyecto.descripcion}
         </p>
-        <article className="flex gap-4 flex-wrap">
+        <article className="flex gap-6 md:gap-4 flex-wrap">
           <CardCaracteristica caracteristica="Tipo" descripcion={proyecto.tipo}></CardCaracteristica>
           <CardCaracteristica caracteristica="Categoría" descripcion={proyecto.categoria}></CardCaracteristica>
           <CardCaracteristica caracteristica="Inicio" descripcion={proyecto.fecha}></CardCaracteristica>
@@ -90,12 +90,12 @@ const DetalleProyecto = () => {
           <h2 className=" mb-4 font-bold text-[18px] text-start text-[#333]">
             Tecnologías o herramientas
           </h2>
-          <div className="flex containerTech xl:w-[100%] h-[200px] sm:h-[100%] gap-2 md:gap-4 md:flex-wrap">
+          <div className="flex xl:w-[100%] gap-2 md:gap-4 flex-wrap">
             {proyecto.tecnologias &&
               proyecto.tecnologias.map((tec, pos) => (
                 <p
                   key={pos}
-                  className="rounded-[8px] py-2 px-4 bg-[#Fff]  text-[#787777] shadow w-[fit-content]  md:text-[1rem]"
+                  className="rounded-[8px] py-2 px-4 bg-[#Fff] font-light text-[#787777] border md:shadow w-[fit-content] h-[fit-content] text-[14px] md:text-[1rem]"
                 >
                   {tec.name}
                 </p>
@@ -113,7 +113,7 @@ const DetalleProyecto = () => {
               proyecto.responsabilidades.map((res, pos) => (
                 <li
                   key={pos}
-                  className="rounded-[20px] text-[#787777] w-[fit-content] mb-3 md:text-[1rem] "
+                  className="rounded-[20px] text-[#787777] font-light w-[fit-content] mb-3 text-[14px] md:text-[1rem] "
                 >
                   {res}
                 </li>

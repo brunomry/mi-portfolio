@@ -12,7 +12,7 @@ function Servicios() {
         {" "}
          Servicios
       </h2>
-      <div className="flex flex-col w-[100%] md:flex-row gap-12 md:gap-4 md:flex-wrap min-h-[250px] mt-8 sm:h-[100%] pb-[20px] lg:gap-12 lg:mt-8 xl:gap-12 ">
+      <div className="flex flex-col w-[100%] md:flex-row gap-4 md:gap-4 md:flex-wrap min-h-[250px] mt-8 sm:h-[100%] pb-[20px] lg:gap-12 lg:mt-8 xl:gap-12 2xl:gap-20 ">
         {servicios.map((servicio) => (
           <CardServicio key={servicio.id} servicio={servicio}></CardServicio>
         ))}

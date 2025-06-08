@@ -20,8 +20,6 @@ function App() {
           <Route path="/proyectos/*" element={<ProyectsRouter />} />
         </Routes>
       </BrowserRouter>
-      <Footer></Footer>
-
       {/* </div> */}
     </>
   );

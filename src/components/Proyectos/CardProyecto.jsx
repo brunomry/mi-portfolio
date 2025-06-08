@@ -16,8 +16,8 @@ const CardProyecto = ({ proyecto }) => {
       </div>
       <div className="flex flex-col justify-between  md:gap-4 md:my-4">
         <div className=" rounded-[4px] py-1 flex flex-col mb-2">
-          <h4 className="font-black text-[16px] md:text-[20px] mb-0 text-[#2B7FF7]">{proyecto.categoria}</h4>
-          <p className="text-[14px] lg:text-[1rem] mb-0 text-[#787777]">{proyecto.tipo}</p>
+          <h4 className="font-black text-[18px] md:text-[20px] mb-0 text-[#2B7FF7]">{proyecto.categoria}</h4>
+          <p className="text-[14px] lg:text-[1rem] mb-0 text-[#787777] font-light">{proyecto.tipo}</p>
         </div>
         <div className="flex flex-wrap gap-2 xl:gap-3">
           <a
@@ -27,7 +27,7 @@ const CardProyecto = ({ proyecto }) => {
             rel="noopener"
             title="Ver código"
           >            
-            <span>Código</span>
+            <span className='font-light'>Código</span>
             <i className="text-lg bi bi-github"></i>
           </a>
           <a
@@ -38,7 +38,7 @@ const CardProyecto = ({ proyecto }) => {
             rel="noopener"
           >
             
-            <span>Web</span>
+            <span className='font-light'>Web</span>
             <i className="text-[1rem] bi bi-box-arrow-up-right"></i>
           </a>
           <Link
@@ -47,7 +47,7 @@ const CardProyecto = ({ proyecto }) => {
             to={`/proyectos/detalleproyecto/${proyecto.id}`}
           >
            
-            <span>Info</span>
+            <span className='font-light'>Info</span>
              <i className="text-lg bi bi-info-circle" ></i>
           </Link>
         </div>

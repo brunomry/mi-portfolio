@@ -22,12 +22,12 @@ const AcercaDeMi = () => {
               Desarrollador web
             </h2>
           </div>
-          <div className="my-2  md:text-[1rem] xl:text-[16px] w-[100%] md:w-[600px]">
+          <div className="md:my-2  md:text-[1rem] xl:text-[16px] w-[100%] md:w-[600px]">
             <p className="text-[#787777] font-light">
               Estudiante de Ingeniería en Sistemas de Información y
               Desarrollador web con enfoque en Front-end.
             </p>
-            <p className="text-[#787777] mt-4">
+            <p className="text-[#787777] font-light mt-4">
               Me especializo en crear sitios y aplicaciones web optimizadas para
               un buen rendimiento y posicionamiento SEO.
             </p>

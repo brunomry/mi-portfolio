@@ -18,7 +18,7 @@ const Contacto = () => {
               title="Contáctame por correo"
             >
               <i
-                className="text-4xl text-red-500 bi bi-google"
+                className="text-2xl text-red-500 bi bi-google"
                 title="Email"
               ></i>
               <div className="flex flex-col">
@@ -33,7 +33,7 @@ const Contacto = () => {
               rel="noopener noreferrer"
               className="w-[100%] flex items-center gap-5 p-4 xl:p-8  bg-[#fff] md:border hover:border-[#2B7FF7] hover:text-[#2B7FF7] hover:bg-[#fff] md:w-[420px] rounded-[8px]"
             >
-              <i className="text-4xl text-[#2B7FF7] bi bi-linkedin"></i>
+              <i className="text-2xl text-[#2B7FF7] bi bi-linkedin"></i>
               <div className="flex flex-col">
                 <span className="text-[#787777] text-[14px]">LinkedIn</span>
                 <span className="text-[#0a0a0a]">Bruno Madozzo</span>
