@@ -24,12 +24,12 @@ const NavbarSecondary = () => {
               Proyectos
             </Link>
           </li>
-          <li className="">
+          {/* <li className="">
             <div className="">
               <i class="bi bi-moon text-[20px]"></i>
               <i class="bi bi-moon-fill text-[20px] hidden"></i>
             </div>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>

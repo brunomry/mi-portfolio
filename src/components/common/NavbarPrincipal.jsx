@@ -12,7 +12,7 @@ const NavbarPrincipal = () => {
       { !desplegado ? (
         <header className="w-[100%] h-[64px] fixed bottom-0 left-0 z-[99] bg-[#FAFAFA] flex justify-between items-center px-8 ">
           <small className="text-[#787777] text-[12px]">Bruno Madozzo - Desarrollador web</small>
-          <button onClick={() => desplegarMenu(true)}>
+          <button onClick={() => desplegarMenu(true)} title="menu">
             <i
               class={`bi ${desplegado ? "bi-x-lg" : "bi-list"} text-[40px] `}
             ></i>
@@ -77,7 +77,7 @@ const NavbarPrincipal = () => {
                   Servicios
                 </a>
               </li>
-              <li className="">
+              {/* <li className="">
                 <a
                   className="block font-black text-[20px] md:text-[14px] navLink text-[#2B7FF7] md:text-[#787777]   text-center"
                   href="#servicios"
@@ -89,7 +89,7 @@ const NavbarPrincipal = () => {
                 >
                   Testimonios
                 </a>
-              </li>
+              </li> */}
               <li className="">
                 <a
                   className="block font-black text-[20px] md:text-[14px] navLink text-[#2B7FF7] md:text-[#787777]   text-center"
@@ -111,7 +111,7 @@ const NavbarPrincipal = () => {
               </li>
             </ul>
           </nav>
-          <button
+          {/* <button
             onClick={() => {
               if (window.innerWidth < 768) {
                 desplegarMenu(false);
@@ -122,7 +122,7 @@ const NavbarPrincipal = () => {
             <i
               class={`bi ${desplegado ? "bi-x-lg" : "bi-list"} text-[40px] `}
             ></i>
-          </button>
+          </button> */}
         </header>
       )}
     </>
