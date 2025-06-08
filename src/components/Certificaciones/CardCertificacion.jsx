@@ -21,24 +21,14 @@ const CardCertificacion = ({ certificado, index }) => {
         <div className="flex flex-col justify-between rounded-[4px] min-h-[100%] h-[fit-content]">
           <div className="flex flex-col justify-between gap-4">
             <div className=" flex flex-col">
-                <p className="text-[#787777] text-[14px]">
-                  {certificado.fechaInicio} - {certificado.fechaFin}
-                </p>
+              <p className="text-[#787777] text-[14px]">
+                {certificado.fechaInicio} - {certificado.fechaFin}
+              </p>
               <h5 className="mb-1 font-black text-[#2B7FF7] md:text-[18px]">
                 {certificado.titulo}
               </h5>
-                <p className="text-gray-600 md:text-[1rem] ">
-                  {certificado.org}
-                </p>
+              <p className="text-gray-600 md:text-[1rem] ">{certificado.org}</p>
             </div>
-            {/* <div className="flex w-[100%]">
-              <button
-                className="px-5 py-[10px] w-[100%] md:w-[50%] xl:w-[100%] rounded-[25px] bg-[#fff] text-[#222] hover:bg-[#000] hover:text-[#fff] border-[1px] hover:border-[#000] text-[16px] md:text-[1rem]"
-                onClick={() => openCarousel(index)}
-              >
-                ver certificación
-              </button>
-            </div> */}
           </div>
         </div>
       </div>

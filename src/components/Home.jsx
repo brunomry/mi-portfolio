@@ -31,7 +31,7 @@ const Home = () => {
       {scrollTop > 0 && (
         <a
           href="#sobremi"
-          className="btnScrollTop fixed bottom-[20px] right-5 md:bottom-[50px] md:right-10 bg-slate-300 px-4 py-2 rounded-sm"
+          className="btnScrollTop fixed bottom-[80px] md:bottom-[20px] right-5 lg:bottom-[50px] md:right-10 bg-slate-300 px-4 py-2 rounded-sm"
         >
           <i className="bi bi-arrow-up text-[20px]"></i>
         </a>

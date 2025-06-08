@@ -5,12 +5,12 @@ import ScrollTop from "../components/common/ScrollTop";
 
 const ProyectsLayout = ({ children }) => {
   return (
-    <>
+    <div className="min-h-[100vh] flex flex-col lg:flex-row">
       <ScrollTop></ScrollTop>
       <NavbarSecondary></NavbarSecondary>
       {children}
-      <Footer></Footer>
-    </>
+      
+    </div>
   );
 };
 

@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="w-[100%] py-[50px] bg-[#fff] border-t px-[5px]">
+    <footer className="w-[100%] md:py-[50px] bg-[#fff] border-t px-[5px]">
       <p className="text-center text-[#787777] text-[14px]">
         &copy;<a
           className=" text-blue-400 lg:hover:underline"
