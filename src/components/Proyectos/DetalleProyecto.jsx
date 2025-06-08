@@ -20,7 +20,7 @@ const DetalleProyecto = () => {
   }, [id]);
 
   return (
-    <section className="flex flex-col mb-20 h-[100vh] gap-3 xl:gap-4 items-center px-3 pt-10 pb-20 md:py-20 md:px-8 lg:px-20 lg:py-[150px] fondo xl:px-[150px] 2xl:px-[250px]">
+    <section className="flex flex-col mb-20 h-[100vh] gap-3 xl:gap-4 items-center px-3 pt-10 pb-20 md:py-28 md:px-8 lg:px-20 lg:py-[150px] fondo xl:px-[150px] 2xl:px-[250px]">
       <Link
         className="w-[100%] flex justify-start items-center gap-2 "
         to={"/proyectos/otros-proyectos"}

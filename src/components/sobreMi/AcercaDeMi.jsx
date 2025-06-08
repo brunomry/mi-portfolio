@@ -9,7 +9,7 @@ const AcercaDeMi = () => {
 
   return (
     <article
-      className="flex my-8 flex-col 2xl:px-[250px] w-[100%] min-h-[40vh] bg-[#FAFAFA] md:min-h-[60vh] md:items-center md:mt-[100px] lg:mt-[150px] xl:mt-[200px] lg:min-h-[70vh] xl:min-h-[72vh] rounded-2"
+      className="flex mt-4 mb-12 flex-col 2xl:px-[250px] w-[100%] min-h-[40vh] bg-[#FAFAFA] md:min-h-[60vh] md:items-center md:mt-[100px] lg:mt-[150px] xl:mt-[200px] lg:min-h-[70vh] xl:min-h-[72vh] rounded-2"
       id="sobremi"
     >
       <div className="flex flex-col px-4 lg:gap-[50px] xl:gap-[150px] lg:flex-row">
@@ -53,7 +53,7 @@ const AcercaDeMi = () => {
             </div>
           </div>
         </div>
-        <div className="block md:flex lg:order-1 lg:mx-auto mt-4 w-[100px] h-[100px] md:w-[150px] md:h-[150px] rounded-[20px] border-[8px] border-[##2B7FF] lg:w-[200px] lg:h-[200px] xl:w-[250px] xl:h-[250px] 2xl:w-[280px] 2xl:h-[280px] mb-2">
+        <div className="block md:flex lg:order-1 lg:mx-auto mt-4 w-[100px] h-[100px] md:w-[150px] md:h-[150px] rounded-[20px] border-[4px] md:border-[8px] border-[##2B7FF] lg:w-[200px] lg:h-[200px] xl:w-[250px] xl:h-[250px] 2xl:w-[280px] 2xl:h-[280px] mb-2">
           <img
             src={perfil}
             alt="Bruno Madozzo"
