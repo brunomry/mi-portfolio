@@ -1,6 +1,6 @@
-import fullstack from "../assets/certificaciones/fullstack-mern.jpeg"
-import reactavanzado from "../assets/certificaciones/react-avanzado.jpeg"
-import pw from "../assets/certificaciones/programacion-web.jpeg"
+import fullstack from "../assets/certificaciones/fullstack-mern.webp"
+import reactavanzado from "../assets/certificaciones/react-avanzado.webp"
+import pw from "../assets/certificaciones/programacion-web.webp"
 
 const certificados = [
   {

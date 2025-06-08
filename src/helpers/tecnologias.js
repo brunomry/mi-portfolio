@@ -10,6 +10,7 @@ import express from "../assets/iconos/express.svg";
 import mongodb from "../assets/iconos/mongodb.svg";
 import postman from "../assets/iconos/postman.svg";
 import git from "../assets/iconos/git.svg";
+import github from "../assets/iconos/github.svg";
 import figma from "../assets/iconos/figma.svg";
 import redux from "../assets/iconos/redux.svg";
 import tailwind from "../assets/iconos/tailwind.svg";
@@ -37,7 +38,8 @@ const tecnologias = {
       { name: "MySQL", icon: mysql },    
       { name: "MongoDB", icon: mongodb },
       { name: "Postman", icon: postman},
-      { name: "Git", icon: git}
+      { name: "Git", icon: git},
+      { name: "Github", icon: github}
     ]
   }
 

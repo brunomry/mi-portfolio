@@ -2,35 +2,9 @@ import laburandoando from "../assets/proyectos/laburandoando.png";
 import ab from "../assets/proyectos/ambientebohemio.webp";
 import temp from "../assets/proyectos/temp.webp";
 import rss1 from "../assets/proyectos/rss1.webp";
-import parrillada from "../assets/proyectos/laparrillada.webp";
-import technicaldoc from "../assets/proyectos/technicaldoc.webp";
-import rollingbank from "../assets/proyectos/rollingbank.webp";
-import trombones from "../assets/proyectos/trombones.webp";
 import blogrecetas from "../assets/proyectos/blogrecetas.webp";
 import sanjorge from "../assets/proyectos/sanjorge.webp";
-import clima from "../assets/proyectos/clima.webp";
 import wpp from "../assets/proyectos/wpp.webp";
-import panel from "../assets/proyectos/panel.webp";
-import html5 from "../assets/iconos/html5.svg";
-import css3 from "../assets/iconos/css3.svg";
-import bootstrap5 from "../assets/iconos/bootstrap5.svg";
-import javascript from "../assets/iconos/javascript.svg";
-import react from "../assets/iconos/react.svg";
-import reactbootstrap from "../assets/iconos/reactbootstrap.svg";
-import reactrouter from "../assets/iconos/reactrouter.svg";
-import node from "../assets/iconos/nodejs.svg";
-import express from "../assets/iconos/express.svg";
-import mongodb from "../assets/iconos/mongodb.svg";
-import postman from "../assets/iconos/postman.svg";
-import draw from "../assets/iconos/draw.png";
-import trello from "../assets/iconos/trello.svg";
-import git from "../assets/iconos/git.svg";
-import github from "../assets/iconos/github.svg";
-import redux from "../assets/iconos/redux.svg";
-import tailwind from "../assets/iconos/tailwind.svg";
-import axios from "../assets/iconos/axios.svg";
-import netlify from "../assets/iconos/netlify.svg";
-import reacthookform from "../assets/iconos/reacthookform.svg";
 
 const proyectos = [
   {
