@@ -21,7 +21,10 @@ const DetalleProyecto = () => {
 
   return (
     <section className="flex flex-col mb-20 h-[100vh] gap-3 xl:gap-4 items-center px-3 pt-10 pb-20 md:py-20 md:px-8 lg:px-20 lg:py-[150px] fondo xl:px-[150px] 2xl:px-[250px]">
-      <Link className="w-[100%] flex justify-start items-center gap-2 " to={"/proyectos/otros-proyectos"}>
+      <Link
+        className="w-[100%] flex justify-start items-center gap-2 "
+        to={"/proyectos/otros-proyectos"}
+      >
         <i class="bi bi-arrow-left text-[20px] text-[#787777]"></i>
         <span className="text-[#787777]">Proyectos</span>
       </Link>
@@ -31,11 +34,13 @@ const DetalleProyecto = () => {
             {proyecto.nombre}
           </h1>
           <div className="flex gap-3">
-            <Link
+            <a
               className="flex items-center justify-center py-1 px-8 w-[fit-content] text-[#2B7FF7]  border-[#2B7FF7] hover:bg-[#2B7FF7] hover:text-[#fff] rounded-[45px] border text-[1rem] gap-3"
-              title="Ver más información del proyecto"
-              to={`/detalleproyecto/${proyecto.id}`}
-            >             
+              href={proyecto.enlace}
+              target="_blank"
+              title="Ver página"
+              rel="noopener"
+            >
               <span>Web</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -54,14 +59,13 @@ const DetalleProyecto = () => {
                   d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
                 />
               </svg>
-            </Link>
+            </a>
             <Link
               className="flex items-center justify-center py-1 px-8 w-[fit-content] rounded-[45px] border-[#0a0a0a] hover:bg-[#0a0a0a] text-[#0a0a0a] hover:text-[#fafafa] border-[1px] text-[1rem] gap-2"
               title="Ver más información del proyecto"
               to={`${proyecto.github}`}
               target="_blank"
             >
-              
               <span>Código</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -80,11 +84,26 @@ const DetalleProyecto = () => {
           {proyecto.descripcion}
         </p>
         <article className="flex gap-6 md:gap-4 flex-wrap">
-          <CardCaracteristica caracteristica="Tipo" descripcion={proyecto.tipo}></CardCaracteristica>
-          <CardCaracteristica caracteristica="Categoría" descripcion={proyecto.categoria}></CardCaracteristica>
-          <CardCaracteristica caracteristica="Inicio" descripcion={proyecto.fecha}></CardCaracteristica>
-          <CardCaracteristica caracteristica="Duración" descripcion={proyecto.duracion}></CardCaracteristica>
-          <CardCaracteristica caracteristica="Último cambio" descripcion={proyecto.ultima_actualizacion}></CardCaracteristica>
+          <CardCaracteristica
+            caracteristica="Tipo"
+            descripcion={proyecto.tipo}
+          ></CardCaracteristica>
+          <CardCaracteristica
+            caracteristica="Categoría"
+            descripcion={proyecto.categoria}
+          ></CardCaracteristica>
+          <CardCaracteristica
+            caracteristica="Inicio"
+            descripcion={proyecto.fecha}
+          ></CardCaracteristica>
+          <CardCaracteristica
+            caracteristica="Duración"
+            descripcion={proyecto.duracion}
+          ></CardCaracteristica>
+          <CardCaracteristica
+            caracteristica="Último cambio"
+            descripcion={proyecto.ultima_actualizacion}
+          ></CardCaracteristica>
         </article>
         <article className="">
           <h2 className=" mb-4 font-bold text-[18px] text-start text-[#333]">
