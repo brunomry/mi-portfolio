@@ -1,4 +1,4 @@
-import tecnologias from "../helpers/tecnologias";
+import tecnologias from "../../helpers/tecnologias";
 import CardTecnologia from "./CardTecnologia";
 
 const Tecnologias = () => {

@@ -1,5 +1,5 @@
 import CardCertificacion from "./CardCertificacion";
-import certificados from "../helpers/certificados";
+import certificados from "../../helpers/certificados";
 
 const Certificaciones = () => {
   return (

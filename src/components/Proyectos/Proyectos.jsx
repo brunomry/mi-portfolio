@@ -1,5 +1,5 @@
 import CardProyecto from "./CardProyecto";
-import proyectos from "../helpers/proyectos";
+import proyectos from "../../helpers/proyectos";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 

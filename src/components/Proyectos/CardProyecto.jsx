@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import ModalProyect from './DetalleProyecto';
+import ModalProyect from '../../pages/DetalleProyecto';
 import { Link } from 'react-router-dom';
 
 const CardProyecto = ({ proyecto }) => {

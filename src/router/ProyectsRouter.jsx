@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import OtrosProyectos from "./components/Proyectos/OtrosProyectos";
-import ProyectsLayout from "./Layout/ProyectsLayout";
-import DetalleProyecto from "./components/Proyectos/DetalleProyecto";
-import Footer from "./components/Footer";
+import OtrosProyectos from "../pages/OtrosProyectos";
+import ProyectsLayout from "../Layout/ProyectsLayout";
+import DetalleProyecto from "../pages/DetalleProyecto";
+import Footer from "../components/common/Footer";
 
 const ProyectsRouter = () => {
   return (

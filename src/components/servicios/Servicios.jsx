@@ -1,6 +1,6 @@
 import React from "react";
 import CardServicio from "./CardServicio";
-import servicios from "../helpers/servicios";
+import servicios from "../../helpers/servicios";
 
 function Servicios() {
   return (

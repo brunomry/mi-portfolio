@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import CardProyecto from './CardProyecto'
+import CardProyecto from '../components/Proyectos/CardProyecto'
 import proyectos from '../helpers/proyectos'
 
 const OtrosProyectos = () => {

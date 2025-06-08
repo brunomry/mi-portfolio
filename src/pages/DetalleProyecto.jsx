@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import proyectos from "../helpers/proyectos.js";
-import CardCaracteristica from "./CardCaracteristica.jsx";
+import CardCaracteristica from "../components/Proyectos/CardCaracteristica.jsx";
 
 const DetalleProyecto = () => {
   const [proyecto, setProyecto] = useState({});
