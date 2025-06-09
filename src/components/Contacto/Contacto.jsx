@@ -5,10 +5,10 @@ const Contacto = () => {
       id="contacto"
     >
       <h2 className="font-black md:text-center text-[16px] md:text-[25px] xl:text-[30px] text-[#2B7FF7]">
-       ¿Estás buscando a alguien con seriedad y compromiso para sumarse a tu equipo? ¿Necesitas una web para tu negocio?
+       ¿Estás buscando a alguien comprometido, detallista y con ganas de aportar al equipo? ¿Necesitas una web profesional para tu negocio?
       </h2>
       <h2 className="font-black md:text-center text-[16px] md:text-[25px] xl:text-[30px]  text-[#2B7FF7]">
-       No dudes en contactarme.
+       ¡No dudes en escribirme!
       </h2>
       <div className="flex flex-col  gap-2 lg:flex-row justify-center xl:gap-3 w-[100%]">
         <div className="flex flex-col w-[100%]">

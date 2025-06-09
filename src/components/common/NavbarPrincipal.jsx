@@ -21,10 +21,23 @@ const NavbarPrincipal = () => {
       ) : (
         <header className=" w-[100%] h-[100%]  md:h-[96px] fixed top-0 left-0 z-[99] bg-[#FAFAFA] flex flex-col items-center lg:px-10 xl:px-20 2xl:px-40">
           <nav className="w-[100%] h-[100%] flex justify-center items-end lg:justify-between pb-20 md:pb-0 md:items-center">
-            <p className="hidden lg:block xl:text-[20px] text-[#0A0A0A] font-black ">
+            <a className="hidden lg:block xl:text-[20px] text-[#0A0A0A] font-black " href="#sobremi">
               BrunoMadozzo&#40;&#41;&#59;
-            </p>
+            </a>
             <ul className="flex flex-col md:flex-row items-center gap-8 md:gap-8 md:justify-end xl:gap-12 ">
+              <li className="">
+                <a
+                  className="block w-[100%] font-black text-[20px] md:text-[14px] navLink text-[#2B7FF7] md:text-[#787777]    text-center"
+                  href="#sobremi"
+                  onClick={() => {
+                    if (window.innerWidth < 768) {
+                      desplegarMenu(false);
+                    }
+                  }}
+                >
+                  Sobre Mí
+                </a>
+              </li>
               <li className="">
                 <a
                   className="block w-[100%] font-black text-[20px] md:text-[14px] navLink text-[#2B7FF7] md:text-[#787777]    text-center"

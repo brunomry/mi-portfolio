@@ -20,7 +20,7 @@ const DetalleProyecto = () => {
   }, [id]);
 
   return (
-    <section className="flex flex-col mb-20 h-[100vh] gap-3 xl:gap-4 items-center px-3 pt-10 pb-20 md:py-28 md:px-8 lg:px-20 lg:py-[150px] fondo xl:px-[150px] 2xl:px-[250px]">
+    <section className="flex flex-col mb-20 min-h-[600px] gap-3 xl:gap-4 items-center px-3 pt-10 pb-40 md:py-28 md:px-8 lg:px-20 lg:py-[150px] fondo xl:px-[150px] 2xl:px-[250px]">
       <Link
         className="w-[100%] flex justify-start items-center gap-2 "
         to={"/proyectos/otros-proyectos"}
@@ -28,7 +28,7 @@ const DetalleProyecto = () => {
         <i class="bi bi-arrow-left text-[20px] text-[#787777]"></i>
         <span className="text-[#787777]">Proyectos</span>
       </Link>
-      <div className="w-[100%] rounded-[10px] 2xl:px-[100px] flex flex-col gap-4">
+      <div className="w-[100%] h-[100%] rounded-[10px] 2xl:px-[100px] flex flex-col gap-4">
         <div className="flex flex-col md:flex-row gap-4 md:gap-12">
           <h1 className="  font-black text-[25px] text-start xl:text-[30px] text-[#333]">
             {proyecto.nombre}
@@ -121,7 +121,7 @@ const DetalleProyecto = () => {
               ))}
           </div>
         </article>
-        <article className="">
+        <article className="min-h-[200px]">
           <h2 className=" mb-4 font-bold text-start text-[18px] text-[#333]">
             {proyecto.proyecto !== "En equipo"
               ? "Aspectos relevantes"

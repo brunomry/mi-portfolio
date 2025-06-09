@@ -9,6 +9,7 @@ const ProyectsLayout = ({ children }) => {
       <ScrollTop></ScrollTop>
       <NavbarSecondary></NavbarSecondary>
       {children}  
+      {/* <Footer></Footer> */}
     </div>
   );
 };
