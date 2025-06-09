@@ -58,7 +58,7 @@ const AcercaDeMi = () => {
             src={perfil}
             alt="Bruno Madozzo"
             title="Bruno Madozzo"
-            className="w-[100%] h-[100%] rounded-[8px] object-cover"
+            className="w-[100%] h-[100%] rounded-[16px] md:rounded-[12px] object-cover"
           />
         </div>
       </div>
