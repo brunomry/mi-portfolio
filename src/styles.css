@@ -12,6 +12,18 @@
   font-family: "Satoshi-Regular", sans-serif;
 }
 
+.nombreUsuario{
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-word;
+     display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  white-space: normal;
+  text-overflow: ellipsis;
+}
+
 .active {
   color: #000 !important;
 }

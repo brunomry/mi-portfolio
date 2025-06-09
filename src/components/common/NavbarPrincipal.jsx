@@ -77,10 +77,10 @@ const NavbarPrincipal = () => {
                   Servicios
                 </a>
               </li>
-              {/* <li className="">
+              <li className="">
                 <a
                   className="block font-black text-[20px] md:text-[14px] navLink text-[#2B7FF7] md:text-[#787777]   text-center"
-                  href="#servicios"
+                  href="#testimonios"
                   onClick={() => {
                     if (window.innerWidth < 768) {
                       desplegarMenu(false);
@@ -89,7 +89,7 @@ const NavbarPrincipal = () => {
                 >
                   Testimonios
                 </a>
-              </li> */}
+              </li>
               <li className="">
                 <a
                   className="block font-black text-[20px] md:text-[14px] navLink text-[#2B7FF7] md:text-[#787777]   text-center"

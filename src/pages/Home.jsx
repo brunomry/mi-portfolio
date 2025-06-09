@@ -7,6 +7,7 @@ import Certificaciones from "../components/Certificaciones/Certificaciones";
 import Proyectos from "../components/Proyectos/Proyectos";
 import Tecnologias from "../components/tecnologias/Tecnologias";
 import AcercaDeMi from "../components/sobreMi/AcercaDeMi";
+import Testimonios from "../components/testimonios/Testimonios";
 
 const Home = () => {
   const [scrollTop, setScrollTop] = useState(0);
@@ -29,6 +30,7 @@ const Home = () => {
         <Proyectos></Proyectos>
         <Certificaciones></Certificaciones>
         <Servicios></Servicios>
+        <Testimonios></Testimonios>
         <Contacto></Contacto>
         <Footer></Footer>
         {scrollTop > 0 && (
