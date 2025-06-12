@@ -1,4 +1,3 @@
-import React from "react";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth } from "../services/firebase.js";
 import { Link, useNavigate } from "react-router-dom";
@@ -9,13 +8,13 @@ const Login = () => {
   const handleSubmit = async (e) => {
     try {
       const provider = new GoogleAuthProvider();
+
       const respuesta = await signInWithPopup(auth, provider);
 
       if (!respuesta.user) throw new Error("Error al loguear con google");
 
       const usuario = {
         nombre: respuesta.user.displayName,
-        uid: respuesta.user.uid,
         img: respuesta.user.photoURL,
       };
 
@@ -27,15 +26,14 @@ const Login = () => {
 
   return (
     <section className="flex flex-col items-center justify-center w-[100%] bg-[#fafafa] min-h-[100vh] py-[100px] gap-2 sm:gap-4  certifications px-2 md:px-[100px]">
-      
       <div className=" rounded-[10px] px-20 py-10 flex flex-col gap-4 bg-white">
         <Link
-        className="w-[100%] flex justify-start items-center gap-2 "
-        to={"/"}
-      >
-        <i class="bi bi-arrow-left text-[20px] text-[#787777]"></i>
-        <span className="text-[#787777]">Regresar</span>
-      </Link>
+          className="w-[100%] flex justify-start items-center gap-2 "
+          to={"/"}
+        >
+          <i class="bi bi-arrow-left text-[20px] text-[#787777]"></i>
+          <span className="text-[#787777]">Regresar</span>
+        </Link>
         <h1 className="mb-8 text-center font-black text-[25px] xl:text-[30px] text-[#333]">
           Inicia sesión con tu cuenta de Google para dejar tu comentario
         </h1>
@@ -49,7 +47,9 @@ const Login = () => {
             <span className="text-[#787777]">Ingresar con Google</span>
           </button>
         </div>
-        <p className="text-center text-[#787777] text-[14px] mt-10">Bruno Madozzo - Desarrollador web</p>
+        <p className="text-center text-[#787777] text-[14px] mt-10">
+          Bruno Madozzo - Desarrollador web
+        </p>
       </div>
     </section>
   );

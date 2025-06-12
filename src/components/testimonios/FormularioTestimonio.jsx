@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Alerta from "../common/Alerta";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+import { Spinner } from "flowbite-react";
+import { useNavigate } from "react-router-dom";
+import { crearTestimonio } from "../../queries/testimonios.queries";
+import { auth } from "../../services/firebase";
 
 const FormularioTestimonio = () => {
   const [cargando, setCargando] = useState(false);
   const [exito, setExito] = useState(false);
+  const [usuario, setUsuario] = useState(null);
 
   const {
     register,
@@ -14,15 +20,68 @@ const FormularioTestimonio = () => {
     reset,
   } = useForm();
 
-  const enviarTestimonio = () => {
-    
+  const navegacion = useNavigate();
+
+  useEffect(() => {
+    const auth = getAuth();
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setUsuario(user);
+    });
+
+    return () => unsubscribe();
+  }, []);
+
+  const enviarTestimonio = async (testimonio) => {
+    const nuevoTestimonio = {
+      usuario: usuario.displayName,
+      foto: usuario.photoURL,
+      relacion: testimonio.relacion,
+      rol: testimonio.rol,
+      comentario: testimonio.comentario,
+      linkedin: testimonio.linkedin,
+    };
+
+    const respuesta = await crearTestimonio(nuevoTestimonio);
+
+    if (respuesta.error) {
+      setExito(false);
+    }
+
+    if (respuesta.success) {
+      setExito(true);
+      reset();
+    }
+  };
+
+  if (!usuario) {
+    return <Spinner></Spinner>;
+  }
+
+  const handleLogout = async () => {
+    try {
+      await signOut(auth);
+      navegacion("/");
+    } catch (error) {
+      console.log("Error al cerrar sesión", error);
+    }
   };
 
   return (
-    <section className="flex flex-col items-center justify-center w-[100%]  min-h-[100vh] py-[100px] bg-[#fff] gap-2 sm:gap-4  certifications px-2 md:px-5 fondo">
-      <div className="flex gap-4 items-center">
-        <h1 className="text-center font-bold text-[25px] xl:text-[30px] 2xl:text-[35px] text-[#333]">Hola "nombre"</h1>
-        <img src="" alt="img" className="max-w-[50px] max-h-[50px] rounded-full"/>
+    <section className="flex flex-col items-center justify-center w-[100%]  min-h-[100vh] py-[100px] bg-[#fafafa] gap-2 sm:gap-4  certifications px-2 md:px-5 fondo">
+      <div className="flex gap-16 items-center justify-between">
+        <h1 className="text-center font-bold text-[25px] xl:text-[30px] 2xl:text-[35px] text-[#333]">
+          ¡Hola{" "}
+          <span className="text-[#2B7FF7] capitalize">
+            {usuario.displayName}
+          </span>
+          !
+        </h1>
+        <button
+          className="border p-2 rounded-[8px] border-[#333]  text-[12px] "
+          onClick={handleLogout}
+        >
+          Cerrar sesión
+        </button>
       </div>
 
       <form
@@ -33,8 +92,15 @@ const FormularioTestimonio = () => {
           {isSubmitted &&
             Object.keys(errors).some(
               (key) => errors[key]?.type === "required"
-            ) && <Alerta mensaje="Completa los campos obligatorios" tipo="error" />}
-          {isSubmitSuccessful && exito && <Alerta mensaje="" tipo="success" />}
+            ) && (
+              <Alerta mensaje="Completa los campos obligatorios" tipo="error" />
+            )}
+          {isSubmitSuccessful && exito && (
+            <Alerta
+              mensaje="El comentario fue registrado con éxito"
+              tipo="success"
+            />
+          )}
         </div>
         <div className="mb-2 lg:mb-0 w-[100%]">
           <label
@@ -46,27 +112,59 @@ const FormularioTestimonio = () => {
           <select
             id="relacion"
             title="¿De dónde me conoces?"
-            className=" text-[#094067] block w-full px-3 py-2 text-[14px] focus:border-none border-gray-300 rounded-[8px]"
+            className=" block w-full px-3 py-2 text-[14px] focus:border-none border-gray-300 rounded-[8px] text-gray-700"
             {...register("relacion", {
-              required: "La relación es obligatoria"
+              required: "La relación es obligatoria",
             })}
           >
-              <option value="">seleccione</option>
-              <option value="rc">compañero en RollingCode School</option>
-              <option value="utn">compañero en UTN-FRT</option>
-              <option value="">Cliente</option>
-            </select>
+            <option value="">seleccione</option>
+            <option value="Compañero en RollingCode School">
+              Compañero en RollingCode School
+            </option>
+            <option value="Compáñero en UTN-FRT">Compañero en UTN-FRT</option>
+            <option value="Cliente">Cliente</option>
+            <option value="Visitante">Visitante</option>
+          </select>
           {errors.relacion && errors.relacion.type !== "required" && (
             <small className="text-red-400">{errors.relacion?.message}</small>
           )}
         </div>
-
+        <div className="mb-2 lg:mb-0 w-[100%]">
+          <label
+            htmlFor="rol"
+            className="block text-[#2B7FF7] text-[14px] dark:text-white"
+          >
+            ¿Cuál es tu rol?
+          </label>
+          <input
+            type="text"
+            id="rol"
+            title="Tu rol y empresa si trabajas en una"
+            className=" text-[#094067] block w-full px-3 text-[14px] py-2 focus:border-none border-gray-300 rounded-[8px]"
+            placeholder="Desarrollador Frontend en NombreEmpresa..."
+            {...register("rol", {
+              required: "El rol es obligatorio",
+              minLength: {
+                value: 10,
+                message: `El rol debe tener como minimo 10 caracteres`,
+              },
+              maxLength: {
+                value: 70,
+                message: `El rol debe tener como maximo 70 caracteres`,
+              },
+            })}
+          />
+          {errors.rol && (
+            <small className="text-red-400">{errors.rol?.message}</small>
+          )}
+        </div>
         <div className="mb-3 lg:mb-0 w-[100%]">
           <label
             htmlFor="message"
             className="block text-[14px] text-[#2B7FF7] dark:text-white"
           >
-            ¿Qué podrías decir sobre mí o cómo fue tu experiencia trabajando conmigo?
+            ¿Qué podrías decir sobre mí o cómo fue tu experiencia trabajando
+            conmigo?
           </label>
           <textarea
             id="message"
@@ -109,7 +207,8 @@ const FormularioTestimonio = () => {
             placeholder="www.linkedin.com/in/nombre-usuario"
             {...register("linkedin", {
               pattern: {
-                value: /^(https?:\/\/)www\.linkedin\.com\/in\/[a-zA-Z0-9\-]+$/i,
+                value:
+                  /^(https?:\/\/)?(www\.)?linkedin\.com\/in\/[a-zA-Z0-9-]+\/?$/i,
                 message: ``,
               },
             })}
@@ -120,15 +219,15 @@ const FormularioTestimonio = () => {
         </div>
         <div className="flex justify-center w-[100%]">
           <button className="text-[14px] rounded-[40px] text-[#2B7FF7] border-[#2B7FF7] hover:bg-[#2B7FF7] hover:text-[#fff] border py-2 px-8 w-[fit-content] uppercase flex gap-3 justify-center items-center">
-            {cargando && (
+            {/* {cargando && (
               <span>
                 <Spinner></Spinner>
               </span>
-            )}
+            )} */}
             <span>Confirmar</span>
           </button>
         </div>
-        <div className="w-full md:hidden mt-5">
+        {/* <div className="w-full md:hidden mt-5">
           {isSubmitted &&
             Object.keys(errors).some(
               (key) => errors[key]?.type === "required"
@@ -136,7 +235,7 @@ const FormularioTestimonio = () => {
               <Alerta mensaje="Completa los campos obligatorios" tipo="error" />
             )}
           {isSubmitSuccessful && exito && <Alerta mensaje="" tipo="success" />}
-        </div>
+        </div> */}
       </form>
     </section>
   );

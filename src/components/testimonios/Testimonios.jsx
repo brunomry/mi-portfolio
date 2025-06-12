@@ -1,12 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import CardTestimonio from "./CardTestimonio";
-import { testimonios } from "../../helpers/testimonios.js";
+import { obtenerTestimonios } from "../../queries/testimonios.queries.js";
 
 const Testimonios = () => {
+  const [testimonios, setTestimonios] = useState([]);
+
+  const mostrarTestimonios = async () => {
+    try {
+      const respuesta = await obtenerTestimonios();
+
+      if (respuesta.success) {
+        setTestimonios(respuesta.data);
+      } else {
+        console.error("Error al obtener los testimonios", respuesta.message);
+      }
+    } catch (error) {}
+  };
+
+  useEffect(() => {
+    mostrarTestimonios();
+  }, []);
+
   return (
-    <section className="w-[100%] min-h-[50vh] bg-[#FAFAFA]  flex flex-col md:gap-2 items-center  md:py-20 px-4 py-8  md:px-[100px] xl:py-40" id="testimonios">
-      <div className=" rounded-[10px] px-10 py-10  pb-20 flex flex-col gap-4 2xl:gap-8">
+    <section
+      className="w-[100%] min-h-[50vh] bg-[#FAFAFA]  flex flex-col md:gap-2 items-center  md:py-20 px-4 py-8  md:px-[100px] xl:py-40"
+      id="testimonios"
+    >
+      <div className="w-[100%] rounded-[10px] px-10 py-10  pb-20 flex flex-col gap-4 2xl:gap-8">
         <div className="flex justify-between w-[100%]">
           <h1 className="text-center font-black text-[25px] xl:text-[30px] 2xl:text-[40px] text-[#333]">
             Testimonios
@@ -21,7 +42,7 @@ const Testimonios = () => {
         <div className="columns-1 md:columns-2 xl:columns-2 2xl:columns-3 gap-8  space-y-6 min-h-[50vh] overflow-auto">
           {testimonios.map((testimonio) => (
             <CardTestimonio
-              key={testimonio.id}
+              key={testimonio._id}
               testimonio={testimonio}
             ></CardTestimonio>
           ))}
