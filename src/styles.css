@@ -29,7 +29,7 @@
 .containerTabProyects,
 .containerTech,
 .containerCertifications,
-.containerServices{
+.containerServices {
   scroll-snap-type: x mandatory;
   overflow-x: scroll;
 }
@@ -53,6 +53,36 @@
   border-bottom: 1px solid #000;
 }
 
+.containerImgProfile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  border-radius: 67% 33% 47% 53% / 34% 32% 68% 66%;
+  overflow: hidden;
+  min-width: 50px;
+  min-height: 50px;
+  animation: border 12s ease-in-out infinite;
+}
+
+@keyframes border {
+  0% {
+    border-radius: 67% 33% 47% 53% / 34% 32% 68% 66%;
+  }
+  25% {
+    border-radius: 60% 40% 60% 40% / 40% 60% 40% 60%;
+  }
+  50% {
+    border-radius: 50% 50% 60% 40% / 60% 40% 50% 50%;
+  }
+  75% {
+    border-radius: 40% 60% 50% 50% / 50% 50% 40% 60%;
+  }
+  100% {
+    border-radius: 67% 33% 47% 53% / 34% 32% 68% 66%;
+  }
+}
+
 @media all and (min-width: 640px) {
   .containerTech,
   .containerTabProyects,
@@ -64,21 +94,6 @@
 }
 
 @media all and (min-width: 992px) {
-  /* .navLink::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background: #000;
-    bottom: 0;
-    left: 0;
-    transition: width 0.4s ease;
-  }
-
-  .navLink:hover::after {
-    width: 100%;
-  } */
-
   * {
     scroll-margin-top: 96px;
   }

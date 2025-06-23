@@ -53,12 +53,12 @@ const AcercaDeMi = () => {
             </div>
           </div>
         </div>
-        <div className="block md:flex lg:order-1 lg:mx-auto mt-4 w-[100px] h-[100px] md:w-[150px] md:h-[150px] rounded-[20px] border-[4px] md:border-[8px] border-[##2B7FF] lg:w-[200px] lg:h-[200px] xl:w-[250px] xl:h-[250px] 2xl:w-[280px] 2xl:h-[280px] mb-2">
+        <div className="containerImgProfile block md:flex lg:order-1 lg:mx-auto mt-4 w-[100px] h-[100px] md:w-[150px] md:h-[150px] rounded-[20px] border-[4px] md:border-[8px] border-[##2B7FF] lg:w-[200px] lg:h-[200px] xl:w-[250px] xl:h-[250px] 2xl:w-[280px] 2xl:h-[280px] mb-2">
           <img
             src={perfil}
             alt="Bruno Madozzo"
             title="Bruno Madozzo"
-            className="w-[100%] h-[100%] rounded-[16px] md:rounded-[12px] object-cover"
+            className="w-[100%] h-[100%] rounded-[16px] md:rounded-[12px] object-cover imgProfile"
           />
         </div>
       </div>
