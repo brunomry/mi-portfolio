@@ -45,7 +45,7 @@ const AcercaDeMi = () => {
               <a
                 className="flex items-center gap-3 justify-center px-5 py-[10px] 2xl:py-[15px] w-[250px] rounded-[45px] bg-[#2B7FF7] text-white hover:bg-[#fff] hover:text-[#2B7FF7] hover:border hover:border-[#2B7FF7] text-[16px] md:text-[1rem] "
                 href="#proyectos"
-                title="Contáctame a través de mis redes sociales"
+                title="Conoce mis proyectos"
               >
                 <span>Proyectos </span>
                 <i class="bi bi-arrow-right"></i>

@@ -29,7 +29,7 @@ const Proyectos = () => {
         <div className="flex flex-col items-center gap-2 md:flex-row md:gap-3">
           <Link
             className="flex gap-3 justify-center px-5 py-[10px] 2xl:py-[15px] w-[250px] rounded-[45px] bg-[#fff] text-[#2B7FF7] hover:bg-[#2B7FF7] hover:text-[#fff] border-[#2B7FF7] border-[1px] hover:border-[#2B7FF7] text-[16px] md:text-[1rem]"
-            title="haz clic para descargar mi CV"
+            title="haz clic para ver otros proyectos"
             to={"/proyectos/otros-proyectos"}
           >
             <span className="font-black">Ver más Proyectos </span>
