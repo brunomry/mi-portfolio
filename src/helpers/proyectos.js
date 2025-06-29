@@ -169,7 +169,7 @@ const proyectos = [
     ultima_actualizacion: "Julio 2024",
     descripcion: "El proyecto realizado es una aplicación web de temporizador donde el objetivo consistía en desarrollar las funcionalidades de iniciar, pausar, continuar y restablecer el temporizador. ",
     proyecto: "Individual",
-    responsabilidades: ["El diseño fue replicado de una aplicación existente.", "Agregué en el menú de navegación las opciones para redirigir a aplicaciones desarrolladas de reloj y cronómetro."],
+    responsabilidades: ["El diseño fue replicado de una aplicación existente.", "Utilicé delegación de eventos para manejar los botones del temporizador","Agregué en el menú de navegación las opciones para redirigir a aplicaciones desarrolladas de reloj y cronómetro."],
     github: "https://github.com/brunomry/Temporizador",
     enlace: "https://temporizador-online-bmr.netlify.app/",
     tecnologias: [
