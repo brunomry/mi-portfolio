@@ -3,10 +3,18 @@ const CardTecnologia = ({ tech }) => {
     <figure
       key={tech.name}
       title={tech.name}
-      className="lg:px-5 border md:border-0 text-center tech w-[100%] min-w-[150px] max-w-[160px] h-[100px] lg:h-[100px] lg:max-w-[175px] xl:h-[150px] duration-[1s]  rounded-xl flex flex-col gap-2 lg:gap-4 justify-center items-center "
+      className="flex flex-col items-center justify-center gap-2 bg-white rounded-2xl 
+                 p-4 min-w-[120px] md:min-w-[165px] h-[120px] md:h-[120px] lg:h-[150px] 
+               shadow-md "
     >
-      <img src={tech.icon} alt={tech.name} className="w-[40px] h-[40px] xl:w-[72px] xl:h-[72px] iconTech" />
-      <figcaption className="text-[#2B7FF7] text-[14px] font-bold md:text-[1rem] ">{tech.name}</figcaption>
+      <img
+        src={tech.icon}
+        alt={tech.name}
+        className="w-[40px] h-[40px] md:w-[50px] md:h-[50px] lg:w-[60px] lg:h-[60px] iconTech"
+      />
+      <figcaption className="text-[#2B7FF7] font-semibold text-sm md:text-base text-center">
+        {tech.name}
+      </figcaption>
     </figure>
   );
 };

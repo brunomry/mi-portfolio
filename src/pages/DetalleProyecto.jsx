@@ -5,141 +5,128 @@ import CardCaracteristica from "../components/Proyectos/CardCaracteristica.jsx";
 
 const DetalleProyecto = () => {
   const [proyecto, setProyecto] = useState({});
-
   const { id } = useParams();
 
-  const obtenerProyecto = () => {
-    const proyectoBuscado = proyectos.find((p) => p.id == id);
-    console.log(proyectoBuscado);
-
-    setProyecto(proyectoBuscado);
-  };
-
   useEffect(() => {
-    obtenerProyecto();
+    const proyectoBuscado = proyectos.find((p) => p.id == id);
+    setProyecto(proyectoBuscado);
+    window.scrollTo(0, 0);
   }, [id]);
 
   return (
-    <section className="flex flex-col mb-20 min-h-[600px] gap-3 xl:gap-4 items-center px-3 pt-10 pb-40 md:py-28 md:px-8 lg:px-20 lg:py-[150px] fondo xl:px-[150px] 2xl:px-[250px]">
+    <section className="flex flex-col w-full min-h-screen px-4 pt-24 lg:pt-32 pb-24 sm:px-8 md:px-14 lg:px-24 xl:px-[150px] 2xl:px-[250px] bg-[#FAFAFA]">
       <Link
-        className="w-[100%] flex justify-start items-center gap-2 "
-        to={"/proyectos/otros-proyectos"}
+        to="/proyectos"
+        className="flex items-center gap-2 text-[#555] hover:text-[#2B7FF7] transition mb-6"
       >
-        <i class="bi bi-arrow-left text-[20px] text-[#787777]"></i>
-        <span className="text-[#787777]">Proyectos</span>
+        <i className="bi bi-arrow-left text-[20px]"></i>
+        <span className="text-sm">Volver a Proyectos</span>
       </Link>
-      <div className="w-[100%] h-[100%] rounded-[10px] 2xl:px-[100px] flex flex-col gap-4">
-        <div className="flex flex-col md:flex-row gap-4 md:gap-12">
-          <h1 className="  font-black text-[25px] text-start xl:text-[30px] text-[#333]">
+      <header className="flex flex-col gap-6 md:flex-row md:justify-between md:items-start bg-white shadow-sm rounded-2xl p-6 md:p-10 border border-gray-100">
+        <div className="flex flex-col gap-3 w-full">
+          <h1 className="text-2xl md:text-4xl font-extrabold text-[#1E1E1E] leading-tight">
             {proyecto.nombre}
           </h1>
-          <div className="flex gap-3">
-            <a
-              className="flex items-center justify-center py-1 px-8 w-[fit-content] text-[#2B7FF7]  border-[#2B7FF7] hover:bg-[#2B7FF7] hover:text-[#fff] rounded-[45px] border text-[1rem] gap-3"
-              href={proyecto.enlace}
-              target="_blank"
-              title="Ver página"
-              rel="noopener"
-            >
-              <span>Web</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-box-arrow-up-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
-                />
-                <path
-                  fill-rule="evenodd"
-                  d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
-                />
-              </svg>
-            </a>
-            <Link
-              className="flex items-center justify-center py-1 px-8 w-[fit-content] rounded-[45px] border-[#0a0a0a] hover:bg-[#0a0a0a] text-[#0a0a0a] hover:text-[#fafafa] border-[1px] text-[1rem] gap-2"
-              title="Ver más información del proyecto"
-              to={`${proyecto.github}`}
-              target="_blank"
-            >
-              <span>Código</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-github"
-                viewBox="0 0 16 16"
-              >
-                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-              </svg>
-            </Link>
+          <p className="text-[#666] text-sm md:text-base font-light">
+            {proyecto.descripcion}
+          </p>
+          <div className="flex flex-wrap gap-2 mt-3">
+            {proyecto.tipo && (
+              <span className="bg-[#E4F0FF] text-[#2B7FF7] px-3 py-1 rounded-full text-sm font-medium">
+                {proyecto.tipo}
+              </span>
+            )}
+            {proyecto.categoria && (
+              <span className="bg-[#D1F7E0] text-[#1D7F5E] px-3 py-1 rounded-full text-sm font-medium">
+                {proyecto.categoria}
+              </span>
+            )}
           </div>
         </div>
-        <p className="w-[100%] text-[#787777] text-[14px] md:text-[1rem] font-light">
-          {proyecto.descripcion}
-        </p>
-        <article className="flex gap-6 md:gap-4 flex-wrap">
-          <CardCaracteristica
-            caracteristica="Tipo"
-            descripcion={proyecto.tipo}
-          ></CardCaracteristica>
-          <CardCaracteristica
-            caracteristica="Categoría"
-            descripcion={proyecto.categoria}
-          ></CardCaracteristica>
-          <CardCaracteristica
-            caracteristica="Inicio"
-            descripcion={proyecto.fecha}
-          ></CardCaracteristica>
-          <CardCaracteristica
-            caracteristica="Duración"
-            descripcion={proyecto.duracion}
-          ></CardCaracteristica>
-          <CardCaracteristica
-            caracteristica="Último cambio"
-            descripcion={proyecto.ultima_actualizacion}
-          ></CardCaracteristica>
-        </article>
-        <article className="">
-          <h2 className=" mb-4 font-bold text-[18px] text-start text-[#333]">
-            Tecnologías o herramientas
-          </h2>
-          <div className="flex xl:w-[100%] gap-2 md:gap-4 flex-wrap">
-            {proyecto.tecnologias &&
-              proyecto.tecnologias.map((tec, pos) => (
-                <p
-                  key={pos}
-                  className="rounded-[8px] py-2 px-4 bg-[#Fff] font-light text-[#787777] border md:shadow w-[fit-content] h-[fit-content] text-[14px] md:text-[1rem]"
-                >
-                  {tec.name}
-                </p>
-              ))}
-          </div>
-        </article>
-        <article className="min-h-[200px]">
-          <h2 className=" mb-4 font-bold text-start text-[18px] text-[#333]">
-            {proyecto.proyecto !== "En equipo"
-              ? "Aspectos relevantes"
-              : "Responsabilidades"}
-          </h2>
-          <ul className="list-disc xl:w-[100%] h-[200px] sm:h-[100%] ms-5">
-            {proyecto.responsabilidades &&
-              proyecto.responsabilidades.map((res, pos) => (
-                <li
-                  key={pos}
-                  className="rounded-[20px] text-[#787777] font-light w-[fit-content] mb-3 text-[14px] md:text-[1rem] "
-                >
-                  {res}
-                </li>
-              ))}
+        <div className="flex gap-3 mt-4 md:mt-0 text-sm md:text-base">
+          <a
+            href={proyecto.enlace}
+            target="_blank"
+            rel="noopener"
+            className="flex items-center justify-center gap-2 px-6 py-2 border border-[#2B7FF7] text-[#2B7FF7] rounded-full font-medium hover:bg-[#2B7FF7] hover:text-white transition"
+          >
+            <span>Web</span>
+            <i className="bi bi-box-arrow-up-right"></i>
+          </a>
+          {proyecto.github && (
+            <a
+              href={proyecto.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 px-6 py-2 border border-[#0a0a0a] text-[#0a0a0a] rounded-full font-medium hover:bg-[#0a0a0a] hover:text-white transition"
+            >
+              <span>Código</span>
+              <i className="bi bi-github"></i>
+            </a>
+          )}
+        </div>
+      </header>
+      <article className="mt-4 bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-gray-100">
+        <h2 className="text-xl md:text-2xl font-bold text-[#1E1E1E] mb-6">Información general</h2>
+        <div className="flex flex-wrap gap-4">
+          <CardCaracteristica caracteristica="Inicio" descripcion={proyecto.fecha} />
+          <CardCaracteristica caracteristica="Duración" descripcion={proyecto.duracion} />
+          <CardCaracteristica caracteristica="Último cambio" descripcion={proyecto.ultima_actualizacion} />
+          <CardCaracteristica caracteristica="Proyecto" descripcion={proyecto.proyecto} />
+          <CardCaracteristica caracteristica="Estado" descripcion={proyecto.estado} />
+        </div>
+      </article>
+      <article className="mt-4 bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-gray-100">
+        <h2 className="text-xl md:text-2xl font-bold text-[#1E1E1E] mb-6">Tecnologías y herramientas</h2>
+        <div className="flex flex-wrap gap-2">
+          {proyecto.tecnologias &&
+            proyecto.tecnologias.map((tec, pos) => (
+              <span key={pos} className="bg-[#F5F8FF] border border-[#E3E8F0] text-[#333] font-medium px-4 py-2 rounded-full text-sm">
+                {tec.name}
+              </span>
+            ))}
+        </div>
+      </article>
+      {proyecto.features && (
+        <article className="mt-4 bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-gray-100">
+          <h2 className="text-xl md:text-2xl font-bold text-[#1E1E1E] mb-6">Características</h2>
+          <ul className="list-disc ms-5 space-y-2">
+            {proyecto.features.map((feature, idx) => (
+              <li key={idx} className="text-[#555] font-light text-sm md:text-base leading-relaxed">
+                {feature}
+              </li>
+            ))}
           </ul>
         </article>
-      </div>
+      )}
+      {proyecto.video && (
+        <article className="mt-4 bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-gray-100">
+          <h2 className="text-xl md:text-2xl font-bold text-[#1E1E1E] mb-6">Demo rápida</h2>
+          <div className="aspect-w-16 aspect-h-9">
+            <iframe
+              src={proyecto.video}
+              title={`Demo ${proyecto.nombre}`}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full rounded-lg"
+            />
+          </div>
+        </article>
+      )}
+      <article className="mt-4 bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-gray-100">
+        <h2 className="text-xl md:text-2xl font-bold text-[#1E1E1E] mb-4">
+          {proyecto.proyecto === "Freelance" ? "Aspectos relevantes" : "Responsabilidades"}
+        </h2>
+        <ul className="list-disc ms-5 space-y-2">
+          {proyecto.responsabilidades &&
+            proyecto.responsabilidades.map((res, pos) => (
+              <li key={pos} className="text-[#555] font-light text-sm md:text-base leading-relaxed">
+                {res}
+              </li>
+            ))}
+        </ul>
+      </article>
     </section>
   );
 };

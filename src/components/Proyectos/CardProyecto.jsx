@@ -1,59 +1,80 @@
-import { useState, useEffect } from 'react';
-import ModalProyect from '../../pages/DetalleProyecto';
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const CardProyecto = ({ proyecto }) => {
+  const tecnologiasPrincipales = proyecto.tecnologias.slice(0, 3);
+
   return (
-    <>
-     <div className=" w-[100%] min-w-[250px] pb-8 bg-[#fff] duration-[0.8s] sm:w-[300px] lg:w-[350px] lg:min-h-[400px] lg:duration-[0.7s] xl:w-[400px] ">
-      <div className=''>
+    <article className="relative bg-white rounded-2xl shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 w-full max-w-[480px] flex flex-col overflow-hidden">
+      <span className="absolute top-3 left-3 bg-[#2B7FF7] text-white text-xs font-bold px-3 py-1 rounded-full z-10 shadow-md">
+        {proyecto.estado}
+      </span>
       <img
         src={proyecto.imagen}
         alt={proyecto.nombre}
         title={proyecto.nombre}
-        className="rounded-[8px] border-b w-[100%] h-[225px] lg:h-[300px] object-cover"
+        className="w-full h-[240px] lg:h-[280px] object-cover rounded-t-2xl"
       />
-      </div>
-      <div className="flex flex-col justify-between  md:gap-4 md:my-4">
-        <div className=" rounded-[4px] py-1 flex flex-col mb-2">
-          <h4 className="font-black text-[18px] md:text-[20px] mb-0 text-[#2B7FF7]">{proyecto.categoria}</h4>
-          <p className="text-[14px] lg:text-[1rem] mb-0 text-[#787777] font-light">{proyecto.tipo}</p>
+      <div className="p-5 flex flex-col gap-3">
+        <div>
+          <h3 className="font-extrabold text-lg md:text-xl text-[#2B7FF7]">
+            {proyecto.nombre}
+          </h3>
+          <p className="text-[#999] text-sm md:text-base mt-1">
+            {proyecto.categoria}
+          </p>
         </div>
-        <div className="flex flex-wrap gap-2 xl:gap-3">
-          <a
-            href={proyecto.github}
-            className="flex gap-2 text-[14px]  bg-[#fff] rounded-[8px] px-3 pt-1 text-[#333] border-[1px] border-[#333] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#000] hover:border-[#000] hover:text-[#fff] items-center "
-            target="_blank"
-            rel="noopener"
-            title="Ver código"
-          >            
-            <span className='font-light'>Código</span>
-            <i className="text-lg bi bi-github"></i>
-          </a>
+        <p className="text-[#555] text-sm md:text-base">{proyecto.tipo}</p>
+        {tecnologiasPrincipales.length > 0 && (
+          <div className="flex flex-wrap gap-2 mt-2">
+            {tecnologiasPrincipales.map((tech, index) => (
+              <span
+                key={index}
+                className="bg-[#E4F0FF] text-[#2B7FF7] px-3 py-1 rounded-md text-xs md:text-sm font-medium"
+              >
+                {tech.name}
+              </span>
+            ))}
+          </div>
+        )}
+        <div className="flex items-center justify-between mt-3 text-xs md:text-sm text-[#999]">
+          <span>
+            Última actualización:{" "}
+            {proyecto.ultima_actualizacion || proyecto.fecha}
+          </span>
+          <span className="font-semibold text-[#2B7FF7]">
+            {proyecto.proyecto}
+          </span>
+        </div>
+        <div className="flex flex-wrap gap-2 mt-4">
+          {proyecto.github && (
+            <a
+              href={proyecto.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex gap-2 items-center text-sm md:text-base bg-[#24292f] border border-[#24292f] text-white px-3 py-1 rounded-md hover:bg-[#333] hover:border-[#333] transition"
+            >
+              Código <i className="bi bi-github text-base"></i>
+            </a>
+          )}
           <a
             href={proyecto.enlace}
-            className="flex gap-2  text-[14px]  bg-[#fff] rounded-[8px] px-3 pt-1 border-[1px] text-[#2B7FF7]  border-[#2B7FF7] hover:bg-[#2B7FF7] duration-[0.5s] hover:duration-[0.5s]  hover:border-[#fff] hover:text-[#fff] items-center "
             target="_blank"
-            title="Ver página"
-            rel="noopener"
+            rel="noopener noreferrer"
+            className="flex gap-2 items-center text-sm md:text-base bg-[#2B7FF7] border border-[#2B7FF7] text-white px-3 py-1 rounded-md hover:bg-[#1a5fcc] hover:border-[#1a5fcc] transition"
           >
-            
-            <span className='font-light'>Web</span>
-            <i className="text-[1rem] bi bi-box-arrow-up-right"></i>
+            Web{" "}
+            <i className="bi bi-box-arrow-up-right text-sm md:text-base"></i>
           </a>
+
           <Link
-            className="flex gap-2 text-[14px]  bg-[#fff] rounded-[8px] px-3 pt-1 text-[#5a5a5a] border-[1px] border-[#cecece] duration-[0.5s] hover:duration-[0.5s] hover:bg-[#e6e6e6] hover:border-[#cecece] hover:text-[#5a5a5a] items-center "
-            title="Ver más información del proyecto"
-            to={`/proyectos/detalleproyecto/${proyecto.id}`}
+            to={`/detalleproyecto/${proyecto.id}`}
+            className="flex gap-2 items-center text-sm md:text-base bg-[#f3f3f3] border border-[#ccc] text-[#555] px-3 py-1 rounded-md hover:bg-[#e6e6e6] transition"
           >
-           
-            <span className='font-light'>Info</span>
-             <i className="text-lg bi bi-info-circle" ></i>
+            Info <i className="bi bi-info-circle text-sm md:text-base"></i>
           </Link>
         </div>
       </div>
-    </div>
-    </>  
+    </article>
   );
 };
 

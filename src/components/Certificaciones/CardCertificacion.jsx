@@ -15,21 +15,31 @@ const CardCertificacion = ({ certificado, index }) => {
     <>
       <div
         onClick={() => openCarousel(index)}
-        className="cursor-pointer rounded-[6px] bg-[#0a0a0a] py-8 cardCertification w-[100%] min-w-[200px] md:max-w-[300px] lg:max-w-[400px] h-[175px] duration-[0.8s] border-[1px] text-center md:text-start flex flex-col px-2 md:px-4 xl:px-5 hover:border-[#2B7FF7]"
-        title="clic para ver certificación"
+        className="cursor-pointer rounded-2xl bg-white shadow-md hover:shadow-xl 
+                   transition-all duration-500 ease-in-out p-6 flex flex-col justify-between
+                   flex-[1_1_280px] w-[100%] min-w-[300px] md:max-w-[340px] lg:max-w-[380px] min-h-[200px] "
+        title="Clic para ver certificación"
       >
-        <div className="flex flex-col justify-center md:justify-start rounded-[4px] min-h-[100%] h-[fit-content]">
-          <div className="flex flex-col justify-between gap-4">
-            <div className=" flex flex-col">
-              <p className="text-[#787777] text-[14px]">
-                {certificado.fechaInicio} - {certificado.fechaFin}
-              </p>
-              <h5 className="mb-1 font-black text-[#2B7FF7] md:text-[18px]">
-                {certificado.titulo}
-              </h5>
-              <p className="text-gray-600 md:text-[1rem] ">{certificado.org}</p>
-            </div>
+        <div className="flex flex-col justify-between h-full">
+          <div className="flex flex-col gap-2">
+            <p className="text-[#555] text-sm md:text-base">
+              {certificado.fechaInicio} - {certificado.fechaFin}
+            </p>
+            <h5 className="font-black text-[#2B7FF7] text-base xl:text-lg 2xl:text-xl">
+              {certificado.titulo}
+            </h5>
+            <p className="text-[#777] text-sm md:text-base">
+              {certificado.org}
+            </p>
           </div>
+
+          <button
+            onClick={() => openCarousel(index)}
+            className="mt-4 px-4 py-2 rounded-full bg-[#2B7FF7] hover:bg-[#1a5fcc] text-white font-medium 
+                       text-sm md:text-base transition-colors shadow-md w-full"
+          >
+            Ver Certificación
+          </button>
         </div>
       </div>
       {visible && (
@@ -38,7 +48,7 @@ const CardCertificacion = ({ certificado, index }) => {
           visible={visible}
           certificadosActuales={certificados}
           certificadoActual={certificadoActual}
-        ></CarruselCertificaciones>
+        />
       )}
     </>
   );

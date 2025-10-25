@@ -3,23 +3,35 @@ import CardTecnologia from "./CardTecnologia";
 
 const Tecnologias = () => {
   return (
-    <article
-      className="w-[100%] py-8 md:px-8 md:py-20 lg:px-[100px] xl:px-[150px] xl:py-40 min-h-[35vh] bg-[#0a0a0a] text-[#028891] flex flex-col md:gap-2 px-4 md:min-h-[80vh] tecnologias lg:min-h-[100vh] xl:min-h-[80vh]"
+    <section
+      className="w-[100%] py-12 xl:py-20 2xl:py-40 px-4 md:px-8 lg:px-[100px] xl:px-[120px] 2xl:px-[150px] bg-[#FAFAFA] text-[#1d2a4d] flex flex-col gap-4 md:gap-6 xl:gap-12"
       id="tecnologias"
     >
-      <h2 className="font-black font- mb-2 text-[25px] xl:text-[30px] 2xl:text-[35px] text-[#FAFAFA]">
+      <h2 className="font-black text-[24px] md:text-[28px] xl:text-[32px] 2xl:text-[36px] text-[#1d2a4d]">
         Tecnologías
       </h2>
-      <p className="text-[#787777] px-2 md:text-[1rem] font-light">
-        Estas son las tecnologías que utilizo en mis proyectos o de las cuales
-        tengo conocimientos, entre otras.
+      <p className="text-[#555] text-sm md:text-base 2xl:text-lg font-light">
+        Estas son las tecnologías con las que trabajo en mis proyectos, organizadas por categoría.
       </p>
-      <div className="flex containerTech w-[100%] h-[150px] sm:h-[100%] gap-2 md:gap-2 lg:gap-6 items-center sm:flex-wrap md:pt-12 lg:pt-12 2xl:pt-14">
-        {tecnologias.actuales.map((tech, pos) => (
-          <CardTecnologia key={pos} tech={tech} />
-        ))}
-      </div>
-    </article>
+      {Object.entries(tecnologias).map(([categoria, lista], idx) => (
+        <article key={idx} className="flex flex-col gap-6 ">
+          <h3 className="text-[#2B7FF7] font-bold text-lg md:text-xl">
+            {categoria === "frontend"
+              ? "Frontend"
+              : categoria === "ui"
+              ? "Diseño UI"
+              : categoria === "backend"
+              ? "Backend"
+              : "Bases de Datos"}
+          </h3>
+          <div className="flex md:flex-wrap gap-4 md:gap-2 lg:gap-4 scrolSnapType h-[150px] md:h-[inherit]">
+            {lista.map((tech, index) => (
+              <CardTecnologia key={index} tech={tech} />
+            ))}
+          </div>
+        </article>
+      ))}
+    </section>
   );
 };
 

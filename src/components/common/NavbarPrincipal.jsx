@@ -1,144 +1,79 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const NavbarPrincipal = () => {
-  const [desplegado, setDesplegado] = useState(window.innerWidth < 768 ? false : true);
+  const [desplegado, setDesplegado] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
-  const desplegarMenu = (value) => {
-    setDesplegado(value);
-  };
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const toggleMenu = () => setDesplegado(!desplegado);
+  const closeMenu = () => isMobile && setDesplegado(false);
 
   return (
-    <>
-      { !desplegado ? (
-        <header className="w-[100%] h-[64px] fixed bottom-0 left-0 z-[99] bg-[#FAFAFA] flex justify-between items-center px-8 ">
-          <small className="text-[#787777] text-[12px]">Bruno Madozzo - Desarrollador web</small>
-          <button onClick={() => desplegarMenu(true)} title="menu">
-            <i
-              class={`bi ${desplegado ? "bi-x-lg" : "bi-list"} text-[40px] `}
-            ></i>
-          </button>
-        </header>
-      ) : (
-        <header className=" w-[100%] h-[100%]  md:h-[96px] fixed top-0 left-0 z-[99] bg-[#FAFAFA] flex flex-col items-center lg:px-10 xl:px-20 2xl:px-40">
-          <nav className="w-[100%] h-[100%] flex justify-center items-end lg:justify-between pb-20 md:pb-0 md:items-center">
-            <a className="hidden lg:block xl:text-[20px] text-[#0A0A0A] font-black " href="#sobremi">
-              BrunoMadozzo&#40;&#41;&#59;
+    <header className="fixed top-0 left-0 w-full z-[99] bg-[#FFF]">
+      <div className="flex justify-around items-center px-6 md:px-10 lg:px-20 h-[64px] md:h-[96px]">
+        <a
+          className="text-[#0A0A0A] font-black text-sm"
+          href="#sobremi"
+        >
+          BM - Soluciones web
+        </a>
+        <nav className="hidden md:flex items-center gap-8 md:gap-4 lg:gap-12 text-[#787777] text-sm ">
+          {[
+            "Proyectos",
+            "Servicios",
+            "Tecnologías",
+            "Certificaciones",
+            "Contacto",
+          ].map((item) => (
+            <a
+              key={item}
+              href={`#${item.toLowerCase()}`}
+              className="hover:text-[#2B7FF7] transition-colors"
+            >
+              {item}
             </a>
-            <ul className="flex flex-col md:flex-row items-center gap-8 md:gap-8 md:justify-end xl:gap-12 ">
-              <li className="">
-                <a
-                  className="block w-[100%] font-black text-[20px] md:text-[14px] navLink text-[#2B7FF7] md:text-[#787777]    text-center"
-                  href="#sobremi"
-                  onClick={() => {
-                    if (window.innerWidth < 768) {
-                      desplegarMenu(false);
-                    }
-                  }}
-                >
-                  Sobre Mí
-                </a>
-              </li>
-              <li className="">
-                <a
-                  className="block w-[100%] font-black text-[20px] md:text-[14px] navLink text-[#2B7FF7] md:text-[#787777]    text-center"
-                  href="#tecnologias"
-                  onClick={() => {
-                    if (window.innerWidth < 768) {
-                      desplegarMenu(false);
-                    }
-                  }}
-                >
-                  Tecnologías
-                </a>
-              </li>
-              <li className="">
-                <a
-                  className="block font-black text-[20px] md:text-[14px] navLink text-[#2B7FF7] md:text-[#787777]   text-center"
-                  href="#proyectos"
-                  onClick={() => {
-                    if (window.innerWidth < 768) {
-                      desplegarMenu(false);
-                    }
-                  }}
-                >
-                  Proyectos
-                </a>
-              </li>
-              <li className="">
-                <a
-                  className="block font-black text-[20px] md:text-[14px] navLink text-[#2B7FF7] md:text-[#787777]   text-center"
-                  href="#certificaciones"
-                  onClick={() => {
-                    if (window.innerWidth < 768) {
-                      desplegarMenu(false);
-                    }
-                  }}
-                >
-                  Certificaciones
-                </a>
-              </li>
-              <li className="">
-                <a
-                  className="block font-black text-[20px] md:text-[14px] navLink text-[#2B7FF7] md:text-[#787777]   text-center"
-                  href="#servicios"
-                  onClick={() => {
-                    if (window.innerWidth < 768) {
-                      desplegarMenu(false);
-                    }
-                  }}
-                >
-                  Servicios
-                </a>
-              </li>
-              {/* <li className="">
-                <a
-                  className="block font-black text-[20px] md:text-[14px] navLink text-[#2B7FF7] md:text-[#787777]   text-center"
-                  href="#servicios"
-                  onClick={() => {
-                    if (window.innerWidth < 768) {
-                      desplegarMenu(false);
-                    }
-                  }}
-                >
-                  Testimonios
-                </a>
-              </li> */}
-              <li className="">
-                <a
-                  className="block font-black text-[20px] md:text-[14px] navLink text-[#2B7FF7] md:text-[#787777]   text-center"
-                  href="#contacto"
-                  onClick={() => {
-                    if (window.innerWidth < 768) {
-                      desplegarMenu(false);
-                    }
-                  }}
-                >
-                  Contacto
-                </a>
-              </li>
-              {/* <li className="">
-                <div className="">
-                  <i class="bi bi-moon text-[25px]"></i>
-                  <i class="bi bi-moon-fill text-[25px] hidden"></i>
-                </div>
-              </li> */}
-            </ul>
-          </nav>
-          <button
-            onClick={() => {
-              if (window.innerWidth < 768) {
-                desplegarMenu(false);
-              }
-            }}
-            className="w-[100%] flex justify-end px-8 md:hidden"
-          >
+          ))}
+        </nav>
+        {isMobile && (
+          <button onClick={toggleMenu} className="md:hidden z-50">
             <i
-              class={`bi ${desplegado ? "bi-x-lg" : "bi-list"} text-[40px] `}
-            ></i>
+              className={`bi ${desplegado ? "bi-x-lg" : "bi-list"} text-xl`}
+            />
           </button>
-        </header>
+        )}
+      </div>
+      {isMobile && (
+        <div
+          className={`fixed top-0 left-0 w-full h-full bg-white flex flex-col items-center justify-center transition-transform duration-500 ease-in-out transform ${
+            desplegado
+              ? "translate-x-0 opacity-100"
+              : "-translate-x-full opacity-0 pointer-events-none"
+          }`}
+        >
+          {[
+            "Proyectos",
+            "Servicios",
+            "Tecnologías",
+            "Certificaciones",
+            "Contacto",
+          ].map((item) => (
+            <a
+              key={item}
+              href={`#${item.toLowerCase()}`}
+              onClick={closeMenu}
+              className="text-[#2B7FF7] text-2xl my-4 hover:text-[#1a5fcc] transition-colors"
+            >
+              {item}
+            </a>
+          ))}
+        </div>
       )}
-    </>
+    </header>
   );
 };
 
