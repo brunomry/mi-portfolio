@@ -15,7 +15,7 @@ const NavbarPrincipal = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-[99] bg-[#FFF]">
-      <div className="flex justify-around items-center px-6 md:px-10 lg:px-20 h-[64px] md:h-[96px]">
+      <div className="flex justify-between md:justify-around items-center px-6 md:px-10 lg:px-20 h-[64px] md:h-[96px]">
         <a
           className="text-[#0A0A0A] font-black text-sm"
           href="#sobremi"
