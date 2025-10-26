@@ -5,7 +5,7 @@ const Tecnologias = () => {
   return (
     <section
       className="w-[100%] py-12 xl:py-20 2xl:py-40 px-4 md:px-8 lg:px-[100px] xl:px-[120px] 2xl:px-[150px] bg-[#FAFAFA] text-[#1d2a4d] flex flex-col gap-4 md:gap-6 xl:gap-12"
-      id="tecnologias"
+      id="tecnologías"
     >
       <h2 className="font-black text-[24px] md:text-[28px] xl:text-[32px] 2xl:text-[36px] text-[#1d2a4d]">
         Tecnologías

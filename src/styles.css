@@ -9,6 +9,7 @@
 * {
   scroll-behavior: smooth;
   font-family: "Satoshi-Regular", sans-serif;
+  scroll-margin-top: 96px;
 }
 
 .active {
@@ -80,8 +81,8 @@
   }
 }
 
-.iconWppFixed{
-   color: #fff;
+.iconWppFixed {
+  color: #fff;
 
   path {
     fill: currentColor;
@@ -96,10 +97,6 @@
 }
 
 @media all and (min-width: 992px) {
-  * {
-    scroll-margin-top: 96px;
-  }
-
   ::-webkit-scrollbar {
     width: 12px;
   }
