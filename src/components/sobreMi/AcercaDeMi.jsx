@@ -5,11 +5,14 @@ const AcercaDeMi = () => {
   const habilidades = [
     "React",
     "Redux Toolkit",
-    "Tailwind",
+    "TailwindCSS",
     "Bootstrap5",
     "JavaScript",
     "Figma",
     "SEO",
+    "Node js",
+    "Express js",
+    "MongoDB",
   ];
   const trabajos = [
     "Landing pages",
@@ -39,9 +42,9 @@ const AcercaDeMi = () => {
             Desarrollador web
           </h2>
           <p className="text-[#555] text-sm md:text-base font-light sm:mt-2 md:mt-4 text-center sm:text-left">
-            Estudiante de Ingeniería en Sistemas de Información y desarrollador
-            web con enfoque en Front-end. Me especializo en la creación de
-            landing pages, sitios web y aplicaciones web optimizadas para un
+            Desarrollador web con enfoque en Front-end y estudiante avanzado de
+            Ingeniería en Sistemas de Información. Me especializo en la creación
+            de landing pages, sitios web y aplicaciones web optimizadas para un
             buen rendimiento y posicionamiento SEO.
           </p>
           <div className="flex flex-wrap justify-center sm:justify-start gap-2 md:mt-4">
@@ -103,7 +106,7 @@ const AcercaDeMi = () => {
           </div>
         </div>
         <div
-          className="containerImgProfile lg:mx-auto mt-6 sm:mt-8 md:mt-0 
+          className="containerImgProfile md:mx-0 mx-auto mt-6 sm:mt-8 md:mt-0 
           w-[120px] h-[120px] sm:w-[150px] sm:h-[150px] 
           lg:w-[200px] lg:h-[200px] xl:w-[250px] xl:h-[250px] 2xl:w-[280px] 2xl:h-[280px] 
           rounded-[20px] border-[4px] md:border-[8px] border-[#d2d2d2] lg:order-1"

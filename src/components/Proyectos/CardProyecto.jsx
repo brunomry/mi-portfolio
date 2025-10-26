@@ -56,15 +56,17 @@ const CardProyecto = ({ proyecto }) => {
               Código <i className="bi bi-github text-base"></i>
             </a>
           )}
-          <a
-            href={proyecto.enlace}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex gap-2 items-center text-sm md:text-base bg-[#2B7FF7] border border-[#2B7FF7] text-white px-3 py-1 rounded-md hover:bg-[#1a5fcc] hover:border-[#1a5fcc] transition"
-          >
-            Web{" "}
-            <i className="bi bi-box-arrow-up-right text-sm md:text-base"></i>
-          </a>
+          {proyecto.area === "frontend" && (
+            <a
+              href={proyecto.enlace}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex gap-2 items-center text-sm md:text-base bg-[#2B7FF7] border border-[#2B7FF7] text-white px-3 py-1 rounded-md hover:bg-[#1a5fcc] hover:border-[#1a5fcc] transition"
+            >
+              Web{" "}
+              <i className="bi bi-box-arrow-up-right text-sm md:text-base"></i>
+            </a>
+          )}
 
           <Link
             to={`/detalleproyecto/${proyecto.id}`}

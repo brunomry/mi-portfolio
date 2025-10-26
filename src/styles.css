@@ -101,7 +101,7 @@
   }
 
   ::-webkit-scrollbar {
-    width: 7px;
+    width: 12px;
   }
 
   ::-webkit-scrollbar-track {
@@ -109,7 +109,7 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #91a7ab;
+    background-color: #657578;
   }
 }
 

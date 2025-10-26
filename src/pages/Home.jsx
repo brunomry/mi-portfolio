@@ -26,7 +26,7 @@ const Home = () => {
         className="w-[100%] absolute min-h-screen lg:w-[100%] xl:w-[100%]  bg-[#FAFAFA] flex flex-col justify-center items-center flex-grow  pt-2 xl:pt-3"
       >
         <AcercaDeMi></AcercaDeMi>
-        <Proyectos></Proyectos>
+        <Proyectos mostrar={false}></Proyectos>
         <Servicios></Servicios>
         <Tecnologias></Tecnologias>    
         <Certificaciones></Certificaciones>

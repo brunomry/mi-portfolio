@@ -32,18 +32,15 @@ const tecnologias = {
     { name: "Redux Toolkit", icon: redux },
     { name: "Axios", icon: axios },
   ],
-
   ui: [
     { name: "Figma", icon: figma },
   ],
-
   backend: [
     { name: "Node.js", icon: node },
     { name: "Express.js", icon: express },
     { name: "Postman", icon: postman },
     { name: "Mongoose", icon: mongoose },
   ],
-
   bd: [
     { name: "MongoDB", icon: mongodb },
     { name: "MySQL", icon: mysql },
