@@ -266,7 +266,8 @@ const proyectos = [
       "Diseño de prototipos de interfaz del sistema.",
       "Contribución a la documentación general del proyecto final.",
     ],
-    features: [
+    features: [],
+    caracteristicasProyecto: [
       "Sistema propuesto para gestionar reservas, clientes y habitaciones.",
       "Casos de uso detallados para cada módulo del sistema.",
       "Modelos UML completos para visualizar procesos y entidades.",
@@ -313,8 +314,8 @@ const proyectos = [
       "Autenticación con tokens JWT.",
       "Endpoints organizados y documentados para fácil integración con frontend.",
       "Validaciones y manejo de errores completo.",
-      "Despliegue en Vercel",
     ],
+    caracteristicasProyecto: ["Aplicación de Metodología Scrum", "Despliegue en Vercel"],
     video: "",
     github: "https://github.com/brunomry/API_restaurante",
     enlace: "",
@@ -396,7 +397,7 @@ const proyectos = [
       "Organización de componentes",
       "Interfaz mobile-first",
     ],
-    images:[buenbit],
+    images: [buenbit],
     video: "",
     github: "",
     enlace:
