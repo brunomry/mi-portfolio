@@ -60,7 +60,7 @@ const proyectos = [
     imagen: sanjorge,
     categoria: "Alojamiento",
     nombre: "Hostal San Jorge",
-    tipo: "Aplicación web",
+    tipo: "Sitio web",
     area: "frontend",
     fecha: "Enero 2024",
     duracion: "8 semanas",
