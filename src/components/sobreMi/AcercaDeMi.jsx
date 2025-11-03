@@ -1,5 +1,4 @@
 import perfil from "../../assets/perfil.webp";
-import { handleDownloadPDF } from "../../helpers/handleFn";
 
 const AcercaDeMi = () => {
   const habilidades = [
@@ -24,9 +23,9 @@ const AcercaDeMi = () => {
   return (
     <article
       className="flex pt-12 pb-12 flex-col w-full min-h-[40vh] bg-[#FFF] rounded-2 
-      px-4 md:px-8 lg:px-[100px] xl:px-[120px] 2xl:px-[150px]
+      px-4 md:px-8 lg:px-[100px] xl:px-[120px] 2xl:px-[250px]
       md:min-h-[60vh] md:items-center md:pt-[100px] 
-      lg:pt-[120px] xl:pt-[220px] lg:min-h-[70vh] xl:min-h-[60vh] 
+      lg:pt-[120px] xl:pt-[220px] lg:min-h-[70vh] xl:min-h-[60vh]
       "
       id="sobremi"
     >
@@ -68,19 +67,19 @@ const AcercaDeMi = () => {
             ))}
           </div>
           <div className="flex sm:flex-row gap-4 md:mt-6 lg:mt-4 w-full sm:w-auto justify-center sm:justify-start">
-            <button
-              onClick={handleDownloadPDF}
-              className="flex items-center gap-3 justify-center text-sm px-4 md:px-6 py-2 xl:py-3 rounded-full bg-white text-[#2B7FF7] border border-[#2B7FF7] hover:bg-[#2B7FF7] hover:text-white transition font-medium md:text-base lg:text-lg"
-              title="Descargar CV"
+            <a
+              href="#servicios"
+              className="flex items-center gap-3 justify-center text-sm px-4 md:px-6 2xl:px-16 py-2 xl:py-3 rounded-full bg-white text-[#2B7FF7] border border-[#2B7FF7] hover:bg-[#2B7FF7] hover:text-white transition font-medium md:text-base lg:text-lg"
+              title="Conoce mis servicios"
             >
-              Descargar CV <i className="bi bi-download"></i>
-            </button>
+              Servicios
+            </a>
             <a
               href="#proyectos"
-              className="flex items-center gap-3 justify-center px-4 md:px-6 py-2 xl:py-3 rounded-full bg-[#2B7FF7] text-white border border-[#2B7FF7] hover:bg-white hover:text-[#2B7FF7] transition font-medium md:text-base lg:text-lg"
+              className="flex items-center gap-3 justify-center px-4 md:px-6 2xl:px-16 py-2 xl:py-3 rounded-full bg-[#2B7FF7] text-white border border-[#2B7FF7] hover:bg-white hover:text-[#2B7FF7] transition font-medium md:text-base lg:text-lg"
               title="Conoce mis proyectos"
             >
-              Proyectos <i className="bi bi-arrow-down"></i>
+              Proyectos
             </a>
           </div>
           <div className="flex gap-4 md:mt-6 lg:mt-2 justify-center sm:justify-start">

@@ -1,4 +1,4 @@
-import cv from "../assets/CV Bruno Madozzo Romay.pdf";
+
 
 export const handleWpp = (text) => {
   const phoneNumber = "5493816561404";
@@ -9,7 +9,7 @@ export const handleWpp = (text) => {
   );
 };
 
-export const handleDownloadPDF = () => {
-  const urlPDF = cv;
+export const handleCV = () => {
+  const urlPDF = "https://drive.google.com/drive/folders/1ZDjfgy3qh964PTwXnTNt-tQVEK8TtJZw?usp=sharing";
   window.open(urlPDF, "_blank", "noopener");
 };

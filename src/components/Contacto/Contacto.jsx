@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { handleDownloadPDF } from "../../helpers/handleFn";
+import { handleCV } from "../../helpers/handleFn";
 
 const Contacto = () => {
   const [copiado, setCopiado] = useState(false);
@@ -106,9 +106,9 @@ const Contacto = () => {
             </div>
           </a>
           <a
-            onClick={handleDownloadPDF}
-            title="Descargar CV"
-            className="w-full md:min-w-[320px] max-w-[320px] flex items-center gap-4 p-4 md:p-6 bg-white border rounded-2xl shadow-md hover:shadow-lg transition-all"
+            onClick={handleCV}
+            title="ver CV"
+            className="w-full cursor-pointer md:min-w-[320px] max-w-[320px] flex items-center gap-4 p-4 md:p-6 bg-white border rounded-2xl shadow-md hover:shadow-lg transition-all"
           >
             <i className="text-2xl text-[#2B7FF7] bi bi-file-earmark-person-fill"></i>
             <div className="flex flex-col">
