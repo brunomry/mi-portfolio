@@ -5,7 +5,7 @@ const CardProyecto = ({ proyecto }) => {
 
   return (
     <article className="relative bg-white rounded-2xl shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 w-full max-w-[480px] flex flex-col overflow-hidden">
-      <span className="absolute top-3 left-3 bg-[#2B7FF7] text-white text-xs font-bold px-3 py-1 rounded-full z-10 shadow-md">
+      <span className="absolute top-3 left-3 bg-[#000000] text-white text-xs font-bold px-3 py-1 rounded-full z-10 shadow-md">
         {proyecto.estado}
       </span>
       <img
@@ -16,7 +16,7 @@ const CardProyecto = ({ proyecto }) => {
       />
       <div className="p-5 flex flex-col gap-3">
         <div>
-          <h3 className="font-extrabold text-lg md:text-xl text-[#2B7FF7]">
+          <h3 className="font-extrabold text-lg md:text-xl text-[#000]">
             {proyecto.nombre}
           </h3>
           <p className="text-[#999] text-sm md:text-base mt-1">
@@ -29,7 +29,7 @@ const CardProyecto = ({ proyecto }) => {
             {tecnologiasPrincipales.map((tech, index) => (
               <span
                 key={index}
-                className="bg-[#E4F0FF] text-[#2B7FF7] px-3 py-1 rounded-md text-xs md:text-sm font-medium"
+                className="bg-gray-200 text-gray-600 px-3 py-1 rounded-md text-xs md:text-sm font-medium"
               >
                 {tech.name}
               </span>
@@ -41,7 +41,7 @@ const CardProyecto = ({ proyecto }) => {
             Última actualización:{" "}
             {proyecto.ultima_actualizacion || proyecto.fecha}
           </span>
-          <span className="font-semibold text-[#2B7FF7]">
+          <span className="font-semibold text-[#000]">
             {proyecto.proyecto}
           </span>
         </div>
@@ -51,7 +51,7 @@ const CardProyecto = ({ proyecto }) => {
               href={proyecto.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex gap-2 items-center text-sm md:text-base bg-[#24292f] border border-[#24292f] text-white px-3 py-1 rounded-md hover:bg-[#333] hover:border-[#333] transition"
+              className="flex gap-2 items-center text-sm md:text-base bg-gray-600 border border-gray-600 text-white px-3 py-1 rounded-md hover:bg-[#333] hover:border-[#333] transition"
             >
               Código <i className="bi bi-github text-base"></i>
             </a>
@@ -61,7 +61,7 @@ const CardProyecto = ({ proyecto }) => {
               href={proyecto.enlace}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex gap-2 items-center text-sm md:text-base bg-[#2B7FF7] border border-[#2B7FF7] text-white px-3 py-1 rounded-md hover:bg-[#1a5fcc] hover:border-[#1a5fcc] transition"
+              className="flex gap-2 items-center text-sm md:text-base bg-[#000] text-white border border-[#000] hover:bg-[#fff] px-3 py-1 rounded-md hover:border-[#000] hover:text-[#000] transition"
             >
               Web{" "}
               <i className="bi bi-box-arrow-up-right text-sm md:text-base"></i>

@@ -17,7 +17,7 @@ const NavbarPrincipal = () => {
     <header className="fixed top-0 left-0 w-full z-[99] bg-[#FFF]">
       <div className="flex justify-between md:justify-around items-center px-6 md:px-10 lg:px-20 h-[64px] md:h-[96px]">
         <a
-          className="text-[#0A0A0A] font-black text-sm"
+          className="text-[#0A0A0A] font-bold text-[12px]"
           href="#sobremi"
         >
           BM - Soluciones web
@@ -66,7 +66,7 @@ const NavbarPrincipal = () => {
               key={item}
               href={`#${item.toLowerCase()}`}
               onClick={closeMenu}
-              className="text-[#2B7FF7] text-2xl my-4 hover:text-[#1a5fcc] transition-colors"
+              className="text-[#000] text-2xl my-4 hover:text-gray-600 transition-colors"
             >
               {item}
             </a>

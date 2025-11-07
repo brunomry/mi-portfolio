@@ -19,43 +19,43 @@ const Contacto = () => {
       className="py-12 xl:py-20 2xl:py-40 px-4 md:px-8 lg:px-[100px] xl:px-[120px] 2xl:px-[150px]  flex flex-col gap-4 md:gap-12 min-h-[400px] xl:min-h-[450px] w-[100%] bg-[#FAFAFA] containerContact contact"
       id="contacto"
     >
-      <h2 className="font-extrabold text-[24px] md:text-[28px] xl:text-[32px] 2xl:text-[36px] text-[#1d2a4d]">
+      <h2 className="font-extrabold text-[24px] md:text-[28px] xl:text-[32px] 2xl:text-[36px] text-[#000] mb-4">
         Contacto
       </h2>
       <div className="flex flex-col lg:flex-row gap-6 md:gap-8 2xl:gap-20 ">
-        <div className=" flex flex-col gap-4 md:gap-8 2xl:gap-12 order-1 ">
+        <div className=" flex flex-col gap-8 md:gap-8 2xl:gap-12 order-1 ">
           <div className="flex flex-col md:gap-4  ">
-            <h2 className="font-bold md:font-black text-base lg:text-[20px] text-[#2B7FF7] leading-snug max-w-4xl">
+            <h2 className="font-bold md:font-black text-base text-[#000] leading-snug max-w-4xl">
               ¿Estás buscando a una persona con quien colaborar, realmente
               comprometida, con ganas de sumarse y aportar a un equipo?
             </h2>
-            <p className="text-[#555] text-sm md:text-base lg:text-md max-w-4xl font-light mt-2">
+            <p className="text-[#555] text-sm max-w-4xl font-light mt-2">
               ¡No dudes en escribirme! Estoy disponible para unirme y aportar
               mis conocimientos en proyectos web y más.
             </p>
           </div>
           <div className="flex flex-col md:gap-4 ">
-            <h2 className="font-bold md:font-black text-base lg:text-[20px] text-[#2B7FF7] leading-snug max-w-4xl">
+            <h2 className="font-bold md:font-black text-base text-[#000] leading-snug max-w-4xl">
               ¿Necesitas una web profesional para tu negocio?
             </h2>
-            <p className="text-[#555] text-sm md:text-base lg:text-md  max-w-4xl font-light mt-2">
+            <p className="text-[#555] text-sm  max-w-4xl font-light mt-2">
               Trabajemos juntos para mejorar tu presencia digital y llegar a más
               clientes.
             </p>
           </div>
           <div className="flex flex-col md:gap-4 ">
-            <h2 className="font-bold md:font-black text-base lg:text-[20px] text-[#2B7FF7] leading-snug max-w-4xl">
+            <h2 className="font-bold md:font-black text-base text-[#000] leading-snug max-w-4xl">
               ¿Quieres optimizar la gestión de tu negocio y tener todo
               centralizado en una sola aplicación?
             </h2>
-            <p className="text-[#555] text-sm md:text-base lg:text-md  max-w-4xl font-light mt-2">
+            <p className="text-[#555] text-sm max-w-4xl font-light mt-2">
               Puedo ayudarte a desarrollar soluciones web o apps que ahorren
               tiempo, automaticen tareas y te permitan gestionar tu negocio de
               manera más eficiente.
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-2 md:flex-row md:flex-wrap lg:flex-nowrap lg:flex-col md:gap-4 justify-start lg:items-stretch items-center md:order-1">
+        <div className="flex flex-col gap-2 md:flex-row md:flex-wrap lg:flex-nowrap lg:flex-col md:gap-4 justify-start lg:items-stretch items-center md:order-1 mb-8">
           <a
             onClick={copiarCorreo}
             className="relative w-full md:min-w-[300px] max-w-[320px] flex items-center gap-4 p-4 md:p-6 bg-white border rounded-2xl shadow-md hover:shadow-lg cursor-pointer transition-all"
@@ -84,7 +84,7 @@ const Contacto = () => {
           >
             <i className="text-2xl text-[#2B7FF7] bi bi-linkedin"></i>
             <div className="flex flex-col">
-              <span className="text-[#787777] text-sm">LinkedIn</span>
+              <span className="text-[#777878] text-sm">LinkedIn</span>
               <span className="text-[#0a0a0a] font-semibold text-sm md:text-base">
                 Bruno Madozzo
               </span>

@@ -12,7 +12,7 @@ const CardTecnologia = ({ tech }) => {
         alt={tech.name}
         className="w-[40px] h-[40px] md:w-[50px] md:h-[50px] lg:w-[60px] lg:h-[60px] iconTech"
       />
-      <figcaption className="text-[#2B7FF7] font-semibold text-sm md:text-base text-center">
+      <figcaption className="text-gray-600  text-sm  text-center">
         {tech.name}
       </figcaption>
     </figure>
