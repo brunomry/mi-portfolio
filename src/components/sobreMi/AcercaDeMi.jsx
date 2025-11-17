@@ -38,11 +38,10 @@ const AcercaDeMi = () => {
             Hola, soy Bruno Madozzo
           </h1>
           <h2 className="text-[18px] sm:text-[24px] lg:text-[28px] xl:text-[32px] 2xl:text-[44px] font-black text-[#000] leading-snug sm:text-left">
-            Desarrollador web
+            Desarrollador web con enfoque en frontend y estudiante de Ingeniería en Sistemas de Información
           </h2>
           <p className="text-[#555] text-sm md:text-base font-light sm:mt-2 md:mt-4 sm:text-left">
-            Desarrollador web con enfoque en Front-end y estudiante avanzado de
-            Ingeniería en Sistemas de Información. Me especializo en la creación
+            Me especializo en la creación
             de landing pages, sitios web y aplicaciones web optimizadas para un
             buen rendimiento y posicionamiento SEO.
           </p>
@@ -94,7 +93,7 @@ const AcercaDeMi = () => {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/brunomry/"
+              href="https://www.linkedin.com/in/bruno-madozzo"
               target="_blank"
               rel="noopener noreferrer"
               title="Mi LinkedIn"
