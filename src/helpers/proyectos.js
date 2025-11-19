@@ -215,7 +215,7 @@ const proyectos = [
     ],
     caracteristicasProyecto: [
       "Aplicación de Metodología Scrum",
-      "Arquitectura basada en dominios (Domain-Based Architecture / DDD)",
+      "Arquitectura basada en dominios",
     ],
     features: [
       "Registro e inicio de sesión de usuarios",

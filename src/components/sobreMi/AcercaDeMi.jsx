@@ -34,11 +34,11 @@ const AcercaDeMi = () => {
         lg:flex-row "
       >
         <div className="flex flex-col gap-4 lg:flex-1 order-1 md:order-1">
-          <h1 className="text-[20px] sm:text-[28px] lg:text-[32px] xl:text-[44px] 2xl:text-[64px] font-light leading-tight text-[#000] sm:text-left">
+          <h1 className="text-[20px] sm:text-[28px] lg:text-[32px] xl:text-[44px] 2xl:text-[64px] font-light leading-tight text-[#222] sm:text-left">
             Hola, soy Bruno Madozzo
           </h1>
-          <h2 className="text-[18px] sm:text-[24px] lg:text-[28px] xl:text-[32px] 2xl:text-[44px] font-black text-[#000] leading-snug sm:text-left">
-            Desarrollador web con enfoque en frontend y estudiante de Ingeniería en Sistemas de Información
+          <h2 className="text-[18px] sm:text-[24px] xl:text-[28px] font-light text-[#000] leading-snug sm:text-left">
+            Desarrollador web con enfoque en frontend y estudiante avanzado de Ingeniería en Sistemas de Información
           </h2>
           <p className="text-[#555] text-sm md:text-base font-light sm:mt-2 md:mt-4 sm:text-left">
             Me especializo en la creación
