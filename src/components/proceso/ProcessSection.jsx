@@ -14,7 +14,7 @@ const ProcessSection = () => (
         Te muestro cómo desarrollo tu proyecto paso a paso, con
         transparencia, control y soluciones adaptadas a tu negocio.
       </p>
-      <ol className="flex flex-wrap lg:gap-4 w-full">
+      <div className="flex flex-wrap lg:gap-4 w-full">
         {processSteps.map((step, index) => (
           <ProcessStep
             key={step.id}
@@ -25,7 +25,7 @@ const ProcessSection = () => (
             isLast={index === processSteps.length - 1}
           />
         ))}
-      </ol>
+      </div>
   </section>
 );
 
