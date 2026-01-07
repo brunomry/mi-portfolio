@@ -16,7 +16,7 @@ const ProjectDetail = () => {
   return (
     <section className="flex flex-col w-full min-h-screen px-4 pt-24 lg:pt-32 pb-24 sm:px-8 md:px-14 lg:px-24 xl:px-[150px] 2xl:px-[250px] bg-[#FAFAFA]">
       <Link
-        to="/projects"
+        to="/proyectos"
         className="flex items-center gap-2 text-[#555] hover:text-[#000] transition mb-6"
       >
         <i className="bi bi-arrow-left text-[20px]"></i>
@@ -66,7 +66,7 @@ const ProjectDetail = () => {
               <i className="bi bi-github"></i>
             </a>
           )}
-          {project.archivo && (
+          {project.file && (
             <a
               href={project.file}
               target="_blank"
@@ -88,19 +88,19 @@ const ProjectDetail = () => {
             caracteristica="Inicio"
             descripcion={project.date}
           />
-          <CCharacteristicsCard
+          <CharacteristicsCard
             caracteristica="Duración"
             descripcion={project.duration}
           />
-          <CCharacteristicsCard
+          <CharacteristicsCard
             caracteristica="Último cambio"
             descripcion={project.last_update}
           />
-          <CCharacteristicsCard
+          <CharacteristicsCard
             caracteristica="Proyecto"
             descripcion={project.project}
           />
-          <CCharacteristicsCard
+          <CharacteristicsCard
             caracteristica="Estado"
             descripcion={project.status}
           />
@@ -161,8 +161,8 @@ const ProjectDetail = () => {
             ))}
         </ul>
       </article>
-      {project.projectCharacteristics &&
-        project.projectCharacteristics.length > 0 && (
+      {project.characteristics &&
+        project.characteristics.length > 0 && (
           <article className="mt-4 bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-gray-100">
             <h2 className="text-xl md:text-2xl font-bold text-[#000] mb-6">
               Características del proyecto

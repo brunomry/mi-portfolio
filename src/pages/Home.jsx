@@ -8,6 +8,7 @@ import TechnologiesSection from "../components/tecnologias/TechnologiesSection";
 import CertificatesSection from "../components/Certificaciones/CertificatesSection";
 import ContactSection from "../components/Contacto/ContactSection";
 import BtnWpp from "../components/common/BtnWpp";
+import ProcessSection from "../components/proceso/ProcessSection";
 
 const Home = () => {
   const [scrollTop, setScrollTop] = useState(0);
@@ -29,6 +30,7 @@ const Home = () => {
         <ProjectsSection mostrar={false}></ProjectsSection>
         <ServicesSection></ServicesSection>
         <TechnologiesSection></TechnologiesSection>
+        <ProcessSection></ProcessSection>
         <CertificatesSection></CertificatesSection>
         <ContactSection></ContactSection>
         <Footer></Footer>

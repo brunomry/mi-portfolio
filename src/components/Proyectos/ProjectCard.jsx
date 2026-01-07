@@ -69,7 +69,7 @@ const ProjectCard= ({ project }) => {
           )}
 
           <Link
-            to={`/detalleproject/${project.id}`}
+            to={`/detalleproyecto/${project.id}`}
             className="flex gap-2 items-center text-sm md:text-base bg-[#f3f3f3] border border-[#ccc] text-[#555] px-3 py-1 rounded-md hover:bg-[#e6e6e6] transition"
           >
             Info <i className="bi bi-info-circle text-sm md:text-base"></i>

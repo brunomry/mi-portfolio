@@ -1,10 +1,10 @@
-import ChatIcon from "./icons/ChatIcon";
-import DocumentIcon from "./icons/DocumentIcon";
-import ComputerIcon from "./icons/ComputerIcon";
-import MagnifyingGlassIcon from "./icons/MagnifyingGlassIcon";
-import CheckIcon from "./icons/CheckIcon";
+import ChatIcon from "../components/common/Icons/ChatIcon";
+import CheckIcon from "../components/common/Icons/CheckIcon";
+import ComputerIcon from "../components/common/Icons/ComputerIcon";
+import DocumentIcon from "../components/common/Icons/DocumentIcon";
+import MagnifyingGlassIcon from "../components/common/Icons/MagnifyingGlassIcon";
 
-export const processSteps = [
+const processSteps = [
   {
     id: 1123124,
     title: "Consulta inicial",
@@ -36,3 +36,5 @@ export const processSteps = [
     Icon: CheckIcon,
   },
 ];
+
+export default processSteps;
