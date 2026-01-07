@@ -13,7 +13,7 @@ const ProcessStep = ({ stepNumber, title, description, Icon, isLast }) => (
     </div>
     <div
       className="bg-white p-6 rounded-lg shadow-md mt-4 md:mt-0
-                    w-full sm:w-[350px] md:w-[600px] lg:w-[800px]
+                    w-full sm:w-[350px] md:w-[600px] lg:w-[400px] xl:w-[500px] 2xl:w-[650px]
                     h-auto sm:h-[200px] md:h-[150px] lg:h-[150px]
                     flex flex-col"
     >
