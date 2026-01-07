@@ -8,7 +8,7 @@ const NavbarSecondary = () => {
           className="text-[#0A0A0A] font-black text-[12px] md:text-sm"
           to={"/"}
         >
-          BM - Soluciones web
+          BM Soluciones web
         </Link>
         <div className="w-fit">
         </div>

@@ -20,19 +20,20 @@ const NavbarPrincipal = () => {
           className="text-[#0A0A0A] font-bold text-[12px]"
           href="#sobremi"
         >
-          BM - Soluciones web
+          BM Soluciones web
         </a>
         <nav className="hidden md:flex items-center gap-8 md:gap-4 lg:gap-12 text-[#787777] text-sm ">
           {[
             "Proyectos",
             "Servicios",
             "Tecnologías",
+            "Mi Método",
             "Certificaciones",
             "Contacto",
           ].map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={`${item === "Mi Método" ? "#proceso" : `#${item.toLowerCase()}`}`}
               className="hover:text-[#2B7FF7] transition-colors"
             >
               {item}
@@ -59,12 +60,13 @@ const NavbarPrincipal = () => {
             "Proyectos",
             "Servicios",
             "Tecnologías",
+            "Mi Método",
             "Certificaciones",
             "Contacto",
           ].map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={`${item === "Mi Método" ? "#proceso" : `#${item.toLowerCase()}`}`}
               onClick={closeMenu}
               className="text-[#000] text-2xl my-4 hover:text-gray-600 transition-colors"
             >
