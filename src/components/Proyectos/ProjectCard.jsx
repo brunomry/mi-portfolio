@@ -1,32 +1,32 @@
 import { Link } from "react-router-dom";
 
-const CardProyecto = ({ proyecto }) => {
-  const tecnologiasPrincipales = proyecto.tecnologias.slice(0, 3);
+const ProjectCard= ({ project }) => {
+  const mainTech = project.technologies.slice(0, 3);
 
   return (
     <article className="relative bg-white rounded-2xl shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 w-full max-w-[480px] flex flex-col overflow-hidden">
       <span className="absolute top-3 left-3 bg-[#000000] text-white text-xs font-bold px-3 py-1 rounded-full z-10 shadow-md">
-        {proyecto.estado}
+        {project.status}
       </span>
       <img
-        src={proyecto.imagen}
-        alt={proyecto.nombre}
-        title={proyecto.nombre}
+        src={project.image}
+        alt={project.name}
+        title={project.name}
         className="w-full h-[240px] lg:h-[280px] object-cover rounded-t-2xl"
       />
       <div className="p-5 flex flex-col gap-3">
         <div>
           <h3 className="font-extrabold text-lg md:text-xl text-[#000]">
-            {proyecto.nombre}
+            {project.name}
           </h3>
           <p className="text-[#999] text-sm md:text-base mt-1">
-            {proyecto.categoria}
+            {project.category}
           </p>
         </div>
-        <p className="text-[#555] text-sm md:text-base">{proyecto.tipo}</p>
-        {tecnologiasPrincipales.length > 0 && (
+        <p className="text-[#555] text-sm md:text-base">{project.tipo}</p>
+        {mainTech.length > 0 && (
           <div className="flex flex-wrap gap-2 mt-2">
-            {tecnologiasPrincipales.map((tech, index) => (
+            {mainTech.map((tech, index) => (
               <span
                 key={index}
                 className="bg-gray-200 text-gray-600 px-3 py-1 rounded-md text-xs md:text-sm font-medium"
@@ -39,16 +39,16 @@ const CardProyecto = ({ proyecto }) => {
         <div className="flex items-center justify-between mt-3 text-xs md:text-sm text-[#999]">
           <span>
             Última actualización:{" "}
-            {proyecto.ultima_actualizacion || proyecto.fecha}
+            {project.last_update || project.date}
           </span>
           <span className="font-semibold text-[#000]">
-            {proyecto.proyecto}
+            {project.project}
           </span>
         </div>
         <div className="flex flex-wrap gap-2 mt-4">
-          {proyecto.github && (
+          {project.github && (
             <a
-              href={proyecto.github}
+              href={project.github}
               target="_blank"
               rel="noopener noreferrer"
               className="flex gap-2 items-center text-sm md:text-base bg-gray-600 border border-gray-600 text-white px-3 py-1 rounded-md hover:bg-[#333] hover:border-[#333] transition"
@@ -56,9 +56,9 @@ const CardProyecto = ({ proyecto }) => {
               Código <i className="bi bi-github text-base"></i>
             </a>
           )}
-          {proyecto.area === "frontend" && (
+          {project.area === "frontend" && (
             <a
-              href={proyecto.enlace}
+              href={project.link}
               target="_blank"
               rel="noopener noreferrer"
               className="flex gap-2 items-center text-sm md:text-base bg-[#000] text-white border border-[#000] hover:bg-[#fff] px-3 py-1 rounded-md hover:border-[#000] hover:text-[#000] transition"
@@ -69,7 +69,7 @@ const CardProyecto = ({ proyecto }) => {
           )}
 
           <Link
-            to={`/detalleproyecto/${proyecto.id}`}
+            to={`/detalleproject/${project.id}`}
             className="flex gap-2 items-center text-sm md:text-base bg-[#f3f3f3] border border-[#ccc] text-[#555] px-3 py-1 rounded-md hover:bg-[#e6e6e6] transition"
           >
             Info <i className="bi bi-info-circle text-sm md:text-base"></i>
@@ -80,4 +80,4 @@ const CardProyecto = ({ proyecto }) => {
   );
 };
 
-export default CardProyecto;
+export default ProjectCard;

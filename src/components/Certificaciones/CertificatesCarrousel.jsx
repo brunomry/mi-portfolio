@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 
-const CarruselCertificaciones = ({
+const CertificatesCarrousel = ({
   setVisible,
   visible,
-  certificadosActuales,
-  certificadoActual,
+  currentsCertificates,
+  currentCertificate,
 }) => {
-  const [posicionActual, setPosicionActual] = useState(certificadoActual);
+  const [posicionActual, setPosicionActual] = useState(currentCertificate);
 
   const closeCarousel = (e) => {
     if (e.target.matches(".noClose")) {
@@ -21,13 +21,13 @@ const CarruselCertificaciones = ({
 
   const handlePrev = () => {
     setPosicionActual((posicion) =>
-      posicion === 0 ? certificadosActuales.length - 1 : posicion - 1
+      posicion === 0 ? currentsCertificates.length - 1 : posicion - 1
     );
   };
 
   const handleNext = () => {
     setPosicionActual((posicion) =>
-      posicion === certificadosActuales.length - 1 ? 0 : posicion + 1
+      posicion === currentsCertificates.length - 1 ? 0 : posicion + 1
     );
   };
 
@@ -44,7 +44,7 @@ const CarruselCertificaciones = ({
           data-carousel-item
         >
           <img
-            src={certificadosActuales[posicionActual].img}
+            src={currentsCertificates[posicionActual].image}
             className="noClose block absolute max-w-full object-cover max-h-full border-[5px] md:border-[15px]"
             alt="..."
           />
@@ -110,4 +110,4 @@ const CarruselCertificaciones = ({
   );
 };
 
-export default CarruselCertificaciones;
+export default CertificatesCarrousel;

@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import ProyectsLayout from "../Layout/ProyectsLayout";
-import DetalleProyecto from "../pages/DetalleProyecto";
-import ProyectosVista from "../pages/ProyectosVista";
+import ProyectosVista from "../pages/ProjectsView";
+import ProjectDetail from "../pages/ProjectDetail";
 
 const ProyectsRouter = () => {
   return (
@@ -9,7 +9,7 @@ const ProyectsRouter = () => {
       <Routes>
         <Route
           path="/detalleproyecto/:id"
-          element={<DetalleProyecto />}
+          element={<ProjectDetail />}
         ></Route>
         <Route
           path="/proyectos"

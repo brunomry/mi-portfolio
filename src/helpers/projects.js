@@ -11,22 +11,22 @@ import buenbitcard from "../assets/proyectos/buenbitcard.png";
 
 import tfi from "../assets/proyectos/trabajofinal-diseñodesistemas.pdf";
 
-const proyectos = [
+const projects = [
   {
     id: 223,
-    imagen: rafter,
-    categoria: "Construcción",
-    nombre: "Rafter Constructora",
-    tipo: "Landing page",
+    image: rafter,
+    category: "Construcción",
+    name: "Rafter Constructora",
+    type: "Landing page",
     area: "frontend",
-    fecha: "Septiembre 2025",
-    duracion: "2 semanas",
-    ultima_actualizacion: "Octubre 2025",
-    estado: "En proceso",
-    proyecto: "Freelance",
-    descripcion:
+    date: "Septiembre 2025",
+    duration: "2 semanas",
+    last_update: "Octubre 2025",
+    status: "En proceso",
+    project: "Freelance",
+    description:
       "Landing page desarrollada para empresa de construcción de San Miguel de Tucumán con diseño moderno, responsive y optimización SEO.",
-    tecnologias: [
+    technologies: [
       { name: "Figma" },
       { name: "React" },
       { name: "TailwindCSS" },
@@ -40,36 +40,37 @@ const proyectos = [
       { name: "Google Search Console" },
       { name: "PageSpeed Insights" },
     ],
-    responsabilidades: [
+    responsabilities: [
       "Diseño de interfaz con Figma",
       "Posicionamiento en Google con palabras clave relevantes",
       "Integración con 'Sitio web' de Google My Business",
       "Gestión de dominio y hosting mediante Hostinger",
     ],
-    caracteristicasProyecto: [
+    characteristics: [
       "Diseño responsive con Tailwind",
       "Optimización SEO para buscadores",
     ],
     features: [],
     video: "",
     github: "",
-    enlace: "https://rafterconstructora.netlify.app/",
+    link: "https://rafterconstructora.netlify.app/",
   },
   {
     id: 222,
-    imagen: sanjorge,
-    categoria: "Alojamiento",
-    nombre: "Hostal San Jorge",
-    tipo: "Sitio web",
+    image: sanjorge,
+    category: "Alojamiento",
+    name: "Hostal San Jorge",
+    type: "Sitio web",
     area: "frontend",
-    fecha: "Enero 2024",
-    duracion: "8 semanas",
-    ultima_actualizacion: "Noviembre 2025",
-    estado: "Actualizando",
-    proyecto: "Freelance",
-    descripcion:
+    date: "Enero 2024",
+    duration: "8 semanas",
+    last_update: "Noviembre 2025",
+    status: "Actualizando",
+    project: "Freelance",
+    description:
       "Sitio web para mejorar la visibilidad online del Hostal San Jorge de Cafayate, donde los usuarios pueden informarse sobre habitaciones, servicios, realizar solicitudes de reservas mediante formulario y consultas por WhatsApp o formulario de contacto.",
-    tecnologias: [
+    technologies
+: [
       { name: "React" },
       { name: "TailwindCSS" },
       { name: "SEO" },
@@ -83,7 +84,7 @@ const proyectos = [
       { name: "Google Search Console" },
       { name: "PageSpeed Insights" },
     ],
-    responsabilidades: [
+    responsabilities: [
       "Posicionamiento en Google con palabras clave relevantes",
       "Optimización de velocidad y rendimiento de la app",
       "Formularios de contacto y reserva para usuarios",
@@ -92,7 +93,7 @@ const proyectos = [
       "Gestión de imágenes de alta calidad con fotógrafa",
       "Buenas prácticas semánticas",
     ],
-    caracteristicasProyecto: [
+    characteristics: [
       "Optimización SEO y rendimiento de la app",
       "Registro de dominio en Google Search Console",
       "Contratación de fotógrafa",
@@ -105,23 +106,24 @@ const proyectos = [
     ],
     video: "",
     github: "",
-    enlace: "https://hostalsanjorgecafayate.netlify.app/",
+    link: "https://hostalsanjorgecafayate.netlify.app/",
   },
   {
     id: 123,
-    imagen: ab,
-    categoria: "Restaurante",
-    nombre: "Ambiente Bohemio",
-    tipo: "Aplicación web",
+    image: ab,
+    category: "Restaurante",
+    name: "Ambiente Bohemio",
+    type: "Aplicación web",
     area: "frontend",
-    fecha: "Marzo 2024",
-    duracion: "4 semanas",
-    ultima_actualizacion: "Marzo 2025",
-    estado: "Actualizando",
-    proyecto: "Educativo",
-    descripcion:
+    date: "Marzo 2024",
+    duration: "4 semanas",
+    last_update: "Marzo 2025",
+    status: "Actualizando",
+    project: "Educativo",
+    description:
       "Aplicación web para restaurante donde los usuarios se registran, inician sesión y realizan pedidos online con integración de pago.",
-    tecnologias: [
+    technologies
+: [
       { name: "React" },
       { name: "Bootstrap5" },
       { name: "Javascript" },
@@ -141,44 +143,45 @@ const proyectos = [
       { name: "Draw.io" },
       { name: "Postman" },
     ],
-    responsabilidades: [
+    responsabilities: [
       "Rol de scrummaster: organización de backlog, descripción de tareas y guía del equipo.",
-      "Mejoras de diseño, funcionalidad de pago y estructura de proyecto (octubre 2024).",
+      "Mejoras de diseño, funcionalidad de pago y estructura de project (octubre 2024).",
       "Mockups de interfaces con Draw.io.",
       "Maquetado de páginas: Inicio, Detalle producto, Administración, Historial de pedidos.",
-      "Funcionalidades: listado de productos por categoría, filtrado por nombre, descarga de PDF en menú.",
+      "Funcionalidades: listado de productos por categoría, filtrado por name, descarga de PDF en menú.",
       "Colaboración en integración de API de MercadoPago para pagos.",
     ],
-    caracteristicasProyecto: ["Aplicación de Metodología Scrumban"],
+    characteristics: ["Aplicación de Metodología Scrumban"],
     features: [
       "Registro e inicio de sesión de usuarios",
       "Visualización de productos",
       "Carrito de compras y pago con MercadoPago",
-      "Filtrado de productos por categoría o nombre",
+      "Filtrado de productos por categoría o name",
       "Descarga de PDF del menú",
       "Gestión de usuarios, productos y pedidos",
       "Backend con despliegue en Vercel y API en Node/Express",
     ],
     video: "",
     github: "https://github.com/brunomry/frontendProyectoFinal_RollingCode",
-    enlace: "https://ambiente-bohemio-restaurante.netlify.app/",
+    link: "https://ambiente-bohemio-restaurante.netlify.app/",
   },
 
   {
     id: 111,
-    imagen: laburandoando,
-    categoria: "Portal de Trabajo",
-    nombre: "LaburandoAndo",
-    tipo: "Aplicación web",
+    image: laburandoando,
+    category: "Portal de Trabajo",
+    name: "LaburandoAndo",
+    type: "Aplicación web",
     area: "frontend",
-    fecha: "Julio 2024",
-    duracion: "6 semanas",
-    ultima_actualizacion: "-",
-    estado: "Finalizado",
-    proyecto: "Educativo",
-    descripcion:
-      "Esta idea de proyecto surge de la necesidad de contar con un portal específico que pueda reunir una amplia variedad de trabajos autónomos, brindando visibilidad y oportunidades a profesionales independientes que buscan ampliar su clientela y conectar con nuevos clientes. La aplicación está diseñada para facilitar la búsqueda y contratación de servicios.",
-    tecnologias: [
+    date: "Julio 2024",
+    duration: "6 semanas",
+    last_update: "-",
+    status: "Finalizado",
+    project: "Educativo",
+    description:
+      "Esta idea de project surge de la necesidad de contar con un portal específico que pueda reunir una amplia variedad de trabajos autónomos, brindando visibilidad y oportunidades a profesionales independientes que buscan ampliar su clientela y conectar con nuevos clientes. La aplicación está diseñada para facilitar la búsqueda y contratación de servicios.",
+    technologies
+: [
       { name: "React" },
       { name: "Redux-Toolkit" },
       { name: "Bootstrap5" },
@@ -202,7 +205,7 @@ const proyectos = [
       { name: "Trello" },
       { name: "Scrum" },
     ],
-    responsabilidades: [
+    responsabilities: [
       "Scrummaster: definición de sprints, organización del backlog y descripción de tareas.",
       "Mockups de interfaces con Draw.io.",
       "Definición de requerimientos de usuario",
@@ -213,7 +216,7 @@ const proyectos = [
       "Resolución de issues en github",
       "Implementación de arquitectura basada en dominios (DDD)",
     ],
-    caracteristicasProyecto: [
+    characteristics: [
       "Aplicación de Metodología Scrum",
       "Arquitectura basada en dominios",
     ],
@@ -224,7 +227,7 @@ const proyectos = [
       "Visualización detallada de anuncio de profesional",
       "Gestión de perfil para profesionales",
       "Gestión de publicaciones para profesionales",
-      "Filtrado de profesionales por nombre, ubicación y categoría",
+      "Filtrado de profesionales por name, ubicación y categoría",
       "Publicación de comentario y valoración para clientes",
       "Envío de mensajes de soporte para profesionales",
       "Gestión de mensajes reportados por profesionales",
@@ -232,66 +235,68 @@ const proyectos = [
     ],
     video: "",
     github: "https://github.com/brunomry/LaburandoAndo",
-    enlace: "https://laburando-ando.netlify.app/",
+    link: "https://laburando-ando.netlify.app/",
   },
   {
     id: 666,
-    imagen: imgtfi,
-    categoria: "Documentación",
-    nombre: "Sistema de Gestión de Reservas - Hostal San Jorge",
-    tipo: "Análisis y Diseño de sistemas",
+    image: imgtfi,
+    category: "Documentación",
+    name: "Sistema de Gestión de Reservas - Hostal San Jorge",
+    type: "Análisis y Diseño de sistemas",
     area: "universidad",
-    fecha: "Noviembre 2020",
-    duracion: "5 meses",
-    ultima_actualizacion: "-",
-    estado: "Finalizado",
-    proyecto: "Educativo",
-    descripcion:
-      "Proyecto académico orientado al diseño de un sistema de gestión de reservas para el Hostal San Jorge. Incluye análisis de requerimientos, casos de uso, modelado UML, diseño de base de datos y prototipos de interfaz.",
-    tecnologias: [
+    date: "Noviembre 2020",
+    duration: "5 meses",
+    last_update: "-",
+    status: "Finalizado",
+    project: "Educativo",
+    description:
+      "Proyecto académico orientado al diseño de un sistema de gestión de reservas para el Hostal San Jorge. Incluye análisis de requerimientos, casos de uso, modelado UML, diseño de base de datos y prototypes de interfaz.",
+    technologies
+: [
       { name: "Análisis de requerimientos" },
       { name: "Casos de uso" },
       { name: "Modelado UML" },
       { name: "Modelado de base de datos" },
-      { name: "Prototipos de interfaz" },
+      { name: "Prototypes de interfaz" },
       { name: "Draw.io" },
       { name: "Documentación técnica" },
       { name: "Balsamiq" },
     ],
-    responsabilidades: [
+    responsabilities: [
       "Relevamiento de requerimientos.",
       "Redacción de casos de uso y contratos",
-      "Diagramas UML: diagrama de casos de uso, modelo de dominio, diagrama de actividades, diagrama de clases, diagramas de secuencia, diagramas de colaboración, diagrama de transición de estados.",
+      "Diagramas UML: diagrama de casos de uso, modelo de dominio, diagrama de actividades, diagrama de clases, diagramas de secuencia, diagramas de colaboración, diagrama de transición de statuss.",
       "Modelado de base de datos (Modelo Entidad-Relación y Modelo relacional).",
-      "Diseño de prototipos de interfaz del sistema.",
-      "Contribución a la documentación general del proyecto final.",
+      "Diseño de prototypes de interfaz del sistema.",
+      "Contribución a la documentación general del project final.",
     ],
     features: [],
-    caracteristicasProyecto: [
+    characteristics: [
       "Sistema propuesto para gestionar reservas, clientes y habitaciones.",
       "Casos de uso detallados para cada módulo del sistema.",
       "Modelos UML completos para visualizar procesos y entidades.",
     ],
     video: "",
-    archivo: tfi,
+    file: tfi,
     github: "",
-    enlace: "",
+    link: "",
   },
   {
     id: 777,
-    imagen: ab,
-    categoria: "Restaurante",
-    nombre: "API Restaurante Ambiente Bohemio",
-    tipo: "API REST",
+    image: ab,
+    category: "Restaurante",
+    name: "API Restaurante Ambiente Bohemio",
+    type: "API REST",
     area: "backend",
-    fecha: "Marzo 2024",
-    duracion: "4 semanas",
-    ultima_actualizacion: "Octubre 2025",
-    estado: "Actualizando",
-    proyecto: "Educativo",
-    descripcion:
+    date: "Marzo 2024",
+    duration: "4 semanas",
+    last_update: "Octubre 2025",
+    status: "Actualizando",
+    project: "Educativo",
+    description:
       "API RESTful desarrollada para gestionar un restaurante, incluyendo usuarios, productos, pedidos y autenticación, con buenas prácticas de organización de rutas y controladores.",
-    tecnologias: [
+    technologies
+: [
       { name: "Node js" },
       { name: "Express js" },
       { name: "Express-validator" },
@@ -303,7 +308,7 @@ const proyectos = [
       { name: "Postman" },
       { name: "JWT" },
     ],
-    responsabilidades: [
+    responsabilities: [
       "Implementación de rutas y controladores para usuarios, productos y pedidos.",
       "Gestión de autenticación y autorización de usuarios.",
       "Validación de datos y manejo de errores.",
@@ -315,26 +320,27 @@ const proyectos = [
       "Endpoints organizados y documentados para fácil integración con frontend.",
       "Validaciones y manejo de errores completo.",
     ],
-    caracteristicasProyecto: ["Aplicación de Metodología Scrum", "Despliegue en Vercel"],
+    characteristics: ["Aplicación de Metodología Scrum", "Despliegue en Vercel"],
     video: "",
     github: "https://github.com/brunomry/API_restaurante",
-    enlace: "",
+    link: "",
   },
   {
     id: 888,
-    imagen: netflixcard,
-    categoria: "Interfaz mobile en Figma",
-    nombre: "Vista principal Instagram - Netflix",
-    tipo: "Diseño UI",
+    image: netflixcard,
+    category: "Interfaz mobile en Figma",
+    name: "Vista principal Instagram - Netflix",
+    type: "Diseño UI",
     area: "ui",
-    fecha: "Mayo 2025",
-    duracion: "1 semana",
-    ultima_actualizacion: "-",
-    estado: "Finalizado",
-    proyecto: "Educativo",
-    descripcion:
+    date: "Mayo 2025",
+    duration: "1 semana",
+    last_update: "-",
+    status: "Finalizado",
+    project: "Educativo",
+    description:
       "Desafío de diseño propuesto en curso de youtube sobre Figma brindado por uxcristopher que consistía en diseñar la interfaz principal de Instagram y Netflix.",
-    tecnologias: [
+    technologies
+: [
       { name: "Figma" },
       { name: "Atomic design" },
       { name: "Plugins" },
@@ -342,14 +348,14 @@ const proyectos = [
       { name: "Tipografía" },
       { name: "Paleta de colores" },
     ],
-    responsabilidades: [
+    responsabilities: [
       "Primeros diseños en Figma",
       "Creación de componentes reutilizables",
       "Práctica de metodología Atomic design",
       "Diseño replicado de aplicaciones reconocidas (Netflix/Instagram)",
     ],
     features: [],
-    caracteristicasProyecto: [
+    characteristics: [
       "Diseño de interfaz principal de Instagram y Netflix",
       "Aplicación de metodología Atomic Design",
       "Organización de componentes",
@@ -358,24 +364,25 @@ const proyectos = [
     video: "",
     github: "",
     images: [ig, netflix],
-    enlace:
+    link:
       "https://www.figma.com/design/2DxaPRLCWwSmJjCte0qdm8/Dise%C3%B1os?node-id=0-1&t=iT0lRymaWSvM4QJJ-1",
   },
   {
     id: 999,
-    imagen: buenbitcard,
-    categoria: "Interfaz mobile en Figma",
-    nombre: "Vista Home - App BuenBit",
-    tipo: "Diseño UI",
+    image: buenbitcard,
+    category: "Interfaz mobile en Figma",
+    name: "Vista Home - App BuenBit",
+    type: "Diseño UI",
     area: "ui",
-    fecha: "Agosto 2025",
-    duracion: "3 días",
-    ultima_actualizacion: "-",
-    estado: "Finalizado",
-    proyecto: "Educativo",
-    descripcion:
+    date: "Agosto 2025",
+    duration: "3 días",
+    last_update: "-",
+    status: "Finalizado",
+    project: "Educativo",
+    description:
       "Desafío de diseño propuesto por BuenBit que consistía en realizar un diseño original de la Home de su aplicación y publicarlo en X con el hashtag #FigmaEnBuenBit. El desafío estaba pensado para diseñadores pero cualquier persona podía participar.",
-    tecnologias: [
+    technologies
+: [
       { name: "Figma" },
       { name: "Atomic design" },
       { name: "Plugins" },
@@ -383,7 +390,7 @@ const proyectos = [
       { name: "Tipografía" },
       { name: "Paleta de colores" },
     ],
-    responsabilidades: [
+    responsabilities: [
       "Desafío de diseño",
       "Publicación en X con hashtag #FigmaEnBuenBit",
       "Creación de componentes reutilizables",
@@ -391,7 +398,7 @@ const proyectos = [
       "Diseño inspirado en la Home de app BuenBit",
     ],
     features: [],
-    caracteristicasProyecto: [
+    characteristics: [
       "Diseño de la Home de BuenBit",
       "Aplicación de metodología Atomic Design",
       "Organización de componentes",
@@ -400,9 +407,9 @@ const proyectos = [
     images: [buenbit],
     video: "",
     github: "",
-    enlace:
+    link:
       "https://www.figma.com/design/joPj1Ky1SUs3O37tQVotqg/HomeBuenbit?node-id=1-689&t=ar7HVNYCBf2uByns-1",
   },
 ];
 
-export default proyectos;
+export default projects;

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { handleCV } from "../../helpers/handleFn";
 
-const Contacto = () => {
+const ContactSection = () => {
   const [copiado, setCopiado] = useState(false);
 
   const copiarCorreo = () => {
@@ -127,4 +127,4 @@ const Contacto = () => {
   );
 };
 
-export default Contacto;
+export default ContactSection;

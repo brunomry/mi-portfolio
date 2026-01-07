@@ -1,7 +1,7 @@
-import CardCertificacion from "./CardCertificacion";
-import certificados from "../../helpers/certificados";
+import certifications from "../../helpers/certificates";
+import CertificationCard from "./CertificateCard";
 
-const Certificaciones = () => {
+const CertificatesSection = () => {
   return (
     <article
       className="py-12 xl:py-20 2xl:py-40 px-4 md:px-8 lg:px-[100px] xl:px-[120px] 2xl:px-[150px] w-[100%] bg-[#FFF] flex flex-col gap-4 md:gap-6 lg:gap-8 xl:gap-12"
@@ -14,10 +14,10 @@ const Certificaciones = () => {
         Estas son las certificaciones obtenidas a lo largo de mi formación académica.
       </p>
       <div className="flex flex-wrap gap-6 justify-start">
-        {certificados.map((certificado, index) => (
-          <CardCertificacion
-            key={certificado.id}
-            certificado={certificado}
+        {certifications.map((certificate, index) => (
+          <CertificationCard
+            key={certificate.id}
+            certificate={certificate}
             index={index}
           />
         ))}
@@ -26,4 +26,4 @@ const Certificaciones = () => {
   );
 };
 
-export default Certificaciones;
+export default CertificatesSection;

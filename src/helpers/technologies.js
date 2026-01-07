@@ -17,7 +17,7 @@ import mongodb from "../assets/iconos/mongodb.svg";
 import postman from "../assets/iconos/postman.svg";
 import mongoose from "../assets/iconos/mongoose.svg";
 
-const tecnologias = {
+const technologies = {
   frontend: [
     { name: "HTML5", icon: html5 },
     { name: "CSS3", icon: css3 },
@@ -47,4 +47,4 @@ const tecnologias = {
   ],
 };
 
-export default tecnologias;
+export default technologies;

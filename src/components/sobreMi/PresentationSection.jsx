@@ -1,6 +1,6 @@
 import perfil from "../../assets/perfil.webp";
 
-const AcercaDeMi = () => {
+const PresentationSection = () => {
   const habilidades = [
     "React",
     "Redux Toolkit",
@@ -127,4 +127,4 @@ const AcercaDeMi = () => {
   );
 };
 
-export default AcercaDeMi;
+export default PresentationSection;

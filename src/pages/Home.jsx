@@ -1,12 +1,12 @@
 import Footer from "../components/common/Footer";
 import NavbarPrincipal from "../components/common/NavbarPrincipal";
 import { useEffect, useState } from "react";
-import Contacto from "../components/Contacto/Contacto";
-import Servicios from "../components/servicios/Servicios";
-import Certificaciones from "../components/Certificaciones/Certificaciones";
-import Proyectos from "../components/Proyectos/Proyectos";
-import Tecnologias from "../components/tecnologias/Tecnologias";
-import AcercaDeMi from "../components/sobreMi/AcercaDeMi";
+import PresentationSection from "../components/sobreMi/PresentationSection";
+import ProjectsSection from "../components/Proyectos/ProjectsSection";
+import ServicesSection from "../components/servicios/ServicesSection";
+import TechnologiesSection from "../components/tecnologias/TechnologiesSection";
+import CertificatesSection from "../components/Certificaciones/CertificatesSection";
+import ContactSection from "../components/Contacto/ContactSection";
 import BtnWpp from "../components/common/BtnWpp";
 
 const Home = () => {
@@ -25,12 +25,12 @@ const Home = () => {
         id="section"
         className="w-[100%] absolute min-h-screen lg:w-[100%] xl:w-[100%]  bg-[#FAFAFA] flex flex-col justify-center items-center flex-grow  pt-2 xl:pt-3"
       >
-        <AcercaDeMi></AcercaDeMi>
-        <Proyectos mostrar={false}></Proyectos>
-        <Servicios></Servicios>
-        <Tecnologias></Tecnologias>    
-        <Certificaciones></Certificaciones>
-        <Contacto></Contacto>
+        <PresentationSection></PresentationSection>
+        <ProjectsSection mostrar={false}></ProjectsSection>
+        <ServicesSection></ServicesSection>
+        <TechnologiesSection></TechnologiesSection>
+        <CertificatesSection></CertificatesSection>
+        <ContactSection></ContactSection>
         <Footer></Footer>
         {/* {scrollTop > 0 && (
           <a

@@ -1,13 +1,13 @@
 import { useState } from "react";
-import CarruselCertificaciones from "./CarruselCertificaciones";
-import certificados from "../../helpers/certificados";
+import certificates from "../../helpers/certificates";
+import CertificatesCarrousel from "./CertificatesCarrousel";
 
-const CardCertificacion = ({ certificado, index }) => {
+const CertificateCard = ({ certificate, index }) => {
   const [visible, setVisible] = useState(false);
-  const [certificadoActual, setCertificadoActual] = useState(0);
+  const [currentCertificate, setCurrentCertificate] = useState(0);
 
   const openCarousel = (index) => {
-    setCertificadoActual(index);
+    setCurrentCertificate(index);
     setVisible(true);
   };
 
@@ -23,14 +23,12 @@ const CardCertificacion = ({ certificado, index }) => {
         <div className="flex flex-col justify-between h-full">
           <div className="flex flex-col gap-2">
             <p className="text-[#555] text-sm md:text-base">
-              {certificado.fechaInicio} - {certificado.fechaFin}
+              {certificate.startDate} - {certificate.endDate}
             </p>
             <h5 className="font-extrabold text-[#000] text-base xl:text-lg 2xl:text-xl">
-              {certificado.titulo}
+              {certificate.title}
             </h5>
-            <p className="text-[#777] text-sm ">
-              {certificado.org}
-            </p>
+            <p className="text-[#777] text-sm ">{certificate.org}</p>
           </div>
 
           <button
@@ -43,15 +41,15 @@ const CardCertificacion = ({ certificado, index }) => {
         </div>
       </div>
       {visible && (
-        <CarruselCertificaciones
+        <CertificatesCarrousel
           setVisible={setVisible}
           visible={visible}
-          certificadosActuales={certificados}
-          certificadoActual={certificadoActual}
+          currentsCertificates={certificates}
+          currentCertificate={currentCertificate}
         />
       )}
     </>
   );
 };
 
-export default CardCertificacion;
+export default CertificateCard;

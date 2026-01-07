@@ -1,7 +1,7 @@
-import CardServicio from "./CardServicio";
-import servicios from "../../helpers/servicios";
+import servicios from "../../helpers/services";
+import ServiceCard from "./ServiceCard";
 
-function Servicios() {
+function ServicesSection() {
   return (
     <section
       id="servicios"
@@ -21,12 +21,12 @@ function Servicios() {
         Desde el diseño visual hasta la implementación funcional.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 xl:gap-8  w-full">
-        {servicios.map((servicio) => (
-          <CardServicio key={servicio.id} servicio={servicio} />
+        {servicios.map((service) => (
+          <ServiceCard key={service.id} service={service} />
         ))}
       </div>
     </section>
   );
 }
 
-export default Servicios;
+export default ServicesSection;
