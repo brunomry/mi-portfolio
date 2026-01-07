@@ -14,7 +14,7 @@ const ProcessSection = () => (
         Te muestro cómo desarrollo tu proyecto paso a paso, con
         transparencia, control y soluciones adaptadas a tu negocio.
       </p>
-      <div className="flex flex-wrap lg:gap-4 w-full">
+      <div className="grid grid-cols-1 xl:grid-cols-2 lg:gap-4 w-full">
         {processSteps.map((step, index) => (
           <ProcessStep
             key={step.id}
