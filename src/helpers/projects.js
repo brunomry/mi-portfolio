@@ -10,6 +10,8 @@ import buenbit from "../assets/proyectos/buenbit.png";
 import buenbitcard from "../assets/proyectos/buenbitcard.png";
 
 import tfi from "../assets/proyectos/trabajofinal-diseñodesistemas.pdf";
+import lavanderia from "../assets/proyectos/lavanderia.jpg";
+import alojamientos from "../assets/proyectos/alojamientos.jpg";
 
 const projects = [
   {
@@ -19,9 +21,9 @@ const projects = [
     name: "Rafter Constructora",
     type: "Landing page",
     area: "frontend",
-    date: "Septiembre 2025",
+    date: "Noviembre 2025",
     duration: "2 semanas",
-    last_update: "Octubre 2025",
+    last_update: "Diciembre 2025",
     status: "En proceso",
     project: "Freelance",
     description:
@@ -36,7 +38,7 @@ const projects = [
       { name: "CSS3" },
       { name: "Git" },
       { name: "Github" },
-      { name: "Hostinger" },
+      { name: "DonWeb" },
       { name: "Google Search Console" },
       { name: "PageSpeed Insights" },
     ],
@@ -44,10 +46,10 @@ const projects = [
       "Diseño de interfaz con Figma",
       "Posicionamiento en Google con palabras clave relevantes",
       "Integración con 'Sitio web' de Google My Business",
-      "Gestión de dominio y hosting mediante Hostinger",
+      "Gestión de dominio y hosting mediante Netflify y DonWeb",
     ],
     characteristics: [
-      "Diseño responsive con Tailwind",
+      "Diseño responsive con TailwindCSS",
       "Optimización SEO para buscadores",
     ],
     features: [],
@@ -69,8 +71,7 @@ const projects = [
     project: "Freelance",
     description:
       "Sitio web para mejorar la visibilidad online del Hostal San Jorge de Cafayate, donde los usuarios pueden informarse sobre habitaciones, servicios, realizar solicitudes de reservas mediante formulario y consultas por WhatsApp o formulario de contacto.",
-    technologies
-: [
+    technologies: [
       { name: "React" },
       { name: "TailwindCSS" },
       { name: "SEO" },
@@ -122,8 +123,7 @@ const projects = [
     project: "Educativo",
     description:
       "Aplicación web para restaurante donde los usuarios se registran, inician sesión y realizan pedidos online con integración de pago.",
-    technologies
-: [
+    technologies: [
       { name: "React" },
       { name: "Bootstrap5" },
       { name: "Javascript" },
@@ -145,7 +145,7 @@ const projects = [
     ],
     responsabilities: [
       "Rol de scrummaster: organización de backlog, descripción de tareas y guía del equipo.",
-      "Mejoras de diseño, funcionalidad de pago y estructura de project (octubre 2024).",
+      "Mejoras de diseño, funcionalidad de pago y estructura de proyecto (octubre 2024).",
       "Mockups de interfaces con Draw.io.",
       "Maquetado de páginas: Inicio, Detalle producto, Administración, Historial de pedidos.",
       "Funcionalidades: listado de productos por categoría, filtrado por name, descarga de PDF en menú.",
@@ -179,9 +179,8 @@ const projects = [
     status: "Finalizado",
     project: "Educativo",
     description:
-      "Esta idea de project surge de la necesidad de contar con un portal específico que pueda reunir una amplia variedad de trabajos autónomos, brindando visibilidad y oportunidades a profesionales independientes que buscan ampliar su clientela y conectar con nuevos clientes. La aplicación está diseñada para facilitar la búsqueda y contratación de servicios.",
-    technologies
-: [
+      "Esta idea de proyecto surge de la necesidad de contar con un portal específico que pueda reunir una amplia variedad de trabajos autónomos, brindando visibilidad y oportunidades a profesionales independientes que buscan ampliar su clientela y conectar con nuevos clientes. La aplicación está diseñada para facilitar la búsqueda y contratación de servicios.",
+    technologies: [
       { name: "React" },
       { name: "Redux-Toolkit" },
       { name: "Bootstrap5" },
@@ -214,7 +213,7 @@ const projects = [
       "Funcionalidades: Visualización de comentarios, eliminación de comentarios como admin, creación de publicaciones y perfil profesional.",
       "Implementación de buenas prácticas semánticas",
       "Resolución de issues en github",
-      "Implementación de arquitectura basada en dominios (DDD)",
+      "Implementación de lineamientos de arquitectura basada en dominios",
     ],
     characteristics: [
       "Aplicación de Metodología Scrum",
@@ -227,7 +226,7 @@ const projects = [
       "Visualización detallada de anuncio de profesional",
       "Gestión de perfil para profesionales",
       "Gestión de publicaciones para profesionales",
-      "Filtrado de profesionales por name, ubicación y categoría",
+      "Filtrado de profesionales por nombre, ubicación y categoría",
       "Publicación de comentario y valoración para clientes",
       "Envío de mensajes de soporte para profesionales",
       "Gestión de mensajes reportados por profesionales",
@@ -250,14 +249,13 @@ const projects = [
     status: "Finalizado",
     project: "Educativo",
     description:
-      "Proyecto académico orientado al diseño de un sistema de gestión de reservas para el Hostal San Jorge. Incluye análisis de requerimientos, casos de uso, modelado UML, diseño de base de datos y prototypes de interfaz.",
-    technologies
-: [
+      "Proyecto académico orientado al diseño de un sistema de gestión de reservas para el Hostal San Jorge. Incluye análisis de requerimientos, casos de uso, modelado UML, diseño de base de datos y prototipos de interfaz.",
+    technologies: [
       { name: "Análisis de requerimientos" },
       { name: "Casos de uso" },
       { name: "Modelado UML" },
       { name: "Modelado de base de datos" },
-      { name: "Prototypes de interfaz" },
+      { name: "Prototipos de interfaz" },
       { name: "Draw.io" },
       { name: "Documentación técnica" },
       { name: "Balsamiq" },
@@ -265,10 +263,10 @@ const projects = [
     responsabilities: [
       "Relevamiento de requerimientos.",
       "Redacción de casos de uso y contratos",
-      "Diagramas UML: diagrama de casos de uso, modelo de dominio, diagrama de actividades, diagrama de clases, diagramas de secuencia, diagramas de colaboración, diagrama de transición de statuss.",
+      "Diagramas UML: diagrama de casos de uso, modelo de dominio, diagrama de actividades, diagrama de clases, diagramas de secuencia, diagramas de colaboración, diagrama de transición de estados.",
       "Modelado de base de datos (Modelo Entidad-Relación y Modelo relacional).",
-      "Diseño de prototypes de interfaz del sistema.",
-      "Contribución a la documentación general del project final.",
+      "Diseño de prototipos de interfaz del sistema.",
+      "Contribución a la documentación general del proyecto final.",
     ],
     features: [],
     characteristics: [
@@ -282,10 +280,105 @@ const projects = [
     link: "",
   },
   {
+    id: 779,
+    image: lavanderia,
+    category: "Lavandería",
+    name: "API Restful para Lavanderías",
+    type: "API REST",
+    area: "backend",
+    date: "Noviembre 2025",
+    duration: "4 semanas",
+    last_update: "Enero 2026",
+    status: "En continuo desarrollo",
+    project: "Freelance",
+    description:
+      "API RESTful desarrollada para la gestión interna de lavanderías. En esta API se pueden gestionar órdenes, prendas, clientes y usuarios administradores, generación de remitos mediante Pureimage y almacenamiento con Cloudinary, autenticación segura y validaciones robustas. La API está diseñada para optimizar las operaciones diarias de una lavandería. Se encuentra en continuo desarrollo para agregar nuevas funcionalidades según las necesidades del cliente.",
+    technologies: [
+      { name: "Node js" },
+      { name: "Express js" },
+      { name: "Express validator" },
+      { name: "MongoDB" },
+      { name: "Mongoose" },
+      { name: "Javascript" },
+      { name: "Git" },
+      { name: "Github" },
+      { name: "Postman" },
+      { name: "JSON Web Token" },
+      { name: "Cloudinary" },
+      { name: "Bcrypt" },
+      { name: "Pureimage" },
+    ],
+    responsabilities: [
+      "Implementación de rutas, controladores, servicios, repositorios y valiaciones para ordenes, prendas, clientes y usuarios administradores.",
+      "Gestión de autenticación y autorización de usuarios administradores.",
+      "Validación de datos y manejo de errores.",
+      "Pruebas de API con Postman y documentación de endpoints.",
+    ],
+    features: [
+      "CRUD de ordenes, prendas, clientes y usuarios.",
+      "Autenticación con tokens JWT.",
+      "Endpoints organizados y documentados para fácil integración con frontend.",
+      "Validaciones y manejo de errores completo.",
+    ],
+    characteristics: [],
+    video: "",
+    github: "",
+    link: "",
+  },
+  {
+    id: 770,
+    image: alojamientos,
+    category: "Alojamientos",
+    name: "API Restful para Alojamientos",
+    type: "API REST",
+    area: "backend",
+    date: "Octubre 2025",
+    duration: "8 semanas",
+    last_update: "Diciembre 2025",
+    status: "En continuo desarrollo",
+    project: "Freelance",
+    description:
+      "API RESTful desarrollada para la gestión interna de alojamientos. En esta API se pueden gestionar servicios/comodidades, habitaciones, tipos de habitaciones, reservas, estadías, pagos, métodos de pago, canales de reservas, huéspedes, administradores y autenticación para administradores y huéspedes. La API está diseñada para optimizar todos los procesos de un alojamiento. Además también permitirá que los usuarios puedan realizar reservas. Se encuentra en continuo desarrollo para agregar nuevas funcionalidades como reportes, gestión de stock, gestión de promociones/descuentos, notificaciones, turnos para el desayuno, entre otras.",
+    technologies: [
+      { name: "Node js" },
+      { name: "Express js" },
+      { name: "Express validator" },
+      { name: "MongoDB" },
+      { name: "Mongoose" },
+      { name: "Javascript" },
+      { name: "Git" },
+      { name: "Github" },
+      { name: "Postman" },
+      { name: "JSON Web Token" },
+      { name: "Nodemailer" },
+      { name: "Cloudinary" },
+      { name: "MercadoPago" },
+      { name: "Stripe" },
+      { name: "Bcrypt" },
+      { name: "Cookie-parser" },
+    ],
+    responsabilities: [
+      "Implementación de rutas, controladores, servicios, repositorios y valiaciones para autenticación, servicios/comodidades, habitaciones, tipos de habitaciones, reservas, estadías, pagos, métodos de pago, canales de reservas, huéspedes y usuarios administradores.",
+      "Gestión de autenticación y autorización de usuarios administradores y huéspedes.",
+      "Validación de datos y manejo de errores.",
+      "Pruebas de API con Postman y documentación de endpoints.",
+    ],
+    features: [
+      "CRUD de servicios/comodidades, habitaciones, tipos de habitaciones, reservas, estadías, pagos, métodos de pago, canales de reservas, huéspedes y usuarios.",
+      "Autenticación con tokens JWT.",
+      "Endpoints organizados y documentados para fácil integración con frontend.",
+      "Validaciones y manejo de errores completo.",
+    ],
+    characteristics: [],
+    video: "",
+    github: "",
+    link: "",
+  },
+  {
     id: 777,
     image: ab,
     category: "Restaurante",
-    name: "API Restaurante Ambiente Bohemio",
+    name: "API Restful Restaurante Ambiente Bohemio",
     type: "API REST",
     area: "backend",
     date: "Marzo 2024",
@@ -295,8 +388,7 @@ const projects = [
     project: "Educativo",
     description:
       "API RESTful desarrollada para gestionar un restaurante, incluyendo usuarios, productos, pedidos y autenticación, con buenas prácticas de organización de rutas y controladores.",
-    technologies
-: [
+    technologies: [
       { name: "Node js" },
       { name: "Express js" },
       { name: "Express-validator" },
@@ -320,11 +412,15 @@ const projects = [
       "Endpoints organizados y documentados para fácil integración con frontend.",
       "Validaciones y manejo de errores completo.",
     ],
-    characteristics: ["Aplicación de Metodología Scrum", "Despliegue en Vercel"],
+    characteristics: [
+      "Aplicación de Metodología Scrum",
+      "Despliegue en Vercel",
+    ],
     video: "",
     github: "https://github.com/brunomry/API_restaurante",
     link: "",
   },
+
   {
     id: 888,
     image: netflixcard,
@@ -339,8 +435,7 @@ const projects = [
     project: "Educativo",
     description:
       "Desafío de diseño propuesto en curso de youtube sobre Figma brindado por uxcristopher que consistía en diseñar la interfaz principal de Instagram y Netflix.",
-    technologies
-: [
+    technologies: [
       { name: "Figma" },
       { name: "Atomic design" },
       { name: "Plugins" },
@@ -364,8 +459,7 @@ const projects = [
     video: "",
     github: "",
     images: [ig, netflix],
-    link:
-      "https://www.figma.com/design/2DxaPRLCWwSmJjCte0qdm8/Dise%C3%B1os?node-id=0-1&t=iT0lRymaWSvM4QJJ-1",
+    link: "https://www.figma.com/design/2DxaPRLCWwSmJjCte0qdm8/Dise%C3%B1os?node-id=0-1&t=iT0lRymaWSvM4QJJ-1",
   },
   {
     id: 999,
@@ -381,8 +475,7 @@ const projects = [
     project: "Educativo",
     description:
       "Desafío de diseño propuesto por BuenBit que consistía en realizar un diseño original de la Home de su aplicación y publicarlo en X con el hashtag #FigmaEnBuenBit. El desafío estaba pensado para diseñadores pero cualquier persona podía participar.",
-    technologies
-: [
+    technologies: [
       { name: "Figma" },
       { name: "Atomic design" },
       { name: "Plugins" },
@@ -407,8 +500,7 @@ const projects = [
     images: [buenbit],
     video: "",
     github: "",
-    link:
-      "https://www.figma.com/design/joPj1Ky1SUs3O37tQVotqg/HomeBuenbit?node-id=1-689&t=ar7HVNYCBf2uByns-1",
+    link: "https://www.figma.com/design/joPj1Ky1SUs3O37tQVotqg/HomeBuenbit?node-id=1-689&t=ar7HVNYCBf2uByns-1",
   },
 ];
 
