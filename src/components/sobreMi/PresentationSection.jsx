@@ -38,7 +38,7 @@ const PresentationSection = () => {
             Hola, soy Bruno Madozzo
           </h1>
           <h2 className="text-[18px] sm:text-[24px] xl:text-[28px] font-light text-[#000] leading-snug sm:text-left">
-            Desarrollador web con enfoque en frontend y estudiante avanzado de Ingeniería en Sistemas de Información
+            Desarrollador web y estudiante avanzado de Ingeniería en Sistemas de Información
           </h2>
           <p className="text-[#555] text-sm md:text-base font-light sm:mt-2 md:mt-4 sm:text-left">
             Me especializo en la creación
