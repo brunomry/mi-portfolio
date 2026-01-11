@@ -56,7 +56,7 @@ const ProjectCard= ({ project }) => {
               Código <i className="bi bi-github text-base"></i>
             </a>
           )}
-          {project.area === "frontend" && (
+          {project.area === "frontend" && project.link && (
             <a
               href={project.link}
               target="_blank"

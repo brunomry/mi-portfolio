@@ -161,24 +161,23 @@ const ProjectDetail = () => {
             ))}
         </ul>
       </article>
-      {project.characteristics &&
-        project.characteristics.length > 0 && (
-          <article className="mt-4 bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-gray-100">
-            <h2 className="text-xl md:text-2xl font-bold text-[#000] mb-6">
-              Características del proyecto
-            </h2>
-            <ul className="list-disc ms-5 space-y-2">
-              {project.characteristics.map((c, idx) => (
-                <li
-                  key={idx}
-                  className="text-[#555] font-light text-sm md:text-base leading-relaxed"
-                >
-                  {c}
-                </li>
-              ))}
-            </ul>
-          </article>
-        )}
+      {project.characteristics && project.characteristics.length > 0 && (
+        <article className="mt-4 bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-gray-100">
+          <h2 className="text-xl md:text-2xl font-bold text-[#000] mb-6">
+            Características del proyecto
+          </h2>
+          <ul className="list-disc ms-5 space-y-2">
+            {project.characteristics.map((c, idx) => (
+              <li
+                key={idx}
+                className="text-[#555] font-light text-sm md:text-base leading-relaxed"
+              >
+                {c}
+              </li>
+            ))}
+          </ul>
+        </article>
+      )}
       {project.area === "ui" && project.images && (
         <article className="mt-6 bg-white rounded-2xl shadow-sm p-4 md:p-8 border border-gray-100">
           <h2 className="text-xl md:text-2xl font-bold text-[#1E1E1E] mb-8">
@@ -196,18 +195,17 @@ const ProjectDetail = () => {
         </article>
       )}
       {project.video && (
-        <article className="mt-4 bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-gray-100">
+        <article className="mt-4 bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-gray-100 h-full lg:max-h-[900px] flex flex-col">
           <h2 className="text-xl md:text-2xl font-bold text-[#1E1E1E] mb-6">
-            Demo rápida
+            Demo
           </h2>
-          <div className="aspect-w-16 aspect-h-9">
-            <iframe
+          <div className="flex-1">
+            <video
               src={project.video}
-              title={`Demo ${project.name}`}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="w-full h-full rounded-lg"
+              controls
+              controlsList="nodownload noremoteplayback"
+              disablePictureInPicture
+              className="w-full h-full object-contain rounded-lg"
             />
           </div>
         </article>
