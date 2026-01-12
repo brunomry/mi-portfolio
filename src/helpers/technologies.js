@@ -19,22 +19,20 @@ import mongoose from "../assets/iconos/mongoose.svg";
 
 const technologies = {
   frontend: [
-    { name: "HTML5", icon: html5 },
-    { name: "CSS3", icon: css3 },
-    { name: "Bootstrap 5", icon: bootstrap5 },
-    { name: "Tailwind CSS", icon: tailwind },
-    { name: "JavaScript", icon: javascript },
     { name: "React", icon: react },
     { name: "React Router", icon: reactrouter },
     { name: "React Bootstrap", icon: reactbootstrap },
     { name: "React Hook Form", icon: form },
     { name: "Redux", icon: redux },
     { name: "Redux Toolkit", icon: redux },
+    { name: "JavaScript", icon: javascript },
+    { name: "Tailwind CSS", icon: tailwind },
+    { name: "Bootstrap 5", icon: bootstrap5 },
     { name: "Axios", icon: axios },
+    { name: "HTML5", icon: html5 },
+    { name: "CSS3", icon: css3 },
   ],
-  ui: [
-    { name: "Figma", icon: figma },
-  ],
+  ui: [{ name: "Figma", icon: figma }],
   backend: [
     { name: "Node.js", icon: node },
     { name: "Express.js", icon: express },
