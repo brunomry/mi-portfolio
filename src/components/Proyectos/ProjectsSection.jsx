@@ -42,7 +42,7 @@ const ProjectsSection = ({ mostrar }) => {
         Proyectos
       </h2>
       <p className="text-[#555] text-sm md:text-base font-light">
-        Estos son algunos de mis projects, que incluyen aplicaciones web,
+        Estos son algunos de mis proyectos, que incluyen aplicaciones web,
         sitios web, landing pages y trabajos académicos. Cada proyecto muestra
         soluciones prácticas, diseño de interfaces y funcionalidades
         desarrolladas con diversas tecnologías modernas.

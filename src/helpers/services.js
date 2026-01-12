@@ -15,7 +15,7 @@ const services = [
     id: 2,
     service: "Creación de landing pages",
     description:
-      "Diseño de páginas atractivas y efectivas para captar clientes potenciales, promocionar services o lanzar nuevos productos.",
+      "Diseño de páginas atractivas y efectivas para captar clientes potenciales, promocionar servicios o lanzar nuevos productos.",
   },
   {
     id: 3,
