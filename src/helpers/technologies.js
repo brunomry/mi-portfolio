@@ -23,7 +23,6 @@ const technologies = {
     { name: "React Router", icon: reactrouter },
     { name: "React Bootstrap", icon: reactbootstrap },
     { name: "React Hook Form", icon: form },
-    { name: "Redux", icon: redux },
     { name: "Redux Toolkit", icon: redux },
     { name: "JavaScript", icon: javascript },
     { name: "Tailwind CSS", icon: tailwind },
