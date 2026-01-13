@@ -62,6 +62,7 @@ const NavbarPrincipal = () => {
             "Tecnologías",
             "Mi Método",
             "Certificaciones",
+            "Sobre mí",
             "Contacto",
           ].map((item) => (
             <a
