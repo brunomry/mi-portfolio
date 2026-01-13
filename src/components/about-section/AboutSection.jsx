@@ -15,20 +15,19 @@ const AboutSection = () => {
             Sobre mí
           </h2>
           <p className="text-[#555] text-sm md:text-base font-light leading-relaxed">
-            Llevo más de 4 años de formación en desarrollo web y mi carrera en
-            Ingeniería en Sistemas me brindó una visión integral que me permite
-            poder trabajar un proyecto de principio a fin: desde el análisis de
-            requerimientos y bocetos, pasando por diseño, frontend y backend,
-            hasta la implementación final. Actualmente me encuentro cerca de
-            obtener el título intermedio de Analista de Sistemas y,
-            próximamente, tomaré un receso de la universidad para enfocarme de
-            lleno en el desarrollo freelance, con el objetivo siempre presente
-            de poder sumarme a un equipo profesional donde pueda aportar y
-            llevar mis conocimientos a un nuevo nivel. Planeo retomar mis
-            estudios universitarios en el futuro para continuar ampliando mis
-            capacidades.
+            Llevo más de 4 años de formación en desarrollo web, y mi carrera en Ingeniería en Sistemas me
+            brindó una visión integral que me permite poder trabajar un proyecto
+            de principio a fin: desde el análisis de requerimientos y bocetos,
+            pasando por diseño, frontend y backend, hasta la implementación
+            final. Actualmente me encuentro cerca de obtener el título
+            intermedio de Analista de Sistemas y, próximamente, tomaré un receso
+            de la universidad para enfocarme de lleno en el desarrollo
+            freelance, con el objetivo siempre presente de poder sumarme a un
+            equipo profesional donde pueda aportar y llevar mis conocimientos a
+            un nuevo nivel. Planeo retomar mis estudios universitarios en el
+            futuro para continuar ampliando mis capacidades.
           </p>
-          <p className="text-[#555] text-sm md:text-base font-light leading-relaxed">
+          <p className="text-[#555] text-sm md:text-base font-light leading-relaxed hidden md:block">
             Además, actualmente trabajo como recepcionista en dos hostales y en
             mis tiempos libres estoy jugando fútbol o dedicándome a mejorar
             proyectos actuales y a diseñar soluciones digitales que ayuden a los
