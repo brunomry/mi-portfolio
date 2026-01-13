@@ -27,7 +27,7 @@ const projects = [
     status: "Actualizando",
     project: "Académico/Freelance",
     description:
-      "Aplicación web de gestión interna para lavanderías donde los usuarios administradores pueden iniciar sesión y gestionar órdenes, prendas, clientes y otros usuarios administradores. Incluye filtros, validaciones, manejo de errores y generación de remitos en formato imagen. El backend está desarrollado en Node js, Express js, Mongoose y MongoDB con despliegue en Vercel.",
+      "Aplicación web de gestión interna para lavanderías donde los usuarios administradores pueden iniciar sesión y gestionar órdenes, prendas, clientes y otros usuarios. Incluye filtros, validaciones, manejo de errores y generación de remitos en formato imagen. El backend está desarrollado en Node js, Express js, Mongoose y MongoDB con despliegue en Vercel.",
     technologies: [
       { name: "React" },
       { name: "TailwindCSS" },

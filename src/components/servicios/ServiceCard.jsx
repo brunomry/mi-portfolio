@@ -21,7 +21,7 @@ const ServiceCard = ({ service }) => {
             {service.service}
           </h5>
         </div>
-        <p className="text-[#555] text-sm font-light leading-relaxed">
+        <p className="text-[#5text-sm55]  font-light leading-relaxed">
           {service.description}
         </p>
         {service.tags && (

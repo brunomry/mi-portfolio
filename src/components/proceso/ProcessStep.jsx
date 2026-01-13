@@ -25,7 +25,7 @@ const ProcessStep = ({ stepNumber, title, description, Icon, isLast }) => (
           {title}
         </h3>
       </div>
-      <p className="text-gray-600 ml-2 md:ml-0">{description}</p>
+      <p className="text-[#555] text-sm font-light leading-relaxed">{description}</p>
     </div>
   </li>
 );
