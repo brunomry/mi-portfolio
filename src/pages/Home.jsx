@@ -7,7 +7,7 @@ import ServicesSection from "../components/servicios/ServicesSection";
 import TechnologiesSection from "../components/tecnologias/TechnologiesSection";
 import CertificatesSection from "../components/Certificaciones/CertificatesSection";
 import ContactSection from "../components/Contacto/ContactSection";
-import BtnWpp from "../components/common/BtnWpp";
+// import BtnWpp from "../components/common/BtnWpp";
 import ProcessSection from "../components/proceso/ProcessSection";
 
 const Home = () => {
@@ -42,7 +42,7 @@ const Home = () => {
             <i className="bi bi-arrow-up text-[20px]"></i>
           </a>
         )} */}
-        <BtnWpp></BtnWpp>
+        {/* <BtnWpp></BtnWpp> */}
       </section>
     </div>
   );

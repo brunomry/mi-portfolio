@@ -118,9 +118,9 @@ const ContactSection = () => {
               </span>
             </div>
           </a>
-          <p className=" text-[#555] text-sm text-center md:text-start mt-4 lg:mt-6">
+          {/* <p className=" text-[#555] text-sm text-center md:text-start mt-4 lg:mt-6">
             También puedes enviarme un mensaje por WhatsApp
-          </p>
+          </p> */}
         </div>
       </div>
     </section>
