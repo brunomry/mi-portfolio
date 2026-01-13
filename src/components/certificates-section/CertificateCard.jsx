@@ -1,5 +1,5 @@
 import { useState } from "react";
-import certificates from "../../helpers/certificates";
+import certificates from "../../helpers/certificates.js";
 import CertificatesCarrousel from "./CertificatesCarrousel";
 
 const CertificateCard = ({ certificate, index }) => {

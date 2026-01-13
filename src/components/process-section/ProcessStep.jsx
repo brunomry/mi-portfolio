@@ -1,11 +1,5 @@
-import React from "react";
-
 const ProcessStep = ({ stepNumber, title, description, Icon, isLast }) => (
   <li className="relative flex flex-col md:flex-row items-start md:items-center mb-8">
-    {/* Línea vertical */}
-    {/* {!isLast && (
-      <span className="absolute left-6 top-14 md:left-6 md:top-16 h-full border-l-2 border-gray-300"></span>
-    )} */}
     <div className="flex-shrink-0 z-10">
       <div className="w-12 h-12 flex items-center justify-center bg-black/90 text-white rounded-full text-lg font-bold shadow-md">
         0{stepNumber}
@@ -25,7 +19,9 @@ const ProcessStep = ({ stepNumber, title, description, Icon, isLast }) => (
           {title}
         </h3>
       </div>
-      <p className="text-[#555] text-sm font-light leading-relaxed">{description}</p>
+      <p className="text-[#555] text-sm font-light leading-relaxed">
+        {description}
+      </p>
     </div>
   </li>
 );

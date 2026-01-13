@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { handleCV } from "../../helpers/handleFn";
+import { handleCV } from "../../helpers/handleFn.js";
 
 const ContactSection = () => {
   const [copiado, setCopiado] = useState(false);

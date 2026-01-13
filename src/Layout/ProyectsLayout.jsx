@@ -1,7 +1,5 @@
-import React from "react";
-import NavbarSecondary from "../components/common/NavbarSecondary";
-import Footer from "../components/common/Footer";
-import ScrollTop from "../components/common/ScrollTop";
+import NavbarSecondary from "../common/NavbarSecondary";
+import ScrollTop from "../common/ScrollTop";
 
 const ProyectsLayout = ({ children }) => {
   return (

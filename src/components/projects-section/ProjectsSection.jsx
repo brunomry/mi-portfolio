@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import projects from "../../helpers/projects";
+import projects from "../../helpers/projects.js";
 import ProjectCard from "./ProjectCard";
 
 const categories = ["Frontend", "Backend", "UI", "Universidad"];
@@ -43,7 +43,10 @@ const ProjectsSection = ({ mostrar }) => {
       </h2>
       <p className="text-[#555] text-sm md:text-base font-light">
         Estos son algunos de mis proyectos, que incluyen aplicaciones web,
-        sitios web, landing pages y trabajos académicos. Cada proyecto muestra
+        sitios web, landing pages y trabajos académicos.
+      </p>
+      <p className="text-[#555] text-sm md:text-base font-light">
+        Cada proyecto muestra
         soluciones prácticas, diseño de interfaces y funcionalidades
         desarrolladas con diversas tecnologías modernas.
       </p>

@@ -1,8 +1,8 @@
-import ChatIcon from "../components/common/Icons/ChatIcon";
-import CheckIcon from "../components/common/Icons/CheckIcon";
-import ComputerIcon from "../components/common/Icons/ComputerIcon";
-import DocumentIcon from "../components/common/Icons/DocumentIcon";
-import MagnifyingGlassIcon from "../components/common/Icons/MagnifyingGlassIcon";
+import ChatIcon from "../common/icons/ChatIcon";
+import CheckIcon from "../common/icons/CheckIcon";
+import ComputerIcon from "../common/icons/ComputerIcon";
+import DocumentIcon from "../common/icons/DocumentIcon";
+import MagnifyingGlassIcon from "../common/icons/MagnifyingGlassIcon";
 
 const processSteps = [
   {

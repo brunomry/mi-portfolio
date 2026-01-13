@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import projects from "../helpers/projects.js";
-import CharacteristicsCard from "../components/Proyectos/CharacteristicsCard.jsx";
+import CharacteristicsCard from "../components/projects-section/CharacteristicsCard.jsx";
 
 const ProjectDetail = () => {
   const [project, setProject] = useState({});

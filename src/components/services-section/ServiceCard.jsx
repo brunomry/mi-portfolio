@@ -1,5 +1,4 @@
 import { BsCheckSquareFill } from "react-icons/bs";
-import { FaWhatsapp } from "react-icons/fa";
 
 const ServiceCard = ({ service }) => {
   return (

@@ -1,4 +1,4 @@
-import ProjectsSection from "../components/Proyectos/ProjectsSection";
+import ProjectsSection from "../components/projects-section/ProjectsSection";
 
 const ProjectsView = () => {
   return (

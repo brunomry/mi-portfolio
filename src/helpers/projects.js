@@ -1,18 +1,18 @@
-import laburandoando from "../assets/proyectos/laburandoando.png";
-import ab from "../assets/proyectos/ambientebohemio.webp";
-import sanjorge from "../assets/proyectos/sanjorge.webp";
-import rafter from "../assets/proyectos/rafter.webp";
-import imgtfi from "../assets/proyectos/tfi.png";
-import ig from "../assets/proyectos/ig.png";
-import netflixcard from "../assets/proyectos/netflixcard.png";
-import netflix from "../assets/proyectos/netflix.png";
-import buenbit from "../assets/proyectos/buenbit.png";
-import buenbitcard from "../assets/proyectos/buenbitcard.png";
+import laburandoando from "../assets/projects-images/laburandoando.png";
+import ab from "../assets/projects-images/ambientebohemio.webp";
+import sanjorge from "../assets/projects-images/sanjorge.webp";
+import rafter from "../assets/projects-images/rafter.webp";
+import imgtfi from "../assets/projects-images/tfi.png";
+import ig from "../assets/projects-images/ig.png";
+import netflixcard from "../assets/projects-images/netflixcard.png";
+import netflix from "../assets/projects-images/netflix.png";
+import buenbit from "../assets/projects-images/buenbit.png";
+import buenbitcard from "../assets/projects-images/buenbitcard.png";
 
-import tfi from "../assets/proyectos/trabajofinal-diseñodesistemas.pdf";
-import lavanderia from "../assets/proyectos/lavanderia.jpg";
-import alojamientos from "../assets/proyectos/alojamientos.jpg";
-import lavanderiavideo from "../assets/proyectos/videos/lavanderia.mp4";
+import tfi from "../assets/projects-images/trabajofinal-diseñodesistemas.pdf";
+import lavanderia from "../assets/projects-images/lavanderia.jpg";
+import alojamientos from "../assets/projects-images/alojamientos.jpg";
+import lavanderiavideo from "../assets/projects-images/videos/lavanderia.mp4";
 const projects = [
    {
     id: 123,

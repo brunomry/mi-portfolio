@@ -1,6 +1,5 @@
-import React from "react";
 import ProcessStep from "./ProcessStep";
-import processSteps from "../../helpers/processSteps";
+import processSteps from "../../helpers/processSteps.js";
 
 const ProcessSection = () => (
   <section

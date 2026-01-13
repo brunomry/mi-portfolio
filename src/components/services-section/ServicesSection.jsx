@@ -1,4 +1,4 @@
-import servicios from "../../helpers/services";
+import servicios from "../../helpers/services.js";
 import ServiceCard from "./ServiceCard";
 
 function ServicesSection() {

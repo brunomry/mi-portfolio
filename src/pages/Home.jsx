@@ -1,14 +1,15 @@
-import Footer from "../components/common/Footer";
-import NavbarPrincipal from "../components/common/NavbarPrincipal";
+import Footer from "../common/Footer";
+import NavbarPrincipal from "../common/NavbarPrincipal";
 import { useEffect, useState } from "react";
-import PresentationSection from "../components/sobreMi/PresentationSection";
-import ProjectsSection from "../components/Proyectos/ProjectsSection";
-import ServicesSection from "../components/servicios/ServicesSection";
-import TechnologiesSection from "../components/tecnologias/TechnologiesSection";
-import CertificatesSection from "../components/Certificaciones/CertificatesSection";
-import ContactSection from "../components/Contacto/ContactSection";
+import HeroSection from "../components/hero-section/HeroSection";
+import ProjectsSection from "../components/projects-section/ProjectsSection";
+import ProcessSection from "../components/process-section/ProcessSection";
+import CertificatesSection from "../components/certificates-section/CertificatesSection";
+import ContactSection from "../components/contact-section/ContactSection";
+import TechnologiesSection from "../components/technologies-section/TechnologiesSection";
+import ServicesSection from "../components/services-section/ServicesSection";
+import AboutSection from "../components/about-section/AboutSection";
 // import BtnWpp from "../components/common/BtnWpp";
-import ProcessSection from "../components/proceso/ProcessSection";
 
 const Home = () => {
   const [scrollTop, setScrollTop] = useState(0);
@@ -26,12 +27,13 @@ const Home = () => {
         id="section"
         className="w-[100%] absolute min-h-screen lg:w-[100%] xl:w-[100%]  bg-[#FAFAFA] flex flex-col justify-center items-center flex-grow  pt-2 xl:pt-3"
       >
-        <PresentationSection></PresentationSection>
+        <HeroSection></HeroSection>
         <ProjectsSection mostrar={false}></ProjectsSection>
         <ServicesSection></ServicesSection>
         <TechnologiesSection></TechnologiesSection>
         <ProcessSection></ProcessSection>
         <CertificatesSection></CertificatesSection>
+        <AboutSection></AboutSection>
         <ContactSection></ContactSection>
         <Footer></Footer>
         {/* {scrollTop > 0 && (

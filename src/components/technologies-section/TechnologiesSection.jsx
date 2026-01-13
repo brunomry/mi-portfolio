@@ -1,4 +1,4 @@
-import technologies from "../../helpers/technologies";
+import technologies from "../../helpers/technologies.js";
 import TechCard from "./TechCard";
 
 const TechnologiesSection = () => {

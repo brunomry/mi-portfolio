@@ -1,6 +1,6 @@
 import perfil from "../../assets/perfil.webp";
 
-const PresentationSection = () => {
+const HeroSection = () => {
   const habilidades = [
     "React",
     "Redux Toolkit",
@@ -33,38 +33,28 @@ const PresentationSection = () => {
         className="flex flex-col gap-4 sm:gap-10 md:gap-8 lg:gap-[50px] xl:gap-[150px] 
         lg:flex-row "
       >
-        <div className="flex flex-col gap-4 lg:flex-1 order-1 md:order-1">
+        <div className="flex flex-col gap-4 lg:flex-1 order-1 md:order-1 max-w-[750px]">
           <h1 className="text-[20px] sm:text-[28px] lg:text-[32px] xl:text-[44px] 2xl:text-[64px] font-light leading-tight text-[#222] sm:text-left">
             Hola, soy Bruno Madozzo
           </h1>
           <h2 className="text-[18px] sm:text-[24px] xl:text-[28px] font-light text-[#000] leading-snug sm:text-left">
-            Desarrollador web y estudiante avanzado de Ingeniería en Sistemas de Información
+            Desarrollador web y estudiante avanzado de Ingeniería en Sistemas de
+            Información
           </h2>
-          <p className="text-[#555] text-sm md:text-base font-light sm:mt-2 md:mt-4 sm:text-left">
-            Me especializo en la creación
-            de landing pages, sitios web y aplicaciones web optimizadas para un
-            buen rendimiento y posicionamiento SEO.
+          <p className="text-[#555] text-sm md:text-base font-light leading-relaxed md:mt-4">
+            Acompaño a emprendedores, profesionales y comercios locales a dar el
+            salto digital, brindando soluciones personalizadas, claras y fáciles
+            de usar.
           </p>
-          {/* <div className="flex flex-wrap gap-2 md:mt-4">
-            {habilidades.map((tech, idx) => (
-              <span
-                key={idx}
-                className="bg-gray-100 text-slate-600 text-xs sm:text-sm font-medium px-3 py-1 rounded-full"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
-          <div className="flex flex-wrap gap-2 mt-2">
-            {trabajos.map((item, idx) => (
-              <span
-                key={idx}
-                className="bg-[#D1F7E0] text-slate-600 text-xs sm:text-sm font-medium px-3 py-1 rounded-full"
-              >
-                {item}
-              </span>
-            ))}
-          </div> */}
+          <p className="text-[#555] text-sm md:text-base font-light sm:mt-2  sm:text-left">
+            Desarrollo páginas y
+            aplicaciones web optimizadas para un buen rendimiento y
+            posicionamiento SEO cuando el proyecto lo requiere.
+          </p>
+          <p className="text-[#555] text-sm md:text-base font-light leading-relaxed">
+            Creo soluciones digitales que no solo se vean bien,
+            sino que ayuden a tu negocio a organizarse mejor y crecer.
+          </p>
           <div className="flex sm:flex-row gap-4 mt-6 lg:mt-16 w-full sm:w-auto">
             <a
               href="#servicios"
@@ -127,4 +117,4 @@ const PresentationSection = () => {
   );
 };
 
-export default PresentationSection;
+export default HeroSection;

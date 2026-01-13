@@ -1,4 +1,4 @@
-import certifications from "../../helpers/certificates";
+import certifications from "../../helpers/certificates.js";
 import CertificationCard from "./CertificateCard";
 
 const CertificatesSection = () => {

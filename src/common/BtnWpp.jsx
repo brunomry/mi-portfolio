@@ -1,5 +1,5 @@
-import { handleWpp } from "../../helpers/handleFn";
-import IconWpp from "../common/Icons/IconWpp";
+import { handleWpp } from "../helpers/handleFn";
+import IconWpp from "./icons/IconWpp";
 
 const BtnWpp = () => {
   return (
