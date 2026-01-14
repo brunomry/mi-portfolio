@@ -43,17 +43,11 @@ const HeroSection = () => {
           </h2>
           <p className="text-[#555] text-sm md:text-base font-light leading-relaxed md:mt-4">
             Acompaño a emprendedores, profesionales y comercios locales a dar el
-            salto digital, brindando soluciones personalizadas, claras y fáciles
-            de usar.
+            salto digital.
           </p>
           <p className="text-[#555] text-sm md:text-base font-light sm:mt-2  sm:text-left">
-            Desarrollo páginas y
-            aplicaciones web optimizadas para un buen rendimiento y
-            posicionamiento SEO cuando el proyecto lo requiere.
-          </p>
-          <p className="text-[#555] text-sm md:text-base font-light leading-relaxed">
-            Creo soluciones digitales que no solo se vean bien,
-            sino que ayuden a tu negocio a organizarse mejor y crecer.
+            Desarrollo soluciones web que convierten ideas en negocios
+            organizados, visibles y rentables.
           </p>
           <div className="flex sm:flex-row gap-4 mt-6 lg:mt-16 w-full sm:w-auto">
             <a

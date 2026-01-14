@@ -29,11 +29,12 @@ const NavbarPrincipal = () => {
             "Tecnologías",
             "Mi Método",
             "Certificaciones",
+            "Sobre mí",
             "Contacto",
           ].map((item) => (
             <a
               key={item}
-              href={`${item === "Mi Método" ? "#proceso" : `#${item.toLowerCase()}`}`}
+              href={`${item === "Mi Método" ? "#proceso" : item === "Sobre mí" ? "#sobre-mi" : `#${item.toLowerCase()}`}`}
               className="hover:text-[#2B7FF7] transition-colors"
             >
               {item}
