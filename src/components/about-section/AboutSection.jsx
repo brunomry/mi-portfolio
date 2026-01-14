@@ -20,7 +20,7 @@ const AboutSection = () => {
             proyectos de principio a fin: desde el análisis y diseño, hasta el
             desarrollo y la implementación final.
           </p>
-          <p className="text-[#555] text-sm md:text-base font-light leading-relaxed hidden md:block">
+          <p className="text-[#555] text-sm md:text-base font-light leading-relaxed">
             Además, trabajo como recepcionista en dos hostales, lo que me dio
             una comprensión profunda de cómo funciona un negocio por dentro:
             reservas, atención al cliente, organización de información y
