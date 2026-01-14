@@ -42,7 +42,7 @@ const HeroSection = () => {
             Información
           </h2>
           <p className="text-[#555] text-sm md:text-base font-light leading-relaxed md:mt-4">
-            Acompaño a emprendedores, profesionales y comercios locales a dar el
+            Acompaño a emprendedores, profesionales y negocios a dar el
             salto digital.
           </p>
           <p className="text-[#555] text-sm md:text-base font-light sm:mt-2  sm:text-left">
