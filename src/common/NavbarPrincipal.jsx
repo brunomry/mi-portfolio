@@ -67,7 +67,7 @@ const NavbarPrincipal = () => {
           ].map((item) => (
             <a
               key={item}
-              href={`${item === "Mi Método" ? "#proceso" : `#${item.toLowerCase()}`}`}
+              href={`${item === "Mi Método" ? "#proceso" : item === "Sobre mí" ? "#sobre-mi" : `#${item.toLowerCase()}`}`}
               onClick={closeMenu}
               className="text-[#000] text-2xl my-4 hover:text-gray-600 transition-colors"
             >
