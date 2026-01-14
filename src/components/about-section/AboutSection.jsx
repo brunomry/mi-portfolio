@@ -18,15 +18,16 @@ const AboutSection = () => {
             Llevo más de 4 años formándome en desarrollo web y mi carrera en
             Ingeniería en Sistemas me dio una visión integral para trabajar
             proyectos de principio a fin: desde el análisis y diseño, hasta el
-            desarrollo y la implementación final.
+            desarrollo y mejora continua de cada solución.
           </p>
           <p className="text-[#555] text-sm md:text-base font-light leading-relaxed">
             Además, trabajo como recepcionista en dos hostales, lo que me dio
             una comprensión profunda de cómo funciona un negocio por dentro:
             reservas, atención al cliente, organización de información y
-            procesos diarios. Gracias a esto, desarrollo aplicaciones y sitios
-            web pensados desde la operación real, que ayudan a los negocios a
-            trabajar mejor y crecer.
+            procesos diarios. A partir de esta experiencia y más, desarrollo
+            aplicaciones y sitios web pensados desde la operación real, que
+            mejoran la organización, aumentan la visibilidad y ayudan a tomar
+            mejores decisiones.
           </p>
           <div className="flex flex-wrap gap-8 mt-6">
             <div className="flex flex-col items-center">
