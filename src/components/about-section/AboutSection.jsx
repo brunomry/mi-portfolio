@@ -21,7 +21,7 @@ const AboutSection = () => {
             desarrollo y mejora continua de cada solución.
           </p>
           <p className="text-[#555] text-sm md:text-base font-light leading-relaxed">
-            Además, trabajo como recepcionista en dos hostales, lo que me dio
+            Además, trabajo actualmente a medio turno como recepcionista en dos hostales, lo que me dio
             una comprensión profunda de cómo funciona un negocio por dentro:
             reservas, atención al cliente, organización de información y
             procesos diarios. A partir de esta experiencia y más, desarrollo
