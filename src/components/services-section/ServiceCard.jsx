@@ -4,7 +4,7 @@ const ServiceCard = ({ service }) => {
   return (
     <div
       className="group bg-gradient-to-tr from-white to-[#f9faff] rounded-3xl shadow-lg 
-                 hover:shadow-2xl transition-all duration-500 ease-in-out transform lg:hover:-translate-y-2
+                 hover:shadow-xl 
                  w-full min-w-[260px] md:max-w-[340px] lg:max-w-[380px] h-fit md:h-[280px] p-6 flex flex-col justify-between"
       title={service.service}
     >
