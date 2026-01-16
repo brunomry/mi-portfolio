@@ -16,7 +16,7 @@ const ProjectCard= ({ project }) => {
       />
       <div className="p-5 flex flex-col gap-3">
         <div>
-          <h3 className="font-extrabold text-lg md:text-xl text-[#000]">
+          <h3 className="font-extrabold text-lg md:text-xl text-[#222]">
             {project.name}
           </h3>
           <p className="text-[#999] text-sm md:text-base mt-1">
@@ -41,7 +41,7 @@ const ProjectCard= ({ project }) => {
             Última actualización:{" "}
             {project.last_update || project.date}
           </span>
-          <span className="font-semibold text-[#000]">
+          <span className="font-semibold text-[#222]">
             {project.project}
           </span>
         </div>
@@ -61,7 +61,7 @@ const ProjectCard= ({ project }) => {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex gap-2 items-center text-sm md:text-base bg-[#000] text-white border border-[#000] hover:bg-[#fff] px-3 py-1 rounded-md hover:border-[#000] hover:text-[#000] transition"
+              className="flex gap-2 items-center text-sm md:text-base bg-[#000] text-white border border-[#000] hover:bg-[#fff] px-3 py-1 rounded-md hover:border-[#000] hover:text-[#222] transition"
             >
               Web{" "}
               <i className="bi bi-box-arrow-up-right text-sm md:text-base"></i>

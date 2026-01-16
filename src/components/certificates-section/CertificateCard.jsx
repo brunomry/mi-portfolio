@@ -25,7 +25,7 @@ const CertificateCard = ({ certificate, index }) => {
             <p className="text-[#555] text-sm md:text-base">
               {certificate.startDate} - {certificate.endDate}
             </p>
-            <h5 className="font-extrabold text-[#000] text-base xl:text-lg 2xl:text-xl">
+            <h5 className="font-extrabold text-[#222] text-base xl:text-lg 2xl:text-xl">
               {certificate.title}
             </h5>
             <p className="text-[#777] text-sm ">{certificate.org}</p>
@@ -33,7 +33,7 @@ const CertificateCard = ({ certificate, index }) => {
 
           <button
             onClick={() => openCarousel(index)}
-            className="mt-4 px-4 py-2 rounded-lg bg-[#000]  hover:bg-[#292929]  text-white font-medium 
+            className="mt-4 px-4 py-2 rounded-lg bg-[#222]  hover:bg-[#000]  text-white font-medium 
                        text-sm md:text-base transition-colors shadow-md w-full"
           >
             Ver Certificación

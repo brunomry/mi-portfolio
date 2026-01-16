@@ -11,12 +11,12 @@ const ServiceCard = ({ service }) => {
       <div className="flex flex-col gap-4">
         <div className="flex flex-col justify-start items-start gap-3">
           <div
-            className="bg-[#000] text-white p-3 rounded-xl shadow-md 
+            className="bg-[#222] text-white p-3 rounded-xl shadow-md 
                           group-hover:scale-110 transition-transform duration-300 flex items-center justify-center"
           >
             <BsCheckSquareFill className="text-[22px]" />
           </div>
-          <h5 className="font-extrabold text-[#000] text-base xl:text-lg 2xl:text-xl leading-snug">
+          <h5 className="font-extrabold text-[#222] text-base xl:text-lg 2xl:text-xl leading-snug">
             {service.service}
           </h5>
         </div>
@@ -28,7 +28,7 @@ const ServiceCard = ({ service }) => {
             {service.tags.map((tag, index) => (
               <span
                 key={index}
-                className="bg-[#E4F0FF] text-[#000] px-3 py-1 rounded-full text-xs md:text-sm font-medium"
+                className="bg-[#E4F0FF] text-[#222] px-3 py-1 rounded-full text-xs md:text-sm font-medium"
               >
                 {tag}
               </span>

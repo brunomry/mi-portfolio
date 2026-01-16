@@ -37,7 +37,7 @@ const HeroSection = () => {
           <h1 className="text-[20px] sm:text-[28px] lg:text-[32px] xl:text-[44px] 2xl:text-[64px] font-light leading-tight text-[#222] sm:text-left">
             Hola, soy Bruno Madozzo
           </h1>
-          <h2 className="text-[18px] sm:text-[24px] xl:text-[28px] font-light text-[#000] leading-snug sm:text-left">
+          <h2 className="text-[18px] sm:text-[24px] xl:text-[28px] font-light text-[#222] leading-snug sm:text-left">
             Desarrollador web y estudiante avanzado de Ingeniería en Sistemas de
             Información
           </h2>
@@ -52,14 +52,14 @@ const HeroSection = () => {
           <div className="flex sm:flex-row gap-4 mt-6 lg:mt-16 w-full sm:w-auto">
             <a
               href="#servicios"
-              className="flex items-center gap-3 justify-center text-sm px-4 md:px-6 2xl:px-16 py-2  rounded-lg bg-white text-[#000] border border-[#000] hover:bg-[#000] hover:text-white transition font-medium md:text-base lg:text-lg"
+              className="flex items-center gap-3 justify-center text-sm px-4 md:px-6 2xl:px-16 py-2  rounded-lg bg-white text-[#222] border border-[#222] hover:bg-[#222] hover:text-white transition font-medium md:text-base lg:text-lg"
               title="Conoce mis servicios"
             >
               Servicios
             </a>
             <a
               href="#proyectos"
-              className="flex items-center gap-3 justify-center px-4 md:px-6 2xl:px-16 py-2 rounded-lg bg-[#000] text-white border hover:border-[#000] hover:bg-white hover:text-[#000] transition font-medium md:text-base lg:text-lg"
+              className="flex items-center gap-3 justify-center px-4 md:px-6 2xl:px-16 py-2 rounded-lg bg-[#222] text-white border hover:border-[#222] hover:bg-white hover:text-[#222] transition font-medium md:text-base lg:text-lg"
               title="Conoce mis proyectos"
             >
               Proyectos
@@ -71,7 +71,7 @@ const HeroSection = () => {
               target="_blank"
               rel="noopener noreferrer"
               title="Mi GitHub"
-              className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[#000] text-white transition"
+              className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-gray-800 hover:bg-[#222] text-white transition"
             >
               <i className="text-xl sm:text-2xl bi bi-github"></i>
             </a>
@@ -103,7 +103,7 @@ const HeroSection = () => {
       </div>
       <a
         href="#proyectos"
-        className="mt-24 animate-bounce text-[#000] text-2xl sm:text-3xl flex justify-center"
+        className="mt-24 animate-bounce text-[#222] text-2xl sm:text-3xl flex justify-center"
       >
         <i className="bi bi-chevron-down"></i>
       </a>

@@ -17,14 +17,14 @@ const ProjectDetail = () => {
     <section className="flex flex-col w-full min-h-screen px-4 pt-24 lg:pt-32 pb-24 sm:px-8 md:px-14 lg:px-24 xl:px-[150px] 2xl:px-[250px] bg-[#FAFAFA]">
       <Link
         to="/proyectos"
-        className="flex items-center gap-2 text-[#555] hover:text-[#000] transition mb-6"
+        className="flex items-center gap-2 text-[#555] hover:text-[#222] transition mb-6"
       >
         <i className="bi bi-arrow-left text-[20px]"></i>
         <span className="text-sm">Volver a Proyectos</span>
       </Link>
       <header className="flex flex-col gap-6 md:flex-row md:justify-between md:items-start bg-white shadow-sm rounded-2xl p-6 md:p-10 border border-gray-100">
         <div className="flex flex-col gap-4 w-full">
-          <h1 className="font-black text-[24px] md:text-[28px] xl:text-[32px] text-[#000] leading-tight">
+          <h1 className="font-black text-[24px] md:text-[28px] xl:text-[32px] text-[#222] leading-tight">
             {project.name}
           </h1>
           <p className="text-[#666] text-sm md:text-base font-light">
@@ -49,7 +49,7 @@ const ProjectDetail = () => {
               href={project.link}
               target="_blank"
               rel="noopener"
-              className="flex items-center w-full justify-center gap-2 px-4 py-2 border border-[#000] text-[#fff] hover:text-[#000] rounded-lg font-medium bg-[#000] hover:border-[#000] hover:bg-white transition"
+              className="flex items-center w-full justify-center gap-2 px-4 py-2 border border-[#000] text-[#fff] hover:text-[#222] rounded-lg font-medium bg-[#000] hover:border-[#000] hover:bg-white transition"
             >
               <span>{project.area === "ui" ? "Figma" : "web"}</span>
               <i className="bi bi-box-arrow-up-right"></i>
@@ -80,7 +80,7 @@ const ProjectDetail = () => {
         </div>
       </header>
       <article className="mt-4 bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-gray-100">
-        <h2 className="text-xl md:text-2xl font-bold text-[#000] mb-6">
+        <h2 className="text-xl md:text-2xl font-bold text-[#222] mb-6">
           Información general
         </h2>
         <div className="flex flex-wrap gap-4">
@@ -107,7 +107,7 @@ const ProjectDetail = () => {
         </div>
       </article>
       <article className="mt-4 bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-gray-100">
-        <h2 className="text-xl md:text-2xl font-bold text-[#000] mb-6">
+        <h2 className="text-xl md:text-2xl font-bold text-[#222] mb-6">
           {project.area === "universidad"
             ? "Herramientas y recursos"
             : "Tecnologías, herramientas y recursos"}
@@ -126,7 +126,7 @@ const ProjectDetail = () => {
       </article>
       {project.features && project.features.length > 0 && (
         <article className="mt-4 bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-gray-100">
-          <h2 className="text-xl md:text-2xl font-bold text-[#000] mb-6">
+          <h2 className="text-xl md:text-2xl font-bold text-[#222] mb-6">
             Funcionalidades (Features)
           </h2>
           <ul className="list-disc ms-5 space-y-2">
@@ -142,7 +142,7 @@ const ProjectDetail = () => {
         </article>
       )}
       <article className="mt-4 bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-gray-100">
-        <h2 className="text-xl md:text-2xl font-bold text-[#000] mb-4">
+        <h2 className="text-xl md:text-2xl font-bold text-[#222] mb-4">
           {project.project === "Freelance" ||
           project.area === "Universidad" ||
           project.area === "ui"
@@ -163,7 +163,7 @@ const ProjectDetail = () => {
       </article>
       {project.characteristics && project.characteristics.length > 0 && (
         <article className="mt-4 bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-gray-100">
-          <h2 className="text-xl md:text-2xl font-bold text-[#000] mb-6">
+          <h2 className="text-xl md:text-2xl font-bold text-[#222] mb-6">
             Características del proyecto
           </h2>
           <ul className="list-disc ms-5 space-y-2">

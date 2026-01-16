@@ -11,7 +11,7 @@ const AboutSection = () => {
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:flex-1 order-2 lg:order-1">
         <article className="flex flex-col md:gap-4">
-          <h2 className="font-extrabold text-[24px] md:text-[28px] xl:text-[32px] 2xl:text-[36px] text-[#000] xl:mb-4">
+          <h2 className="font-extrabold text-[24px] md:text-[28px] xl:text-[32px] 2xl:text-[36px] text-[#222] xl:mb-4">
             Sobre mí
           </h2>
           <p className="text-[#555] text-sm md:text-base font-light leading-relaxed">
