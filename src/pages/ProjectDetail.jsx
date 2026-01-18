@@ -106,7 +106,23 @@ const ProjectDetail = () => {
           />
         </div>
       </article>
-      <article className="mt-4 bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-gray-100">
+      {project.video && (
+        <article className="mt-4 bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-gray-100 h-full lg:max-h-[900px] flex flex-col">
+          <h2 className="text-xl md:text-2xl font-bold text-[#1E1E1E] mb-6">
+            Demo
+          </h2>
+          <div className="flex-1">
+            <video
+              src={project.video}
+              controls
+              controlsList="nodownload noremoteplayback"
+              disablePictureInPicture
+              className="w-full h-full object-contain rounded-lg"
+            />
+          </div>
+        </article>
+      )}
+            <article className="mt-4 bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-gray-100">
         <h2 className="text-xl md:text-2xl font-bold text-[#222] mb-6">
           {project.area === "universidad"
             ? "Herramientas y recursos"
@@ -191,22 +207,6 @@ const ProjectDetail = () => {
                 className="w-[100%] min-w-[300px] max-w-[375px] rounded-xl shadow-md object-cover h-full"
               />
             ))}
-          </div>
-        </article>
-      )}
-      {project.video && (
-        <article className="mt-4 bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-gray-100 h-full lg:max-h-[900px] flex flex-col">
-          <h2 className="text-xl md:text-2xl font-bold text-[#1E1E1E] mb-6">
-            Demo
-          </h2>
-          <div className="flex-1">
-            <video
-              src={project.video}
-              controls
-              controlsList="nodownload noremoteplayback"
-              disablePictureInPicture
-              className="w-full h-full object-contain rounded-lg"
-            />
           </div>
         </article>
       )}
