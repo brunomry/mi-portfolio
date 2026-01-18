@@ -88,7 +88,7 @@ const projects = [
     date: "Noviembre 2025",
     duration: "4 semanas",
     last_update: "Diciembre 2025",
-    status: "Finalizado",
+    status: "Mantenimiento activo",
     project: "Freelance",
     description:
       "Landing page desarrollada para empresa de construcción de San Miguel de Tucumán con diseño moderno, responsive y optimización SEO.",
@@ -131,7 +131,7 @@ const projects = [
     date: "Enero 2024",
     duration: "8 semanas",
     last_update: "Noviembre 2025",
-    status: "Actualizando",
+    status: "Mantenimiento activo",
     project: "Freelance",
     description:
       "Sitio web para mejorar la visibilidad online del Hostal San Jorge de Cafayate, donde los usuarios pueden informarse sobre habitaciones, servicios, realizar solicitudes de reservas mediante formulario y consultas por WhatsApp o formulario de contacto.",
@@ -354,7 +354,7 @@ const projects = [
     date: "Noviembre 2025",
     duration: "4 semanas",
     last_update: "Enero 2026",
-    status: "En continuo desarrollo",
+    status: "Mantenimiento activo",
     project: "Freelance",
     description:
       "API RESTful desarrollada para la gestión interna de lavanderías. En esta API se pueden gestionar órdenes, prendas, clientes y usuarios administradores, generación de remitos mediante Pureimage y almacenamiento con Cloudinary, autenticación segura y validaciones robustas. La API está diseñada para optimizar las operaciones diarias de una lavandería. Se encuentra en continuo desarrollo para agregar nuevas funcionalidades según las necesidades del cliente.",
