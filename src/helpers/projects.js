@@ -157,6 +157,7 @@ const projects = [
     ],
     characteristics: [
       "Optimización SEO y rendimiento de la app",
+      "Registro y gestión de dominio .com mediante Hostinger y Netlify",
       "Registro de dominio en Google Search Console",
       "Contratación de fotógrafa",
     ],
