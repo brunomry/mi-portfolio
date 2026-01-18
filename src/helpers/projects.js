@@ -171,7 +171,7 @@ const projects = [
     ],
     video: "",
     github: "",
-    link: "https://hostalsanjorgecafayate.netlify.app/",
+    link: "https://hostalsanjorgecafayate.com/",
   },
  
   // {
