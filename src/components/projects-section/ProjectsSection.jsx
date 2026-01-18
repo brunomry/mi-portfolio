@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import projects from "../../helpers/projects.js";
 import ProjectCard from "./ProjectCard";
 
-const categories = ["Frontend", "Backend", "UI", "Universidad"];
+const categories = ["Páginas", "Funcionalidad", "Diseño", "Académico"];
 
 const ProjectsSection = ({ mostrar }) => {
-  const [filter, setFilter] = useState("Frontend");
+  const [filter, setFilter] = useState("Páginas");
   const [filteredList, setFilteredList] = useState([]);
 
   useEffect(() => {
@@ -15,17 +15,17 @@ const ProjectsSection = ({ mostrar }) => {
   const filterProjects = (categoria) => {
     let filtered = [];
     switch (categoria) {
-      case "Frontend":
+      case "Páginas":
         filtered = projects.filter((p) => p.area.includes("frontend"));
         break;
-      case "Backend":
+      case "Funcionalidad":
         filtered = projects.filter((p) => p.area.includes("backend"));
         break;
-      case "UI":
-        filtered = projects.filter((p) => p.area.includes("ui"));
+      case "Diseño":
+        filtered = projects.filter((p) => p.area.includes("diseño"));
         break;
-      case "Universidad":
-        filtered = projects.filter((p) => p.area.includes("universidad"));
+      case "Académico":
+        filtered = projects.filter((p) => p.area.includes("académico"));
         break;
       default:
         filtered = projects;

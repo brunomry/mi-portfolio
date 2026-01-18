@@ -8,11 +8,11 @@ import netflixcard from "../assets/projects-images/netflixcard.png";
 import netflix from "../assets/projects-images/netflix.png";
 import buenbit from "../assets/projects-images/buenbit.png";
 import buenbitcard from "../assets/projects-images/buenbitcard.png";
-
 import tfi from "../assets/projects-images/trabajofinal-diseñodesistemas.pdf";
 import lavanderia from "../assets/projects-images/lavanderia.jpg";
 import alojamientos from "../assets/projects-images/alojamientos.jpg";
 import lavanderiavideo from "../assets/projects-images/videos/lavanderia.mp4";
+
 const projects = [
    {
     id: 123,
@@ -305,7 +305,7 @@ const projects = [
     category: "Documentación",
     name: "Sistema de Gestión de Reservas - Hostal San Jorge",
     type: "Análisis y Diseño de sistemas",
-    area: "universidad",
+    area: "académico",
     date: "Noviembre 2020",
     duration: "5 meses",
     last_update: "-",
@@ -492,7 +492,7 @@ const projects = [
     category: "Interfaz mobile en Figma",
     name: "Vista principal Instagram - Netflix",
     type: "Diseño UI",
-    area: "ui",
+    area: "diseño",
     date: "Mayo 2025",
     duration: "1 semana",
     last_update: "-",
@@ -532,7 +532,7 @@ const projects = [
     category: "Interfaz mobile en Figma",
     name: "Vista Home - App BuenBit",
     type: "Diseño UI",
-    area: "ui",
+    area: "diseño",
     date: "Agosto 2025",
     duration: "3 días",
     last_update: "-",

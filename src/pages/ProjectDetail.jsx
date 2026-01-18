@@ -51,7 +51,7 @@ const ProjectDetail = () => {
               rel="noopener"
               className="flex items-center w-full justify-center gap-2 px-4 py-2 border border-[#000] text-[#fff] hover:text-[#222] rounded-lg font-medium bg-[#000] hover:border-[#000] hover:bg-white transition"
             >
-              <span>{project.area === "ui" ? "Figma" : "web"}</span>
+              <span>{project.area === "diseño" ? "Figma" : "web"}</span>
               <i className="bi bi-box-arrow-up-right"></i>
             </a>
           )}
@@ -178,7 +178,7 @@ const ProjectDetail = () => {
           </ul>
         </article>
       )}
-      {project.area === "ui" && project.images && (
+      {project.area === "diseño" && project.images && (
         <article className="mt-6 bg-white rounded-2xl shadow-sm p-4 md:p-8 border border-gray-100">
           <h2 className="text-xl md:text-2xl font-bold text-[#1E1E1E] mb-8">
             Vista del diseño
