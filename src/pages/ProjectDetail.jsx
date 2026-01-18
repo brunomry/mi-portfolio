@@ -44,7 +44,7 @@ const ProjectDetail = () => {
           </div>
         </div>
         <div className="flex flex-wrap lg:flex-nowrap gap-2 mt-4 md:mt-0 text-sm md:text-base">
-          {project.enlace && (
+          {project.link && (
             <a
               href={project.link}
               target="_blank"
