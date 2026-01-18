@@ -89,8 +89,7 @@ const projects = [
     last_update: "Diciembre 2025",
     status: "Mantenimiento activo",
     project: "Freelance",
-    description:
-      "Landing page desarrollada para empresa de construcción de San Miguel de Tucumán con diseño moderno, responsive y optimización SEO.",
+    description: "Landing page desarrollada para Rafter Constructora, diseñada para fortalecer su presencia en Internet y aumentar la visibilidad de la empresa en San Miguel de Tucumán y alrededores. La página presenta un diseño moderno y adaptado a todo tipo de dispositivos, permitiendo que los clientes encuentren fácilmente información sobre los servicios y proyectos de la constructora. Además, está preparada y optimizada para buscadores, lista para potenciar su posicionamiento una vez que se registre el dominio propio y se cree el perfil de Google Business, facilitando que la empresa aparezca en los resultados de búsqueda y mejorando el contacto con clientes potenciales.",
     technologies: [
       { name: "Figma" },
       { name: "React" },
@@ -132,8 +131,7 @@ const projects = [
     last_update: "Noviembre 2025",
     status: "Mantenimiento activo",
     project: "Freelance",
-    description:
-      "Sitio web para mejorar la visibilidad online del Hostal San Jorge de Cafayate, donde los usuarios pueden informarse sobre habitaciones, servicios, realizar solicitudes de reservas mediante formulario y consultas por WhatsApp o formulario de contacto.",
+    description: "Sitio web desarrollado para mejorar la visibilidad online del Hostal San Jorge en Cafayate, permitiendo que los visitantes se informen fácilmente sobre habitaciones, servicios y comodidades. Actualmente, los usuarios pueden realizar consultas y solicitudes de reserva mediante formularios y WhatsApp, mejorando la comunicación directa y la experiencia del cliente. El sitio está optimizado para buscadores y preparado para SEO, con el objetivo de aparecer en los primeros resultados de Google. Próximamente, el sitio permitirá que los usuarios se registren, inicien sesión y realicen reservas de manera directa.",
     technologies: [
       { name: "React" },
       { name: "TailwindCSS" },
