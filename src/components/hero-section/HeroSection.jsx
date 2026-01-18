@@ -34,7 +34,7 @@ const HeroSection = () => {
         lg:flex-row "
       >
         <div className="flex flex-col gap-4 lg:flex-1 order-1 md:order-1 max-w-[750px]">
-          <h1 className="text-[20px] sm:text-[28px] lg:text-[32px] xl:text-[44px] 2xl:text-[64px] font-light leading-tight text-[#222] sm:text-left">
+          <h1 className="text-[20px] sm:text-[28px] lg:text-[32px] xl:text-[44px] 2xl:text-[60px] font-bold leading-tight text-[#222] sm:text-left">
             Hola, soy Bruno Madozzo
           </h1>
           <h2 className="text-[18px] sm:text-[24px] xl:text-[28px] font-light text-[#222] leading-snug sm:text-left">
