@@ -26,8 +26,7 @@ const projects = [
     last_update: "Enero 2026",
     status: "Actualizando",
     project: "Académico/Freelance",
-    description:
-      "Aplicación web de gestión interna para lavanderías donde los usuarios administradores pueden iniciar sesión y gestionar órdenes, prendas, clientes y otros usuarios. Incluye filtros, validaciones, manejo de errores y generación de remitos en formato imagen. El backend está desarrollado en Node js, Express js, Mongoose y MongoDB con despliegue en Vercel.",
+    description: "Aplicación web diseñada para facilitar la gestión diaria de una lavandería, centralizando en un solo sistema el control de órdenes, prendas, clientes y usuarios. Permite registrar y administrar cada trabajo de forma ordenada, agilizando la atención al cliente y reduciendo errores en el seguimiento de ordenes. A través de una interfaz clara e intuitiva, el personal puede buscar órdenes por nombre, código o fecha, gestionar prendas y mantener actualizada la información de los clientes. El sistema genera automáticamente comprobantes de entrega y carnets virtuales para los clientes, los cuales pueden compartirse directamente por WhatsApp, mejorando la comunicación y la experiencia del usuario final. La aplicación está pensada para negocios que necesitan optimizar tiempos, mantener un control interno eficiente y ofrecer una atención más profesional, con una base sólida para seguir creciendo e incorporar nuevas funcionalidades en el futuro.",
     technologies: [
       { name: "React" },
       { name: "TailwindCSS" },
