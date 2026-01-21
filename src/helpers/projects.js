@@ -89,7 +89,7 @@ const projects = [
     last_update: "Diciembre 2025",
     status: "Mantenimiento activo",
     project: "Freelance",
-    description: "Landing page desarrollada para Rafter Constructora, diseñada para fortalecer su presencia en Internet y aumentar la visibilidad de la empresa en San Miguel de Tucumán y alrededores. La página presenta un diseño moderno y adaptado a todo tipo de dispositivos, permitiendo que los clientes encuentren fácilmente información sobre los servicios y proyectos de la constructora. Además, está preparada y optimizada para buscadores, lista para potenciar su posicionamiento una vez que se registre el dominio propio y se cree el perfil de Google Business, facilitando que la empresa aparezca en los resultados de búsqueda y mejorando el contacto con clientes potenciales.",
+    description: "Landing page desarrollada para Rafter Constructora, diseñada para fortalecer su presencia en Internet y aumentar la visibilidad de la empresa en San Miguel de Tucumán y alrededores. La página presenta un diseño moderno y adaptado a todo tipo de dispositivos, permitiendo que los clientes encuentren fácilmente información sobre los servicios y proyectos de la constructora. Además, está preparada y optimizada para buscadores, lista para potenciar su posicionamiento, facilitando que la empresa aparezca en los resultados de búsqueda y mejorando el contacto con clientes potenciales.",
     technologies: [
       { name: "Figma" },
       { name: "React" },
@@ -100,15 +100,16 @@ const projects = [
       { name: "CSS3" },
       { name: "Git" },
       { name: "Github" },
-      { name: "DonWeb" },
-      { name: "Google Search Console" },
+      // { name: "Google Search Console" },
       { name: "PageSpeed Insights" },
+      { name: "DonWeb" },
+      { name: "Vercel" },
     ],
     responsabilities: [
       "Diseño de interfaz con Figma",
       "Posicionamiento en Google con palabras clave relevantes",
       // "Integración con 'Sitio web' de Google My Business",
-      // "Gestión de dominio y hosting mediante Netflify y DonWeb",
+      "Registro y gestión de dominio .com mediante DonWeb y Vercel",
     ],
     characteristics: [
       "Diseño responsive con TailwindCSS",
@@ -117,7 +118,7 @@ const projects = [
     features: [],
     video: "",
     github: "",
-    link: "https://rafterconstructora.netlify.app/",
+    link: "https://rafterconstructora.com.ar/",
   },
   {
     id: 222,
