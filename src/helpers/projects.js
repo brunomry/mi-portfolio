@@ -109,7 +109,7 @@ const projects = [
       "Diseño de interfaz con Figma",
       "Posicionamiento en Google con palabras clave relevantes",
       // "Integración con 'Sitio web' de Google My Business",
-      "Registro y gestión de dominio .com mediante DonWeb y Vercel",
+      "Registro y gestión de dominio .com.ar mediante DonWeb y Vercel",
     ],
     characteristics: [
       "Diseño responsive con TailwindCSS",
