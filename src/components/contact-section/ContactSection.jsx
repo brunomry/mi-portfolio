@@ -16,13 +16,13 @@ const ContactSection = () => {
 
   return (
     <section
-      className="py-12 xl:py-20 2xl:py-40 px-4 md:px-8 lg:px-[100px] xl:px-[120px] 2xl:px-[150px]  flex flex-col gap-4 md:gap-12 min-h-[400px] xl:min-h-[450px] w-[100%] bg-[#FAFAFA] containerContact contact"
+      className="site-section section-tint flex flex-col gap-4 md:gap-10 w-full"
       id="contacto"
     >
       <h2 className="font-extrabold text-[24px] md:text-[28px] xl:text-[32px] 2xl:text-[36px] text-[#222] mb-4">
         Contacto
       </h2>
-      <div className="flex flex-col lg:flex-row gap-6 md:gap-8 2xl:gap-20 ">
+      <div className="contact-panel flex flex-col lg:flex-row gap-10 2xl:gap-20">
         <div className=" flex flex-col gap-8 md:gap-8 2xl:gap-12 order-1 ">
           <div className="flex flex-col md:gap-4  ">
             <h2 className="font-bold md:font-black text-base text-[#222] leading-snug max-w-4xl">
@@ -58,7 +58,7 @@ const ContactSection = () => {
         <div className="flex flex-col gap-2 md:flex-row md:flex-wrap lg:flex-nowrap lg:flex-col md:gap-4 justify-start lg:items-stretch items-center md:order-1 mb-8">
           <a
             onClick={copiarCorreo}
-            className="relative w-full md:min-w-[300px] max-w-[320px] flex items-center gap-4 p-4 md:p-6 bg-white border rounded-2xl shadow-md hover:shadow-lg cursor-pointer transition-all"
+            className="contact-link relative w-full md:min-w-[300px] max-w-[340px] flex items-center gap-4 p-4 md:p-5 border rounded-2xl cursor-pointer transition-all"
             title="Haz clic para copiar mi correo"
           >
             <i className="bi bi-envelope-fill text-2xl text-red-500"></i>
@@ -80,7 +80,7 @@ const ContactSection = () => {
             target="_blank"
             title="Contáctame por LinkedIn"
             rel="noopener noreferrer"
-            className="w-full md:min-w-[320px] max-w-[320px] flex items-center gap-4 p-4 md:p-6 bg-white border rounded-2xl shadow-md hover:shadow-lg transition-all"
+            className="contact-link w-full md:min-w-[320px] max-w-[340px] flex items-center gap-4 p-4 md:p-5 border rounded-2xl transition-all"
           >
             <i className="text-2xl text-[#2B7FF7] bi bi-linkedin"></i>
             <div className="flex flex-col">
@@ -95,7 +95,7 @@ const ContactSection = () => {
             target="_blank"
             title="Mi GitHub"
             rel="noopener noreferrer"
-            className="w-full min-w-[320px] max-w-[320px] flex items-center gap-4 p-4 md:p-6 bg-white border rounded-2xl shadow-md hover:shadow-lg transition-all"
+            className="contact-link w-full md:min-w-[320px] max-w-[340px] flex items-center gap-4 p-4 md:p-5 border rounded-2xl transition-all"
           >
             <i className="text-2xl text-black bi bi-github"></i>
             <div className="flex flex-col">
@@ -108,7 +108,7 @@ const ContactSection = () => {
           <a
             onClick={handleCV}
             title="ver CV"
-            className="w-full cursor-pointer md:min-w-[320px] max-w-[320px] flex items-center gap-4 p-4 md:p-6 bg-white border rounded-2xl shadow-md hover:shadow-lg transition-all"
+            className="contact-link w-full cursor-pointer md:min-w-[320px] max-w-[340px] flex items-center gap-4 p-4 md:p-5 border rounded-2xl transition-all"
           >
             <i className="text-2xl text-[#2B7FF7] bi bi-file-earmark-person-fill"></i>
             <div className="flex flex-col">

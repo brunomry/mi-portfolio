@@ -1,6 +1,5 @@
 import Footer from "../common/Footer";
 import NavbarPrincipal from "../common/NavbarPrincipal";
-import { useEffect, useState } from "react";
 import HeroSection from "../components/hero-section/HeroSection";
 import ProjectsSection from "../components/projects-section/ProjectsSection";
 import ProcessSection from "../components/process-section/ProcessSection";
@@ -12,20 +11,12 @@ import AboutSection from "../components/about-section/AboutSection";
 // import BtnWpp from "../components/common/BtnWpp";
 
 const Home = () => {
-  const [scrollTop, setScrollTop] = useState(0);
-  const handleScroll = () => setScrollTop(window.pageYOffset);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <div className="min-h-[100vh] flex flex-col lg:flex-row">
+    <div className="site-shell min-h-[100vh] flex flex-col">
       <NavbarPrincipal></NavbarPrincipal>
-      <section
+      <main
         id="section"
-        className="w-[100%] absolute min-h-screen lg:w-[100%] xl:w-[100%]  bg-[#FAFAFA] flex flex-col justify-center items-center flex-grow  pt-2 xl:pt-3"
+        className="w-full min-h-screen flex flex-col items-center"
       >
         <HeroSection></HeroSection>
         <ProjectsSection mostrar={false}></ProjectsSection>
@@ -45,7 +36,7 @@ const Home = () => {
           </a>
         )} */}
         {/* <BtnWpp></BtnWpp> */}
-      </section>
+      </main>
     </div>
   );
 };

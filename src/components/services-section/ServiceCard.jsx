@@ -3,15 +3,13 @@ import { BsCheckSquareFill } from "react-icons/bs";
 const ServiceCard = ({ service }) => {
   return (
     <div
-      className="group bg-gradient-to-tr from-white to-[#f9faff] rounded-3xl shadow-lg 
-                 hover:shadow-xl 
-                 w-full min-w-[260px] md:max-w-[340px] lg:max-w-[380px] h-fit md:h-[280px] p-6 flex flex-col justify-between"
+      className="surface-card group bg-white w-full min-w-[260px] min-h-[280px] p-6 flex flex-col justify-between"
       title={service.service}
     >
       <div className="flex flex-col gap-4">
         <div className="flex flex-col justify-start items-start gap-3">
           <div
-            className="bg-[#222] text-white p-3 rounded-xl shadow-md 
+            className="bg-[#0b6e69] text-white p-3 rounded-xl shadow-md
                           group-hover:scale-110 transition-transform duration-300 flex items-center justify-center"
           >
             <BsCheckSquareFill className="text-[22px]" />
@@ -28,7 +26,7 @@ const ServiceCard = ({ service }) => {
             {service.tags.map((tag, index) => (
               <span
                 key={index}
-                className="bg-[#E4F0FF] text-[#222] px-3 py-1 rounded-full text-xs md:text-sm font-medium"
+                className="tag-pill px-3 py-1 rounded-full text-xs md:text-sm font-medium"
               >
                 {tag}
               </span>

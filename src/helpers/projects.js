@@ -26,6 +26,13 @@ const projects = [
     last_update: "Enero 2026",
     status: "Mantenimiento activo",
     project: "Académico/Freelance",
+    problem:
+      "La operación diaria de una lavandería requiere registrar muchas prendas, clientes y estados de entrega. Cuando esa información se distribuye entre anotaciones o herramientas separadas, aumenta el tiempo de atención y el riesgo de cometer errores.",
+    outcome:
+      "La solución centraliza órdenes, prendas, clientes y usuarios en un mismo flujo de trabajo. También automatiza la generación de remitos y carnets virtuales listos para compartir por WhatsApp.",
+    outcomeLabel: "Impacto esperado",
+    outcomeDetail:
+      "En una implementación comercial, permitiría reducir tareas manuales, agilizar la búsqueda y el seguimiento de órdenes y ofrecer al cliente una comunicación más clara y profesional.",
     description: "Aplicación web diseñada para facilitar la gestión diaria de una lavandería, centralizando en un solo sistema el control de órdenes, prendas, clientes y usuarios. Permite registrar y administrar cada trabajo de forma ordenada, agilizando la atención al cliente y reduciendo errores en el seguimiento de ordenes. A través de una interfaz clara e intuitiva, el personal puede buscar órdenes por nombre, código o fecha, gestionar prendas y mantener actualizada la información de los clientes. El sistema genera automáticamente comprobantes de entrega y carnets virtuales para los clientes, los cuales pueden compartirse directamente por WhatsApp, mejorando la comunicación y la experiencia del usuario final. La aplicación está pensada para negocios que necesitan optimizar tiempos, mantener un control interno eficiente y ofrecer una atención más profesional, con una base sólida para seguir creciendo e incorporar nuevas funcionalidades en el futuro.",
     technologies: [
       { name: "React" },
@@ -89,6 +96,13 @@ const projects = [
     last_update: "Enero 2026",
     status: "Mantenimiento activo",
     project: "Freelance",
+    problem:
+      "Rafter necesitaba una presencia digital profesional que acompañara el crecimiento de la empresa y permitiera explicar sus servicios y proyectos de manera clara a potenciales clientes.",
+    outcome:
+      "El sitio se encuentra publicado y es utilizado por la empresa como material de presentación comercial. Actualmente continúa evolucionando con nuevos cambios solicitados por el cliente para ampliar la información disponible.",
+    outcomeLabel: "Resultado comprobado",
+    outcomeDetail:
+      "La web pasó a ser un recurso activo del proceso comercial: el equipo puede compartirla directamente con clientes que necesitan conocer mejor la empresa, sus servicios y su experiencia.",
     description: "Landing page desarrollada para Rafter Constructora, diseñada para fortalecer su presencia en Internet y aumentar la visibilidad de la empresa en San Miguel de Tucumán y alrededores. La página presenta un diseño moderno y adaptado a todo tipo de dispositivos, permitiendo que los clientes encuentren fácilmente información sobre los servicios y proyectos de la constructora. Además, está preparada y optimizada para buscadores, lista para potenciar su posicionamiento, facilitando que la empresa aparezca en los resultados de búsqueda y mejorando el contacto con clientes potenciales.",
     technologies: [
       { name: "Figma" },
@@ -132,6 +146,13 @@ const projects = [
     last_update: "Noviembre 2025",
     status: "Mantenimiento activo",
     project: "Freelance",
+    problem:
+      "El hostal ya contaba con una web, pero su diseño anterior no comunicaba correctamente la calidad del alojamiento ni generaba suficiente confianza para que los visitantes iniciaran una consulta.",
+    outcome:
+      "Se rediseñó por completo la experiencia, mejorando la presentación de habitaciones, servicios y llamados a la acción, además de facilitar el contacto directo mediante WhatsApp y formularios.",
+    outcomeLabel: "Resultado comprobado",
+    outcomeDetail:
+      "En lo que va del año, la nueva web generó más de 50 consultas directas por WhatsApp. Para un alojamiento local, este resultado demuestra que el rediseño no solo mejoró la imagen del negocio: también aumentó la confianza y produjo oportunidades comerciales concretas.",
     description: "Sitio web desarrollado para mejorar la visibilidad online del Hostal San Jorge en Cafayate, permitiendo que los visitantes se informen fácilmente sobre habitaciones, servicios y comodidades. Actualmente, los usuarios pueden realizar consultas y solicitudes de reserva mediante formularios y WhatsApp, mejorando la comunicación directa y la experiencia del cliente. El sitio está optimizado para buscadores y preparado para SEO, con el objetivo de aparecer en los primeros resultados de Google. Próximamente, el sitio permitirá que los usuarios se registren, inicien sesión y realicen reservas de manera directa.",
     technologies: [
       { name: "React" },
@@ -355,6 +376,13 @@ const projects = [
     last_update: "Enero 2026",
     status: "Mantenimiento activo",
     project: "Freelance",
+    problem:
+      "La gestión manual o fragmentada de órdenes, prendas, clientes y comprobantes dificulta el seguimiento del trabajo y puede generar demoras o inconsistencias en la atención.",
+    outcome:
+      "La API proporciona una base centralizada y escalable para administrar la operación, con autenticación, validaciones, manejo de errores y generación de comprobantes.",
+    outcomeLabel: "Impacto esperado",
+    outcomeDetail:
+      "Integrada en un negocio, permitiría reducir la duplicación de datos, automatizar tareas administrativas y mantener un historial confiable de clientes y órdenes.",
     description:
       "API RESTful desarrollada para la gestión interna de lavanderías. En esta API se pueden gestionar órdenes, prendas, clientes y usuarios administradores, generación de remitos mediante Pureimage y almacenamiento con Cloudinary, autenticación segura y validaciones robustas. La API está diseñada para optimizar las operaciones diarias de una lavandería. Se encuentra en continuo desarrollo para agregar nuevas funcionalidades según las necesidades del cliente.",
     technologies: [
@@ -401,6 +429,13 @@ const projects = [
     last_update: "-",
     status: "En continuo desarrollo",
     project: "Freelance",
+    problem:
+      "Los alojamientos suelen gestionar reservas, estadías, pagos, habitaciones y huéspedes mediante herramientas separadas, lo que dificulta tener una visión completa de la operación.",
+    outcome:
+      "La API fue diseñada para centralizar los principales procesos de un alojamiento y servir como base tanto para la gestión interna como para futuras reservas online.",
+    outcomeLabel: "Impacto esperado",
+    outcomeDetail:
+      "En una implementación real, ayudaría a reducir errores de disponibilidad, agilizar el registro de reservas y pagos, mejorar el seguimiento de cada estadía y disponer de información organizada para tomar decisiones.",
     description:
       "API RESTful desarrollada para la gestión interna de alojamientos. En esta API se pueden gestionar servicios/comodidades, habitaciones, tipos de habitaciones, reservas, estadías, pagos, métodos de pago, canales de reservas, huéspedes, administradores y autenticación para administradores y huéspedes. La API está diseñada para optimizar todos los procesos de un alojamiento. Además también permitirá que los usuarios puedan realizar reservas. Se encuentra en continuo desarrollo para agregar nuevas funcionalidades como reportes, gestión de stock, gestión de promociones/descuentos, notificaciones, turnos para el desayuno, entre otras.",
     technologies: [

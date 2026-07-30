@@ -1,82 +1,90 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+
+const navigation = [
+  { label: "Proyectos", href: "#proyectos" },
+  { label: "Servicios", href: "#servicios" },
+  { label: "Tecnologías", href: "#tecnologías" },
+  { label: "Mi método", href: "#proceso" },
+  { label: "Certificaciones", href: "#certificaciones" },
+  { label: "Sobre mí", href: "#sobre-mi" },
+  { label: "Contacto", href: "#contacto" },
+];
 
 const NavbarPrincipal = () => {
-  const [desplegado, setDesplegado] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < 768);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    document.body.style.overflow = isOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
+  useEffect(() => {
+    const closeOnEscape = (event) => {
+      if (event.key === "Escape") setIsOpen(false);
+    };
+    window.addEventListener("keydown", closeOnEscape);
+    return () => window.removeEventListener("keydown", closeOnEscape);
   }, []);
 
-  const toggleMenu = () => setDesplegado(!desplegado);
-  const closeMenu = () => isMobile && setDesplegado(false);
-
   return (
-    <header className="fixed top-0 left-0 w-full z-[99] bg-[#FFF]">
-      <div className="flex justify-between md:justify-around items-center px-6 md:px-10 lg:px-20 h-[64px] md:h-[96px]">
-        <a
-          className="text-[#0A0A0A] font-bold text-[12px]"
-          href="#sobremi"
-        >
-          BM Soluciones web
+    <header className="site-nav fixed left-0 top-0 z-[99] w-full">
+      <div className="relative z-20 mx-auto flex h-[68px] max-w-[1500px] items-center justify-between px-5 md:h-[82px] md:px-8 lg:px-12">
+        <a className="brand-mark" href="#sobremi" aria-label="Ir al inicio" onClick={() => setIsOpen(false)}>
+          <span>Soluciones web</span>
         </a>
-        <nav className="hidden md:flex items-center gap-8 md:gap-4 lg:gap-12 text-[#787777] text-sm ">
-          {[
-            "Proyectos",
-            "Servicios",
-            "Tecnologías",
-            "Mi Método",
-            "Certificaciones",
-            "Sobre mí",
-            "Contacto",
-          ].map((item) => (
-            <a
-              key={item}
-              href={`${item === "Mi Método" ? "#proceso" : item === "Sobre mí" ? "#sobre-mi" : `#${item.toLowerCase()}`}`}
-              className="hover:text-[#2B7FF7] transition-colors"
-            >
-              {item}
+
+        <nav className="hidden items-center gap-4 md:flex lg:gap-8" aria-label="Navegación principal">
+          {navigation.map((item) => (
+            <a key={item.href} href={item.href} className="nav-link transition-colors">
+              {item.label}
             </a>
           ))}
         </nav>
-        {isMobile && (
-          <button onClick={toggleMenu} className="md:hidden z-50">
-            <i
-              className={`bi ${desplegado ? "bi-x-lg" : "bi-list"} text-xl`}
-            />
-          </button>
-        )}
-      </div>
-      {isMobile && (
-        <div
-          className={`fixed top-0 left-0 w-full h-full bg-white flex flex-col items-center justify-center transition-transform duration-500 ease-in-out transform ${
-            desplegado
-              ? "translate-x-0 opacity-100"
-              : "-translate-x-full opacity-0 pointer-events-none"
-          }`}
+
+        <button
+          type="button"
+          onClick={() => setIsOpen((current) => !current)}
+          className="relative z-30 flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 bg-white text-[#102a43] md:hidden"
+          aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
+          aria-expanded={isOpen}
+          aria-controls="mobile-navigation"
         >
-          {[
-            "Proyectos",
-            "Servicios",
-            "Tecnologías",
-            "Mi Método",
-            "Certificaciones",
-            "Sobre mí",
-            "Contacto",
-          ].map((item) => (
-            <a
-              key={item}
-              href={`${item === "Mi Método" ? "#proceso" : item === "Sobre mí" ? "#sobre-mi" : `#${item.toLowerCase()}`}`}
-              onClick={closeMenu}
-              className="text-[#000] text-2xl my-4 hover:text-gray-600 transition-colors"
-            >
-              {item}
-            </a>
-          ))}
-        </div>
-      )}
+          <i className={`bi ${isOpen ? "bi-x-lg" : "bi-list"} text-xl`} />
+        </button>
+      </div>
+
+      <div
+        id="mobile-navigation"
+        className={`mobile-menu fixed inset-0 z-10 h-[100dvh] w-screen overflow-hidden bg-white px-5 pb-6 pt-[88px] transition duration-300 md:hidden ${
+          isOpen
+            ? "visible translate-y-0 opacity-100"
+            : "invisible -translate-y-3 opacity-0 pointer-events-none"
+        }`}
+      >
+        <nav className="mx-auto flex h-full max-w-lg flex-col justify-center" aria-label="Navegación móvil">
+          <div className="flex flex-col">
+            {navigation.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                onClick={() => setIsOpen(false)}
+                className="border-b border-slate-100 py-[clamp(.65rem,2.2vh,1rem)] text-[clamp(1rem,2.8vh,1.25rem)] font-bold text-[#102a43] transition hover:text-[#0b6e69]"
+              >
+                {item.label}
+              </a>
+            ))}
+          </div>
+          <a
+            href="#contacto"
+            onClick={() => setIsOpen(false)}
+            className="button-primary mt-[clamp(.8rem,2.5vh,1.5rem)] flex items-center justify-center gap-2 border"
+          >
+            Hablemos de tu proyecto <i className="bi bi-arrow-right" />
+          </a>
+        </nav>
+      </div>
     </header>
   );
 };

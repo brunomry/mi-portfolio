@@ -4,14 +4,11 @@ const AboutSection = () => {
   return (
     <section
       id="sobre-mi"
-      className="flex pt-12 pb-12 flex-col w-full min-h-[40vh] bg-[#FFF]
-      px-4 md:px-8 lg:px-[100px] xl:px-[120px] 2xl:px-[250px]
-      md:min-h-[60vh] md:items-center md:pt-[100px] 
-      lg:pt-[120px] xl:pt-[180px] lg:min-h-[70vh]"
+      className="site-section section-white flex flex-col w-full"
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:flex-1 order-2 lg:order-1">
         <article className="flex flex-col md:gap-4">
-          <h2 className="font-extrabold text-[24px] md:text-[28px] xl:text-[32px] 2xl:text-[36px] text-[#222] xl:mb-4">
+          <h2 className="section-heading font-black text-[32px] md:text-[48px] text-[#102a43] tracking-[-0.04em] xl:mb-4">
             Sobre mí
           </h2>
           <p className="text-[#555] text-sm md:text-base font-light leading-relaxed">
@@ -30,7 +27,7 @@ const AboutSection = () => {
             mejores decisiones.
           </p>
           <div className="flex flex-wrap gap-8 mt-6">
-            <div className="flex flex-col items-center">
+            <div className="stat-card flex flex-col items-center">
               <span className="text-2xl 2xl:text-4xl font-bold text-gray-800">
                 4+
               </span>
@@ -38,7 +35,7 @@ const AboutSection = () => {
                 Años de formación
               </span>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="stat-card flex flex-col items-center">
               <span className="text-2xl 2xl:text-4xl font-bold text-gray-800">
                 2
               </span>
@@ -46,7 +43,7 @@ const AboutSection = () => {
                 Becas obtenidas
               </span>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="stat-card flex flex-col items-center">
               <span className="text-2xl 2xl:text-4xl font-bold text-gray-800">
                 1+
               </span>
@@ -54,7 +51,7 @@ const AboutSection = () => {
                 Año de experiencia
               </span>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="stat-card flex flex-col items-center">
               <span className="text-2xl 2xl:text-4xl font-bold text-gray-800">
                 15+
               </span>
@@ -67,7 +64,7 @@ const AboutSection = () => {
         <article
           className="w-full h-[400px]
            lg:h-[550px] 2xl:h-[600px] 2xl:w-[75%]
-          rounded-[20px] border-[4px] md:border-[8px] border-[#d2d2d2] order-1 lg:order-2"
+          rounded-[28px] border-[8px] border-[#e8f4f2] shadow-[0_28px_65px_rgba(16,42,67,.13)] overflow-hidden order-1 lg:order-2"
         >
           <img
             src={perfil}

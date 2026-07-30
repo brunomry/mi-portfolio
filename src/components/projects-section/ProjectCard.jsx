@@ -4,15 +4,15 @@ const ProjectCard= ({ project }) => {
   const mainTech = project.technologies.slice(0, 3);
 
   return (
-    <article className="relative bg-white rounded-2xl shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 w-full max-w-[480px] flex flex-col overflow-hidden">
-      <span className="absolute top-3 left-3 bg-[#000000] text-white text-xs font-bold px-3 py-1 rounded-full z-10 shadow-md">
+    <article className="project-card surface-card relative bg-white w-full max-w-[480px] flex flex-col overflow-hidden">
+      <span className="absolute top-4 left-4 bg-[#102a43] text-white text-[11px] font-bold px-3 py-1.5 rounded-full z-10 shadow-md uppercase tracking-wider">
         {project.status}
       </span>
       <img
         src={project.image}
         alt={project.name}
         title={project.name}
-        className="w-full h-[240px] lg:h-[280px] object-cover rounded-t-2xl"
+        className="project-image w-full h-[240px] lg:h-[280px] object-cover"
       />
       <div className="p-5 flex flex-col gap-3">
         <div>
@@ -29,7 +29,7 @@ const ProjectCard= ({ project }) => {
             {mainTech.map((tech, index) => (
               <span
                 key={index}
-                className="bg-gray-200 text-gray-600 px-3 py-1 rounded-md text-xs md:text-sm font-medium"
+                className="tag-pill px-3 py-1 rounded-full text-xs font-semibold"
               >
                 {tech.name}
               </span>

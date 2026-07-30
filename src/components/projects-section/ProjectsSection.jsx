@@ -36,7 +36,7 @@ const ProjectsSection = ({ mostrar }) => {
   return (
     <section
       id="proyectos"
-      className="w-[100%] py-12 xl:py-20 2xl:py-40 px-4 md:px-8 lg:px-[100px] xl:px-[120px] 2xl:px-[150px] flex flex-col gap-4 md:gap-6 bg-[#f9f9f9] "
+      className="site-section section-tint w-full flex flex-col gap-4 md:gap-6"
     >
       <h2 className="font-extrabold text-[24px] md:text-[28px] xl:text-[32px] 2xl:text-[36px] text-[#222] xl:mb-4">
         Proyectos
@@ -55,11 +55,11 @@ const ProjectsSection = ({ mostrar }) => {
           <button
             key={cat}
             onClick={() => setFilter(cat)}
-            className={`px-4 py-2 rounded-full font-medium text-sm md:text-base transition 
+            className={`filter-button px-4 py-2 rounded-full font-semibold text-sm transition
               ${
                 filter === cat
-                  ? "bg-[#595c61] text-white"
-                  : "bg-[#e0e0e0] text-[#333] hover:bg-[#b4b4b4]"
+                  ? "filter-button-active"
+                  : ""
               }`}
           >
             {cat}

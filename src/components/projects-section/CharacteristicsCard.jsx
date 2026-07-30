@@ -1,8 +1,8 @@
 const CharacteristicsCard = ({caracteristica, descripcion}) => {
   return (
-    <div className=" rounded-[15px] md:px-10 md:py-5 flex flex-col  md:shadow bg-[white] w-[fit-content]">
-      <p className="text-[12px] md:text-[14px] text-[#787777]">{caracteristica}</p>
-      <p className="font-bold text-[14px] md:text-[16px] text-[#000]">
+    <div className="min-w-[140px] flex-1 rounded-2xl border border-[#dce6ec] bg-[#f7fafc] px-4 py-4 md:px-5">
+      <p className="mb-1 text-[11px] font-bold uppercase tracking-[.12em] text-[#829ab1]">{caracteristica}</p>
+      <p className="text-[14px] font-bold text-[#102a43] md:text-[16px]">
         {descripcion}
       </p>
     </div>

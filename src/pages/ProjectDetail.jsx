@@ -1,216 +1,162 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import projects from "../helpers/projects.js";
 import CharacteristicsCard from "../components/projects-section/CharacteristicsCard.jsx";
 
+const DetailSection = ({ title, children, className = "" }) => (
+  <article className={`detail-card p-6 md:p-9 ${className}`}>
+    <h2 className="detail-section-title mb-6">{title}</h2>
+    {children}
+  </article>
+);
+
 const ProjectDetail = () => {
-  const [project, setProject] = useState({});
   const { id } = useParams();
+  const project = projects.find((item) => item.id === Number(id));
 
   useEffect(() => {
-    const searchedProject = projects.find((p) => p.id == id);
-    setProject(searchedProject);
     window.scrollTo(0, 0);
   }, [id]);
 
+  if (!project) {
+    return (
+      <main className="detail-page grid min-h-screen place-items-center px-5">
+        <div className="text-center">
+          <h1 className="text-3xl font-black text-[#102a43]">Proyecto no encontrado</h1>
+          <Link className="button-primary mt-6 inline-flex" to="/proyectos">Volver a proyectos</Link>
+        </div>
+      </main>
+    );
+  }
+
+  const relevantTitle =
+    project.project === "Freelance" || project.area === "Universidad" || project.area === "ui"
+      ? "Aspectos relevantes"
+      : "Mi aporte y responsabilidades";
+
   return (
-    <section className="flex flex-col w-full min-h-screen px-4 pt-24 lg:pt-32 pb-24 sm:px-8 md:px-14 lg:px-24 xl:px-[150px] 2xl:px-[250px] bg-[#FAFAFA]">
-      <Link
-        to="/proyectos"
-        className="flex items-center gap-2 text-[#555] hover:text-[#222] transition mb-6"
-      >
-        <i className="bi bi-arrow-left text-[20px]"></i>
-        <span className="text-sm">Volver a Proyectos</span>
-      </Link>
-      <header className="flex flex-col gap-6 md:flex-row md:justify-between md:items-start bg-white shadow-sm rounded-2xl p-6 md:p-10 border border-gray-100">
-        <div className="flex flex-col gap-4 w-full">
-          <h1 className="font-black text-[24px] md:text-[28px] xl:text-[32px] text-[#222] leading-tight">
-            {project.name}
-          </h1>
-          <p className="text-[#666] text-sm md:text-base font-light">
-            {project.description}
-          </p>
-          <div className="flex flex-wrap gap-2 mt-3">
-            {project.type && (
-              <span className="bg-gray-200 text-gray-600 px-3 py-1 rounded-lg text-sm font-medium">
-                {project.type}
-              </span>
-            )}
-            {project.category && (
-              <span className="bg-gray-200 text-gray-600 px-3 py-1 rounded-lg text-sm font-medium">
-                {project.category}
-              </span>
-            )}
+    <main className="detail-page min-h-screen px-5 pb-24 pt-28 md:px-8 md:pt-32 lg:px-12">
+      <div className="mx-auto max-w-[1280px]">
+        <Link to="/proyectos" className="mb-6 inline-flex items-center gap-2 text-sm font-semibold text-[#486581] transition hover:text-[#0b6e69]">
+          <i className="bi bi-arrow-left" /> Volver a proyectos
+        </Link>
+
+        <header className="detail-hero p-6 md:p-10 lg:p-14">
+          <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
+            <div className="max-w-[820px]">
+              <p className="detail-kicker mb-4">{project.category} · {project.type}</p>
+              <h1 className="detail-title font-black">{project.name}</h1>
+              <p className="mt-6 max-w-[780px] text-base leading-8 text-[#486581] md:text-lg">
+                {project.description}
+              </p>
+              <div className="mt-6 flex flex-wrap gap-2">
+                <span className="tag-pill rounded-full px-3 py-1.5 text-xs font-bold">{project.status}</span>
+                <span className="rounded-full border border-[#dce6ec] bg-white px-3 py-1.5 text-xs font-bold text-[#486581]">{project.project}</span>
+              </div>
+            </div>
+
+            <div className="flex min-w-fit flex-wrap gap-3">
+              {project.link && (
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="button-primary flex items-center justify-center gap-2 border">
+                  {project.area === "diseño" ? "Ver en Figma" : "Visitar proyecto"} <i className="bi bi-arrow-up-right" />
+                </a>
+              )}
+              {project.github && (
+                <a href={project.github} target="_blank" rel="noopener noreferrer" className="button-secondary flex items-center justify-center gap-2 border">
+                  Código <i className="bi bi-github" />
+                </a>
+              )}
+              {project.file && (
+                <a href={project.file} target="_blank" rel="noopener noreferrer" className="button-secondary flex items-center justify-center gap-2 border">
+                  Ver documento <i className="bi bi-file-earmark-pdf" />
+                </a>
+              )}
+            </div>
           </div>
-        </div>
-        <div className="flex flex-wrap lg:flex-nowrap gap-2 mt-4 md:mt-0 text-sm md:text-base">
-          {project.link && (
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener"
-              className="flex items-center w-full justify-center gap-2 px-4 py-2 border border-[#000] text-[#fff] hover:text-[#222] rounded-lg font-medium bg-[#000] hover:border-[#000] hover:bg-white transition"
-            >
-              <span>{project.area === "diseño" ? "Figma" : "web"}</span>
-              <i className="bi bi-box-arrow-up-right"></i>
-            </a>
+        </header>
+
+        <div className="mt-6 grid gap-6 lg:grid-cols-12">
+          {project.problem && (
+            <DetailSection title="El problema" className="lg:col-span-6">
+              <p className="text-base leading-8 text-[#486581]">{project.problem}</p>
+            </DetailSection>
           )}
-          {project.github && (
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center w-full justify-center gap-2 px-4 py-2 border border-[#0a0a0a] text-[#0a0a0a] rounded-lg font-medium hover:bg-[#0a0a0a] hover:text-white transition"
-            >
-              <span>Código</span>
-              <i className="bi bi-github"></i>
-            </a>
+
+          {project.outcome && (
+            <DetailSection title="La solución" className="lg:col-span-6">
+              <p className="text-base leading-8 text-[#486581]">{project.outcome}</p>
+            </DetailSection>
           )}
-          {project.file && (
-            <a
-              href={project.file}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 px-6 py-2 border border-[#E53935] text-[#E53935] rounded-lg font-medium hover:bg-[#E53935] hover:text-white transition"
-            >
-              <span>PDF</span>
-              <i className="bi bi-file-earmark-pdf"></i>
-            </a>
+
+          {project.outcomeDetail && (
+            <article className="overflow-hidden rounded-[1.5rem] border border-[#b9ddd8] bg-[#e8f4f2] p-6 md:p-9 lg:col-span-12">
+              <p className="detail-kicker mb-3">{project.outcomeLabel || "Impacto"}</p>
+              <p className="max-w-[1000px] text-lg font-semibold leading-8 text-[#164e4a] md:text-xl">
+                {project.outcomeDetail}
+              </p>
+            </article>
+          )}
+
+          <DetailSection title="Ficha del proyecto" className="lg:col-span-12">
+            <div className="grid grid-cols-2 gap-3 md:grid-cols-5">
+              <CharacteristicsCard caracteristica="Inicio" descripcion={project.date} />
+              <CharacteristicsCard caracteristica="Duración" descripcion={project.duration} />
+              <CharacteristicsCard caracteristica="Último cambio" descripcion={project.last_update} />
+              <CharacteristicsCard caracteristica="Modalidad" descripcion={project.project} />
+              <CharacteristicsCard caracteristica="Estado" descripcion={project.status} />
+            </div>
+          </DetailSection>
+
+          {project.video && (
+            <DetailSection title="Demo del producto" className="lg:col-span-12">
+              <video src={project.video} controls controlsList="nodownload noremoteplayback" disablePictureInPicture
+                className="max-h-[760px] w-full rounded-2xl bg-[#102a43] object-contain" />
+            </DetailSection>
+          )}
+
+          <DetailSection title={project.area === "universidad" ? "Herramientas y recursos" : "Stack y herramientas"} className="lg:col-span-5">
+            <div className="flex flex-wrap gap-2">
+              {project.technologies?.map((tech) => (
+                <span key={tech.name} className="tag-pill rounded-full px-3 py-2 text-sm font-semibold">{tech.name}</span>
+              ))}
+            </div>
+          </DetailSection>
+
+          <DetailSection title={relevantTitle} className="lg:col-span-7">
+            <ul className="detail-list">
+              {project.responsabilities?.map((item) => <li key={item}>{item}</li>)}
+            </ul>
+          </DetailSection>
+
+          {project.features?.length > 0 && (
+            <DetailSection title="Funcionalidades principales" className="lg:col-span-6">
+              <ul className="detail-list">
+                {project.features.map((item) => <li key={item}>{item}</li>)}
+              </ul>
+            </DetailSection>
+          )}
+
+          {project.characteristics?.length > 0 && (
+            <DetailSection title="Decisiones y características" className="lg:col-span-6">
+              <ul className="detail-list">
+                {project.characteristics.map((item) => <li key={item}>{item}</li>)}
+              </ul>
+            </DetailSection>
+          )}
+
+          {project.area === "diseño" && project.images?.length > 0 && (
+            <DetailSection title="Vistas del diseño" className="lg:col-span-12">
+              <div className="flex flex-col items-center justify-center gap-5 lg:flex-row lg:items-start">
+                {project.images.map((image, index) => (
+                  <img key={image} src={image} alt={`Vista ${index + 1} de ${project.name}`}
+                    className="w-full max-w-[390px] rounded-2xl border border-[#dce6ec] shadow-lg" />
+                ))}
+              </div>
+            </DetailSection>
           )}
         </div>
-      </header>
-      <article className="mt-4 bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-gray-100">
-        <h2 className="text-xl md:text-2xl font-bold text-[#222] mb-6">
-          Información general
-        </h2>
-        <div className="flex flex-wrap gap-4">
-          <CharacteristicsCard
-            caracteristica="Inicio"
-            descripcion={project.date}
-          />
-          <CharacteristicsCard
-            caracteristica="Duración"
-            descripcion={project.duration}
-          />
-          <CharacteristicsCard
-            caracteristica="Último cambio"
-            descripcion={project.last_update}
-          />
-          <CharacteristicsCard
-            caracteristica="Proyecto"
-            descripcion={project.project}
-          />
-          <CharacteristicsCard
-            caracteristica="Estado"
-            descripcion={project.status}
-          />
-        </div>
-      </article>
-      {project.video && (
-        <article className="mt-4 bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-gray-100 h-full lg:max-h-[900px] flex flex-col">
-          <h2 className="text-xl md:text-2xl font-bold text-[#1E1E1E] mb-6">
-            Demo
-          </h2>
-          <div className="flex-1">
-            <video
-              src={project.video}
-              controls
-              controlsList="nodownload noremoteplayback"
-              disablePictureInPicture
-              className="w-full h-full object-contain rounded-lg"
-            />
-          </div>
-        </article>
-      )}
-            <article className="mt-4 bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-gray-100">
-        <h2 className="text-xl md:text-2xl font-bold text-[#222] mb-6">
-          {project.area === "universidad"
-            ? "Herramientas y recursos"
-            : "Tecnologías, herramientas y recursos"}
-        </h2>
-        <div className="flex flex-wrap gap-2">
-          {project.technologies &&
-            project.technologies.map((tech, pos) => (
-              <span
-                key={pos}
-                className="bg-gray-200 border border-[#E3E8F0] text-gray-600 font-medium px-4 py-2 rounded-lg text-sm"
-              >
-                {tech.name}
-              </span>
-            ))}
-        </div>
-      </article>
-      {project.features && project.features.length > 0 && (
-        <article className="mt-4 bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-gray-100">
-          <h2 className="text-xl md:text-2xl font-bold text-[#222] mb-6">
-            Funcionalidades (Features)
-          </h2>
-          <ul className="list-disc ms-5 space-y-2">
-            {project.features.map((feature, idx) => (
-              <li
-                key={idx}
-                className="text-[#555] font-light text-sm md:text-base leading-relaxed"
-              >
-                {feature}
-              </li>
-            ))}
-          </ul>
-        </article>
-      )}
-      <article className="mt-4 bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-gray-100">
-        <h2 className="text-xl md:text-2xl font-bold text-[#222] mb-4">
-          {project.project === "Freelance" ||
-          project.area === "Universidad" ||
-          project.area === "ui"
-            ? "Aspectos relevantes"
-            : "Responsabilidades"}
-        </h2>
-        <ul className="list-disc ms-5 space-y-2">
-          {project.responsabilities &&
-            project.responsabilities.map((res, pos) => (
-              <li
-                key={pos}
-                className="text-[#555] font-light text-sm md:text-base leading-relaxed"
-              >
-                {res}
-              </li>
-            ))}
-        </ul>
-      </article>
-      {project.characteristics && project.characteristics.length > 0 && (
-        <article className="mt-4 bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-gray-100">
-          <h2 className="text-xl md:text-2xl font-bold text-[#222] mb-6">
-            Características del proyecto
-          </h2>
-          <ul className="list-disc ms-5 space-y-2">
-            {project.characteristics.map((c, idx) => (
-              <li
-                key={idx}
-                className="text-[#555] font-light text-sm md:text-base leading-relaxed"
-              >
-                {c}
-              </li>
-            ))}
-          </ul>
-        </article>
-      )}
-      {project.area === "diseño" && project.images && (
-        <article className="mt-6 bg-white rounded-2xl shadow-sm p-4 md:p-8 border border-gray-100">
-          <h2 className="text-xl md:text-2xl font-bold text-[#1E1E1E] mb-8">
-            Vista del diseño
-          </h2>
-          <div className="w-full flex flex-col lg:flex-row items-center lg:items-start justify-center gap-4">
-            {project.images.map((img) => (
-              <img
-                src={img}
-                alt={`Vista de ${project.name}`}
-                className="w-[100%] min-w-[300px] max-w-[375px] rounded-xl shadow-md object-cover h-full"
-              />
-            ))}
-          </div>
-        </article>
-      )}
-    </section>
+      </div>
+    </main>
   );
 };
 

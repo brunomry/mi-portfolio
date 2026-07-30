@@ -3,9 +3,8 @@ const TechCard = ({ tech }) => {
     <figure
       key={tech.name}
       title={tech.name}
-      className="flex flex-col items-center justify-center gap-2 bg-white rounded-2xl 
-                 p-4 min-w-[120px] md:min-w-[165px] h-[120px] md:h-[120px] lg:h-[150px] 
-               shadow-md "
+      className="surface-card flex flex-col items-center justify-center gap-3 bg-white
+                 p-4 min-w-[120px] md:min-w-[155px] h-[120px] lg:h-[145px]"
     >
       <img
         src={tech.icon}
