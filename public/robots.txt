@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bmsolucionesweb.netlify.app/sitemap.xml
+Sitemap: https://bmsolucionesweb.com/sitemap.xml
