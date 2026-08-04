@@ -143,7 +143,7 @@ const projects = [
     area: "frontend",
     date: "Enero 2025",
     duration: "4 semanas",
-    last_update: "Noviembre 2025",
+    last_update: "Agosto 2026",
     status: "Mantenimiento activo",
     project: "Freelance",
     problem:
