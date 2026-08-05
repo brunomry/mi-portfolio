@@ -110,7 +110,9 @@ const ProjectDetail = () => {
           {project.video && (
             <DetailSection title="Demo del producto" className="lg:col-span-12">
               <video src={project.video} controls controlsList="nodownload noremoteplayback" disablePictureInPicture
-                className="max-h-[760px] w-full rounded-2xl bg-[#102a43] object-contain" />
+                className={`max-h-[760px] w-full rounded-2xl bg-[#102a43] object-contain ${
+                  project.id === 123 ? "aspect-[4/3] md:aspect-auto" : ""
+                }`} />
             </DetailSection>
           )}
 
