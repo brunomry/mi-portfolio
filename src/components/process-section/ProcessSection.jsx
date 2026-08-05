@@ -1,30 +1,25 @@
-import ProcessStep from "./ProcessStep";
 import processSteps from "../../helpers/processSteps.js";
 
 const ProcessSection = () => (
-  <section
-    className="site-section section-white w-full flex flex-col gap-4 md:gap-6 xl:gap-12"
-    id="proceso"
-  >
-      <h2 className="font-black text-[24px] md:text-[28px] xl:text-[32px] 2xl:text-[36px] text-[#222]">
-        Mi método de trabajo
-      </h2>
-      <p className="text-[#555] text-sm md:text-base font-light">
-        Te muestro cómo desarrollo tu proyecto paso a paso, con
-        transparencia, control y soluciones adaptadas a tu negocio.
-      </p>
-      <div className="grid grid-cols-1 xl:grid-cols-2 lg:gap-4 w-full">
-        {processSteps.map((step, index) => (
-          <ProcessStep
-            key={step.id}
-            stepNumber={index + 1}
-            title={step.title}
-            description={step.description}
-            Icon={step.Icon}
-            isLast={index === processSteps.length - 1}
-          />
-        ))}
+  <section className="site-section process-section w-full" id="proceso">
+    <div className="mx-auto max-w-[1320px]">
+      <div className="section-heading-row">
+        <div><p className="section-kicker">Del primer mensaje a la publicación</p><h2 className="section-display">Un proceso visible y sin sorpresas</h2></div>
+        <p className="section-lead">Cada etapa termina con algo concreto. Sabés qué estamos resolviendo, qué sigue y qué necesitás revisar.</p>
       </div>
+      <div className="process-track">
+        {processSteps.map((step, index) => {
+          const Icon = step.Icon;
+          return (
+            <article key={step.id} className="process-node">
+              <div className="process-node-head"><span>0{index + 1}</span><div><Icon className="h-5 w-5" /></div></div>
+              <h3>{step.title}</h3><p>{step.description}</p>
+              <strong><i className="bi bi-check2" /> {step.deliverable}</strong>
+            </article>
+          );
+        })}
+      </div>
+    </div>
   </section>
 );
 

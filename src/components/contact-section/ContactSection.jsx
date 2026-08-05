@@ -1,126 +1,38 @@
 import { useState } from "react";
-import { handleCV } from "../../helpers/handleFn.js";
+import { handleCV, handleWpp } from "../../helpers/handleFn.js";
 
 const ContactSection = () => {
-  const [copiado, setCopiado] = useState(false);
-
-  const copiarCorreo = () => {
-    navigator.clipboard
-      .writeText("brunomadozzo@gmail.com")
-      .then(() => {
-        setCopiado(true);
-        setTimeout(() => setCopiado(false), 2000);
-      })
-      .catch((err) => console.error("Error al copiar el correo:", err));
+  const [copied, setCopied] = useState(false);
+  const copyEmail = async () => {
+    await navigator.clipboard.writeText("brunomadozzo@gmail.com");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
   };
 
   return (
-    <section
-      className="site-section section-tint flex flex-col gap-4 md:gap-10 w-full"
-      id="contacto"
-    >
-      <h2 className="font-extrabold text-[24px] md:text-[28px] xl:text-[32px] 2xl:text-[36px] text-[#222] mb-4">
-        Contacto
-      </h2>
-      <div className="contact-panel flex flex-col lg:flex-row gap-10 2xl:gap-20">
-        <div className=" flex flex-col gap-8 md:gap-8 2xl:gap-12 order-1 ">
-          <div className="flex flex-col md:gap-4  ">
-            <h2 className="font-bold md:font-black text-base text-[#222] leading-snug max-w-4xl">
-              ¿Estás buscando a una persona con quien colaborar, realmente
-              comprometida, con ganas de sumarse y aportar a un equipo?
-            </h2>
-            <p className="text-[#555] text-sm max-w-4xl font-light mt-2">
-              ¡No dudes en escribirme! Estoy disponible para unirme y aportar
-              mis conocimientos en proyectos web y más.
-            </p>
+    <section className="contact-stage w-full" id="contacto">
+      <div className="mx-auto max-w-[1320px]">
+        <div className="contact-main">
+          <div className="contact-message">
+            <p className="contact-kicker">El próximo paso puede ser simple</p>
+            <h2>¿Tenés un proyecto o un proceso que podría funcionar mejor?</h2>
+            <p>Contame qué necesitás. Puedo ayudarte a ordenar la idea, definir una solución y convertirla en un producto web claro, funcional y preparado para crecer.</p>
+            <div className="contact-primary-actions">
+              <button type="button" onClick={() => handleWpp("Hola Bruno, vi tu portfolio y quisiera consultarte por un proyecto web.")}><i className="bi bi-whatsapp" /> Escribirme por WhatsApp</button>
+              <button type="button" onClick={copyEmail}><i className="bi bi-envelope" /> {copied ? "Correo copiado" : "Copiar correo"}</button>
+            </div>
+            <p className="contact-availability"><span /> Disponible para proyectos freelance y colaboraciones remotas.</p>
           </div>
-          <div className="flex flex-col md:gap-4 ">
-            <h2 className="font-bold md:font-black text-base text-[#222] leading-snug max-w-4xl">
-              ¿Necesitas una web profesional para tu negocio?
-            </h2>
-            <p className="text-[#555] text-sm  max-w-4xl font-light mt-2">
-              Trabajemos juntos para mejorar tu presencia digital y llegar a más
-              clientes.
-            </p>
-          </div>
-          <div className="flex flex-col md:gap-4 ">
-            <h2 className="font-bold md:font-black text-base text-[#222] leading-snug max-w-4xl">
-              ¿Quieres optimizar la gestión de tu negocio y tener todo
-              centralizado en una sola aplicación?
-            </h2>
-            <p className="text-[#555] text-sm max-w-4xl font-light mt-2">
-              Puedo ayudarte a desarrollar soluciones web o apps que ahorren
-              tiempo, automaticen tareas y te permitan gestionar tu negocio de
-              manera más eficiente.
-            </p>
+          <div className="contact-routes">
+            <article><span>Para negocios y profesionales</span><h3>Una web o sistema pensado para un objetivo concreto.</h3><p>Presencia digital, consultas, reservas, clientes o procesos internos.</p></article>
+            <article><span>Para empresas y equipos</span><h3>Una persona que puede aportar producto y desarrollo.</h3><p>Abierto a colaborar en proyectos frontend, backend y análisis de soluciones.</p></article>
           </div>
         </div>
-        <div className="flex flex-col gap-2 md:flex-row md:flex-wrap lg:flex-nowrap lg:flex-col md:gap-4 justify-start lg:items-stretch items-center md:order-1 mb-8">
-          <a
-            onClick={copiarCorreo}
-            className="contact-link relative w-full md:min-w-[300px] max-w-[340px] flex items-center gap-4 p-4 md:p-5 border rounded-2xl cursor-pointer transition-all"
-            title="Haz clic para copiar mi correo"
-          >
-            <i className="bi bi-envelope-fill text-2xl text-red-500"></i>
-
-            <div className="flex flex-col">
-              <span className="text-[#787777] font-medium text-sm">Email</span>
-              <span className="text-[#0a0a0a] font-semibold text-sm md:text-base">
-                brunomadozzo@gmail.com
-              </span>
-            </div>
-            {copiado && (
-              <span className="absolute -top-8 left-1/2 -translate-x-1/2 px-3 py-1 bg-[#1257b8] text-white text-sm rounded-full shadow-lg transition-all">
-                Correo copiado!
-              </span>
-            )}
-          </a>
-          <a
-            href="https://www.linkedin.com/in/bruno-madozzo/"
-            target="_blank"
-            title="Contáctame por LinkedIn"
-            rel="noopener noreferrer"
-            className="contact-link w-full md:min-w-[320px] max-w-[340px] flex items-center gap-4 p-4 md:p-5 border rounded-2xl transition-all"
-          >
-            <i className="text-2xl text-[#2B7FF7] bi bi-linkedin"></i>
-            <div className="flex flex-col">
-              <span className="text-[#777878] text-sm">LinkedIn</span>
-              <span className="text-[#0a0a0a] font-semibold text-sm md:text-base">
-                Bruno Madozzo
-              </span>
-            </div>
-          </a>
-          <a
-            href="https://github.com/brunomry"
-            target="_blank"
-            title="Mi GitHub"
-            rel="noopener noreferrer"
-            className="contact-link w-full md:min-w-[320px] max-w-[340px] flex items-center gap-4 p-4 md:p-5 border rounded-2xl transition-all"
-          >
-            <i className="text-2xl text-black bi bi-github"></i>
-            <div className="flex flex-col">
-              <span className="text-[#787777] text-sm">GitHub</span>
-              <span className="text-[#0a0a0a] font-semibold text-sm md:text-base">
-                brunomry
-              </span>
-            </div>
-          </a>
-          <a
-            onClick={handleCV}
-            title="ver CV"
-            className="contact-link w-full cursor-pointer md:min-w-[320px] max-w-[340px] flex items-center gap-4 p-4 md:p-5 border rounded-2xl transition-all"
-          >
-            <i className="text-2xl text-[#2B7FF7] bi bi-file-earmark-person-fill"></i>
-            <div className="flex flex-col">
-              <span className="text-[#787777] text-start text-sm">CV</span>
-              <span className="text-[#0a0a0a] font-semibold text-sm md:text-base">
-                Descargar
-              </span>
-            </div>
-          </a>
-          {/* <p className=" text-[#555] text-sm text-center md:text-start mt-4 lg:mt-6">
-            También puedes enviarme un mensaje por WhatsApp
-          </p> */}
+        <div className="contact-footer-links">
+          <a href="mailto:brunomadozzo@gmail.com"><span>Email</span>brunomadozzo@gmail.com</a>
+          <a href="https://www.linkedin.com/in/bruno-madozzo/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span>Bruno Madozzo <i className="bi bi-arrow-up-right" /></a>
+          <a href="https://github.com/brunomry" target="_blank" rel="noopener noreferrer"><span>GitHub</span>brunomry <i className="bi bi-arrow-up-right" /></a>
+          <button type="button" onClick={handleCV}><span>Currículum</span>Ver CV <i className="bi bi-download" /></button>
         </div>
       </div>
     </section>

@@ -132,7 +132,7 @@ const projects = [
     features: [],
     video: "",
     github: "",
-    link: "https://rafterconstructora.com.ar/",
+    link: "https://rafterconstructoradev.netlify.app/",
   },
   {
     id: 222,

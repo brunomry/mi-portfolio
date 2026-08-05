@@ -1,32 +1,62 @@
-import servicios from "../../helpers/services.js";
-import ServiceCard from "./ServiceCard";
+const solutions = [
+  {
+    number: "01",
+    title: "Sitios web profesionales",
+    promise: "Para que tu negocio se vea tan sólido como el trabajo que hace.",
+    description: "Sitios claros, rápidos y adaptados a celulares que presentan tu propuesta, generan confianza y facilitan el contacto.",
+    includes: ["Diseño responsive", "Formularios y WhatsApp", "SEO inicial", "Dominio y publicación"],
+    icon: "bi-window",
+  },
+  {
+    number: "02",
+    title: "Landing pages",
+    promise: "Una página, un objetivo, menos distracciones.",
+    description: "Páginas enfocadas en promocionar un servicio, producto o lanzamiento y transformar visitas en consultas.",
+    includes: ["Estructura de conversión", "Llamados a la acción", "Medición", "Optimización móvil"],
+    icon: "bi-cursor",
+  },
+  {
+    number: "03",
+    title: "Aplicaciones de gestión",
+    promise: "Procesos dispersos convertidos en un flujo de trabajo.",
+    description: "Soluciones a medida para centralizar clientes, reservas, órdenes, pagos, inventario u operaciones internas.",
+    includes: ["Análisis de procesos", "Paneles administrativos", "API y base de datos", "Accesos y validaciones"],
+    icon: "bi-kanban",
+  },
+  {
+    number: "04",
+    title: "Mejora y mantenimiento",
+    promise: "Tu producto no termina el día de la publicación.",
+    description: "Rediseño, rendimiento, SEO, correcciones y nuevas funcionalidades para sitios o aplicaciones existentes.",
+    includes: ["Auditoría inicial", "Rediseño", "Rendimiento", "Soporte evolutivo"],
+    icon: "bi-arrow-repeat",
+  },
+];
 
-function ServicesSection() {
-  return (
-    <section
-      id="servicios"
-      className="site-section section-white w-full flex flex-col"
-    >
-      <h2 className="font-extrabold text-[24px] md:text-[28px] xl:text-[32px] 2xl:text-[36px] mb-8 text-[#222]">
-        Servicios
-      </h2>
-      <p className="text-[#555] text-sm md:text-base font-light mb-2">
-        Soluciones digitales adaptadas a tus necesidades.
-      </p>
-      <p className="text-[#555] text-sm md:text-base font-light mb-2">
-        Creación de experiencias web rápidas, atractivas y optimizadas para tus
-        clientes.
-      </p>
-      <p className="text-[#555] text-sm md:text-base font-light mb-4 md:mb-16">
-        Desde el diseño visual hasta la implementación funcional.
-      </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 xl:gap-8  w-full">
-        {servicios.map((service) => (
-          <ServiceCard key={service.id} service={service} />
+const ServicesSection = () => (
+  <section id="servicios" className="site-section services-studio w-full">
+    <div className="mx-auto max-w-[1320px]">
+      <div className="services-intro">
+        <p className="section-kicker">Qué podemos construir</p>
+        <h2 className="section-display">Servicios convertidos en soluciones.</h2>
+        <p>No necesitás conocer la tecnología correcta antes de escribirme. Primero entendemos el objetivo; después definimos qué conviene construir.</p>
+      </div>
+      <div className="solutions-list">
+        {solutions.map((solution) => (
+          <article key={solution.number} className="solution-row">
+            <span className="solution-number">{solution.number}</span>
+            <div className="solution-icon"><i className={`bi ${solution.icon}`} /></div>
+            <div className="solution-main"><h3>{solution.title}</h3><strong>{solution.promise}</strong><p>{solution.description}</p></div>
+            <ul>{solution.includes.map((item) => <li key={item}>{item}</li>)}</ul>
+          </article>
         ))}
       </div>
-    </section>
-  );
-}
+      <div className="services-cta">
+        <p>¿Tu necesidad no encaja exactamente en una categoría?</p>
+        <a href="#contacto">La evaluamos juntos <i className="bi bi-arrow-right" /></a>
+      </div>
+    </div>
+  </section>
+);
 
 export default ServicesSection;

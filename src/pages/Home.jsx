@@ -8,7 +8,10 @@ import ContactSection from "../components/contact-section/ContactSection";
 import TechnologiesSection from "../components/technologies-section/TechnologiesSection";
 import ServicesSection from "../components/services-section/ServicesSection";
 import AboutSection from "../components/about-section/AboutSection";
-// import BtnWpp from "../components/common/BtnWpp";
+import ResultsSection from "../components/results-section/ResultsSection";
+import DifferentialsSection from "../components/differentials-section/DifferentialsSection";
+import TestimonialsSection from "../components/testimonials-section/TestimonialsSection";
+import FAQSection from "../components/faq-section/FAQSection";
 
 const Home = () => {
   return (
@@ -19,23 +22,18 @@ const Home = () => {
         className="w-full min-h-screen flex flex-col items-center"
       >
         <HeroSection></HeroSection>
-        <ProjectsSection mostrar={false}></ProjectsSection>
+        <ResultsSection></ResultsSection>
+        <ProjectsSection></ProjectsSection>
         <ServicesSection></ServicesSection>
-        <TechnologiesSection></TechnologiesSection>
+        <DifferentialsSection></DifferentialsSection>
+        <TestimonialsSection></TestimonialsSection>
         <ProcessSection></ProcessSection>
-        <CertificatesSection></CertificatesSection>
         <AboutSection></AboutSection>
+        <TechnologiesSection></TechnologiesSection>
+        <CertificatesSection></CertificatesSection>
+        <FAQSection></FAQSection>
         <ContactSection></ContactSection>
         <Footer></Footer>
-        {/* {scrollTop > 0 && (
-          <a
-            href="#sobremi"
-            className="btnScrollTop fixed bottom-[80px] md:bottom-[20px] right-5 lg:bottom-[50px] md:right-24 bg-slate-300 px-4 py-2 rounded-sm"
-          >
-            <i className="bi bi-arrow-up text-[20px]"></i>
-          </a>
-        )} */}
-        {/* <BtnWpp></BtnWpp> */}
       </main>
     </div>
   );

@@ -1,29 +1,19 @@
 import certifications from "../../helpers/certificates.js";
 import CertificationCard from "./CertificateCard";
 
-const CertificatesSection = () => {
-  return (
-    <section
-      className="site-section section-tint w-full flex flex-col gap-4 md:gap-6 lg:gap-8 xl:gap-12"
-      id="certificaciones"
-    >
-      <h2 className="font-black text-[24px] md:text-[28px] xl:text-[32px] 2xl:text-[36px] text-[#222]">
-        Certificaciones
-      </h2>
-      <p className="text-[#555] text-sm md:text-base font-light">
-        Estas son las certificaciones obtenidas a lo largo de mi formación académica.
-      </p>
-      <div className="flex flex-wrap gap-6 justify-start">
-        {certifications.map((certificate, index) => (
-          <CertificationCard
-            key={certificate.id}
-            certificate={certificate}
-            index={index}
-          />
-        ))}
+const CertificatesSection = () => (
+  <section className="credentials-section w-full" id="certificaciones">
+    <div className="mx-auto grid max-w-[1320px] gap-10 lg:grid-cols-[.55fr_1.45fr]">
+      <div className="credentials-intro">
+        <p className="section-kicker">Formación que acompaña la práctica</p>
+        <h2>Certificaciones</h2>
+        <p>Una base formal en programación web, React y desarrollo full stack, reforzada continuamente con proyectos reales.</p>
       </div>
-    </section>
-  );
-};
+      <div className="credentials-list">
+        {certifications.map((certificate, index) => <CertificationCard key={certificate.id} certificate={certificate} index={index} />)}
+      </div>
+    </div>
+  </section>
+);
 
 export default CertificatesSection;

@@ -1,79 +1,60 @@
-import { useState, useEffect } from "react";
+import { useMemo, useState } from "react";
 import projects from "../../helpers/projects.js";
 import ProjectCard from "./ProjectCard";
 
-const categories = ["Páginas", "Funcionalidad", "Diseño", "Académico"];
+const categories = [
+  { label: "Sitios y aplicaciones", value: "frontend" },
+  { label: "Backend", value: "backend" },
+  { label: "Diseño UI", value: "diseño" },
+  { label: "Análisis", value: "académico" },
+];
 
-const ProjectsSection = ({ mostrar }) => {
-  const [filter, setFilter] = useState("Páginas");
-  const [filteredList, setFilteredList] = useState([]);
-
-  useEffect(() => {
-    filterProjects(filter);
+const ProjectsSection = () => {
+  const [filter, setFilter] = useState("frontend");
+  const filteredList = useMemo(() => {
+    const priority = filter === "frontend" ? [222, 223, 123] : [];
+    return projects
+      .filter((project) => project.area.includes(filter))
+      .sort((a, b) => {
+        const aIndex = priority.indexOf(a.id);
+        const bIndex = priority.indexOf(b.id);
+        if (aIndex === -1 && bIndex === -1) return 0;
+        if (aIndex === -1) return 1;
+        if (bIndex === -1) return -1;
+        return aIndex - bIndex;
+      });
   }, [filter]);
 
-  const filterProjects = (categoria) => {
-    let filtered = [];
-    switch (categoria) {
-      case "Páginas":
-        filtered = projects.filter((p) => p.area.includes("frontend"));
-        break;
-      case "Funcionalidad":
-        filtered = projects.filter((p) => p.area.includes("backend"));
-        break;
-      case "Diseño":
-        filtered = projects.filter((p) => p.area.includes("diseño"));
-        break;
-      case "Académico":
-        filtered = projects.filter((p) => p.area.includes("académico"));
-        break;
-      default:
-        filtered = projects;
-    }
-    setFilteredList(filtered);
-  };
-
   return (
-    <section
-      id="proyectos"
-      className="site-section section-tint w-full flex flex-col gap-4 md:gap-6"
-    >
-      <h2 className="font-extrabold text-[24px] md:text-[28px] xl:text-[32px] 2xl:text-[36px] text-[#222] xl:mb-4">
-        Proyectos
-      </h2>
-      <p className="text-[#555] text-sm md:text-base font-light">
-        Estos son algunos de mis proyectos, que incluyen aplicaciones web,
-        sitios web, landing pages y trabajos académicos.
-      </p>
-      <p className="text-[#555] text-sm md:text-base font-light">
-        Cada proyecto muestra
-        soluciones prácticas, diseño de interfaces y funcionalidades
-        desarrolladas con diversas tecnologías modernas.
-      </p>
-      <article className="flex gap-2 md:gap-4 mt-4 flex-wrap">
-        {categories.map((cat) => (
-          <button
-            key={cat}
-            onClick={() => setFilter(cat)}
-            className={`filter-button px-4 py-2 rounded-full font-semibold text-sm transition
-              ${
-                filter === cat
-                  ? "filter-button-active"
-                  : ""
-              }`}
-          >
-            {cat}
-          </button>
-        ))}
-      </article>
-      <div
-        className={`mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3 2xl:gap-8 ${
-          filteredList.length === 3 ? "justify-items-center" : ""
-        }`}
-      >
-        {filteredList.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
+    <section id="proyectos" className="site-section projects-showcase w-full">
+      <div className="mx-auto max-w-[1320px]">
+        <div className="section-heading-row projects-heading">
+          <div>
+            <p className="section-kicker">Casos reales y productos funcionales</p>
+            <h2 className="section-display">Proyectos y resultados</h2>
+          </div>
+          <p className="section-lead">No son ejercicios aislados: cada proyecto parte de una necesidad, una decisión de diseño y una forma concreta de aportar valor.</p>
+        </div>
+
+        <div className="project-filters" role="tablist" aria-label="Filtrar proyectos">
+          {categories.map((category) => (
+            <button key={category.value} type="button" onClick={() => setFilter(category.value)}
+              className={filter === category.value ? "is-active" : ""}>
+              {category.label}
+            </button>
+          ))}
+        </div>
+
+        <div className="projects-editorial-grid">
+          {filteredList.map((project, index) => (
+            <ProjectCard key={project.id} project={project} featured index={index} />
+          ))}
+        </div>
+
+        <div className="projects-footer-note">
+          <p>¿Querés ver arquitectura, funcionalidades y decisiones técnicas?</p>
+          <span>Abrí cada caso para conocer el proceso completo.</span>
+        </div>
       </div>
     </section>
   );
