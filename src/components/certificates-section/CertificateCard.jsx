@@ -7,7 +7,9 @@ const CertificateCard = ({ certificate, index }) => {
   return (
     <>
       <button type="button" onClick={() => setVisible(true)} className="credential-row">
-        <span className="credential-year">{certificate.endDate}</span>
+        <span className="credential-year">
+          {certificate.startDate} — {certificate.endDate}
+        </span>
         <span className="credential-main"><strong>{certificate.title}</strong><small>{certificate.org}</small></span>
         <span className="credential-action">Ver certificado <i className="bi bi-arrow-up-right" /></span>
       </button>
