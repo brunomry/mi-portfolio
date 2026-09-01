@@ -93,7 +93,7 @@ const projects = [
     area: "frontend",
     date: "Noviembre 2025",
     duration: "6 semanas",
-    last_update: "Enero 2026",
+    last_update: "Agosto 2026",
     status: "Mantenimiento activo",
     project: "Freelance",
     problem:
@@ -124,6 +124,7 @@ const projects = [
       "Posicionamiento en Google con palabras clave relevantes",
       // "Integración con 'Sitio web' de Google My Business",
       "Registro y gestión de dominio .com.ar mediante DonWeb y Vercel",
+      "Rediseño de la landing page e incorporación de nuevas secciones y página para el detalle de proyectos. (Agosto 2026)",
     ],
     characteristics: [
       "Diseño responsive con TailwindCSS",
@@ -132,7 +133,7 @@ const projects = [
     features: [],
     video: "",
     github: "",
-    link: "https://rafterconstructoradev.netlify.app/",
+    link: "https://rafterconstructora.com.ar/",
   },
   {
     id: 222,
