@@ -104,7 +104,7 @@ const projects = [
     image: localRopaImage,
     category: "Indumentaria",
     name: "Tienda digital para local de ropa",
-    type: "Catálogo con carrito y pedidos por WhatsApp",
+    type: "Aplicación web · SaaS",
     area: "frontend",
     date: "Agosto 2026",
     duration: "En desarrollo",
