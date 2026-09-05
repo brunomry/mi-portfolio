@@ -1,8 +1,8 @@
 const results = [
   {
     value: "+50",
-    label: "consultas directas",
-    text: "generadas por WhatsApp para un alojamiento local después de rediseñar su web.",
+    label: "consultas directas en los primeros dos meses de 2026",
+    text: "generadas por WhatsApp para un alojamiento después de rediseñar su web.",
     accent: true,
   },
   {
