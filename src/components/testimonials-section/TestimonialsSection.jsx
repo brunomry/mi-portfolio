@@ -2,7 +2,7 @@ const evidence = [
   {
     type: "Presencia digital y crecimiento",
     title: "Una web que informa, genera confianza y abre conversaciones",
-    text: "El sitio del Hostal San Jorge nació para construir una presencia digital profesional y crecer junto al negocio. Hoy funciona como referencia para mostrar habitaciones, servicios y formas de contacto, y además ya generó más de 50 consultas directas por WhatsApp en lo que va del año.",
+    text: "El sitio del Hostal San Jorge nació para construir una presencia digital profesional y crecer junto al negocio. Hoy funciona como referencia para mostrar habitaciones, servicios y formas de contacto, y continúa generando consultas directas por WhatsApp.",
     link: "https://hostalsanjorgecafayate.com/",
     linkLabel: "Visitar Hostal San Jorge",
   },

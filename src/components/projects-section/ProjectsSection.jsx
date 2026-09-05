@@ -12,7 +12,7 @@ const categories = [
 const ProjectsSection = () => {
   const [filter, setFilter] = useState("frontend");
   const filteredList = useMemo(() => {
-    const priority = filter === "frontend" ? [222, 223, 123] : [];
+    const priority = filter === "frontend" ? [124, 125, 126, 127, 128, 222, 223, 123] : [];
     return projects
       .filter((project) => project.area.includes(filter))
       .sort((a, b) => {
