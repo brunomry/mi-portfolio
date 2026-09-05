@@ -62,7 +62,7 @@ const projects = [
   {
     id: 125,
     image: dieteticaImage,
-    category: "Comercio minorista",
+    category: "Comercio",
     name: "Tienda online de productos sin TACC",
     type: "Aplicación web · SaaS",
     area: "frontend",
@@ -102,8 +102,8 @@ const projects = [
   {
     id: 126,
     image: localRopaImage,
-    category: "Indumentaria",
-    name: "Tienda digital para local de ropa",
+    category: "Comercio",
+    name: "Tienda online para local de ropa",
     type: "Aplicación web · SaaS",
     area: "frontend",
     date: "Agosto 2026",
