@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { handleWpp } from "../helpers/handleFn.js";
+import brandLogo from "../assets/brand-logo.png";
 
 const navigation = [
   { label: "Proyectos", href: "#proyectos" },
@@ -25,7 +26,9 @@ const NavbarPrincipal = () => {
   return (
     <header className="site-nav fixed left-0 top-0 z-[99] w-full">
       <div className="relative z-20 mx-auto flex h-[68px] max-w-[1500px] items-center justify-between px-5 md:h-[82px] md:px-8 lg:px-12">
-        <a className="brand-mark" href="#sobremi" aria-label="Ir al inicio" onClick={() => setIsOpen(false)}><span>Soluciones web</span></a>
+        <a className="brand-mark" href="#sobremi" aria-label="Ir al inicio" onClick={() => setIsOpen(false)}>
+          <img src={brandLogo} alt="Bruno Madozzo · Soluciones web" className="brand-logo-image" />
+        </a>
         <nav className="hidden items-center gap-4 md:flex lg:gap-7" aria-label="Navegación principal">
           {navigation.map((item) => <a key={item.href} href={item.href} className="nav-link transition-colors">{item.label}</a>)}
           <button type="button" className="nav-cta" onClick={() => handleWpp("Hola Bruno, vi tu portfolio y quisiera consultarte por un proyecto web.")}>Consultar <i className="bi bi-arrow-up-right" /></button>

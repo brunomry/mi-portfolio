@@ -154,8 +154,9 @@ a:focus-visible, button:focus-visible { outline: 3px solid rgba(11,110,105,.28);
 .surface-card { border: 1px solid var(--line) !important; border-radius: 1.5rem !important; box-shadow: 0 12px 35px rgba(16,42,67,.07) !important; transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease !important; }
 .surface-card:hover { transform: translateY(-6px); border-color: rgba(11,110,105,.25) !important; box-shadow: var(--shadow) !important; }
 .site-nav { border-bottom: 1px solid rgba(16,42,67,.08); background: rgba(255,255,255,.88); box-shadow: 0 10px 30px rgba(16,42,67,.04); backdrop-filter: blur(18px); }
-.brand-mark { display: flex; align-items: center; gap: .65rem; padding: .35rem .8rem .35rem .35rem; border-radius: .85rem; color: #fff; background: var(--brand); font-size: .82rem; font-weight: 800; box-shadow: 0 8px 20px rgba(11,110,105,.2); }
-.brand-mark::before { display: grid; width: 2rem; height: 2rem; place-items: center; border-radius: .58rem; color: white; background: rgba(5,53,51,.35); content: "BM"; font-size: .68rem; }
+.brand-mark { display: inline-flex; align-items: center; flex-shrink: 0; }
+.brand-logo-image { display: block; width: auto; height: 3.6rem; object-fit: contain; }
+.footer-brand-logo { display: block; width: auto; height: 5rem; object-fit: contain; }
 .nav-link { position: relative; color: #486581; font-size: .82rem; font-weight: 600; }
 .nav-link::after { position: absolute; right: 0; bottom: -.55rem; left: 0; height: 2px; border-radius: 10px; background: var(--brand); content: ""; transform: scaleX(0); transition: transform .25s ease; }
 .nav-link:hover { color: var(--brand); }
@@ -203,6 +204,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid rgba(11,110,105,.28);
   .hero-section { padding-top: 7rem !important; }
   .profile-frame { width: 12rem !important; height: 12rem !important; }
   .mobile-menu { background: rgba(255,255,255,.97) !important; backdrop-filter: blur(18px); }
+  .brand-logo-image { height: 3rem; }
+  .footer-brand-logo { height: 4.5rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
