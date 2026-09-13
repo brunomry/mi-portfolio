@@ -203,7 +203,7 @@ const projects = [
     date: "Noviembre 2025",
     duration: "4 semanas",
     last_update: "Enero 2026",
-    status: "Mantenimiento activo",
+    status: "En pausa",
     project: "Académico/Freelance",
     problem:
       "La operación diaria de una lavandería requiere registrar muchas prendas, clientes y estados de entrega. Cuando esa información se distribuye entre anotaciones o herramientas separadas, aumenta el tiempo de atención y el riesgo de cometer errores.",
@@ -559,7 +559,7 @@ const projects = [
     date: "Noviembre 2025",
     duration: "-",
     last_update: "Enero 2026",
-    status: "Mantenimiento activo",
+    status: "En pausa",
     project: "Freelance",
     problem:
       "La gestión manual o fragmentada de órdenes, prendas, clientes y comprobantes dificulta el seguimiento del trabajo y puede generar demoras o inconsistencias en la atención.",
@@ -612,7 +612,7 @@ const projects = [
     date: "Marzo 2026",
     duration: "-",
     last_update: "-",
-    status: "En continuo desarrollo",
+    status: "En pausa",
     project: "Freelance",
     problem:
       "Los alojamientos suelen gestionar reservas, estadías, pagos, habitaciones y huéspedes mediante herramientas separadas, lo que dificulta tener una visión completa de la operación.",
@@ -627,8 +627,6 @@ const projects = [
       { name: "Node js" },
       { name: "Express js" },
       { name: "Express validator" },
-      { name: "MongoDB" },
-      { name: "Mongoose" },
       { name: "Javascript" },
       { name: "Git" },
       { name: "Github" },
@@ -638,8 +636,6 @@ const projects = [
       { name: "Cloudinary" },
       { name: "MercadoPago" },
       { name: "Stripe" },
-      { name: "Bcrypt" },
-      { name: "Cookie-parser" },
     ],
     responsabilities: [
       "Implementación de rutas, controladores, servicios, repositorios y valiaciones para autenticación, servicios/comodidades, habitaciones, tipos de habitaciones, reservas, estadías, pagos, métodos de pago, canales de reservas, huéspedes y usuarios administradores.",
