@@ -171,29 +171,63 @@ const projects = [
     characteristics: ["Solución enfocada en una necesidad operativa concreta.", "Desarrollo iterativo asistido por inteligencia artificial."],
     video: "", github: "", link: "",
   },
-  {
-    id: 128,
-    image: alojamientos,
-    category: "Alojamiento",
-    name: "Propuesta de optimización web para alojamiento",
-    type: "Auditoría y propuesta de rediseño",
-    area: "Auditoría UX",
-    date: "Septiembre 2026",
-    duration: "En curso",
-    last_update: "-",
-    status: "Finalizado",
-    project: "Freelance",
-    problem: "El sitio dispone de información sobre alojamientos, pero la forma de comunicarla puede dificultar que el visitante comprenda rápidamente la propuesta, encuentre la opción adecuada y finalice el recorrido con una consulta por WhatsApp.",
-    outcome: "El análisis busca reunir oportunidades de mejora en contenido, jerarquía visual, consistencia de la información y llamados a la acción, junto con recomendaciones que puedan aplicarse sobre el sitio actual o mediante un nuevo desarrollo.",
-    outcomeLabel: "Objetivo del análisis",
-    outcomeDetail: "Lograr que la información sea más clara, confiable y persuasiva para reducir dudas durante la navegación y aumentar las posibilidades de convertir las visitas en consultas por WhatsApp.",
-    description: "Análisis en curso del sitio web de un alojamiento, orientado a evaluar cómo se comunican sus distintas opciones, la claridad y consistencia de la información y el recorrido hacia la consulta por WhatsApp. El trabajo concluirá con un informe de oportunidades y recomendaciones priorizadas, que servirá como guía para optimizar el sitio existente o desarrollar una nueva experiencia desde cero.",
-    technologies: [{ name: "Auditoría UX" }, { name: "Arquitectura de información" }, { name: "Diseño de contenidos" }, { name: "Responsive design" }, { name: "Optimización de conversión" }],
-    responsabilities: ["Evaluación de la propuesta de valor y de la claridad del mensaje principal.", "Revisión de la jerarquía, redacción y consistencia de la información entre páginas.", "Análisis del recorrido desde la exploración de alojamientos hasta la consulta por WhatsApp.", "Priorización de oportunidades de mejora.", "Elaboración de un informe base para una nueva implementación."],
-    features: [],
-    characteristics: ["Propuesta basada en el análisis del sitio actualmente publicado.", "Recomendaciones orientadas a claridad, confianza y conversión.", "La implementación posterior todavía no está definida y dependerá de la decisión de la clienta."],
-    video: "", github: "", link: "",
-  },   {
+ {
+  id: 128,
+  image: alojamientos,
+  category: "Alojamiento",
+  name: "Auditoría y propuesta de optimización web para alojamientos",
+  type: "Auditoría y propuesta de optimización",
+  area: "Auditoría y Optimización Web",
+  date: "Septiembre 2026",
+  duration: "Septiembre 2026",
+  last_update: "-",
+  status: "Finalizado",
+  project: "Freelance",
+
+  problem:
+    "El sitio web reúne la oferta de dos alojamientos con características e identidades diferentes, pero la forma de organizar y comunicar la información limita la diferenciación entre ambas propuestas. También se detectaron oportunidades de mejora en la presentación de reseñas, ubicación, navegación, visibilidad en buscadores y recorrido hacia la consulta por WhatsApp.",
+
+  outcome:
+    "Se realizó una auditoría integral del sitio y se elaboró una propuesta de optimización orientada a fortalecer la identidad de ambos alojamientos, reorganizar la arquitectura de información, mejorar la experiencia de navegación y facilitar el recorrido hacia la consulta. El análisis también incluyó aspectos de posicionamiento orgánico, conversión y una revisión técnica preliminar.",
+
+  outcomeLabel: "Resultado",
+
+  outcomeDetail:
+    "Se entregó un informe con hallazgos, prioridades y recomendaciones para mejorar la claridad, confianza, visibilidad y conversión del sitio, incluyendo una propuesta de reorganización que permite diferenciar ambos alojamientos dentro de una misma experiencia web.",
+
+  description:
+    "Auditoría y propuesta de optimización de un sitio web que reúne dos alojamientos turísticos de Cafayate. El trabajo incluyó el análisis de la propuesta de valor, identidad de cada alojamiento, arquitectura de información, navegación, contenidos, reseñas, ubicación, recorrido hacia WhatsApp, posicionamiento orgánico y aspectos técnicos del sitio. Como resultado se elaboró un informe con oportunidades de mejora priorizadas y una propuesta de reorganización que puede aplicarse sobre el sitio actual o servir como base para un futuro rediseño.",
+
+  technologies: [
+    { name: "Auditoría UX" },
+    { name: "Arquitectura de información" },
+    { name: "Optimización de conversión" },
+    { name: "Análisis de contenidos" }
+  ],
+
+  responsabilities: [
+    "Evaluación de la propuesta de valor y diferenciación entre ambos alojamientos.",
+    "Análisis de la arquitectura de información, navegación y jerarquía de contenidos.",
+    "Revisión del recorrido desde la exploración de los alojamientos hasta la consulta por WhatsApp.",
+    "Análisis de la presencia de reseñas, ubicación y otros elementos de confianza.",
+    "Evaluación de alternativas de organización: sitio único con marcas diferenciadas o sitios independientes.",
+    "Priorización de oportunidades de mejora y elaboración del informe final de auditoría."
+  ],
+
+  features: [],
+
+  characteristics: [
+    "Auditoría realizada sobre un sitio web actualmente publicado.",
+    "Análisis de dos alojamientos con identidades y propuestas de valor diferentes.",
+    "Recomendaciones orientadas a mejorar claridad, confianza, visibilidad y conversión.",
+    "Propuesta de reorganización de la experiencia web y diferenciación de ambas marcas.",
+    "Informe final preparado como guía para una futura implementación."
+  ],
+
+  video: "",
+  github: "",
+  link: ""
+},   {
     id: 123,
     image: lavanderia,
     category: "Lavandería",
