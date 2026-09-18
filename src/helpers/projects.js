@@ -177,7 +177,7 @@ const projects = [
   category: "Alojamiento",
   name: "Auditoría y propuesta de optimización web para alojamientos",
   type: "Auditoría y propuesta de optimización",
-  area: "Auditoría y Optimización Web",
+  area: "auditoría",
   date: "Septiembre 2026",
   duration: "Septiembre 2026",
   last_update: "-",

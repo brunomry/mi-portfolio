@@ -3,9 +3,9 @@ import projects from "../../helpers/projects.js";
 import ProjectCard from "./ProjectCard";
 
 const categories = [
-  { label: "Auditoría y optimización web", value: "Auditoría y Optimización web" },
-  { label: "Sitios y aplicaciones", value: "frontend" },
-  { label: "Backend", value: "backend" },
+  { label: "Auditoría y Optimización web", value: "auditoría" },
+  { label: "Sitios y Apps web", value: "frontend" },
+  { label: "APIs", value: "backend" },
   { label: "Diseño UI", value: "diseño" },
   { label: "Análisis", value: "académico" },
 ];
