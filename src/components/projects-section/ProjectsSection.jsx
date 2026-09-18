@@ -3,7 +3,7 @@ import projects from "../../helpers/projects.js";
 import ProjectCard from "./ProjectCard";
 
 const categories = [
-  { label: "Auditoría y optimización web", value: "Auditoría y optimización web" },
+  { label: "Auditoría y optimización web", value: "Auditoría y Optimización web" },
   { label: "Sitios y aplicaciones", value: "frontend" },
   { label: "Backend", value: "backend" },
   { label: "Diseño UI", value: "diseño" },
