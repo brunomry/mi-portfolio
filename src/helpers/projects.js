@@ -166,7 +166,6 @@ const projects = [
       { name: "React Hook Form" },
       { name: "React Router" },
       { name: "Netlify" },
-      { name: "Codex" },
     ],    responsabilities: ["Definición del problema y alcance.", "Diseño del flujo de carga.", "Construcción y validación de la herramienta con asistencia de Codex."],
     features: ["Carga de datos del cliente y del equipo.", "Generación de comprobante digital en formato PDF."],
     characteristics: ["Solución enfocada en una necesidad operativa concreta.", "Desarrollo iterativo asistido por inteligencia artificial."],
