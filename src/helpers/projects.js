@@ -139,7 +139,7 @@ const projects = [
     responsabilities: ["Análisis del proceso actual de difusión y venta.", "Desarrollo del catálogo y del flujo de pedido hacia WhatsApp.", "Preparación de una arquitectura escalable."],
     features: ["Catálogo de prendas y variantes.", "Carrito de compras.", "Envío del pedido por WhatsApp.", "Gestión de productos y disponibilidad."],
     characteristics: ["Canal de ventas propio y responsive.", "Producto SaaS preparado para evolucionar."],
-    video: "", github: "", link: "blanqueriazf.com.ar",
+    video: "", github: "", link: "https://blanqueriazf.com.ar",
   },
   {
     id: 127,
