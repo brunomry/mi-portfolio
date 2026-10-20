@@ -19,6 +19,58 @@ import servicioTecnicoImage from "../assets/projects-images/servicio-tecnico.jpg
 
 const projects = [
   {
+  id: 771,
+  image: alojamientos,
+  category: "Alojamientos",
+  name: "Sistema de Gestión para Alojamientos",
+  type: "Aplicación Web",
+  area: "frontend",
+  date: "Marzo 2026",
+  duration: "-",
+  last_update: "Octubre 2026",
+  status: "En desarrollo",
+  project: "Freelance",
+  problem:
+    "Muchos alojamientos gestionan reservas, estadías, pagos y huéspedes mediante registros en papel o herramientas separadas, lo que dificulta el control de la información y aumenta el riesgo de errores o pérdida de datos. Además, dependen de plataformas intermediarias que cobran comisiones por cada reserva.",
+  outcome:
+    "La aplicación busca centralizar la gestión de alojamientos, digitalizar los registros y facilitar el control de las operaciones diarias. También permitirá integrar reservas directas desde el sitio web del establecimiento, reduciendo la dependencia de plataformas intermediarias.",
+  outcomeLabel: "Impacto esperado",
+  outcomeDetail:
+    "En una implementación real, permitiría agilizar la administración de reservas, habitaciones, huéspedes, estadías y pagos, reducir errores y mantener la información organizada y respaldada digitalmente. Además, ofrecería la posibilidad de complementar o reemplazar los registros en papel y fomentar las reservas directas sin comisiones de intermediarios.",
+  description:
+    "Aplicación web diseñada para la gestión integral de alojamientos, con una interfaz intuitiva que permitirá administrar habitaciones, servicios, reservas, estadías, pagos, huéspedes y demás operaciones del establecimiento. Su objetivo es digitalizar y centralizar la información, evitando depender exclusivamente de registros en papel y permitiendo conservar ambos métodos de control si el alojamiento lo requiere. Además, se busca que el sistema pueda integrarse con el sitio web del establecimiento para recibir reservas directas, minimizar la dependencia de plataformas intermediarias y reducir los costos asociados a sus comisiones. El proyecto contempla futuras funcionalidades como reportes, gestión de stock, promociones y descuentos, notificaciones y organización de turnos para el desayuno.",
+  technologies: [
+    { name: "React" },
+    { name: "Javascript" },
+    { name: "React Router" },
+    { name: "React Hook Form" },
+    { name: "Tailwind CSS" },
+    { name: "Git" },
+    { name: "Github" },
+  ],
+  responsabilities: [
+    "Diseño y desarrollo de interfaces para la administración de habitaciones, servicios, reservas, estadías, pagos y huéspedes.",
+    "Implementación de formularios para el registro, consulta y actualización de información.",
+    "Integración con la API REST para la gestión y visualización de datos.",
+    "Implementación de navegación, rutas protegidas y control de acceso para administradores.",
+    "Desarrollo de componentes reutilizables y diseño adaptable a distintos dispositivos.",
+    "Implementación de validaciones, mensajes de confirmación y manejo de errores en la interfaz.",
+  ],
+  features: [
+    "Panel de administración para centralizar la gestión del alojamiento.",
+    "Gestión de habitaciones, servicios, reservas, estadías, pagos y huéspedes.",
+    "Formularios para registrar, consultar, editar y eliminar información.",
+    "Visualización de disponibilidad y estados de habitaciones y reservas.",
+    "Autenticación y acceso protegido para administradores.",
+    "Interfaz responsive adaptable a computadoras, tablets y celulares.",
+    "Integración prevista con sitios web para recibir reservas directas.",
+  ],
+  characteristics: [],
+  video: "",
+  github: "",
+  link: "",
+},
+  {
     id: 124,
     image: hamburgueseriaImage,
     category: "Gastronomía",
@@ -179,7 +231,7 @@ const projects = [
   type: "Auditoría y propuesta de optimización",
   area: "auditoría",
   date: "Septiembre 2026",
-  duration: "Septiembre 2026",
+  duration: "1 semana",
   last_update: "-",
   status: "Finalizado",
   project: "Freelance",
@@ -636,17 +688,18 @@ const projects = [
     github: "",
     link: "",
   },
+
   {
     id: 770,
     image: alojamientos,
     category: "Alojamientos",
-    name: "API Restful para Alojamientos",
+    name: "API Restful para gestión de Alojamientos",
     type: "API REST",
     area: "backend",
     date: "Marzo 2026",
     duration: "-",
-    last_update: "-",
-    status: "En pausa",
+    last_update: "Octubre 2026",
+    status: "En desarrollo",
     project: "Freelance",
     problem:
       "Los alojamientos suelen gestionar reservas, estadías, pagos, habitaciones y huéspedes mediante herramientas separadas, lo que dificulta tener una visión completa de la operación.",
@@ -672,7 +725,7 @@ const projects = [
       { name: "Stripe" },
     ],
     responsabilities: [
-      "Implementación de rutas, controladores, servicios, repositorios y valiaciones para autenticación, servicios/comodidades, habitaciones, tipos de habitaciones, reservas, estadías, pagos, métodos de pago, canales de reservas, huéspedes y usuarios administradores.",
+      "Implementación de rutas, controladores, servicios, repositorios y validaciones para autenticación, servicios/comodidades, habitaciones, tipos de habitaciones, reservas, estadías, pagos, métodos de pago, canales de reservas, huéspedes y usuarios administradores.",
       "Gestión de autenticación y autorización de usuarios administradores y huéspedes.",
       "Validación de datos y manejo de errores.",
       "Pruebas de API con Postman y documentación de endpoints.",
